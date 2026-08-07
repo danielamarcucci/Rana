@@ -27,8 +27,11 @@ export async function guardarArchivo(
 ): Promise<string> {
   if (usaBlob()) {
     const { put } = await import("@vercel/blob");
+    // Acceso privado: los soportes y fotos de las denuncias son datos
+    // sensibles. Solo puede leerlos esta aplicación (con el token), nunca
+    // una URL suelta.
     const resultado = await put(`${carpeta}/${nombreArchivo}`, buffer, {
-      access: "public",
+      access: "private",
       contentType,
       addRandomSuffix: false,
     });
@@ -46,9 +49,10 @@ export async function guardarArchivo(
 export async function obtenerArchivo(ref: string): Promise<Buffer | null> {
   try {
     if (ref.startsWith("http://") || ref.startsWith("https://")) {
-      const res = await fetch(ref);
-      if (!res.ok) return null;
-      return Buffer.from(await res.arrayBuffer());
+      const { get } = await import("@vercel/blob");
+      const resultado = await get(ref, { access: "private" });
+      if (!resultado) return null;
+      return Buffer.from(await new Response(resultado.stream).arrayBuffer());
     }
     const relativo = ref.startsWith("local:") ? ref.slice("local:".length) : ref;
     const ruta = path.join(LOCAL_UPLOADS_DIR, relativo);
