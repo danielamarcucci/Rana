@@ -8,7 +8,7 @@ export default async function ConfirmacionPage({
   params: Promise<{ token: string }>;
 }) {
   const { token } = await params;
-  const caso = getCasoPorToken(token);
+  const caso = await getCasoPorToken(token);
   if (!caso) notFound();
 
   return (

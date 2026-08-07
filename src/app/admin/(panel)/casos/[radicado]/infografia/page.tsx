@@ -14,14 +14,14 @@ export default async function InfografiaCasoPage({
 }) {
   const { radicado: raw } = await params;
   const radicado = decodeURIComponent(raw);
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) notFound();
 
-  const anexos = listAnexos(radicado);
+  const anexos = await listAnexos(radicado);
   const anexoFinal = anexos.find((a) => a.estado === "version_final") ?? null;
   const habilitado = anexoFinal !== null;
   const valoresAnexo = anexoFinal ? valoresResueltos(anexoFinal.tipo, caso, anexoFinal.overrides) : null;
-  const infografia = getOrCreateInfografia(radicado, sugeridosInfografia(caso, valoresAnexo));
+  const infografia = await getOrCreateInfografia(radicado, sugeridosInfografia(caso, valoresAnexo));
 
   return (
     <div className="space-y-4">

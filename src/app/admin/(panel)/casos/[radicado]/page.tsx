@@ -6,7 +6,7 @@ import { FormularioAmpliado } from "@/components/admin/FormularioAmpliado";
 export default async function CasoPage({ params }: { params: Promise<{ radicado: string }> }) {
   const { radicado: raw } = await params;
   const radicado = decodeURIComponent(raw);
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) notFound();
 
   return (

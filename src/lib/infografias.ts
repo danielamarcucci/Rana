@@ -41,50 +41,54 @@ function rowTo(row: Row): Infografia {
   };
 }
 
-export function getInfografia(radicado: string): Infografia | null {
-  const row = db
-    .prepare("SELECT * FROM infografias WHERE radicado = ? ORDER BY created_at DESC LIMIT 1")
-    .get(radicado) as Row | undefined;
+export async function getInfografia(radicado: string): Promise<Infografia | null> {
+  const row = await db.get<Row>(
+    "SELECT * FROM infografias WHERE radicado = ? ORDER BY created_at DESC LIMIT 1",
+    [radicado]
+  );
   return row ? rowTo(row) : null;
 }
 
-export function getOrCreateInfografia(
+export async function getOrCreateInfografia(
   radicado: string,
   contenidoInicial: ContenidoInfografia
-): Infografia {
-  const existente = getInfografia(radicado);
+): Promise<Infografia> {
+  const existente = await getInfografia(radicado);
   if (existente) return existente;
   const ts = nowIso();
-  const info = db
-    .prepare(
-      `INSERT INTO infografias (radicado, contenido, created_at, updated_at) VALUES (?, ?, ?, ?)`
-    )
-    .run(radicado, JSON.stringify(contenidoInicial), ts, ts);
-  return getInfografiaPorId(Number(info.lastInsertRowid))!;
+  const insertado = await db.get<{ id: number }>(
+    `INSERT INTO infografias (radicado, contenido, created_at, updated_at)
+     VALUES (?, ?, ?, ?) RETURNING id`,
+    [radicado, JSON.stringify(contenidoInicial), ts, ts]
+  );
+  return (await getInfografiaPorId(Number(insertado!.id)))!;
 }
 
-export function getInfografiaPorId(id: number): Infografia | null {
-  const row = db.prepare("SELECT * FROM infografias WHERE id = ?").get(id) as Row | undefined;
+export async function getInfografiaPorId(id: number): Promise<Infografia | null> {
+  const row = await db.get<Row>("SELECT * FROM infografias WHERE id = ?", [id]);
   return row ? rowTo(row) : null;
 }
 
-export function actualizarContenidoInfografia(
+export async function actualizarContenidoInfografia(
   id: number,
   contenido: ContenidoInfografia
-): Infografia | null {
-  db.prepare("UPDATE infografias SET contenido = ?, updated_at = ? WHERE id = ?").run(
+): Promise<Infografia | null> {
+  await db.run("UPDATE infografias SET contenido = ?, updated_at = ? WHERE id = ?", [
     JSON.stringify(contenido),
     nowIso(),
-    id
-  );
+    id,
+  ]);
   return getInfografiaPorId(id);
 }
 
-export function actualizarFotoInfografia(id: number, fotoPath: string | null): Infografia | null {
-  db.prepare("UPDATE infografias SET foto_path = ?, updated_at = ? WHERE id = ?").run(
+export async function actualizarFotoInfografia(
+  id: number,
+  fotoPath: string | null
+): Promise<Infografia | null> {
+  await db.run("UPDATE infografias SET foto_path = ?, updated_at = ? WHERE id = ?", [
     fotoPath,
     nowIso(),
-    id
-  );
+    id,
+  ]);
   return getInfografiaPorId(id);
 }

@@ -25,65 +25,66 @@ function rowToAnexo(row: AnexoRow): Anexo {
   };
 }
 
-export function listAnexos(radicado: string): Anexo[] {
-  const rows = db
-    .prepare("SELECT * FROM anexos WHERE radicado = ? ORDER BY created_at ASC")
-    .all(radicado) as AnexoRow[];
+export async function listAnexos(radicado: string): Promise<Anexo[]> {
+  const rows = await db.all<AnexoRow>(
+    "SELECT * FROM anexos WHERE radicado = ? ORDER BY created_at ASC",
+    [radicado]
+  );
   return rows.map(rowToAnexo);
 }
 
-export function getAnexo(id: number): Anexo | null {
-  const row = db.prepare("SELECT * FROM anexos WHERE id = ?").get(id) as
-    | AnexoRow
-    | undefined;
+export async function getAnexo(id: number): Promise<Anexo | null> {
+  const row = await db.get<AnexoRow>("SELECT * FROM anexos WHERE id = ?", [id]);
   return row ? rowToAnexo(row) : null;
 }
 
-export function getOrCreateAnexo(radicado: string, tipo: AnexoTipo): Anexo {
-  const row = db
-    .prepare("SELECT * FROM anexos WHERE radicado = ? AND tipo = ?")
-    .get(radicado, tipo) as AnexoRow | undefined;
+export async function getOrCreateAnexo(radicado: string, tipo: AnexoTipo): Promise<Anexo> {
+  const row = await db.get<AnexoRow>(
+    "SELECT * FROM anexos WHERE radicado = ? AND tipo = ?",
+    [radicado, tipo]
+  );
   if (row) return rowToAnexo(row);
   const ts = nowIso();
-  const info = db
-    .prepare(
-      `INSERT INTO anexos (radicado, tipo, estado, overrides, created_at, updated_at)
-       VALUES (?, ?, 'borrador', '{}', ?, ?)`
-    )
-    .run(radicado, tipo, ts, ts);
-  return getAnexo(Number(info.lastInsertRowid))!;
+  const insertado = await db.get<{ id: number }>(
+    `INSERT INTO anexos (radicado, tipo, estado, overrides, created_at, updated_at)
+     VALUES (?, ?, 'borrador', '{}', ?, ?)
+     RETURNING id`,
+    [radicado, tipo, ts, ts]
+  );
+  return (await getAnexo(Number(insertado!.id)))!;
 }
 
-export function actualizarOverrides(
+export async function actualizarOverrides(
   id: number,
   overrides: Record<string, string>
-): Anexo | null {
-  db.prepare("UPDATE anexos SET overrides = ?, updated_at = ? WHERE id = ?").run(
+): Promise<Anexo | null> {
+  await db.run("UPDATE anexos SET overrides = ?, updated_at = ? WHERE id = ?", [
     JSON.stringify(overrides),
     nowIso(),
-    id
+    id,
+  ]);
+  return getAnexo(id);
+}
+
+export async function marcarVersionFinal(id: number): Promise<Anexo | null> {
+  const anexo = await getAnexo(id);
+  if (!anexo) return null;
+  const ts = nowIso();
+  await db.run(
+    `INSERT INTO anexo_versiones (anexo_id, overrides, etiqueta, created_at)
+     VALUES (?, ?, 'Versión final', ?)`,
+    [id, JSON.stringify(anexo.overrides), ts]
+  );
+  await db.run(
+    "UPDATE anexos SET estado = 'version_final', finalized_at = ?, updated_at = ? WHERE id = ?",
+    [ts, ts, id]
   );
   return getAnexo(id);
 }
 
-export function marcarVersionFinal(id: number): Anexo | null {
-  const anexo = getAnexo(id);
-  if (!anexo) return null;
-  const ts = nowIso();
-  db.prepare(
-    `INSERT INTO anexo_versiones (anexo_id, overrides, etiqueta, created_at)
-     VALUES (?, ?, 'Versión final', ?)`
-  ).run(id, JSON.stringify(anexo.overrides), ts);
-  db.prepare(
-    "UPDATE anexos SET estado = 'version_final', finalized_at = ?, updated_at = ? WHERE id = ?"
-  ).run(ts, ts, id);
-  return getAnexo(id);
-}
-
-export function listVersiones(anexoId: number) {
-  return db
-    .prepare(
-      "SELECT id, overrides, etiqueta, created_at FROM anexo_versiones WHERE anexo_id = ? ORDER BY created_at DESC"
-    )
-    .all(anexoId) as { id: number; overrides: string; etiqueta: string; created_at: string }[];
+export async function listVersiones(anexoId: number) {
+  return db.all<{ id: number; overrides: string; etiqueta: string; created_at: string }>(
+    "SELECT id, overrides, etiqueta, created_at FROM anexo_versiones WHERE anexo_id = ? ORDER BY created_at DESC",
+    [anexoId]
+  );
 }

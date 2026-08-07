@@ -6,7 +6,7 @@ import { nombreArchivoCaso } from "@/lib/radicado";
 export async function GET(_req: NextRequest, { params }: { params: Promise<{ radicado: string }> }) {
   const { radicado: raw } = await params;
   const radicado = decodeURIComponent(raw);
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
   const buffer = await generarFormularioAmpliadoDocx(caso);
   return new NextResponse(new Uint8Array(buffer), {

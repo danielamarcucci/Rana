@@ -15,7 +15,7 @@ const updateSchema = z.object({
 
 export async function GET(_req: NextRequest, { params }: { params: Promise<{ radicado: string }> }) {
   const { radicado } = await params;
-  const caso = getCaso(decodeURIComponent(radicado));
+  const caso = await getCaso(decodeURIComponent(radicado));
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
   return NextResponse.json({ caso });
 }
@@ -23,7 +23,7 @@ export async function GET(_req: NextRequest, { params }: { params: Promise<{ rad
 export async function PUT(req: NextRequest, { params }: { params: Promise<{ radicado: string }> }) {
   const { radicado: raw } = await params;
   const radicado = decodeURIComponent(raw);
-  const existing = getCaso(radicado);
+  const existing = await getCaso(radicado);
   if (!existing) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
 
   let body: unknown;
@@ -38,14 +38,14 @@ export async function PUT(req: NextRequest, { params }: { params: Promise<{ radi
   }
 
   if (parsed.data.estado) {
-    actualizarEstado(radicado, parsed.data.estado as EstadoCaso);
+    await actualizarEstado(radicado, parsed.data.estado as EstadoCaso);
   }
   if (parsed.data.data) {
-    actualizarDatosCaso(radicado, parsed.data.data as CasoData, {
+    await actualizarDatosCaso(radicado, parsed.data.data as CasoData, {
       marcarAmpliadoCompleto: parsed.data.marcarAmpliadoCompleto,
       draft: parsed.data.draft,
     });
   }
 
-  return NextResponse.json({ caso: getCaso(radicado) });
+  return NextResponse.json({ caso: await getCaso(radicado) });
 }

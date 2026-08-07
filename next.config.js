@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ["better-sqlite3", "@napi-rs/canvas"],
+  serverExternalPackages: ["@libsql/client", "@napi-rs/canvas"],
   async headers() {
     return [
       {

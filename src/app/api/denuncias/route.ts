@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     ? (accedioPor as CanalRecepcion)
     : "pagina_web";
 
-  const caso = crearCasoPublico({ ...data, accedioPor }, canal);
+  const caso = await crearCasoPublico({ ...data, accedioPor }, canal);
 
   return NextResponse.json({
     radicado: caso.radicado,

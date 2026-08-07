@@ -4,7 +4,7 @@ import { registrarManualSchema } from "@/lib/validation";
 import type { CasoData } from "@/lib/types";
 
 export async function GET() {
-  return NextResponse.json({ casos: listCasos() });
+  return NextResponse.json({ casos: await listCasos() });
 }
 
 export async function POST(req: NextRequest) {
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
       { status: 400 }
     );
   }
-  const caso = crearCasoManual(
+  const caso = await crearCasoManual(
     parsed.data.data as CasoData,
     parsed.data.medioManual,
     parsed.data.draft ?? false

@@ -16,10 +16,10 @@ export default async function AnexoTipoPage({
   const { radicado: raw, tipo } = await params;
   const radicado = decodeURIComponent(raw);
   if (!TIPOS_VALIDOS.includes(tipo as AnexoTipo)) notFound();
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) notFound();
 
-  const anexo = getOrCreateAnexo(radicado, tipo as AnexoTipo);
+  const anexo = await getOrCreateAnexo(radicado, tipo as AnexoTipo);
   const valores = valoresResueltos(tipo as AnexoTipo, caso, anexo.overrides);
 
   return (

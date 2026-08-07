@@ -12,10 +12,10 @@ export async function GET(
   const { radicado: raw, tipo } = await params;
   const radicado = decodeURIComponent(raw);
   const t = tipo as AnexoTipo;
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
 
-  const anexo = getOrCreateAnexo(radicado, t);
+  const anexo = await getOrCreateAnexo(radicado, t);
   const buffer = await generarAnexoDocx(t, caso, anexo.overrides);
   const nombre = `${radicado.replace("#", "_#")}_${NOMBRE_TIPO[t].replace(/\s+/g, "_")}.docx`;
 

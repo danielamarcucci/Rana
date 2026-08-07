@@ -7,22 +7,19 @@ function todayKey(d = new Date()) {
   return `${yyyy}${mm}${dd}`;
 }
 
-/** Generates a sequential daily radicado like 20260805#0001, matching the
- * download filename convention AAAAMMDD_#NUMERO-DE-RADICADO.docx. */
-export function generarRadicado(): string {
+/** Genera un radicado diario secuencial como 20260805#0001, coincidiendo
+ * con el nombre de archivo de descarga AAAAMMDD_#NUMERO-DE-RADICADO.docx.
+ * El UPSERT con RETURNING es atómico: no hay condición de carrera entre
+ * solicitudes concurrentes. */
+export async function generarRadicado(): Promise<string> {
   const dia = todayKey();
-  const tx = db.transaction((d: string) => {
-    const row = db
-      .prepare("SELECT seq FROM radicado_counters WHERE dia = ?")
-      .get(d) as { seq: number } | undefined;
-    const next = (row?.seq ?? 0) + 1;
-    db.prepare(
-      `INSERT INTO radicado_counters (dia, seq) VALUES (?, ?)
-       ON CONFLICT(dia) DO UPDATE SET seq = excluded.seq`
-    ).run(d, next);
-    return next;
-  });
-  const seq = tx(dia);
+  const fila = await db.get<{ seq: number }>(
+    `INSERT INTO radicado_counters (dia, seq) VALUES (?, 1)
+     ON CONFLICT(dia) DO UPDATE SET seq = seq + 1
+     RETURNING seq`,
+    [dia]
+  );
+  const seq = fila?.seq ?? 1;
   return `${dia}#${String(seq).padStart(4, "0")}`;
 }
 

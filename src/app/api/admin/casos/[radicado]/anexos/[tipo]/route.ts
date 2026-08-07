@@ -17,10 +17,10 @@ export async function GET(
   const { radicado: raw, tipo } = await params;
   const radicado = decodeURIComponent(raw);
   if (!esTipoValido(tipo)) return NextResponse.json({ error: "Tipo de anexo inválido." }, { status: 400 });
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
 
-  const anexo = getOrCreateAnexo(radicado, tipo);
+  const anexo = await getOrCreateAnexo(radicado, tipo);
   const valores = valoresResueltos(tipo, caso, anexo.overrides);
   return NextResponse.json({ anexo, valores });
 }
@@ -32,7 +32,7 @@ export async function PUT(
   const { radicado: raw, tipo } = await params;
   const radicado = decodeURIComponent(raw);
   if (!esTipoValido(tipo)) return NextResponse.json({ error: "Tipo de anexo inválido." }, { status: 400 });
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
 
   let body: unknown;
@@ -46,8 +46,8 @@ export async function PUT(
     return NextResponse.json({ error: "Datos inválidos." }, { status: 400 });
   }
 
-  const anexo = getOrCreateAnexo(radicado, tipo);
-  const actualizado = actualizarOverrides(anexo.id, overrides);
+  const anexo = await getOrCreateAnexo(radicado, tipo);
+  const actualizado = await actualizarOverrides(anexo.id, overrides);
   const valores = valoresResueltos(tipo, caso, actualizado?.overrides ?? {});
   return NextResponse.json({ anexo: actualizado, valores });
 }

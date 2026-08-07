@@ -37,107 +37,113 @@ function rowToCaso(row: CasoRow): Caso {
   };
 }
 
-export function crearCasoPublico(data: CasoData, canalRecepcion: CanalRecepcion): Caso {
-  const radicado = generarRadicado();
+export async function crearCasoPublico(
+  data: CasoData,
+  canalRecepcion: CanalRecepcion
+): Promise<Caso> {
+  const radicado = await generarRadicado();
   const token = nanoid(32);
   const ts = nowIso();
-  db.prepare(
+  await db.run(
     `INSERT INTO casos (radicado, access_token, created_at, updated_at, canal_recepcion, estado, is_manual, draft, data, soportes)
-     VALUES (?, ?, ?, ?, ?, 'recibido', 0, 0, ?, '[]')`
-  ).run(radicado, token, ts, ts, canalRecepcion, JSON.stringify(data));
-  return getCaso(radicado)!;
+     VALUES (?, ?, ?, ?, ?, 'recibido', 0, 0, ?, '[]')`,
+    [radicado, token, ts, ts, canalRecepcion, JSON.stringify(data)]
+  );
+  return (await getCaso(radicado))!;
 }
 
-export function crearCasoManual(
+export async function crearCasoManual(
   data: CasoData,
   medioManual: string,
   draft: boolean
-): Caso {
-  const radicado = generarRadicado();
+): Promise<Caso> {
+  const radicado = await generarRadicado();
   const token = nanoid(32);
   const ts = nowIso();
-  db.prepare(
+  await db.run(
     `INSERT INTO casos (radicado, access_token, created_at, updated_at, canal_recepcion, medio_manual, estado, is_manual, draft, ampliado_completo, ampliado_submitted_at, data, soportes)
-     VALUES (?, ?, ?, ?, 'RED', ?, 'recibido', 1, ?, ?, ?, ?, '[]')`
-  ).run(
-    radicado,
-    token,
-    ts,
-    ts,
-    medioManual,
-    draft ? 1 : 0,
-    draft ? 0 : 1,
-    draft ? null : ts,
-    JSON.stringify(data)
+     VALUES (?, ?, ?, ?, 'RED', ?, 'recibido', 1, ?, ?, ?, ?, '[]')`,
+    [
+      radicado,
+      token,
+      ts,
+      ts,
+      medioManual,
+      draft ? 1 : 0,
+      draft ? 0 : 1,
+      draft ? null : ts,
+      JSON.stringify(data),
+    ]
   );
-  return getCaso(radicado)!;
+  return (await getCaso(radicado))!;
 }
 
-export function getCaso(radicado: string): Caso | null {
-  const row = db.prepare("SELECT * FROM casos WHERE radicado = ?").get(radicado) as
-    | CasoRow
-    | undefined;
+export async function getCaso(radicado: string): Promise<Caso | null> {
+  const row = await db.get<CasoRow>("SELECT * FROM casos WHERE radicado = ?", [radicado]);
   return row ? rowToCaso(row) : null;
 }
 
-export function getCasoPorToken(token: string): Caso | null {
-  const row = db.prepare("SELECT * FROM casos WHERE access_token = ?").get(token) as
-    | CasoRow
-    | undefined;
+export async function getCasoPorToken(token: string): Promise<Caso | null> {
+  const row = await db.get<CasoRow>("SELECT * FROM casos WHERE access_token = ?", [token]);
   return row ? rowToCaso(row) : null;
 }
 
-export function listCasos(): Caso[] {
-  const rows = db
-    .prepare("SELECT * FROM casos ORDER BY created_at DESC")
-    .all() as CasoRow[];
+export async function listCasos(): Promise<Caso[]> {
+  const rows = await db.all<CasoRow>("SELECT * FROM casos ORDER BY created_at DESC");
   return rows.map(rowToCaso);
 }
 
-export function actualizarDatosCaso(
+export async function actualizarDatosCaso(
   radicado: string,
   data: CasoData,
   opts: { marcarAmpliadoCompleto?: boolean; draft?: boolean } = {}
-): Caso | null {
-  const existing = getCaso(radicado);
+): Promise<Caso | null> {
+  const existing = await getCaso(radicado);
   if (!existing) return null;
   const ts = nowIso();
   const merged = { ...existing.data, ...data };
   const setAmpliado = opts.marcarAmpliadoCompleto ?? existing.ampliadoCompleto;
-  db.prepare(
+  await db.run(
     `UPDATE casos SET data = ?, updated_at = ?, ampliado_completo = ?,
        ampliado_submitted_at = CASE WHEN ? = 1 AND ampliado_submitted_at IS NULL THEN ? ELSE ampliado_submitted_at END,
        draft = ?
-     WHERE radicado = ?`
-  ).run(
-    JSON.stringify(merged),
-    ts,
-    setAmpliado ? 1 : 0,
-    setAmpliado ? 1 : 0,
-    ts,
-    opts.draft === undefined ? existing.draft ? 1 : 0 : opts.draft ? 1 : 0,
-    radicado
+     WHERE radicado = ?`,
+    [
+      JSON.stringify(merged),
+      ts,
+      setAmpliado ? 1 : 0,
+      setAmpliado ? 1 : 0,
+      ts,
+      opts.draft === undefined ? (existing.draft ? 1 : 0) : opts.draft ? 1 : 0,
+      radicado,
+    ]
   );
   return getCaso(radicado);
 }
 
-export function actualizarEstado(radicado: string, estado: EstadoCaso): Caso | null {
-  db.prepare("UPDATE casos SET estado = ?, updated_at = ? WHERE radicado = ?").run(
+export async function actualizarEstado(
+  radicado: string,
+  estado: EstadoCaso
+): Promise<Caso | null> {
+  await db.run("UPDATE casos SET estado = ?, updated_at = ? WHERE radicado = ?", [
     estado,
     nowIso(),
-    radicado
-  );
+    radicado,
+  ]);
   return getCaso(radicado);
 }
 
-export function agregarSoportes(radicado: string, nuevos: Soporte[]): Caso | null {
-  const existing = getCaso(radicado);
+export async function agregarSoportes(
+  radicado: string,
+  nuevos: Soporte[]
+): Promise<Caso | null> {
+  const existing = await getCaso(radicado);
   if (!existing) return null;
   const soportes = [...existing.soportes, ...nuevos];
-  db.prepare("UPDATE casos SET soportes = ?, updated_at = ? WHERE radicado = ?").run(
+  await db.run("UPDATE casos SET soportes = ?, updated_at = ? WHERE radicado = ?", [
     JSON.stringify(soportes),
     nowIso(),
-    radicado
-  );
+    radicado,
+  ]);
   return getCaso(radicado);
 }

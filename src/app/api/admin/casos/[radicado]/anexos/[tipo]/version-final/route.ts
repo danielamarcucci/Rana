@@ -9,10 +9,10 @@ export async function POST(
 ) {
   const { radicado: raw, tipo } = await params;
   const radicado = decodeURIComponent(raw);
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
 
-  const anexo = getOrCreateAnexo(radicado, tipo as AnexoTipo);
-  const actualizado = marcarVersionFinal(anexo.id);
+  const anexo = await getOrCreateAnexo(radicado, tipo as AnexoTipo);
+  const actualizado = await marcarVersionFinal(anexo.id);
   return NextResponse.json({ anexo: actualizado });
 }

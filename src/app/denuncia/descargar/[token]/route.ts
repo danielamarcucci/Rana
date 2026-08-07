@@ -5,7 +5,7 @@ import { nombreArchivoCaso } from "@/lib/radicado";
 
 export async function GET(_req: NextRequest, { params }: { params: Promise<{ token: string }> }) {
   const { token } = await params;
-  const caso = getCasoPorToken(token);
+  const caso = await getCasoPorToken(token);
   if (!caso) {
     return NextResponse.json({ error: "Denuncia no encontrada." }, { status: 404 });
   }

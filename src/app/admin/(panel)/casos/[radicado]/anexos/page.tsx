@@ -10,10 +10,10 @@ const TIPOS: AnexoTipo[] = ["derecho_peticion", "denuncia_publica", "alerta_agra
 export default async function AnexosCasoPage({ params }: { params: Promise<{ radicado: string }> }) {
   const { radicado: raw } = await params;
   const radicado = decodeURIComponent(raw);
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) notFound();
 
-  const anexos = listAnexos(radicado);
+  const anexos = await listAnexos(radicado);
   const rutaJuridica = caso.data.rutaJuridica ?? [];
   const mapaRuta: Record<AnexoTipo, string> = {
     derecho_peticion: "derecho_peticion",

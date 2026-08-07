@@ -1,11 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import path from "node:path";
-import fs from "node:fs/promises";
 import { getCaso } from "@/lib/casos";
 import { getInfografia } from "@/lib/infografias";
 import { renderizarInfografiaPng } from "@/lib/infografiaRender";
 import { pngAPdf } from "@/lib/infografiaPdf";
-import { uploadsDir } from "@/lib/db";
+import { obtenerArchivo } from "@/lib/storage";
 
 export async function GET(
   req: NextRequest,
@@ -13,20 +11,13 @@ export async function GET(
 ) {
   const { radicado: raw } = await params;
   const radicado = decodeURIComponent(raw);
-  const caso = getCaso(radicado);
+  const caso = await getCaso(radicado);
   if (!caso) return NextResponse.json({ error: "Caso no encontrado." }, { status: 404 });
 
-  const infografia = getInfografia(radicado);
+  const infografia = await getInfografia(radicado);
   if (!infografia) return NextResponse.json({ error: "Aún no se ha generado la ficha gráfica." }, { status: 404 });
 
-  let fotoBuffer: Buffer | null = null;
-  if (infografia.fotoPath) {
-    try {
-      fotoBuffer = await fs.readFile(path.join(uploadsDir(), "infografias", infografia.fotoPath));
-    } catch {
-      fotoBuffer = null;
-    }
-  }
+  const fotoBuffer = infografia.fotoPath ? await obtenerArchivo(infografia.fotoPath) : null;
 
   const png = await renderizarInfografiaPng(infografia.contenido, radicado, fotoBuffer);
 
