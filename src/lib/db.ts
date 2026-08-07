@@ -2,7 +2,13 @@ import { createClient, type InValue } from "@libsql/client";
 import fs from "node:fs";
 import path from "node:path";
 
-const DATA_DIR = process.env.RANA_DATA_DIR || path.join(process.cwd(), "data");
+// En Vercel el directorio del proyecto es de solo lectura; solo /tmp admite
+// escritura (y es efímero). Si alguien despliega sin conectar Turso todavía,
+// usamos /tmp para que el sitio funcione igual (sin persistencia real) en
+// lugar de fallar con un error 500.
+const DATA_DIR =
+  process.env.RANA_DATA_DIR ||
+  (process.env.VERCEL ? "/tmp/rana-data" : path.join(process.cwd(), "data"));
 
 function urlLocal() {
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });

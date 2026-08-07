@@ -7,7 +7,10 @@ import path from "node:path";
 // (activo cuando BLOB_READ_WRITE_TOKEN está configurado). En desarrollo
 // local, sin ese token, se guarda en disco bajo RANA_DATA_DIR/uploads.
 
-const DATA_DIR = process.env.RANA_DATA_DIR || path.join(process.cwd(), "data");
+// Igual que en db.ts: en Vercel solo /tmp admite escritura (y es efímero).
+const DATA_DIR =
+  process.env.RANA_DATA_DIR ||
+  (process.env.VERCEL ? "/tmp/rana-data" : path.join(process.cwd(), "data"));
 const LOCAL_UPLOADS_DIR = path.join(DATA_DIR, "uploads");
 
 function usaBlob() {
