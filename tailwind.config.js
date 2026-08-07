@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  theme: {
+    extend: {
+      colors: {
+        tierra: {
+          50: "#fbf7ee",
+          100: "#f4ecd6",
+          200: "#e6d3a8",
+          300: "#d6b877",
+          400: "#c69c4e",
+          500: "#b1832f",
+          600: "#8f6425",
+          700: "#6d4a20",
+          800: "#4d341c",
+          900: "#332318",
+        },
+        hoja: {
+          50: "#f0f9ee",
+          100: "#dcf0d6",
+          200: "#b8e0af",
+          300: "#8ecb7f",
+          400: "#66b354",
+          500: "#4a9736",
+          600: "#397a29",
+          700: "#2e5f22",
+          800: "#264b1e",
+          900: "#1e3b18",
+        },
+        cielo: {
+          50: "#eef7fb",
+          100: "#d6ecf4",
+          200: "#aed9e9",
+          300: "#7cbfd9",
+          400: "#4aa0c4",
+          500: "#2f83a8",
+          600: "#256788",
+          700: "#20516b",
+          800: "#1e4258",
+          900: "#1b384a",
+        },
+        alerta: {
+          50: "#fdf2f1",
+          100: "#fbe0dd",
+          200: "#f6bcb5",
+          300: "#ef9186",
+          400: "#e4614f",
+          500: "#cf3f2c",
+          600: "#ac3020",
+          700: "#8a271b",
+          800: "#6c221a",
+          900: "#591f19",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        card: "0 2px 10px 0 rgb(38 75 30 / 0.08)",
+      },
+    },
+  },
+  plugins: [],
+};

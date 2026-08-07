@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Segoe UI", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #fbf7ee;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 font-semibold text-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-hoja-600 text-white hover:bg-hoja-700 focus-visible:ring-hoja-500;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-hoja-700 border border-hoja-300 hover:bg-hoja-50 focus-visible:ring-hoja-400;
+  }
+  .btn-danger {
+    @apply btn bg-alerta-500 text-white hover:bg-alerta-600 focus-visible:ring-alerta-400;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-tierra-700 hover:bg-tierra-100;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-tierra-100 p-6;
+  }
+  .field-label {
+    @apply block text-sm font-semibold text-tierra-800 mb-1.5;
+  }
+  .field-help {
+    @apply text-xs text-tierra-500 mt-1;
+  }
+  .field-error {
+    @apply text-xs text-alerta-600 mt-1 font-medium;
+  }
+  .input {
+    @apply w-full rounded-lg border border-tierra-200 bg-white px-3.5 py-2.5 text-sm text-tierra-900 placeholder:text-tierra-400 focus:outline-none focus:ring-2 focus:ring-hoja-400 focus:border-hoja-400;
+  }
+  .select {
+    @apply input pr-8;
+  }
+  .textarea {
+    @apply input min-h-[7rem] resize-y;
+  }
+  .checkbox-row {
+    @apply flex items-start gap-2.5 rounded-lg border border-tierra-100 px-3 py-2.5 hover:bg-tierra-50 cursor-pointer;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+  .section-title {
+    @apply text-lg font-bold text-hoja-800 flex items-center gap-2;
+  }
+}
