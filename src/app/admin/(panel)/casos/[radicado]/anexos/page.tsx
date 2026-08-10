@@ -29,6 +29,9 @@ export default async function AnexosCasoPage({ params }: { params: Promise<{ rad
         </Link>
         <h1 className="text-2xl font-extrabold text-hoja-800 font-mono">{radicado}</h1>
         <p className="text-tierra-500 text-sm">Anexos de ruta jurídica y de derechos humanos</p>
+        <Link href={`/admin/casos/${encodeURIComponent(radicado)}/analisis`} className="inline-block mt-1 text-xs text-cielo-700 hover:underline">
+          🔍 Ver análisis previo del caso
+        </Link>
       </div>
 
       {rutaJuridica.length === 0 && (

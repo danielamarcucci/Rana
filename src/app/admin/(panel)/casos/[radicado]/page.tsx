@@ -18,6 +18,9 @@ export default async function CasoPage({ params }: { params: Promise<{ radicado:
           <p className="text-tierra-500 text-sm">Formulario ampliado — revise y complemente la información</p>
         </div>
         <div className="flex gap-2">
+          <Link href={`/admin/casos/${encodeURIComponent(caso.radicado)}/analisis`} className="btn-secondary text-xs">
+            🔍 Análisis previo
+          </Link>
           <Link href={`/admin/casos/${encodeURIComponent(caso.radicado)}/anexos`} className="btn-secondary text-xs">
             📄 Anexos jurídicos
           </Link>

@@ -4,6 +4,13 @@ import { useState } from "react";
 import type { AnexoTipo, Anexo } from "@/lib/types";
 import { camposPara, NOMBRE_TIPO } from "@/lib/docGenerators/anexoCampos";
 
+type VersionGuardada = {
+  id: number;
+  etiqueta: string;
+  createdAt: string;
+  overrides: Record<string, string>;
+};
+
 export function AnexoEditor({
   radicado,
   tipo,
@@ -20,6 +27,8 @@ export function AnexoEditor({
   const [guardando, setGuardando] = useState(false);
   const [finalizando, setFinalizando] = useState(false);
   const [mensaje, setMensaje] = useState<string | null>(null);
+  const [versiones, setVersiones] = useState<VersionGuardada[] | null>(null);
+  const [cargandoVersiones, setCargandoVersiones] = useState(false);
   const campos = camposPara(tipo);
   const base = `/api/admin/casos/${encodeURIComponent(radicado)}/anexos/${tipo}`;
 
@@ -69,6 +78,29 @@ export function AnexoEditor({
     }
   }
 
+  async function cargarVersiones() {
+    if (versiones !== null) {
+      setVersiones(null);
+      return;
+    }
+    setCargandoVersiones(true);
+    try {
+      const res = await fetch(`${base}/versiones`);
+      const json = await res.json();
+      setVersiones(json.versiones ?? []);
+    } finally {
+      setCargandoVersiones(false);
+    }
+  }
+
+  function restaurarVersion(v: VersionGuardada) {
+    if (!confirm(`¿Restaurar el contenido de la versión del ${new Date(v.createdAt).toLocaleString("es-CO")}? Esto reemplaza lo que tiene escrito ahora (todavía no se guarda hasta que pulse "Guardar cambios").`)) {
+      return;
+    }
+    setValores(v.overrides);
+    setMensaje("Versión restaurada en el editor. Revise y pulse \"Guardar cambios\" para conservarla.");
+  }
+
   const camposFaltantes = campos.filter((c) => !c.opcional && !(valores[c.key] || "").trim());
 
   return (
@@ -84,6 +116,31 @@ export function AnexoEditor({
       </div>
 
       {mensaje && <div className="card border-hoja-300 bg-hoja-50 text-hoja-800 text-sm font-medium">{mensaje}</div>}
+
+      <div className="card space-y-3">
+        <button onClick={cargarVersiones} className="text-sm font-semibold text-hoja-700 hover:underline">
+          {versiones !== null ? "▲ Ocultar versiones anteriores" : "▼ Ver versiones anteriores"}
+        </button>
+        {cargandoVersiones && <p className="text-xs text-tierra-400">Cargando…</p>}
+        {versiones !== null && (
+          versiones.length > 0 ? (
+            <ul className="space-y-2">
+              {versiones.map((v) => (
+                <li key={v.id} className="flex items-center justify-between text-sm bg-tierra-50 rounded-lg px-3 py-2">
+                  <span>
+                    <strong>{v.etiqueta}</strong> — {new Date(v.createdAt).toLocaleString("es-CO")}
+                  </span>
+                  <button onClick={() => restaurarVersion(v)} className="text-hoja-700 hover:underline text-xs font-semibold">
+                    Restaurar
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-xs text-tierra-400">Todavía no hay versiones finales guardadas para este anexo.</p>
+          )
+        )}
+      </div>
 
       {camposFaltantes.length > 0 && (
         <div className="card border-alerta-200 bg-alerta-50 text-alerta-800 text-sm">

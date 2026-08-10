@@ -143,8 +143,8 @@ export function CasosTable({ casosIniciales }: { casosIniciales: Caso[] }) {
                 </td>
                 <td className="px-3 py-2.5 whitespace-nowrap">
                   {c.estado === "en_ruta_juridica" ? (
-                    <Link href={`/admin/casos/${encodeURIComponent(c.radicado)}/anexos`} className="text-hoja-700 font-semibold hover:underline">
-                      Ver anexos →
+                    <Link href={`/admin/casos/${encodeURIComponent(c.radicado)}/analisis`} className="text-hoja-700 font-semibold hover:underline">
+                      Ver análisis →
                     </Link>
                   ) : (
                     <span className="text-tierra-400 text-xs">Disponible en ruta jurídica</span>

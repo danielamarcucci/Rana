@@ -30,10 +30,21 @@ function tipologiaLabels(d: Caso["data"]) {
   }[];
 }
 
+function estaCorroborado(caso: Caso) {
+  return ["corroborado", "en_ruta_juridica", "cerrado"].includes(caso.estado);
+}
+
 function relatoHechosSugerido(caso: Caso) {
   const d = caso.data;
+  const corroborado = estaCorroborado(caso);
   const partes: string[] = [];
-  if (d.comoNarracion) partes.push(d.comoNarracion);
+  if (d.comoNarracion) {
+    partes.push(
+      corroborado
+        ? d.comoNarracion
+        : `Según la información reportada por la fuente, pendiente de verificación por la Red: ${d.comoNarracion}`
+    );
+  }
   const tip = tipologiaLabels(d);
   if (tip.length) {
     partes.push(`Tipología identificada: ${tip.map((t) => `${t.label} (${t.derecho})`).join("; ")}.`);
@@ -53,9 +64,9 @@ function causaSugerida(caso: Caso) {
   const d = caso.data;
   const partes: string[] = [];
   const causas = labelesDe(CAUSAS_HECHO, d.causas);
-  if (causas.length) partes.push(causas.join("; ") + ".");
+  if (causas.length) partes.push(`Como hipótesis señalada por la fuente, pendiente de confirmación: ${causas.join("; ")}.`);
   if (d.causaDetalleRed) partes.push(d.causaDetalleRed);
-  else if (d.razonHechoTexto) partes.push(d.razonHechoTexto);
+  else if (d.razonHechoTexto) partes.push(`La persona manifestó: "${d.razonHechoTexto}"`);
   return partes.join(" ");
 }
 
@@ -66,8 +77,8 @@ function responsabilizamosSugerido(caso: Caso) {
     .map((a) => a.nombreApellidos || a.aliasCargo)
     .filter(Boolean);
   const partes: string[] = [];
-  if (actores.length) partes.push(`Presuntos responsables: ${actores.join(", ")}${d.actoresOtroDetalle ? ` (${d.actoresOtroDetalle})` : ""}.`);
-  if (autoresTxt.length) partes.push(`Identificados: ${autoresTxt.join("; ")}.`);
+  if (actores.length) partes.push(`Presuntos responsables señalados por la fuente: ${actores.join(", ")}${d.actoresOtroDetalle ? ` (${d.actoresOtroDetalle})` : ""}.`);
+  if (autoresTxt.length) partes.push(`Identificados por la fuente, pendientes de verificación por autoridad competente: ${autoresTxt.join("; ")}.`);
   return partes.join(" ");
 }
 
@@ -154,7 +165,7 @@ export function sugeridosPara(tipo: AnexoTipo, caso: Caso): Record<string, strin
       ? `Solicito información sobre el estado del expediente No. ${predio.numeroExpediente}, actuaciones pendientes y cronograma previsto.`
       : "",
     solicitudCuarto: "",
-    telefonoContacto: d.contactoMedioPreferido || "",
-    correoContacto: "",
+    telefonoContacto: d.contactoMedioPreferidoNumero || d.contactoCelular || d.contactoTelefono || "",
+    correoContacto: d.contactoCorreo || "",
   };
 }
