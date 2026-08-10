@@ -68,6 +68,17 @@ export const ESTADO_SITUACION: Opcion[] = [
   { value: "ya_se_detuvo", label: "Ya se detuvo", help: "La situación terminó o el peligro está controlado." },
 ];
 
+export const TIPO_DOCUMENTO: Opcion[] = [
+  { value: "cedula_ciudadania", label: "Cédula de ciudadanía" },
+  { value: "tarjeta_identidad", label: "Tarjeta de identidad" },
+  { value: "cedula_extranjeria", label: "Cédula de extranjería" },
+  { value: "pasaporte", label: "Pasaporte" },
+  { value: "registro_civil", label: "Registro civil" },
+  { value: "pep_ppt", label: "Permiso Especial de Permanencia (PEP) / Permiso por Protección Temporal (PPT)" },
+  { value: "no_tiene", label: "No tiene documento" },
+  { value: "otro", label: "Otro" },
+];
+
 export const IDENTIFICACION: Opcion[] = [
   { value: "campesino", label: "Campesino" },
   { value: "indigena", label: "Indígena" },

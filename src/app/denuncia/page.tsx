@@ -20,6 +20,9 @@ type FormState = {
   nombre: string;
   apellido: string;
   sexo: string;
+  contactoCelular: string;
+  contactoTelefono: string;
+  contactoCorreo: string;
   quePasoNarracion: string;
   cuandoAnio: string;
   cuandoMes: string;
@@ -43,6 +46,9 @@ const INITIAL: FormState = {
   nombre: "",
   apellido: "",
   sexo: "",
+  contactoCelular: "",
+  contactoTelefono: "",
+  contactoCorreo: "",
   quePasoNarracion: "",
   cuandoAnio: "",
   cuandoMes: "",
@@ -158,6 +164,36 @@ export default function DenunciaPage() {
             <FieldShell label="Sexo" required error={errores?.sexo}>
               <RadioGroupField name="sexo" value={form.sexo} onChange={(v) => set("sexo", v)} options={SEXO} />
             </FieldShell>
+          </section>
+
+          <section className="card space-y-4">
+            <h2 className="section-title">📱 ¿Cómo nos contactamos con usted o su comunidad?</h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              <FieldShell label="Celular" required error={errores?.contactoCelular}>
+                <TextField
+                  type="tel"
+                  value={form.contactoCelular}
+                  onChange={(v) => set("contactoCelular", v)}
+                  placeholder="300 000 0000"
+                />
+              </FieldShell>
+              <FieldShell label="Teléfono">
+                <TextField
+                  type="tel"
+                  value={form.contactoTelefono}
+                  onChange={(v) => set("contactoTelefono", v)}
+                  placeholder="Opcional"
+                />
+              </FieldShell>
+              <FieldShell label="Correo electrónico" error={errores?.contactoCorreo}>
+                <TextField
+                  type="email"
+                  value={form.contactoCorreo}
+                  onChange={(v) => set("contactoCorreo", v)}
+                  placeholder="Opcional"
+                />
+              </FieldShell>
+            </div>
           </section>
 
           <section className="card space-y-4">

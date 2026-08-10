@@ -13,6 +13,7 @@ import {
   CANAL_RECEPCION,
   IDENTIFICACION,
   ROL_LIDERAZGO,
+  TIPO_DOCUMENTO,
   tipologiaLabel,
   MEDIOS_UTILIZADOS,
   VESTIMENTA,
@@ -49,6 +50,11 @@ export async function generarFormularioInicialDocx(caso: Caso): Promise<Buffer> 
     campo("Nombre", d.nombre),
     campo("Apellido", d.apellido),
     campo("Sexo", labelDe(SEXO, d.sexo)),
+
+    subtitulo("¿Cómo nos contactamos con usted o su comunidad?"),
+    campo("Celular", d.contactoCelular),
+    campo("Teléfono", d.contactoTelefono),
+    campo("Correo electrónico", d.contactoCorreo),
 
     subtitulo("2. ¿Qué le pasó?"),
     parrafo(d.quePasoNarracion || ""),
@@ -98,8 +104,15 @@ export async function generarFormularioAmpliadoDocx(caso: Caso): Promise<Buffer>
     campo("Apellido", d.apellido),
     campo("Sexo", labelDe(SEXO, d.sexo)),
     campo("Edad", d.edad),
+    campo("Tipo de documento", labelDe(TIPO_DOCUMENTO, d.tipoDocumento)),
+    campo("Número de documento", d.numeroDocumento),
     campo("Identificación", labelesDe(IDENTIFICACION, d.identificacion).join(", ")),
     campo("Rol o liderazgo específico", labelDe(ROL_LIDERAZGO, d.rolLiderazgo) + (d.rolLiderazgoOtro ? `: ${d.rolLiderazgoOtro}` : "")),
+
+    subtitulo("¿Cómo nos contactamos con usted o su comunidad?"),
+    campo("Celular", d.contactoCelular),
+    campo("Teléfono", d.contactoTelefono),
+    campo("Correo electrónico", d.contactoCorreo),
 
     subtitulo("Vínculo del hecho con la Reforma Agraria"),
     ...(d.predios && d.predios.length
@@ -232,6 +245,7 @@ export async function generarFormularioAmpliadoDocx(caso: Caso): Promise<Buffer>
 
     subtitulo("10. Contacto seguro de seguimiento"),
     campo("Medio de contacto preferido", d.contactoMedioPreferido),
+    campo("Número o dato de contacto", d.contactoMedioPreferidoNumero),
     campo("Persona intermediaria de confianza", d.contactoPersonaIntermediaria),
     campo("Horarios seguros para comunicarse", d.contactoHorarios),
     campo("Precauciones a tener en cuenta", d.contactoPrecauciones),

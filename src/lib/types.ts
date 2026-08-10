@@ -69,11 +69,18 @@ export type CasoData = {
   apellido?: string;
   sexo?: string;
   edad?: string;
+  tipoDocumento?: string;
+  numeroDocumento?: string;
   identificacion?: string[];
   rolLiderazgo?: string;
   rolLiderazgoOtro?: string;
 
   accedioPor?: string;
+
+  // Cómo contactar a quien denuncia (visible, del formulario público)
+  contactoCelular?: string;
+  contactoTelefono?: string;
+  contactoCorreo?: string;
 
   // 2. Qué le pasó
   quePasoNarracion?: string;
@@ -150,6 +157,7 @@ export type CasoData = {
 
   // Contacto y punto focal (solo Red)
   contactoMedioPreferido?: string;
+  contactoMedioPreferidoNumero?: string;
   contactoPersonaIntermediaria?: string;
   contactoHorarios?: string;
   contactoPrecauciones?: string;

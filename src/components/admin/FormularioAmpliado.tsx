@@ -18,6 +18,7 @@ import {
   SEXO,
   IDENTIFICACION,
   ROL_LIDERAZGO,
+  TIPO_DOCUMENTO,
   RURAL_URBANO,
   ES_PREDIO_REFORMA_AGRARIA,
   ACTOR_RESPONSABLE,
@@ -34,8 +35,6 @@ import {
   ESTADO_PROCESO_AGRARIO,
   RELACION_HECHO_RA,
   CRUCE_BASE_PREDIOS,
-  RESOLUCION_ANT,
-  SE_CONOCE_NO,
   MEDIDAS_AUTOPROTECCION,
   ENTIDAD_PROTECCION,
   TIPO_MEDIDA_PROTECCION,
@@ -115,9 +114,22 @@ export function FormularioAmpliado({ caso }: { caso: Caso }) {
         <FieldShell label="Sexo" required>
           <RadioGroupField name="sexo" value={data.sexo ?? ""} onChange={(v) => set("sexo", v)} options={SEXO} />
         </FieldShell>
+        <div className="grid sm:grid-cols-3 gap-4">
+          <FieldShell label="Celular"><TextField value={data.contactoCelular ?? ""} onChange={(v) => set("contactoCelular", v)} /></FieldShell>
+          <FieldShell label="Teléfono"><TextField value={data.contactoTelefono ?? ""} onChange={(v) => set("contactoTelefono", v)} /></FieldShell>
+          <FieldShell label="Correo electrónico"><TextField type="email" value={data.contactoCorreo ?? ""} onChange={(v) => set("contactoCorreo", v)} /></FieldShell>
+        </div>
         <FieldShell label="Edad" rojo>
           <TextField value={data.edad ?? ""} onChange={(v) => set("edad", v)} type="number" />
         </FieldShell>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <FieldShell label="Tipo de documento" rojo>
+            <SelectField value={data.tipoDocumento ?? ""} onChange={(v) => set("tipoDocumento", v)} options={TIPO_DOCUMENTO} />
+          </FieldShell>
+          <FieldShell label="Número de documento" rojo>
+            <TextField value={data.numeroDocumento ?? ""} onChange={(v) => set("numeroDocumento", v)} />
+          </FieldShell>
+        </div>
         <FieldShell label="Identificación (puede marcar más de una)" rojo>
           <CheckboxGroupField value={data.identificacion ?? []} onChange={(v) => set("identificacion", v)} options={IDENTIFICACION} />
         </FieldShell>
@@ -153,9 +165,9 @@ export function FormularioAmpliado({ caso }: { caso: Caso }) {
                 <FieldShell label="Municipio"><SelectMunicipio departamento={p.departamento ?? ""} value={p.municipio ?? ""} onChange={(v) => update({ municipio: v })} /></FieldShell>
               </div>
               <div className="grid sm:grid-cols-3 gap-3">
-                <FieldShell label="Número de resolución de adjudicación ANT"><SelectField value={p.resolucionAnt ?? ""} onChange={(v) => update({ resolucionAnt: v })} options={RESOLUCION_ANT} /></FieldShell>
-                <FieldShell label="Matrícula inmobiliaria"><SelectField value={p.matriculaInmobiliaria ?? ""} onChange={(v) => update({ matriculaInmobiliaria: v })} options={SE_CONOCE_NO} /></FieldShell>
-                <FieldShell label="Código o número predial catastral"><SelectField value={p.codigoCatastral ?? ""} onChange={(v) => update({ codigoCatastral: v })} options={SE_CONOCE_NO} /></FieldShell>
+                <FieldShell label="Número de resolución de adjudicación ANT"><TextField value={p.resolucionAnt ?? ""} onChange={(v) => update({ resolucionAnt: v })} placeholder={'Escriba el número, o "no se conoce"'} /></FieldShell>
+                <FieldShell label="Matrícula inmobiliaria"><TextField value={p.matriculaInmobiliaria ?? ""} onChange={(v) => update({ matriculaInmobiliaria: v })} placeholder={'Escriba el número, o "no se conoce"'} /></FieldShell>
+                <FieldShell label="Código o número predial catastral"><TextField value={p.codigoCatastral ?? ""} onChange={(v) => update({ codigoCatastral: v })} placeholder={'Escriba el número, o "no se conoce"'} /></FieldShell>
               </div>
               <FieldShell label="Vínculo de la persona u organización con el predio">
                 <CheckboxGroupField value={p.vinculoPredio ?? []} onChange={(v) => update({ vinculoPredio: v })} options={VINCULO_PREDIO} />
@@ -467,6 +479,7 @@ export function FormularioAmpliado({ caso }: { caso: Caso }) {
         <h2 className="section-title">📞 10. Contacto seguro de seguimiento</h2>
         <div className="grid sm:grid-cols-2 gap-3">
           <FieldShell label="Medio de contacto preferido" rojo><TextField value={data.contactoMedioPreferido ?? ""} onChange={(v) => set("contactoMedioPreferido", v)} /></FieldShell>
+          <FieldShell label="¿Cuál es el número?" rojo><TextField value={data.contactoMedioPreferidoNumero ?? ""} onChange={(v) => set("contactoMedioPreferidoNumero", v)} /></FieldShell>
           <FieldShell label="Persona intermediaria de confianza (si aplica)" rojo><TextField value={data.contactoPersonaIntermediaria ?? ""} onChange={(v) => set("contactoPersonaIntermediaria", v)} /></FieldShell>
           <FieldShell label="Horarios en que es seguro comunicarse" rojo><TextField value={data.contactoHorarios ?? ""} onChange={(v) => set("contactoHorarios", v)} /></FieldShell>
           <FieldShell label="Precauciones a tener en cuenta" rojo><TextField value={data.contactoPrecauciones ?? ""} onChange={(v) => set("contactoPrecauciones", v)} /></FieldShell>
