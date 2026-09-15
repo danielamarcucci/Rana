@@ -10,6 +10,11 @@ function getSecret() {
 
 const RUTAS_PUBLICAS = ["/login", "/api/login"];
 
+// El rol "captura" (usuario Equipo) solo ve la interfaz sencilla de carga de
+// información — no el tablero, el mapa ni el detalle/edición de actuaciones,
+// que son la interfaz de seguimiento del rol "gestor".
+const RUTAS_PERMITIDAS_CAPTURA = ["/cargar"];
+
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
@@ -24,23 +29,27 @@ export async function middleware(req: NextRequest) {
   }
 
   const token = req.cookies.get(COOKIE_NAME)?.value;
-  let autenticado = false;
+  let rol: string | null = null;
   if (token) {
     try {
-      await jwtVerify(token, getSecret());
-      autenticado = true;
+      const { payload } = await jwtVerify(token, getSecret());
+      rol = (payload.rol as string) ?? "gestor";
     } catch {
-      autenticado = false;
+      rol = null;
     }
   }
 
-  if (!autenticado) {
+  if (!rol) {
     if (pathname.startsWith("/api/")) {
       return NextResponse.json({ error: "No autenticado" }, { status: 401 });
     }
     const url = new URL("/login", req.url);
     url.searchParams.set("redirect", pathname);
     return NextResponse.redirect(url);
+  }
+
+  if (rol === "captura" && !pathname.startsWith("/api/") && !RUTAS_PERMITIDAS_CAPTURA.includes(pathname)) {
+    return NextResponse.redirect(new URL("/cargar", req.url));
   }
 
   return NextResponse.next();

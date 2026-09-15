@@ -11,6 +11,23 @@ aplicación **totalmente independiente** (otro `package.json`, otra base de
 datos, otro despliegue) — no tiene relación con el sistema de denuncias de la
 raíz del repositorio ni con `servicios-app`.
 
+## Dos interfaces separadas
+
+- **Carga de información** (`/cargar`, usuario `Equipo`): una pantalla única y
+  sencilla para registrar una actuación en pocos pasos. Al guardar, el
+  formulario se limpia y queda lista para cargar la siguiente, sin tener que
+  navegar a ningún otro lado. Este usuario **no ve** el tablero, el mapa ni
+  el detalle/edición de actuaciones — solo carga información.
+- **Tablero dinámico de seguimiento** (`/` y `/mapa`, usuarios
+  `UnidadInformación` y `Despacho`): el tablero de control, el mapa
+  interactivo y el detalle/edición/historial de cada actuación, descritos
+  abajo. Estos usuarios también pueden usar `/cargar` si necesitan registrar
+  algo rápidamente.
+
+La separación se aplica automáticamente al iniciar sesión (cada usuario cae en
+su pantalla) y también por `src/middleware.ts`: el usuario `Equipo` es
+redirigido a `/cargar` si intenta abrir cualquier otra página.
+
 ## Qué incluye
 
 - **Tablero de control** (`/`): resumen ejecutivo con indicadores clave
@@ -42,21 +59,25 @@ raíz del repositorio ni con `servicios-app`.
   información alojada (o solo lo que esté filtrado) en un archivo `.xlsx` con
   una hoja de actuaciones y otra de ubicaciones detalladas, lista para
   análisis o para compartir.
-- **Acceso restringido** con dos usuarios (ver más abajo), sesión con cookie
+- **Acceso restringido** con tres usuarios (ver más abajo), sesión con cookie
   firmada y todas las páginas y la API protegidas por middleware.
 
 ## Usuarios
 
-| Usuario | Clave | Perfil |
-|---|---|---|
-| `UnidadInformación` | `revoluciónporlavida` | Unidad de Información Estratégica del Despacho |
-| `Despacho` | `campomilagro2026` | Despacho del Ministro |
+| Usuario | Clave | Perfil | Interfaz |
+|---|---|---|---|
+| `UnidadInformación` | `revoluciónporlavida` | Unidad de Información Estratégica del Despacho | Tablero dinámico (+ carga) |
+| `Despacho` | `campomilagro2026` | Despacho del Ministro | Tablero dinámico (+ carga) |
+| `Equipo` | `Report32026` | Equipo de carga de información | Solo carga de información |
 
-Ambos usuarios tienen los mismos permisos (crear, editar, eliminar y
-descargar). Se crean automáticamente la primera vez que la aplicación se
-conecta a la base de datos. Si en algún momento se quiere cambiar alguna
-clave, se puede actualizar directamente en la tabla `usuarios` de la base de
-datos (el valor guardado es un hash `bcrypt`, nunca la clave en texto plano).
+`UnidadInformación` y `Despacho` tienen los mismos permisos (crear, editar,
+eliminar y descargar) y ven el tablero completo. `Equipo` solo puede cargar
+actuaciones nuevas desde `/cargar`. Los tres se crean automáticamente la
+primera vez que la aplicación se conecta a la base de datos (y también se
+agregan solos si faltan en una base ya existente). Si en algún momento se
+quiere cambiar alguna clave, se puede actualizar directamente en la tabla
+`usuarios` de la base de datos (el valor guardado es un hash `bcrypt`, nunca
+la clave en texto plano).
 
 ## Stack técnico
 

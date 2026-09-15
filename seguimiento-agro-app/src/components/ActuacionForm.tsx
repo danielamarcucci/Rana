@@ -65,12 +65,21 @@ function Campo({ etiqueta, children }: { etiqueta: string; children: React.React
 const claseInput =
   "w-full rounded-lg border border-azul-200 px-3 py-2 text-sm outline-none focus:border-azul-500 focus:ring-2 focus:ring-azul-100";
 
-export default function ActuacionForm({ actuacion }: { actuacion?: Actuacion }) {
+export default function ActuacionForm({
+  actuacion,
+  modoRapido = false,
+}: {
+  actuacion?: Actuacion;
+  /** Al crear (no editar): en vez de navegar al detalle, limpia el formulario
+   * para poder registrar la siguiente actuación de inmediato. */
+  modoRapido?: boolean;
+}) {
   const router = useRouter();
   const [dependencias, setDependencias] = useState<Dependencia[]>([]);
   const [datos, setDatos] = useState<ActuacionInput>(valoresIniciales(actuacion));
   const [guardando, setGuardando] = useState(false);
   const [error, setError] = useState("");
+  const [mensajeExito, setMensajeExito] = useState("");
 
   useEffect(() => {
     fetch("/api/dependencias")
@@ -85,6 +94,7 @@ export default function ActuacionForm({ actuacion }: { actuacion?: Actuacion }) 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError("");
+    setMensajeExito("");
     if (!datos.nombre.trim()) return setError("El nombre es obligatorio.");
     if (!datos.dependenciaId) return setError("Seleccione la dependencia o entidad responsable.");
     if (datos.ubicaciones.length === 0) return setError("Agregue al menos un departamento.");
@@ -103,6 +113,12 @@ export default function ActuacionForm({ actuacion }: { actuacion?: Actuacion }) 
         setError(data.error ?? "No se pudo guardar la actuación");
         return;
       }
+      if (!actuacion && modoRapido) {
+        setDatos(valoresIniciales());
+        setMensajeExito(`"${datos.nombre}" quedó registrada. Puede cargar la siguiente.`);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
       router.push(`/actuaciones/${actuacion ? actuacion.id : data.id}`);
       router.refresh();
     } finally {
@@ -115,6 +131,11 @@ export default function ActuacionForm({ actuacion }: { actuacion?: Actuacion }) 
 
   return (
     <form onSubmit={onSubmit} className="space-y-6">
+      {mensajeExito && (
+        <p className="rounded-lg bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700">
+          ✔ {mensajeExito}
+        </p>
+      )}
       {error && <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">{error}</p>}
 
       <section className="grid gap-4 md:grid-cols-2">
@@ -315,19 +336,27 @@ export default function ActuacionForm({ actuacion }: { actuacion?: Actuacion }) 
       </section>
 
       <div className="flex justify-end gap-3">
-        <button
-          type="button"
-          onClick={() => router.back()}
-          className="rounded-lg border border-azul-200 px-4 py-2 text-sm font-medium text-azul-700 hover:bg-azul-50"
-        >
-          Cancelar
-        </button>
+        {!modoRapido && (
+          <button
+            type="button"
+            onClick={() => router.back()}
+            className="rounded-lg border border-azul-200 px-4 py-2 text-sm font-medium text-azul-700 hover:bg-azul-50"
+          >
+            Cancelar
+          </button>
+        )}
         <button
           type="submit"
           disabled={guardando}
           className="rounded-lg bg-azul-700 px-5 py-2 text-sm font-semibold text-white hover:bg-azul-800 disabled:opacity-60"
         >
-          {guardando ? "Guardando…" : actuacion ? "Guardar cambios" : "Crear actuación"}
+          {guardando
+            ? "Guardando…"
+            : actuacion
+              ? "Guardar cambios"
+              : modoRapido
+                ? "Guardar y cargar otra"
+                : "Crear actuación"}
         </button>
       </div>
     </form>

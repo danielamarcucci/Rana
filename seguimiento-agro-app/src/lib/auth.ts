@@ -19,27 +19,34 @@ function getSecret() {
   return new TextEncoder().encode(secret);
 }
 
+export type RolUsuario = "gestor" | "captura";
+
 export interface SesionUsuario {
   usuario: string;
   nombreVisible: string;
+  rol: RolUsuario;
 }
 
 export async function verificarCredenciales(
   usuario: string,
   clave: string
 ): Promise<SesionUsuario | null> {
-  const fila = await db.get<{ usuario: string; password_hash: string; nombre_visible: string }>(
-    `SELECT usuario, password_hash, nombre_visible FROM usuarios WHERE usuario = ? COLLATE NOCASE`,
+  const fila = await db.get<{ usuario: string; password_hash: string; nombre_visible: string; rol: RolUsuario }>(
+    `SELECT usuario, password_hash, nombre_visible, rol FROM usuarios WHERE usuario = ? COLLATE NOCASE`,
     [usuario.trim()]
   );
   if (!fila) return null;
   const ok = await bcrypt.compare(clave, fila.password_hash);
   if (!ok) return null;
-  return { usuario: fila.usuario, nombreVisible: fila.nombre_visible };
+  return { usuario: fila.usuario, nombreVisible: fila.nombre_visible, rol: fila.rol };
 }
 
 export async function crearSesion(sesion: SesionUsuario) {
-  const token = await new SignJWT({ usuario: sesion.usuario, nombreVisible: sesion.nombreVisible })
+  const token = await new SignJWT({
+    usuario: sesion.usuario,
+    nombreVisible: sesion.nombreVisible,
+    rol: sesion.rol,
+  })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
     .setExpirationTime(`${SESSION_TTL_SECONDS}s`)
@@ -70,6 +77,7 @@ export async function usuarioActual(): Promise<SesionUsuario | null> {
     return {
       usuario: payload.usuario as string,
       nombreVisible: (payload.nombreVisible as string) ?? (payload.usuario as string),
+      rol: (payload.rol as RolUsuario) ?? "gestor",
     };
   } catch {
     return null;

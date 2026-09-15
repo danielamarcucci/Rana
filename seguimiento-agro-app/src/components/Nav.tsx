@@ -4,15 +4,18 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { SesionUsuario } from "@/lib/auth";
 
-const ENLACES = [
+const ENLACES_GESTOR = [
   { href: "/", label: "Tablero" },
   { href: "/mapa", label: "Mapa" },
-  { href: "/actuaciones/nueva", label: "+ Nueva actuación" },
+  { href: "/cargar", label: "+ Cargar información" },
 ];
+
+const ENLACES_CAPTURA = [{ href: "/cargar", label: "Cargar información" }];
 
 export default function Nav({ usuario }: { usuario: SesionUsuario }) {
   const pathname = usePathname();
   const router = useRouter();
+  const enlaces = usuario.rol === "captura" ? ENLACES_CAPTURA : ENLACES_GESTOR;
 
   async function cerrarSesion() {
     await fetch("/api/logout", { method: "POST" });
@@ -34,7 +37,7 @@ export default function Nav({ usuario }: { usuario: SesionUsuario }) {
         </div>
 
         <nav className="ml-2 flex flex-1 flex-wrap items-center gap-1">
-          {ENLACES.map((enlace) => {
+          {enlaces.map((enlace) => {
             const activo = pathname === enlace.href;
             return (
               <Link

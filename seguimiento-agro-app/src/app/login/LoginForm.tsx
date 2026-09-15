@@ -26,7 +26,8 @@ export default function LoginForm() {
         setError(data.error ?? "No se pudo iniciar sesión");
         return;
       }
-      const destino = searchParams.get("redirect") || "/";
+      const esCaptura = data.usuario?.rol === "captura";
+      const destino = esCaptura ? "/cargar" : searchParams.get("redirect") || "/";
       router.push(destino);
       router.refresh();
     } finally {

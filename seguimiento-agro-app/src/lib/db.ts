@@ -111,32 +111,36 @@ async function sembrarSiVacio() {
     }
   }
 
-  const usuariosExistentes = await cliente.execute("SELECT id FROM usuarios LIMIT 1");
-  if (usuariosExistentes.rows.length === 0) {
-    await cliente.batch(
-      [
-        {
-          sql: `INSERT INTO usuarios (usuario, password_hash, nombre_visible, rol) VALUES (?, ?, ?, ?)`,
-          args: [
-            "UnidadInformación",
-            "$2a$12$hRzZPPI4cihEwE/8CrR/UOwnYgNEEhUOLSA08X8wna22utq573zP.",
-            "Unidad de Información Estratégica",
-            "gestor",
-          ] as InValue[],
-        },
-        {
-          sql: `INSERT INTO usuarios (usuario, password_hash, nombre_visible, rol) VALUES (?, ?, ?, ?)`,
-          args: [
-            "Despacho",
-            "$2a$12$c46dcwVHMykYeJf3mb8cvOM5.UDHl9fRZOVvcrhU/2WO3QmDggMEu",
-            "Despacho del Ministro",
-            "gestor",
-          ] as InValue[],
-        },
-      ],
-      "write"
-    );
-  }
+  // INSERT OR IGNORE para que agregar un usuario nuevo (p.ej. en una futura
+  // actualización) funcione también sobre una base de datos que ya tenía
+  // usuarios sembrados, sin duplicar ni sobreescribir los existentes.
+  const USUARIOS_SEMILLA: { usuario: string; hash: string; nombreVisible: string; rol: string }[] = [
+    {
+      usuario: "UnidadInformación",
+      hash: "$2a$12$hRzZPPI4cihEwE/8CrR/UOwnYgNEEhUOLSA08X8wna22utq573zP.",
+      nombreVisible: "Unidad de Información Estratégica",
+      rol: "gestor",
+    },
+    {
+      usuario: "Despacho",
+      hash: "$2a$12$c46dcwVHMykYeJf3mb8cvOM5.UDHl9fRZOVvcrhU/2WO3QmDggMEu",
+      nombreVisible: "Despacho del Ministro",
+      rol: "gestor",
+    },
+    {
+      usuario: "Equipo",
+      hash: "$2a$12$IMKyBCoJ25zX/ZTdjng6Ye7zpLD5mnpSMYKXKQ5mvXDhhoEgv3rJm",
+      nombreVisible: "Equipo de carga de información",
+      rol: "captura",
+    },
+  ];
+  await cliente.batch(
+    USUARIOS_SEMILLA.map((u) => ({
+      sql: `INSERT OR IGNORE INTO usuarios (usuario, password_hash, nombre_visible, rol) VALUES (?, ?, ?, ?)`,
+      args: [u.usuario, u.hash, u.nombreVisible, u.rol] as InValue[],
+    })),
+    "write"
+  );
 }
 
 async function asegurarListo() {

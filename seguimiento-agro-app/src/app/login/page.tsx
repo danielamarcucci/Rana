@@ -4,7 +4,7 @@ import LoginForm from "./LoginForm";
 
 export default async function LoginPage() {
   const sesion = await usuarioActual();
-  if (sesion) redirect("/");
+  if (sesion) redirect(sesion.rol === "captura" ? "/cargar" : "/");
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-azul-900 via-azul-800 to-azul-950 px-4">
