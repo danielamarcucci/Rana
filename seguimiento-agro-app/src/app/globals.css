@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #f4f6fb;
+  color: #10203a;
+}
+
+.scrollbar-fina::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-fina::-webkit-scrollbar-thumb {
+  background-color: #b0cded;
+  border-radius: 8px;
+}
