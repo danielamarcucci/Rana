@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { crearDependencia, listarDependencias } from "@/lib/dependencias";
-import { usuarioActual } from "@/lib/auth";
+import { crearDependencia, listarDependencias } from "../../../lib/dependencias";
+import { usuarioActual } from "../../../lib/auth";
 
 export async function GET() {
   const dependencias = await listarDependencias();

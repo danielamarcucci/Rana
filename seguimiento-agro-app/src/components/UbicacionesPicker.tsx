@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import colombia from "@/data/colombia.json";
-import type { Ubicacion } from "@/lib/types";
+import colombia from "../data/colombia.json";
+import type { Ubicacion } from "../lib/types";
 
 function agrupar(ubicaciones: Ubicacion[]): Record<string, string[]> {
   const grupos: Record<string, string[]> = {};

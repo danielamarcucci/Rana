@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import mapaData from "@/data/departamentos-mapa.json";
-import { CODIGO_DANE_POR_DEPARTAMENTO } from "@/data/departamentos-dane";
+import mapaData from "../data/departamentos-mapa.json";
+import { CODIGO_DANE_POR_DEPARTAMENTO } from "../data/departamentos-dane";
 
 const CODIGO_A_DEPARTAMENTO = Object.fromEntries(
   Object.entries(CODIGO_DANE_POR_DEPARTAMENTO).map(([nombre, codigo]) => [codigo, nombre])

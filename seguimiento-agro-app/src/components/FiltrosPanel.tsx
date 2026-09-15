@@ -1,10 +1,10 @@
 "use client";
 
-import type { Dependencia } from "@/lib/types";
-import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION } from "@/lib/types";
-import { opcionesDependencia } from "@/lib/client/dependencias";
-import type { FiltrosUI } from "@/lib/client/query";
-import colombia from "@/data/colombia.json";
+import type { Dependencia } from "../lib/types";
+import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION } from "../lib/types";
+import { opcionesDependencia } from "../lib/client/dependencias";
+import type { FiltrosUI } from "../lib/client/query";
+import colombia from "../data/colombia.json";
 
 const TIPOS_ACTUACION = Object.entries(ETIQUETA_TIPO_ACTUACION);
 const ESTADOS = Object.entries(ETIQUETA_ESTADO);

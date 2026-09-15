@@ -1,5 +1,5 @@
-import ActuacionForm from "@/components/ActuacionForm";
-import { usuarioActual } from "@/lib/auth";
+import ActuacionForm from "../../components/ActuacionForm";
+import { usuarioActual } from "../../lib/auth";
 
 export default async function CargarPage() {
   const sesion = await usuarioActual();

@@ -1,4 +1,4 @@
-import type { Dependencia } from "@/lib/types";
+import type { Dependencia } from "../types";
 
 export interface OpcionDependencia {
   id: number;

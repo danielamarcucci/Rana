@@ -2,13 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import FiltrosPanel from "@/components/FiltrosPanel";
-import StatCard from "@/components/StatCard";
-import ProgressBar from "@/components/ProgressBar";
-import { BadgeEstado, BadgeTipo } from "@/components/Badge";
-import { construirQuery, FILTROS_VACIOS, type FiltrosUI } from "@/lib/client/query";
-import { formatoCOPCorto, formatoNumero } from "@/lib/format";
-import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion, type Dependencia } from "@/lib/types";
+import FiltrosPanel from "../components/FiltrosPanel";
+import StatCard from "../components/StatCard";
+import ProgressBar from "../components/ProgressBar";
+import { BadgeEstado, BadgeTipo } from "../components/Badge";
+import { construirQuery, FILTROS_VACIOS, type FiltrosUI } from "../lib/client/query";
+import { formatoCOPCorto, formatoNumero } from "../lib/format";
+import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion, type Dependencia } from "../lib/types";
 
 export default function TableroPage() {
   const [filtros, setFiltros] = useState<FiltrosUI>(FILTROS_VACIOS);

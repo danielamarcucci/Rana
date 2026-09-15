@@ -1,7 +1,7 @@
 import { createClient, type InValue } from "@libsql/client";
 import fs from "node:fs";
 import path from "node:path";
-import { DEPENDENCIAS_SEED } from "@/data/dependencias-seed";
+import { DEPENDENCIAS_SEED } from "../data/dependencias-seed";
 
 // En Vercel el directorio del proyecto es de solo lectura; solo /tmp admite
 // escritura (y es efímero). Si se despliega sin conectar Turso todavía,

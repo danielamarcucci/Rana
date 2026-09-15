@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { crearActuacion, listarActuaciones } from "@/lib/actuaciones";
-import { parseFiltros } from "@/lib/filtros";
-import { actuacionInputSchema } from "@/lib/validation";
-import { usuarioActual } from "@/lib/auth";
+import { crearActuacion, listarActuaciones } from "../../../lib/actuaciones";
+import { parseFiltros } from "../../../lib/filtros";
+import { actuacionInputSchema } from "../../../lib/validation";
+import { usuarioActual } from "../../../lib/auth";
 
 export async function GET(req: NextRequest) {
   const filtros = parseFiltros(req.nextUrl.searchParams);

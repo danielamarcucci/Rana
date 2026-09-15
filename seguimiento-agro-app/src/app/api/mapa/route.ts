@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { agregarPorUbicacion } from "@/lib/actuaciones";
-import { parseFiltros } from "@/lib/filtros";
+import { agregarPorUbicacion } from "../../../lib/actuaciones";
+import { parseFiltros } from "../../../lib/filtros";
 
 export async function GET(req: NextRequest) {
   const filtros = parseFiltros(req.nextUrl.searchParams);

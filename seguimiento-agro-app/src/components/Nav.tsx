@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import type { SesionUsuario } from "@/lib/auth";
+import type { SesionUsuario } from "../lib/auth";
 
 const ENLACES_GESTOR = [
   { href: "/", label: "Tablero" },

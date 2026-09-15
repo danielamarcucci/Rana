@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import UbicacionesPicker from "./UbicacionesPicker";
-import { opcionesDependencia } from "@/lib/client/dependencias";
-import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION } from "@/lib/types";
-import type { Actuacion, ActuacionInput, Dependencia, EstadoActuacion, TipoActuacion, Ubicacion } from "@/lib/types";
+import { opcionesDependencia } from "../lib/client/dependencias";
+import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION } from "../lib/types";
+import type { Actuacion, ActuacionInput, Dependencia, EstadoActuacion, TipoActuacion, Ubicacion } from "../lib/types";
 
 const TIPOS = Object.entries(ETIQUETA_TIPO_ACTUACION) as [TipoActuacion, string][];
 const ESTADOS = Object.entries(ETIQUETA_ESTADO) as [EstadoActuacion, string][];

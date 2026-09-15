@@ -2,14 +2,14 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import FiltrosPanel from "@/components/FiltrosPanel";
-import MapaColombia, { type ValorMapa } from "@/components/MapaColombia";
-import ProgressBar from "@/components/ProgressBar";
-import { BadgeEstado, BadgeTipo } from "@/components/Badge";
-import { construirQuery, FILTROS_VACIOS, type FiltrosUI } from "@/lib/client/query";
-import { formatoCOPCorto, formatoNumero } from "@/lib/format";
-import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion, type Dependencia } from "@/lib/types";
-import type { AgregadoUbicacion } from "@/lib/actuaciones";
+import FiltrosPanel from "../../components/FiltrosPanel";
+import MapaColombia, { type ValorMapa } from "../../components/MapaColombia";
+import ProgressBar from "../../components/ProgressBar";
+import { BadgeEstado, BadgeTipo } from "../../components/Badge";
+import { construirQuery, FILTROS_VACIOS, type FiltrosUI } from "../../lib/client/query";
+import { formatoCOPCorto, formatoNumero } from "../../lib/format";
+import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion, type Dependencia } from "../../lib/types";
+import type { AgregadoUbicacion } from "../../lib/actuaciones";
 
 const METRICAS = [
   { clave: "totalActuaciones", etiqueta: "N.º de actuaciones", formato: (v: number) => `${v} actuación(es)` },

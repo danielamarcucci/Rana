@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import { usuarioActual } from "@/lib/auth";
+import Nav from "../components/Nav";
+import { usuarioActual } from "../lib/auth";
 
 export const metadata: Metadata = {
   title: "Seguimiento sectorial agro",

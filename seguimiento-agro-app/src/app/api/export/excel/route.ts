@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { listarActuaciones } from "@/lib/actuaciones";
-import { parseFiltros } from "@/lib/filtros";
-import { generarExcelActuaciones } from "@/lib/excel";
+import { listarActuaciones } from "../../../../lib/actuaciones";
+import { parseFiltros } from "../../../../lib/filtros";
+import { generarExcelActuaciones } from "../../../../lib/excel";
 
 export async function GET(req: NextRequest) {
   const filtros = parseFiltros(req.nextUrl.searchParams);

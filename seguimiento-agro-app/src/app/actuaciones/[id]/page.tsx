@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { historialActuacion, obtenerActuacion } from "@/lib/actuaciones";
+import { historialActuacion, obtenerActuacion } from "../../../lib/actuaciones";
 import ActuacionDetalle from "./ActuacionDetalle";
 
 export default async function DetalleActuacionPage({ params }: { params: Promise<{ id: string }> }) {

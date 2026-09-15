@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import ActuacionForm from "@/components/ActuacionForm";
-import ProgressBar from "@/components/ProgressBar";
-import { BadgeEstado, BadgeTipo } from "@/components/Badge";
-import { formatoCOP, formatoFecha, formatoNumero } from "@/lib/format";
-import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion } from "@/lib/types";
-import type { VersionActuacion } from "@/lib/actuaciones";
+import ActuacionForm from "../../../components/ActuacionForm";
+import ProgressBar from "../../../components/ProgressBar";
+import { BadgeEstado, BadgeTipo } from "../../../components/Badge";
+import { formatoCOP, formatoFecha, formatoNumero } from "../../../lib/format";
+import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion } from "../../../lib/types";
+import type { VersionActuacion } from "../../../lib/actuaciones";
 
 export default function ActuacionDetalle({
   actuacion,
