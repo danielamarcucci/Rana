@@ -42,6 +42,39 @@ export default function MapaColombia({ valores, seleccionado, onSeleccionar, for
   return (
     <div className="relative">
       <svg viewBox={mapaData.viewBox} className="h-auto w-full" role="img" aria-label="Mapa de Colombia por departamento">
+        {mapaData.insetSanAndres && (
+          <g>
+            <rect
+              x={mapaData.insetSanAndres.x}
+              y={mapaData.insetSanAndres.y}
+              width={mapaData.insetSanAndres.width}
+              height={mapaData.insetSanAndres.height}
+              fill="#f8fafc"
+              stroke="#94a3b8"
+              strokeDasharray="4 3"
+              strokeWidth={1}
+              rx={4}
+            />
+            <text
+              x={mapaData.insetSanAndres.x + mapaData.insetSanAndres.width / 2}
+              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height + 16}
+              textAnchor="middle"
+              fontSize={11}
+              fill="#64748b"
+            >
+              San Andrés y Prov.
+            </text>
+            <text
+              x={mapaData.insetSanAndres.x + mapaData.insetSanAndres.width / 2}
+              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height + 30}
+              textAnchor="middle"
+              fontSize={10}
+              fill="#94a3b8"
+            >
+              (fuera de escala)
+            </text>
+          </g>
+        )}
         {mapaData.departamentos.map((d) => {
           const nombre = CODIGO_A_DEPARTAMENTO[d.dpto];
           const dato = nombre ? valores[nombre] : undefined;
