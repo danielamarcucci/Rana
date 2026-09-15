@@ -16,12 +16,14 @@ const sans = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://conversacionespendientes.net"),
   title: "Carolina Melo Arévalo — Método Conversemos",
   description:
     "Facilitadora de conversaciones pendientes. Acompaño a equipos y organizaciones a comprender lo que está ocurriendo, poner sobre la mesa lo que importa y construir nuevas formas de avanzar juntos.",
   openGraph: {
     title: "Carolina Melo Arévalo — Método Conversemos",
     description: "Cuando cambian las conversaciones, cambian las organizaciones.",
+    url: "https://conversacionespendientes.net",
     locale: "es_CO",
     type: "website",
   },
