@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import FiltrosPanel from "../components/FiltrosPanel";
+import IntroBanner from "../components/IntroBanner";
 import StatCard from "../components/StatCard";
 import ProgressBar from "../components/ProgressBar";
 import { BadgeEstado, BadgeTipo } from "../components/Badge";
@@ -56,6 +57,8 @@ export default function TableroPage() {
 
   return (
     <div className="space-y-5">
+      <IntroBanner />
+
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-azul-900">Tablero de control</h1>
