@@ -88,20 +88,24 @@ export default function MapaPage() {
 
       <FiltrosPanel dependencias={dependencias} value={filtros} onChange={setFiltros} mostrarDepartamento={false} />
 
-      <div className="flex items-center gap-2">
-        <p className="text-xs font-semibold uppercase tracking-wide text-azul-700">Colorear por:</p>
+      <div className="flex flex-wrap items-center gap-2 rounded-lg border border-azul-100 bg-white px-3 py-2.5 shadow-card">
+        <p className="border-l-2 border-azul-400 pl-2 text-xs font-bold uppercase tracking-wide text-azul-800">
+          Colorear mapa por
+        </p>
         {METRICAS.map((m) => (
           <button
             key={m.clave}
             onClick={() => setMetrica(m.clave)}
-            className={`rounded-full border px-3 py-1 text-xs font-medium ${
-              metrica === m.clave ? "border-azul-600 bg-azul-600 text-white" : "border-azul-200 text-azul-700"
+            className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
+              metrica === m.clave
+                ? "border-azul-600 bg-azul-600 text-white"
+                : "border-azul-200 text-azul-700 hover:bg-azul-50"
             }`}
           >
             {m.etiqueta}
           </button>
         ))}
-        {cargando && <span className="text-xs text-slate-400">Actualizando…</span>}
+        {cargando && <span className="ml-auto text-xs text-slate-400">Actualizando…</span>}
       </div>
 
       <div className="grid gap-5 lg:grid-cols-[1.3fr_1fr]">
@@ -125,13 +129,17 @@ export default function MapaPage() {
           )}
 
           {departamento && (
-            <div className="rounded-xl border border-azul-100 bg-white p-4 shadow-card">
-              <div className="mb-2 flex items-center justify-between">
-                <h2 className="text-lg font-bold text-azul-900">{departamento}</h2>
-                <button onClick={() => setDepartamento(null)} className="text-xs text-slate-400 hover:underline">
-                  cerrar
+            <div className="overflow-hidden rounded-xl border border-azul-200 bg-white shadow-card">
+              <div className="flex items-center justify-between bg-azul-900 px-4 py-2.5">
+                <h2 className="text-lg font-bold text-white">{departamento}</h2>
+                <button
+                  onClick={() => setDepartamento(null)}
+                  className="rounded-md border border-azul-700 px-2 py-0.5 text-xs text-azul-100 hover:bg-azul-800"
+                >
+                  ✕ cerrar
                 </button>
               </div>
+              <div className="p-4">
               {resumenDepartamento ? (
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <Resumen etiqueta="Actuaciones" valor={formatoNumero(resumenDepartamento.totalActuaciones)} />
@@ -146,8 +154,8 @@ export default function MapaPage() {
               )}
 
               {porMunicipio.length > 0 && (
-                <div className="mt-3">
-                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-azul-700">
+                <div className="mt-3 rounded-lg border border-azul-100 bg-azul-50/40 p-3">
+                  <p className="mb-1.5 border-l-2 border-azul-400 pl-2 text-xs font-bold uppercase tracking-wide text-azul-800">
                     Municipios con actuaciones
                   </p>
                   <div className="flex flex-wrap gap-1.5">
@@ -175,6 +183,7 @@ export default function MapaPage() {
                   </div>
                 </div>
               )}
+              </div>
             </div>
           )}
 

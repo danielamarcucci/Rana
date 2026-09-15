@@ -1,5 +1,5 @@
-import ActuacionForm from "../../components/ActuacionForm";
 import { usuarioActual } from "../../lib/auth";
+import CargarClient from "./CargarClient";
 
 export default async function CargarPage() {
   const sesion = await usuarioActual();
@@ -14,9 +14,7 @@ export default async function CargarPage() {
           puede seguir cargando la siguiente actuación sin salir de esta pantalla.
         </p>
       </div>
-      <div className="rounded-xl border border-azul-100 bg-white p-6 shadow-card">
-        <ActuacionForm modoRapido />
-      </div>
+      <CargarClient nombreVisible={sesion?.nombreVisible ?? ""} />
     </div>
   );
 }

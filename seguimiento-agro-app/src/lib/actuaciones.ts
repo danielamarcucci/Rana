@@ -16,6 +16,8 @@ export interface FiltrosActuaciones {
   q?: string;
   avanceMin?: number;
   avanceMax?: number;
+  creadoPor?: string;
+  limite?: number;
 }
 
 interface FilaActuacion {
@@ -110,18 +112,24 @@ function construirFiltros(filtros: FiltrosActuaciones) {
     args.push(filtros.departamento);
     if (filtros.municipio) args.push(filtros.municipio);
   }
+  if (filtros.creadoPor) {
+    condiciones.push(`a.creado_por = ?`);
+    args.push(filtros.creadoPor);
+  }
 
   return { where: condiciones.length ? `WHERE ${condiciones.join(" AND ")}` : "", args };
 }
 
 export async function listarActuaciones(filtros: FiltrosActuaciones = {}): Promise<Actuacion[]> {
   const { where, args } = construirFiltros(filtros);
+  const limite = filtros.limite ? `LIMIT ${Number(filtros.limite)}` : "";
   const filas = await db.all<FilaActuacion>(
     `SELECT a.*, d.nombre AS dependencia_nombre, d.tipo AS dependencia_tipo
      FROM actuaciones a
      JOIN dependencias d ON d.id = a.dependencia_id
      ${where}
-     ORDER BY a.updated_at DESC`,
+     ORDER BY a.updated_at DESC
+     ${limite}`,
     args
   );
   if (filas.length === 0) return [];

@@ -28,5 +28,11 @@ export function parseFiltros(params: URLSearchParams): FiltrosActuaciones {
   const avanceMax = params.get("avanceMax");
   if (avanceMax) filtros.avanceMax = Number(avanceMax);
 
+  const creadoPor = params.get("creadoPor");
+  if (creadoPor) filtros.creadoPor = creadoPor;
+
+  const limite = params.get("limite");
+  if (limite) filtros.limite = Number(limite);
+
   return filtros;
 }

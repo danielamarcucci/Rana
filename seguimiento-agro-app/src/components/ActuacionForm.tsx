@@ -68,11 +68,14 @@ const claseInput =
 export default function ActuacionForm({
   actuacion,
   modoRapido = false,
+  onGuardado,
 }: {
   actuacion?: Actuacion;
   /** Al crear (no editar): en vez de navegar al detalle, limpia el formulario
    * para poder registrar la siguiente actuación de inmediato. */
   modoRapido?: boolean;
+  /** Se llama tras guardar con éxito en modoRapido, para refrescar listas externas. */
+  onGuardado?: () => void;
 }) {
   const router = useRouter();
   const [dependencias, setDependencias] = useState<Dependencia[]>([]);
@@ -117,6 +120,7 @@ export default function ActuacionForm({
         setDatos(valoresIniciales());
         setMensajeExito(`"${datos.nombre}" quedó registrada. Puede cargar la siguiente.`);
         window.scrollTo({ top: 0, behavior: "smooth" });
+        onGuardado?.();
         return;
       }
       router.push(`/actuaciones/${actuacion ? actuacion.id : data.id}`);
