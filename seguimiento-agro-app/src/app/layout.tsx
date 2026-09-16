@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Nav from "../components/Nav";
+import EncabezadoInstitucional from "../components/EncabezadoInstitucional";
 import { usuarioActual } from "../lib/auth";
 
 export const metadata: Metadata = {
@@ -21,7 +22,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="es">
       <body className={`min-h-screen font-sans antialiased ${sesion ? "fondo-campo" : ""}`}>
-        {sesion && <Nav usuario={sesion} />}
+        {sesion && (
+          <>
+            <EncabezadoInstitucional />
+            <Nav usuario={sesion} />
+          </>
+        )}
         <main className="mx-auto max-w-7xl px-4 py-5">{children}</main>
       </body>
     </html>
