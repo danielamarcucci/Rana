@@ -177,6 +177,20 @@ export default function FiltrosPanel({ dependencias, value, onChange, mostrarDep
                 ))}
               </select>
             )}
+            {mostrarDepartamento && value.departamento && (
+              <select
+                value={value.municipio}
+                onChange={(e) => onChange({ ...value, municipio: e.target.value })}
+                className="w-full rounded-md border border-naranja-200 bg-white px-2 py-1 text-xs"
+              >
+                <option value="">Todos los municipios</option>
+                {(colombia.find((d) => d.departamento === value.departamento)?.municipios ?? []).map((m) => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+              </select>
+            )}
             <input
               value={value.q}
               onChange={(e) => onChange({ ...value, q: e.target.value })}

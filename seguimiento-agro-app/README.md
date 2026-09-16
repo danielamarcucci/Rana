@@ -51,10 +51,14 @@ redirigido a `/cargar` si intenta abrir cualquier otra página.
     de quién cambió qué y cuándo.
 - **Mapa interactivo** (`/mapa`): mapa de Colombia por departamento, coloreado
   según el número de actuaciones, el avance promedio o los recursos
-  ejecutados (con los mismos filtros del tablero). Al hacer clic en un
-  departamento se despliega un panel con el detalle agregado (recursos,
-  beneficiarios, avance), los municipios con actuaciones y la lista completa
-  de actuaciones de ese departamento/municipio.
+  ejecutados (con los mismos filtros del tablero, incluido el filtro de
+  departamento, que en esta pantalla también se puede fijar haciendo clic
+  directamente en el mapa). Al elegir un departamento (por el filtro o por
+  el mapa) se despliega un panel con el detalle agregado (recursos,
+  beneficiarios, avance) y aparece de inmediato un segundo filtro de
+  municipio (con el catálogo completo del departamento), además de la lista
+  de municipios con actuaciones y la lista completa de actuaciones de ese
+  departamento/municipio.
 - **Descarga a Excel** (botón "Descargar Excel" en el tablero): exporta toda la
   información alojada (o solo lo que esté filtrado) en un archivo `.xlsx` con
   una hoja de actuaciones y otra de ubicaciones detalladas, lista para

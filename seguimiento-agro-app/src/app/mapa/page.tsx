@@ -26,11 +26,25 @@ export default function MapaPage() {
   const [dependencias, setDependencias] = useState<Dependencia[]>([]);
   const [porDepartamento, setPorDepartamento] = useState<AgregadoUbicacion[]>([]);
   const [porMunicipio, setPorMunicipio] = useState<AgregadoUbicacion[]>([]);
-  const [departamento, setDepartamento] = useState<string | null>(null);
-  const [municipio, setMunicipio] = useState<string | null>(null);
   const [actuacionesLista, setActuacionesLista] = useState<Actuacion[]>([]);
   const [metrica, setMetrica] = useState<(typeof METRICAS)[number]["clave"]>("totalActuaciones");
   const [cargando, setCargando] = useState(true);
+
+  // El departamento y el municipio seleccionados viven dentro de `filtros`
+  // (no en estado aparte), así el mismo valor alimenta el mapa, el filtro
+  // del panel de arriba y las fichas de municipio: se puede elegir un
+  // departamento haciendo clic en el mapa o desde el filtro, y ambos
+  // quedan sincronizados.
+  const departamento = filtros.departamento || null;
+  const municipio = filtros.municipio || null;
+
+  function seleccionarDepartamento(dep: string | null) {
+    setFiltros((f) => ({ ...f, departamento: dep ?? "", municipio: "" }));
+  }
+
+  function seleccionarMunicipio(m: string | null) {
+    setFiltros((f) => ({ ...f, municipio: m ?? "" }));
+  }
 
   useEffect(() => {
     fetch("/api/dependencias")
@@ -41,7 +55,6 @@ export default function MapaPage() {
   useEffect(() => {
     setCargando(true);
     const params = new URLSearchParams(construirQuery(filtros));
-    if (departamento) params.set("departamento", departamento);
     fetch(`/api/mapa?${params.toString()}`)
       .then((r) => r.json())
       .then((d) => {
@@ -49,7 +62,7 @@ export default function MapaPage() {
         setPorMunicipio(d.porMunicipio ?? []);
       })
       .finally(() => setCargando(false));
-  }, [filtros, departamento]);
+  }, [filtros]);
 
   useEffect(() => {
     if (!departamento) {
@@ -57,14 +70,10 @@ export default function MapaPage() {
       return;
     }
     const params = new URLSearchParams(construirQuery(filtros));
-    params.set("departamento", departamento);
-    if (municipio) params.set("municipio", municipio);
     fetch(`/api/actuaciones?${params.toString()}`)
       .then((r) => r.json())
       .then((d) => setActuacionesLista(d.actuaciones ?? []));
-  }, [filtros, departamento, municipio]);
-
-  useEffect(() => setMunicipio(null), [departamento]);
+  }, [filtros, departamento]);
 
   const valoresMapa = useMemo(() => {
     const mapa: Record<string, ValorMapa> = {};
@@ -86,7 +95,7 @@ export default function MapaPage() {
         </p>
       </div>
 
-      <FiltrosPanel dependencias={dependencias} value={filtros} onChange={setFiltros} mostrarDepartamento={false} />
+      <FiltrosPanel dependencias={dependencias} value={filtros} onChange={setFiltros} />
 
       <div className="flex flex-wrap items-center gap-1.5 rounded-lg border border-azul-100 bg-white px-3 py-1.5 shadow-card">
         <p className="border-l-2 border-azul-400 pl-2 text-[11px] font-bold uppercase tracking-wide text-azul-800">
@@ -113,7 +122,7 @@ export default function MapaPage() {
           <MapaColombia
             valores={valoresMapa}
             seleccionado={departamento}
-            onSeleccionar={setDepartamento}
+            onSeleccionar={seleccionarDepartamento}
             formatoValor={metricaInfo.formato}
           />
           <p className="mt-2 text-center text-xs text-slate-400">
@@ -133,7 +142,7 @@ export default function MapaPage() {
               <div className="flex items-center justify-between bg-azul-900 px-4 py-2.5">
                 <h2 className="text-lg font-bold text-white">{departamento}</h2>
                 <button
-                  onClick={() => setDepartamento(null)}
+                  onClick={() => seleccionarDepartamento(null)}
                   className="rounded-md border border-azul-700 px-2 py-0.5 text-xs text-azul-100 hover:bg-azul-800"
                 >
                   ✕ cerrar
@@ -160,7 +169,7 @@ export default function MapaPage() {
                   </p>
                   <div className="flex flex-wrap gap-1.5">
                     <button
-                      onClick={() => setMunicipio(null)}
+                      onClick={() => seleccionarMunicipio(null)}
                       className={`rounded-full border px-2.5 py-1 text-xs ${!municipio ? "border-naranja-500 bg-naranja-500 text-white" : "border-azul-200 text-azul-700"}`}
                     >
                       Todos
@@ -170,7 +179,7 @@ export default function MapaPage() {
                       .map((m) => (
                         <button
                           key={m.municipio}
-                          onClick={() => setMunicipio(m.municipio)}
+                          onClick={() => seleccionarMunicipio(m.municipio)}
                           className={`rounded-full border px-2.5 py-1 text-xs ${
                             municipio === m.municipio
                               ? "border-naranja-500 bg-naranja-500 text-white"

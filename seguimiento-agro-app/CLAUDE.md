@@ -6,6 +6,19 @@ en sesiones anteriores.
 
 ## Mapa de Colombia (`/mapa`)
 
+**El filtro de departamento/municipio de `/api/mapa` no debe usarse para
+calcular `porDepartamento`** (el agregado que colorea el mapa completo):
+si se filtra por el departamento seleccionado, el resto de departamentos
+se quedan sin datos y el mapa se ve "en blanco" apenas se elige uno. Ya
+pasó una vez (bug real, encontrado al exponer el filtro de departamento en
+el panel de Filtros de esta página — antes solo se disparaba haciendo clic
+en el mapa, así que era menos evidente). La regla: `porDepartamento` se
+calcula con los filtros generales (tipo, estado, dependencia, q, avance)
+pero **sin** `departamento`/`municipio`; `porMunicipio` sí se filtra por
+`departamento` (para traer solo los municipios de ese departamento) pero
+tampoco por `municipio` (si no, se pierde la lista completa de municipios
+del departamento apenas se elige uno). Ver `src/app/api/mapa/route.ts`.
+
 `src/data/departamentos-mapa.json` **no se escribe a mano** — lo genera
 `scripts/generar-mapa-colombia.py` a partir de un GeoJSON de departamentos.
 Para volver a generarlo (por ejemplo, para ajustar el tamaño del inset de
