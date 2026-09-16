@@ -232,13 +232,18 @@ Rural (minagricultura.gov.co/el-ministerio/organigrama). Como la estructura
 del Estado puede cambiar, el catálogo es una semilla inicial editable desde
 la propia aplicación, no un valor fijo en el código.
 
-## Créditos de la foto de fondo
+## Marca de agua de fondo
 
-La foto de campo colombiano usada como marca de agua de fondo
-(`public/fondo-campo.jpg`, cultivo de arroz en Distracción, La Guajira) es de
-Wikimedia Commons, bajo licencia
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es):
-<https://commons.wikimedia.org/wiki/File:Cultivo_de_arroz_en_Distracci%C3%B3n.JPG>.
+El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) es un patrón
+propio en SVG (`public/patron-campo.svg`, generado para esta app, sin
+licencia externa que declarar) con siluetas de campesinos, una espiga,
+ganado y hojas, repetido en mosaico (`background-repeat: repeat`) sobre un
+degradado azul claro. Antes se usaba una única foto de fondo
+(`background-size: cover`, sin repetir), que solo se veía completa en la
+primera pantalla y dejaba color plano vacío en el resto de una página larga.
+El patrón en mosaico se ve igual de claro en cualquier ancho o alto de
+página. Para ajustar qué íconos aparecen o su distribución, editar
+directamente ese SVG (es texto plano, sin build ni herramienta externa).
 
 ## Logo del Ministerio y "El Campo Milagro"
 

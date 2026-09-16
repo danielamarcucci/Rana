@@ -14,12 +14,17 @@ body {
 /* Foto de campo colombiano de fondo, a modo de marca de agua, para que los
    bloques y filtros (con fondo blanco sólido) resalten más sobre la página. */
 .fondo-campo {
-  background-image: linear-gradient(rgba(238, 244, 252, 0.8), rgba(224, 234, 248, 0.82)),
-    url("/fondo-campo.jpg");
-  background-size: cover;
-  background-position: center 35%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* Los fondos en CSS se apilan con el primero arriba: el patrón va
+     primero (para que se vea) y el degradado va segundo, como base
+     debajo de los íconos. */
+  background-color: #eef4fb;
+  background-image: url("/patron-campo.svg"), linear-gradient(180deg, #eef4fb, #e4edfa);
+  background-size:
+    240px 240px,
+    cover;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
 }
 
 .scrollbar-fina::-webkit-scrollbar {
