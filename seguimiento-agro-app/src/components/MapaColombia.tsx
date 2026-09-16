@@ -45,10 +45,21 @@ export default function MapaColombia({ valores, seleccionado, onSeleccionar, for
         {mapaData.insetSanAndres && (
           <g>
             <rect
-              x={mapaData.insetSanAndres.x}
-              y={mapaData.insetSanAndres.y}
-              width={mapaData.insetSanAndres.width}
-              height={mapaData.insetSanAndres.height}
+              x={mapaData.insetSanAndres.cajaSanAndres.x}
+              y={mapaData.insetSanAndres.cajaSanAndres.y}
+              width={mapaData.insetSanAndres.cajaSanAndres.width}
+              height={mapaData.insetSanAndres.cajaSanAndres.height}
+              fill="#f8fafc"
+              stroke="#94a3b8"
+              strokeDasharray="4 3"
+              strokeWidth={1}
+              rx={4}
+            />
+            <rect
+              x={mapaData.insetSanAndres.cajaProvidencia.x}
+              y={mapaData.insetSanAndres.cajaProvidencia.y}
+              width={mapaData.insetSanAndres.cajaProvidencia.width}
+              height={mapaData.insetSanAndres.cajaProvidencia.height}
               fill="#f8fafc"
               stroke="#94a3b8"
               strokeDasharray="4 3"
@@ -56,18 +67,36 @@ export default function MapaColombia({ valores, seleccionado, onSeleccionar, for
               rx={4}
             />
             <text
-              x={mapaData.insetSanAndres.x + mapaData.insetSanAndres.width / 2}
-              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height - 20}
+              x={mapaData.insetSanAndres.cajaSanAndres.x + mapaData.insetSanAndres.cajaSanAndres.width / 2}
+              y={mapaData.insetSanAndres.etiquetaY}
+              textAnchor="middle"
+              fontSize={9}
+              fill="#94a3b8"
+            >
+              San Andrés
+            </text>
+            <text
+              x={mapaData.insetSanAndres.cajaProvidencia.x + mapaData.insetSanAndres.cajaProvidencia.width / 2}
+              y={mapaData.insetSanAndres.etiquetaY}
+              textAnchor="middle"
+              fontSize={9}
+              fill="#94a3b8"
+            >
+              Providencia
+            </text>
+            <text
+              x={mapaData.insetSanAndres.captionX}
+              y={mapaData.insetSanAndres.captionY}
               textAnchor="middle"
               fontSize={11}
               fontWeight={600}
               fill="#64748b"
             >
-              San Andrés y Prov.
+              Archipiélago de San Andrés y Providencia
             </text>
             <text
-              x={mapaData.insetSanAndres.x + mapaData.insetSanAndres.width / 2}
-              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height - 7}
+              x={mapaData.insetSanAndres.captionX}
+              y={mapaData.insetSanAndres.captionY + 13}
               textAnchor="middle"
               fontSize={9.5}
               fill="#94a3b8"
