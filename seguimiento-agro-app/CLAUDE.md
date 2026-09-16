@@ -39,20 +39,30 @@ Lecciones ya aprendidas sobre ese mapa (para no repetir el mismo error):
 
 ## Marca de agua de fondo (`.fondo-campo` en `globals.css`)
 
-Es un patrón SVG en mosaico (`public/patron-campo.svg`, campesinos, ganado,
-espigas y hojas), no una foto — una foto única con `background-size: cover`
-solo se ve una vez, arriba de la página, y queda en color plano vacío en el
-resto de una página larga; un patrón con `background-repeat: repeat` se ve
-igual en cualquier alto/ancho.
+Es un patrón SVG en mosaico, no una foto — una foto única con
+`background-size: cover` solo se ve una vez, arriba de la página, y queda
+en color plano vacío en el resto de una página larga; un patrón con
+`background-repeat: repeat` se ve igual en cualquier alto/ancho.
+
+Historial de estilo de este fondo (para no repetir vueltas ya dadas):
+primero una foto de campo colombiano, luego un patrón de íconos ilustrados
+(campesinos, ganado, espigas — `patron-campo.svg`, ya no existe), y
+finalmente el actual: un **emblema institucional abstracto** (escudo +
+estrella + laurel, `public/patron-institucional.svg`) muy disperso y tenue,
+más una **textura fina de líneas diagonales** (`public/patron-textura.svg`,
+tipo papel de certificado). El usuario pidió explícitamente quitar los
+íconos ilustrados de campo porque no se veían "institucional de élite" —
+si se vuelve a tocar este fondo, mantener ese criterio (formal/serio, no
+ilustrativo) salvo que el usuario pida lo contrario.
 
 **Los `background-image` en CSS se apilan con el primero de la lista
 arriba de los demás** (al revés de lo que uno esperaría). Si se pone un
 degradado opaco a pantalla completa antes que el patrón en la lista de
 `background-image`, el degradado tapa el patrón por completo y no se ve
 nada aunque todo esté bien configurado (mismo bug ya se dio aquí: la
-página se veía con un degradado liso, sin ningún ícono). El patrón va
-siempre primero en la lista; el degradado (o color de fondo) va después,
-como capa base.
+página se veía con un degradado liso, sin ningún ícono). El o los patrones
+van siempre primero en la lista; el degradado (o color de fondo) va
+después, como capa base.
 
 ## Gotchas de despliegue en Vercel (ya resueltos, no repetir)
 

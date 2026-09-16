@@ -234,16 +234,24 @@ la propia aplicación, no un valor fijo en el código.
 
 ## Marca de agua de fondo
 
-El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) es un patrón
-propio en SVG (`public/patron-campo.svg`, generado para esta app, sin
-licencia externa que declarar) con siluetas de campesinos, una espiga,
-ganado y hojas, repetido en mosaico (`background-repeat: repeat`) sobre un
-degradado azul claro. Antes se usaba una única foto de fondo
-(`background-size: cover`, sin repetir), que solo se veía completa en la
-primera pantalla y dejaba color plano vacío en el resto de una página larga.
-El patrón en mosaico se ve igual de claro en cualquier ancho o alto de
-página. Para ajustar qué íconos aparecen o su distribución, editar
-directamente ese SVG (es texto plano, sin build ni herramienta externa).
+El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) combina dos
+SVG propios (sin licencia externa que declarar), en capas:
+
+- `public/patron-institucional.svg`: un emblema abstracto (escudo + estrella
+  + laurel, no el escudo oficial del país ni del Ministerio, para no
+  imitarlo de forma inexacta) a muy baja opacidad, repetido disperso en un
+  mosaico grande (480×480px) — como un sello institucional tenue.
+- `public/patron-textura.svg`: una textura fina de líneas diagonales a muy
+  baja opacidad, tipo papel de certificado oficial, en un mosaico pequeño
+  (10×10px).
+
+Ambos van sobre un degradado neutro claro. Antes hubo dos versiones previas:
+una única foto de fondo (se veía completa solo en la primera pantalla) y
+luego un patrón de íconos de campo (campesinos, ganado), que el usuario
+pidió cambiar por no verse "institucional de élite". El mosaico se ve igual
+de claro en cualquier ancho o alto de página. Para ajustar el motivo o su
+opacidad, editar directamente esos SVG (son texto plano, sin build ni
+herramienta externa).
 
 ## Logo del Ministerio y "El Campo Milagro"
 

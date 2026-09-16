@@ -11,20 +11,34 @@ body {
   color: #10203a;
 }
 
-/* Foto de campo colombiano de fondo, a modo de marca de agua, para que los
-   bloques y filtros (con fondo blanco sólido) resalten más sobre la página. */
+/* Marca de agua institucional: un emblema abstracto disperso (grande, muy
+   tenue) más una textura fina de líneas diagonales, tipo papel de
+   certificado oficial, sobre un degradado neutro. Reemplaza un patrón
+   anterior con íconos de campo (campesinos, ganado) que resultaba poco
+   formal para una herramienta de gobierno. Los fondos en CSS se apilan con
+   el primero de la lista arriba de los demás: el emblema va primero, la
+   textura fina después, y el degradado al final como capa base. */
 .fondo-campo {
-  /* Los fondos en CSS se apilan con el primero arriba: el patrón va
-     primero (para que se vea) y el degradado va segundo, como base
-     debajo de los íconos. */
-  background-color: #eef4fb;
-  background-image: url("/patron-campo.svg"), linear-gradient(180deg, #eef4fb, #e4edfa);
+  background-color: #eef2f8;
+  background-image:
+    url("/patron-institucional.svg"), url("/patron-textura.svg"),
+    linear-gradient(180deg, #eef2f8, #e6ecf6);
   background-size:
-    240px 240px,
+    480px 480px,
+    10px 10px,
     cover;
-  background-position: center, center;
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
+  background-position:
+    center,
+    center,
+    center;
+  background-repeat:
+    repeat,
+    repeat,
+    no-repeat;
+  background-attachment:
+    fixed,
+    fixed,
+    fixed;
 }
 
 .scrollbar-fina::-webkit-scrollbar {
