@@ -44,16 +44,28 @@ Es un patrón SVG en mosaico, no una foto — una foto única con
 en color plano vacío en el resto de una página larga; un patrón con
 `background-repeat: repeat` se ve igual en cualquier alto/ancho.
 
-Historial de estilo de este fondo (para no repetir vueltas ya dadas):
-primero una foto de campo colombiano, luego un patrón de íconos ilustrados
-(campesinos, ganado, espigas — `patron-campo.svg`, ya no existe), y
-finalmente el actual: un **emblema institucional abstracto** (escudo +
-estrella + laurel, `public/patron-institucional.svg`) muy disperso y tenue,
-más una **textura fina de líneas diagonales** (`public/patron-textura.svg`,
-tipo papel de certificado). El usuario pidió explícitamente quitar los
-íconos ilustrados de campo porque no se veían "institucional de élite" —
-si se vuelve a tocar este fondo, mantener ese criterio (formal/serio, no
-ilustrativo) salvo que el usuario pida lo contrario.
+Historial de estilo de este fondo (para no repetir vueltas ya dadas —
+el usuario pidió cambios opuestos dos veces seguidas, y la versión actual
+es el punto medio de ambos):
+
+1. Foto de campo colombiano de fondo (`background-size: cover`, sin
+   repetir) — se veía completa solo en la primera pantalla.
+2. Patrón de íconos ilustrados a color (campesinos, ganado, espigas —
+   `patron-campo.svg`, ya no existe) — el usuario pidió quitarlo por no
+   verse "institucional de élite".
+3. Emblema institucional abstracto sin nada de campo (escudo + estrella +
+   laurel) — el usuario pidió que igual "evocara el campo y el
+   campesinado".
+4. **Actual**: un emblema tipo **sello agrario oficial**
+   (`public/patron-institucional.svg`) — escudo con sol naciente sobre la
+   cordillera y un campesino con sombrero y azadón, enmarcado por una
+   corona de espigas en vez de laurel — más una **textura fina de líneas
+   diagonales** (`public/patron-textura.svg`, tipo papel de certificado).
+   La clave para que se vea "institucional" pese a tener un campesino y
+   montañas es el tratamiento: trazo fino tipo grabado, monocromo, muy
+   baja opacidad, sin colores vivos ni relleno plano — no el contenido en
+   sí. Si se vuelve a tocar este fondo, mantener ese tratamiento formal
+   salvo que el usuario pida lo contrario.
 
 **Los `background-image` en CSS se apilan con el primero de la lista
 arriba de los demás** (al revés de lo que uno esperaría). Si se pone un

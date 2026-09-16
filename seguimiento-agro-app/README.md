@@ -237,19 +237,25 @@ la propia aplicación, no un valor fijo en el código.
 El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) combina dos
 SVG propios (sin licencia externa que declarar), en capas:
 
-- `public/patron-institucional.svg`: un emblema abstracto (escudo + estrella
-  + laurel, no el escudo oficial del país ni del Ministerio, para no
-  imitarlo de forma inexacta) a muy baja opacidad, repetido disperso en un
-  mosaico grande (480×480px) — como un sello institucional tenue.
+- `public/patron-institucional.svg`: un emblema tipo sello agrario oficial
+  (escudo con sol naciente sobre la cordillera y un campesino con sombrero
+  y azadón, enmarcado por una corona de espigas) a muy baja opacidad,
+  repetido disperso en un mosaico grande (480×480px). No es el escudo
+  oficial del país ni del Ministerio (para no imitarlo de forma inexacta) —
+  es un motivo propio, en la tradición de los sellos de entidades agrarias,
+  pensado para evocar el campo y el campesinado sin dejar de verse formal
+  (trazo fino tipo grabado, monocromo, muy tenue — no íconos a color).
 - `public/patron-textura.svg`: una textura fina de líneas diagonales a muy
   baja opacidad, tipo papel de certificado oficial, en un mosaico pequeño
   (10×10px).
 
-Ambos van sobre un degradado neutro claro. Antes hubo dos versiones previas:
-una única foto de fondo (se veía completa solo en la primera pantalla) y
-luego un patrón de íconos de campo (campesinos, ganado), que el usuario
-pidió cambiar por no verse "institucional de élite". El mosaico se ve igual
-de claro en cualquier ancho o alto de página. Para ajustar el motivo o su
+Ambos van sobre un degradado neutro claro. El fondo pasó por tres versiones:
+una foto única (se veía completa solo en la primera pantalla), luego un
+patrón de íconos de campo a color (campesinos, ganado — "no parece muy
+institucional"), y luego un emblema abstracto sin nada de campo (escudo +
+estrella + laurel — "tiene que evocar el campo y el campesinado"). La
+versión actual combina ambos pedidos. El mosaico se ve igual de claro en
+cualquier ancho o alto de página. Para ajustar el motivo o su
 opacidad, editar directamente esos SVG (son texto plano, sin build ni
 herramienta externa).
 
