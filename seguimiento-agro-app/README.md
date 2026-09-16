@@ -242,11 +242,17 @@ Wikimedia Commons, bajo licencia
 
 ## Logo del Ministerio y "El Campo Milagro"
 
-El encabezado institucional (`src/components/EncabezadoInstitucional.tsx`)
-usa dos recortes (`public/sello-campo-milagro.png` y
-`public/logo-agricultura.png`) tomados directamente de una pieza gráfica
-oficial suministrada por el usuario (banner institucional del Ministerio de
-Agricultura y Desarrollo Rural con el sello de la campaña "El Campo
-Milagro"). Ambos logos están diseñados sobre fondo azul oscuro, por lo que
-la franja del encabezado usa ese mismo azul (`#16305e`) en vez de fondo
-blanco, para que se vean tal como en la pieza original.
+La barra superior (`src/components/Nav.tsx`) es una sola franja azul oscura
+(`#16305e`) que reúne todo el encabezado institucional: el sello de "El
+Campo Milagro" a la izquierda, el nombre de la herramienta, la navegación,
+el usuario y el botón de cerrar sesión, y el logo "Agricultura" del
+Ministerio en la esquina superior derecha. Antes había dos franjas
+separadas (una blanca solo con logos y la barra de navegación debajo); se
+unificaron en una sola para no duplicar la barra.
+
+Los dos logos (`public/sello-campo-milagro.png` y
+`public/logo-agricultura.png`) son recortes tomados directamente de una
+pieza gráfica oficial suministrada por el usuario (banner institucional del
+Ministerio de Agricultura y Desarrollo Rural con el sello de la campaña "El
+Campo Milagro"). Ambos están diseñados sobre fondo azul oscuro, de ahí el
+color de fondo de la barra.
