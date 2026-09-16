@@ -11,30 +11,22 @@ body {
   color: #10203a;
 }
 
-/* Marca de agua de fondo: una foto real de campo con ganado
-   (public/ganado-campo.jpg), fija respecto a la ventana
-   (background-attachment: fixed) para que quede visible detrás de todo el
-   contenido en cualquier punto de scroll, no solo en la primera pantalla.
-   El velo claro encima es apenas para que el texto y los bloques blancos
-   sigan siendo legibles, sin tapar la foto (versiones anteriores con un
-   velo muy opaco, o con ilustraciones/emblemas en vez de una foto real,
-   no funcionaron — ver CLAUDE.md). Los fondos en CSS se apilan con el
-   primero de la lista arriba: el velo va primero, la foto detrás. */
+/* Marca de agua de fondo: patrón SVG en mosaico (public/patron-campo.svg)
+   con campesino, ganado, espigas y hojas, en azul institucional a baja
+   opacidad, repetido (background-repeat: repeat) para que se vea
+   consistente en cualquier ancho o alto de página. Los fondos en CSS se
+   apilan con el primero de la lista arriba de los demás: el patrón va
+   primero, el degradado va después, como capa base. Ver el historial de
+   este fondo (van 6 versiones) en CLAUDE.md antes de volver a cambiarlo. */
 .fondo-campo {
-  background-color: #10203a;
-  background-image: linear-gradient(rgba(238, 243, 250, 0.55), rgba(230, 238, 248, 0.6)), url("/ganado-campo.jpg");
+  background-color: #eef4fb;
+  background-image: url("/patron-campo.svg"), linear-gradient(180deg, #eef4fb, #e0eaf8);
   background-size:
-    cover,
+    240px 240px,
     cover;
-  background-position:
-    center,
-    center 60%;
-  background-repeat:
-    no-repeat,
-    no-repeat;
-  background-attachment:
-    fixed,
-    fixed;
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
 }
 
 .scrollbar-fina::-webkit-scrollbar {

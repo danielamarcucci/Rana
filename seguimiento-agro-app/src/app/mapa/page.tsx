@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { toPng } from "html-to-image";
 import FiltrosPanel from "../../components/FiltrosPanel";
 import MapaColombia, { type ValorMapa } from "../../components/MapaColombia";
 import ProgressBar from "../../components/ProgressBar";
@@ -29,6 +30,8 @@ export default function MapaPage() {
   const [actuacionesLista, setActuacionesLista] = useState<Actuacion[]>([]);
   const [metrica, setMetrica] = useState<(typeof METRICAS)[number]["clave"]>("totalActuaciones");
   const [cargando, setCargando] = useState(true);
+  const [descargando, setDescargando] = useState(false);
+  const fichaRef = useRef<HTMLDivElement>(null);
 
   // El departamento y el municipio seleccionados viven dentro de `filtros`
   // (no en estado aparte), así el mismo valor alimenta el mapa, el filtro
@@ -44,6 +47,34 @@ export default function MapaPage() {
 
   function seleccionarMunicipio(m: string | null) {
     setFiltros((f) => ({ ...f, municipio: m ?? "" }));
+  }
+
+  function normalizarNombreArchivo(texto: string): string {
+    const sinTildes = texto.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+    return sinTildes.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  }
+
+  async function descargarFicha() {
+    if (!fichaRef.current || !departamento) return;
+    setDescargando(true);
+    try {
+      const dataUrl = await toPng(fichaRef.current, {
+        backgroundColor: "#ffffff",
+        pixelRatio: 2,
+        filter: (nodo) => !(nodo instanceof HTMLElement && nodo.dataset.fichaIgnorar === "true"),
+      });
+      const nombreArchivo = normalizarNombreArchivo(
+        `ficha-${departamento}${municipio ? "-" + municipio : ""}`
+      );
+      const link = document.createElement("a");
+      link.download = `${nombreArchivo}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (error) {
+      console.error("No se pudo generar la ficha para descargar", error);
+    } finally {
+      setDescargando(false);
+    }
   }
 
   useEffect(() => {
@@ -117,7 +148,7 @@ export default function MapaPage() {
         {cargando && <span className="ml-auto text-xs text-slate-400">Actualizando…</span>}
       </div>
 
-      <div className="grid gap-3 lg:grid-cols-[1.3fr_1fr]">
+      <div ref={fichaRef} className="grid gap-3 lg:grid-cols-[1.3fr_1fr]">
         <div className="rounded-xl border border-azul-100 bg-white p-3 shadow-card">
           <MapaColombia
             valores={valoresMapa}
@@ -133,20 +164,34 @@ export default function MapaPage() {
         <div className="space-y-3">
           {!departamento && (
             <div className="rounded-xl border border-azul-100 bg-white p-6 text-center text-sm text-slate-400 shadow-card">
-              Seleccione un departamento en el mapa para ver su información detallada.
+              Seleccione un departamento en el mapa (o en el filtro de arriba) para ver su información detallada.
             </div>
           )}
 
           {departamento && (
             <div className="overflow-hidden rounded-xl border border-azul-200 bg-white shadow-card">
-              <div className="flex items-center justify-between bg-azul-900 px-4 py-2.5">
-                <h2 className="text-lg font-bold text-white">{departamento}</h2>
-                <button
-                  onClick={() => seleccionarDepartamento(null)}
-                  className="rounded-md border border-azul-700 px-2 py-0.5 text-xs text-azul-100 hover:bg-azul-800"
-                >
-                  ✕ cerrar
-                </button>
+              <div className="flex items-center justify-between gap-2 bg-azul-900 px-4 py-2.5">
+                <div className="leading-tight">
+                  <h2 className="text-lg font-bold text-white">{departamento}</h2>
+                  {municipio && <p className="text-xs text-azul-200">{municipio}</p>}
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    onClick={descargarFicha}
+                    disabled={descargando}
+                    data-ficha-ignorar="true"
+                    className="rounded-md border border-azul-700 bg-azul-800 px-2 py-0.5 text-xs text-white hover:bg-azul-700 disabled:opacity-60"
+                  >
+                    {descargando ? "Generando…" : "⬇ Descargar ficha"}
+                  </button>
+                  <button
+                    onClick={() => seleccionarDepartamento(null)}
+                    data-ficha-ignorar="true"
+                    className="rounded-md border border-azul-700 px-2 py-0.5 text-xs text-azul-100 hover:bg-azul-800"
+                  >
+                    ✕ cerrar
+                  </button>
+                </div>
               </div>
               <div className="p-4">
               {resumenDepartamento ? (
@@ -195,28 +240,28 @@ export default function MapaPage() {
               </div>
             </div>
           )}
-
-          {departamento && actuacionesLista.length > 0 && (
-            <div className="max-h-[520px] space-y-2 overflow-y-auto scrollbar-fina">
-              {actuacionesLista.map((a) => (
-                <Link
-                  key={a.id}
-                  href={`/actuaciones/${a.id}`}
-                  className="block rounded-xl border border-azul-100 bg-white p-3 shadow-card hover:border-azul-300"
-                >
-                  <div className="mb-1 flex items-center gap-2">
-                    <BadgeTipo tipo={a.tipo} etiqueta={ETIQUETA_TIPO_ACTUACION[a.tipo]} />
-                    <BadgeEstado estado={a.estado} etiqueta={ETIQUETA_ESTADO[a.estado]} />
-                  </div>
-                  <p className="text-sm font-medium text-azul-900">{a.nombre}</p>
-                  <p className="mb-1 text-xs text-slate-500">{a.dependenciaNombre}</p>
-                  <ProgressBar valor={a.nivelAvance} tamano="sm" />
-                </Link>
-              ))}
-            </div>
-          )}
         </div>
       </div>
+
+      {departamento && actuacionesLista.length > 0 && (
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {actuacionesLista.map((a) => (
+            <Link
+              key={a.id}
+              href={`/actuaciones/${a.id}`}
+              className="block rounded-xl border border-azul-100 bg-white p-3 shadow-card hover:border-azul-300"
+            >
+              <div className="mb-1 flex items-center gap-2">
+                <BadgeTipo tipo={a.tipo} etiqueta={ETIQUETA_TIPO_ACTUACION[a.tipo]} />
+                <BadgeEstado estado={a.estado} etiqueta={ETIQUETA_ESTADO[a.estado]} />
+              </div>
+              <p className="text-sm font-medium text-azul-900">{a.nombre}</p>
+              <p className="mb-1 text-xs text-slate-500">{a.dependenciaNombre}</p>
+              <ProgressBar valor={a.nivelAvance} tamano="sm" />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

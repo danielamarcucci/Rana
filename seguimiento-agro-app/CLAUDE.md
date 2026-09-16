@@ -19,6 +19,18 @@ pero **sin** `departamento`/`municipio`; `porMunicipio` sí se filtra por
 tampoco por `municipio` (si no, se pierde la lista completa de municipios
 del departamento apenas se elige uno). Ver `src/app/api/mapa/route.ts`.
 
+**Bug de hydration real, ya corregido**: el `<title>` dentro de cada
+`<path>` de departamento tenía dos expresiones JSX en líneas separadas
+(`{nombre}` y `{dato ? ... : ...}`, con un salto de línea entre ellas en
+el código fuente). Eso generaba un mismatch de hydration en React
+("Hydration failed...") porque el HTML renderizado en el servidor y el
+árbol que arma el cliente no manejan igual el espacio en blanco entre
+expresiones JSX dentro de un `<title>` de SVG. Solución: una sola
+expresión con un template literal (`{`${nombre}${...}`}`) en vez de dos
+expresiones adyacentes. Si aparece este error en algún otro `<title>`,
+`<text>` u otro elemento "inline" de SVG con varias expresiones JSX
+seguidas, es la misma causa.
+
 `src/data/departamentos-mapa.json` **no se escribe a mano** — lo genera
 `scripts/generar-mapa-colombia.py` a partir de un GeoJSON de departamentos.
 Para volver a generarlo (por ejemplo, para ajustar el tamaño del inset de
@@ -50,46 +62,80 @@ Lecciones ya aprendidas sobre ese mapa (para no repetir el mismo error):
   y el clic sobre ellas siga seleccionando el departamento y mostrando su
   panel de detalle.
 
+## Zoom al departamento y ficha descargable (`/mapa`)
+
+Al elegir un departamento (clic en el mapa o filtro), `MapaColombia`
+"hace zoom" aplicando `transform: translate(...) scale(...)` a un `<g>`
+que envuelve todas las formas — **no** recalculando el `viewBox`. Así el
+cambio se anima solo con una transición CSS normal sobre `transform`
+(cambiar el `viewBox` no es animable con CSS). La caja del departamento
+seleccionado se calcula con `cajaDePath` (`src/lib/geometria-mapa.ts`),
+que asume que el path solo usa comandos `M`/`L`/`Z` (líneas rectas, sin
+curvas) — cierto para todo lo que genera
+`scripts/generar-mapa-colombia.py` hoy; si algún día se agregan curvas
+(Q/C) a algún path, ese cálculo de caja dejaría de ser exacto. Los paths
+llevan `vector-effect="non-scaling-stroke"` para que el borde no se vea
+absurdamente grueso cuando el zoom escala mucho (departamentos pequeños).
+El zoom no distingue departamento de municipio: no hay geometría de
+municipios en este proyecto, así que seleccionar un municipio dentro de
+un departamento no mueve el zoom (ya está enfocado en el departamento).
+
+La ficha del panel derecho se descarga como PNG con la librería
+`html-to-image` (`toPng`), capturando el `<div>` que envuelve el mapa
+zoomeado **y** la ficha juntos (así la imagen descargada incluye el mapa,
+como pidió el usuario explícitamente: "la ficha debe tener... información
+de departamento, municipio. Con el mapa"). Los botones que no deben salir
+en la imagen (Descargar, Cerrar) llevan `data-ficha-ignorar="true"`, y
+`descargarFicha` pasa un `filter` a `toPng` que los excluye — **ese
+atributo es una convención propia de este proyecto**, no algo que
+`html-to-image` reconozca solo; si se agregan más botones dentro del área
+capturada, hay que marcarlos igual o van a salir en la imagen descargada.
+
 ## Marca de agua de fondo (`.fondo-campo` en `globals.css`)
 
-**`background-attachment: fixed` hace que un fondo se vea "en toda la
-interfaz" sin necesidad de que sea un patrón en mosaico.** Un fondo fijo
-queda pegado a la ventana (no al documento), así que sigue visible detrás
-de todo el contenido en cualquier punto de scroll — no hace falta que sea
-un SVG repetido para cumplir "que se vea en toda la interfaz"; una sola
-foto con `background-attachment: fixed` + `background-size: cover` ya lo
-cumple. Lo que sí importa es que el velo/degradado encima no sea tan
-opaco que tape la foto (ver el historial: eso fue el problema real la
-primera vez, se leyó como "cambiar de foto a patrón" pero era un problema
-de opacidad).
-
-Historial de estilo de este fondo (5 vueltas — para no repetir ninguna):
+**Antes de tocar este fondo otra vez, preguntar qué es lo que no
+funciona** (¿el contenido — campo/institucional? ¿que sea foto o patrón?
+¿la opacidad/claridad?) **en vez de adivinar y rediseñar de cero.** Van
+6 vueltas sobre este mismo fondo; casi todas salieron de resolver la
+pregunta equivocada:
 
 1. Foto de campo colombiano (arrozal, La Guajira), con velo blanco muy
    opaco (~80%) — el usuario la vio "poco clara".
-2. Patrón SVG en mosaico de íconos ilustrados a color (campesinos, ganado,
-   espigas) — el usuario pidió quitarlo por no verse "institucional de
-   élite".
+2. Patrón SVG en mosaico con campesino, ganado, espigas y hojas, en azul
+   institucional a baja opacidad (`public/patron-campo.svg`) — el usuario
+   pidió quitarlo por no verse "institucional de élite" (con esa misma
+   paleta monocroma tenue — el rechazo no era por ser "a color").
 3. Emblema institucional abstracto sin nada de campo (escudo + estrella +
    laurel, SVG dibujado a mano) — el usuario pidió que igual "evocara el
    campo y el campesinado".
 4. Emblema tipo sello agrario (escudo con sol, cordillera y un campesino
    con azadón, corona de espigas) — seguía siendo un dibujo SVG a mano, y
    el usuario lo rechazó directamente: "ese sello se ve horrible".
-5. **Actual**: una **foto real** de nuevo (`public/ganado-campo.jpg`,
-   campo con ganado y cordillera al fondo, licencia Pexels — ver README),
-   con un velo mucho más liviano (~55-60%) que en el intento 1, y
-   `background-attachment: fixed` (ya lo tenía desde el intento 1) para
-   que se vea en toda la interfaz sin necesidad de mosaico. Ante un nuevo
-   pedido de cambiar este fondo, **preguntar primero si el problema es la
-   claridad/opacidad o el motivo/contenido** antes de rediseñar de cero —
-   las vueltas 2-4 salieron de no distinguir esas dos cosas a tiempo.
+5. Foto real de campo con ganado y cordillera (Pexels, ver README), con un
+   velo más liviano (~55-60%) y `background-attachment: fixed` para que se
+   viera en toda la interfaz sin necesidad de mosaico — técnicamente
+   correcto, pero el usuario pidió volver a un patrón de todos modos
+   ("vuelvas a cambiar el fondo por patrones").
+6. **Actual**: de vuelta al patrón del punto 2 (`public/patron-campo.svg`,
+   sin cambios — mismo archivo), con `background-repeat: repeat`. Es la
+   combinación de TODO lo pedido a lo largo de las 6 vueltas: patrón (no
+   foto única), con campo y campesinado (no abstracto), en tono
+   institucional monocromo tenue (no ilustración a color ni dibujo
+   recargado). Si se vuelve a rechazar, probablemente el problema ya no es
+   ninguna de esas tres cosas — preguntar qué se ve mal concretamente.
+
+**`background-attachment: fixed` hace que un fondo se vea "en toda la
+interfaz" sin necesidad de que sea un patrón en mosaico** (queda pegado a
+la ventana, no al documento, así que sigue visible en cualquier punto de
+scroll) — pero un patrón en mosaico también lo logra, y es lo que se pidió
+explícitamente en la vuelta 6, así que ambas técnicas se usan juntas
+(patrón + `fixed`) por si acaso.
 
 **Los `background-image` en CSS se apilan con el primero de la lista
 arriba de los demás** (al revés de lo que uno esperaría). Si se pone un
 degradado opaco a pantalla completa antes que el patrón en la lista de
 `background-image`, el degradado tapa el patrón por completo y no se ve
-nada aunque todo esté bien configurado (mismo bug ya se dio aquí: la
+nada aunque todo esté bien configurado (bug real ya encontrado aquí: la
 página se veía con un degradado liso, sin ningún ícono). El o los patrones
 van siempre primero en la lista; el degradado (o color de fondo) va
 después, como capa base.

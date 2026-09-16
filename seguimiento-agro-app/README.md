@@ -54,11 +54,14 @@ redirigido a `/cargar` si intenta abrir cualquier otra página.
   ejecutados (con los mismos filtros del tablero, incluido el filtro de
   departamento, que en esta pantalla también se puede fijar haciendo clic
   directamente en el mapa). Al elegir un departamento (por el filtro o por
-  el mapa) se despliega un panel con el detalle agregado (recursos,
-  beneficiarios, avance) y aparece de inmediato un segundo filtro de
-  municipio (con el catálogo completo del departamento), además de la lista
-  de municipios con actuaciones y la lista completa de actuaciones de ese
-  departamento/municipio.
+  el mapa), el mapa **hace zoom** sobre ese departamento y se despliega una
+  ficha a la derecha con el detalle agregado (recursos, beneficiarios,
+  avance) y aparece de inmediato un segundo filtro de municipio (con el
+  catálogo completo del departamento), además de la lista de municipios con
+  actuaciones. La ficha se puede **descargar como imagen** (botón
+  "⬇ Descargar ficha"), con el mapa zoomeado y toda la información
+  organizada. La lista completa de actuaciones de ese departamento/municipio
+  aparece debajo, fuera de la ficha.
 - **Descarga a Excel** (botón "Descargar Excel" en el tablero): exporta toda la
   información alojada (o solo lo que esté filtrado) en un archivo `.xlsx` con
   una hoja de actuaciones y otra de ubicaciones detalladas, lista para
@@ -238,25 +241,24 @@ la propia aplicación, no un valor fijo en el código.
 
 ## Marca de agua de fondo
 
-El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) es una foto
-real de campo con ganado (`public/ganado-campo.jpg`) con un velo claro
-encima para que el texto siga siendo legible. Se fija respecto a la
-ventana (`background-attachment: fixed`, no `scroll`), así queda visible
-detrás de todo el contenido en cualquier punto de scroll de cualquier
-página, no solo en la primera pantalla — un patrón que se repite en
-mosaico no es la única forma de lograr eso.
+El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) es un patrón
+SVG propio en mosaico (`public/patron-campo.svg`, sin licencia externa que
+declarar) con un campesino, ganado, espigas y hojas, en azul institucional
+a baja opacidad (fill-opacity 0.16), repetido con
+`background-repeat: repeat` para que se vea consistente en cualquier ancho
+o alto de página, no solo en la primera pantalla.
 
-Fue la cuarta versión de este fondo; las anteriores (por si se necesita el
-porqué de nuevo): una foto sin velo tan opaco (funcionaba pero el usuario
-la vio poco clara), un patrón de íconos de campo ilustrados a color
-("no parece muy institucional"), y un emblema abstracto sin nada de campo
-("tiene que evocar el campo y el campesinado") que luego se rehízo como
-sello agrario dibujado a mano ("ese sello se ve horrible"). La versión
-actual vuelve a una foto real, más clara que la primera vez, fija en vez
-de en mosaico. Foto: [Soran Ali](https://www.pexels.com/@soranov), vía
-Pexels, bajo la [Licencia de
-Pexels](https://www.pexels.com/license/) (uso libre, sin atribución
-obligatoria, incluida esta).
+Es la sexta versión de este fondo; el historial completo (por si se pide
+cambiarlo otra vez) está en `CLAUDE.md`. En resumen: empezó como una foto
+sin velo tan opaco (el usuario la vio poco clara), pasó por este mismo
+patrón de íconos ("no parece muy institucional"), un emblema abstracto sin
+campo ("tiene que evocar el campo y el campesinado"), ese mismo emblema
+rehecho como sello agrario dibujado a mano ("se ve horrible"), una foto
+real de campo con ganado, y de vuelta a este patrón ("vuelvas a cambiar el
+fondo por patrones"). Antes de rediseñarlo de cero otra vez, vale la pena
+preguntar primero qué es lo que no funciona (¿el contenido? ¿que sea
+foto/patrón? ¿la opacidad?) — la mayoría de las vueltas anteriores salieron
+de adivinar eso.
 
 ## Logo del Ministerio y "El Campo Milagro"
 
