@@ -234,30 +234,25 @@ la propia aplicación, no un valor fijo en el código.
 
 ## Marca de agua de fondo
 
-El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) combina dos
-SVG propios (sin licencia externa que declarar), en capas:
+El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) es una foto
+real de campo con ganado (`public/ganado-campo.jpg`) con un velo claro
+encima para que el texto siga siendo legible. Se fija respecto a la
+ventana (`background-attachment: fixed`, no `scroll`), así queda visible
+detrás de todo el contenido en cualquier punto de scroll de cualquier
+página, no solo en la primera pantalla — un patrón que se repite en
+mosaico no es la única forma de lograr eso.
 
-- `public/patron-institucional.svg`: un emblema tipo sello agrario oficial
-  (escudo con sol naciente sobre la cordillera y un campesino con sombrero
-  y azadón, enmarcado por una corona de espigas) a muy baja opacidad,
-  repetido disperso en un mosaico grande (480×480px). No es el escudo
-  oficial del país ni del Ministerio (para no imitarlo de forma inexacta) —
-  es un motivo propio, en la tradición de los sellos de entidades agrarias,
-  pensado para evocar el campo y el campesinado sin dejar de verse formal
-  (trazo fino tipo grabado, monocromo, muy tenue — no íconos a color).
-- `public/patron-textura.svg`: una textura fina de líneas diagonales a muy
-  baja opacidad, tipo papel de certificado oficial, en un mosaico pequeño
-  (10×10px).
-
-Ambos van sobre un degradado neutro claro. El fondo pasó por tres versiones:
-una foto única (se veía completa solo en la primera pantalla), luego un
-patrón de íconos de campo a color (campesinos, ganado — "no parece muy
-institucional"), y luego un emblema abstracto sin nada de campo (escudo +
-estrella + laurel — "tiene que evocar el campo y el campesinado"). La
-versión actual combina ambos pedidos. El mosaico se ve igual de claro en
-cualquier ancho o alto de página. Para ajustar el motivo o su
-opacidad, editar directamente esos SVG (son texto plano, sin build ni
-herramienta externa).
+Fue la cuarta versión de este fondo; las anteriores (por si se necesita el
+porqué de nuevo): una foto sin velo tan opaco (funcionaba pero el usuario
+la vio poco clara), un patrón de íconos de campo ilustrados a color
+("no parece muy institucional"), y un emblema abstracto sin nada de campo
+("tiene que evocar el campo y el campesinado") que luego se rehízo como
+sello agrario dibujado a mano ("ese sello se ve horrible"). La versión
+actual vuelve a una foto real, más clara que la primera vez, fija en vez
+de en mosaico. Foto: [Soran Ali](https://www.pexels.com/@soranov), vía
+Pexels, bajo la [Licencia de
+Pexels](https://www.pexels.com/license/) (uso libre, sin atribución
+obligatoria, incluida esta).
 
 ## Logo del Ministerio y "El Campo Milagro"
 

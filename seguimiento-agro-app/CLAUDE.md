@@ -39,33 +39,38 @@ Lecciones ya aprendidas sobre ese mapa (para no repetir el mismo error):
 
 ## Marca de agua de fondo (`.fondo-campo` en `globals.css`)
 
-Es un patrón SVG en mosaico, no una foto — una foto única con
-`background-size: cover` solo se ve una vez, arriba de la página, y queda
-en color plano vacío en el resto de una página larga; un patrón con
-`background-repeat: repeat` se ve igual en cualquier alto/ancho.
+**`background-attachment: fixed` hace que un fondo se vea "en toda la
+interfaz" sin necesidad de que sea un patrón en mosaico.** Un fondo fijo
+queda pegado a la ventana (no al documento), así que sigue visible detrás
+de todo el contenido en cualquier punto de scroll — no hace falta que sea
+un SVG repetido para cumplir "que se vea en toda la interfaz"; una sola
+foto con `background-attachment: fixed` + `background-size: cover` ya lo
+cumple. Lo que sí importa es que el velo/degradado encima no sea tan
+opaco que tape la foto (ver el historial: eso fue el problema real la
+primera vez, se leyó como "cambiar de foto a patrón" pero era un problema
+de opacidad).
 
-Historial de estilo de este fondo (para no repetir vueltas ya dadas —
-el usuario pidió cambios opuestos dos veces seguidas, y la versión actual
-es el punto medio de ambos):
+Historial de estilo de este fondo (5 vueltas — para no repetir ninguna):
 
-1. Foto de campo colombiano de fondo (`background-size: cover`, sin
-   repetir) — se veía completa solo en la primera pantalla.
-2. Patrón de íconos ilustrados a color (campesinos, ganado, espigas —
-   `patron-campo.svg`, ya no existe) — el usuario pidió quitarlo por no
-   verse "institucional de élite".
+1. Foto de campo colombiano (arrozal, La Guajira), con velo blanco muy
+   opaco (~80%) — el usuario la vio "poco clara".
+2. Patrón SVG en mosaico de íconos ilustrados a color (campesinos, ganado,
+   espigas) — el usuario pidió quitarlo por no verse "institucional de
+   élite".
 3. Emblema institucional abstracto sin nada de campo (escudo + estrella +
-   laurel) — el usuario pidió que igual "evocara el campo y el
-   campesinado".
-4. **Actual**: un emblema tipo **sello agrario oficial**
-   (`public/patron-institucional.svg`) — escudo con sol naciente sobre la
-   cordillera y un campesino con sombrero y azadón, enmarcado por una
-   corona de espigas en vez de laurel — más una **textura fina de líneas
-   diagonales** (`public/patron-textura.svg`, tipo papel de certificado).
-   La clave para que se vea "institucional" pese a tener un campesino y
-   montañas es el tratamiento: trazo fino tipo grabado, monocromo, muy
-   baja opacidad, sin colores vivos ni relleno plano — no el contenido en
-   sí. Si se vuelve a tocar este fondo, mantener ese tratamiento formal
-   salvo que el usuario pida lo contrario.
+   laurel, SVG dibujado a mano) — el usuario pidió que igual "evocara el
+   campo y el campesinado".
+4. Emblema tipo sello agrario (escudo con sol, cordillera y un campesino
+   con azadón, corona de espigas) — seguía siendo un dibujo SVG a mano, y
+   el usuario lo rechazó directamente: "ese sello se ve horrible".
+5. **Actual**: una **foto real** de nuevo (`public/ganado-campo.jpg`,
+   campo con ganado y cordillera al fondo, licencia Pexels — ver README),
+   con un velo mucho más liviano (~55-60%) que en el intento 1, y
+   `background-attachment: fixed` (ya lo tenía desde el intento 1) para
+   que se vea en toda la interfaz sin necesidad de mosaico. Ante un nuevo
+   pedido de cambiar este fondo, **preguntar primero si el problema es la
+   claridad/opacidad o el motivo/contenido** antes de rediseñar de cero —
+   las vueltas 2-4 salieron de no distinguir esas dos cosas a tiempo.
 
 **Los `background-image` en CSS se apilan con el primero de la lista
 arriba de los demás** (al revés de lo que uno esperaría). Si se pone un

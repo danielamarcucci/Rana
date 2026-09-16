@@ -11,32 +11,28 @@ body {
   color: #10203a;
 }
 
-/* Marca de agua institucional: un emblema abstracto disperso (grande, muy
-   tenue) más una textura fina de líneas diagonales, tipo papel de
-   certificado oficial, sobre un degradado neutro. Reemplaza un patrón
-   anterior con íconos de campo (campesinos, ganado) que resultaba poco
-   formal para una herramienta de gobierno. Los fondos en CSS se apilan con
-   el primero de la lista arriba de los demás: el emblema va primero, la
-   textura fina después, y el degradado al final como capa base. */
+/* Marca de agua de fondo: una foto real de campo con ganado
+   (public/ganado-campo.jpg), fija respecto a la ventana
+   (background-attachment: fixed) para que quede visible detrás de todo el
+   contenido en cualquier punto de scroll, no solo en la primera pantalla.
+   El velo claro encima es apenas para que el texto y los bloques blancos
+   sigan siendo legibles, sin tapar la foto (versiones anteriores con un
+   velo muy opaco, o con ilustraciones/emblemas en vez de una foto real,
+   no funcionaron — ver CLAUDE.md). Los fondos en CSS se apilan con el
+   primero de la lista arriba: el velo va primero, la foto detrás. */
 .fondo-campo {
-  background-color: #eef2f8;
-  background-image:
-    url("/patron-institucional.svg"), url("/patron-textura.svg"),
-    linear-gradient(180deg, #eef2f8, #e6ecf6);
+  background-color: #10203a;
+  background-image: linear-gradient(rgba(238, 243, 250, 0.55), rgba(230, 238, 248, 0.6)), url("/ganado-campo.jpg");
   background-size:
-    480px 480px,
-    10px 10px,
+    cover,
     cover;
   background-position:
     center,
-    center,
-    center;
+    center 60%;
   background-repeat:
-    repeat,
-    repeat,
+    no-repeat,
     no-repeat;
   background-attachment:
-    fixed,
     fixed,
     fixed;
 }
