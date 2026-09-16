@@ -91,51 +91,43 @@ atributo es una convención propia de este proyecto**, no algo que
 `html-to-image` reconozca solo; si se agregan más botones dentro del área
 capturada, hay que marcarlos igual o van a salir en la imagen descargada.
 
-## Marca de agua de fondo (`.fondo-campo` en `globals.css`)
+## Fondo de la interfaz (`.fondo-campo` en `globals.css`)
 
-**Antes de tocar este fondo otra vez, preguntar qué es lo que no
-funciona** (¿el contenido — campo/institucional? ¿que sea foto o patrón?
-¿la opacidad/claridad?) **en vez de adivinar y rediseñar de cero.** Van
-6 vueltas sobre este mismo fondo; casi todas salieron de resolver la
-pregunta equivocada:
+**No proponer un patrón SVG ni una foto de marca de agua aquí sin que el
+usuario lo pida explícitamente.** Van 7 vueltas sobre este mismo fondo; el
+estado final, después de probar todo lo demás dos veces, es un **degradado
+azul claro liso, sin ningún elemento decorativo**:
 
 1. Foto de campo colombiano (arrozal, La Guajira), con velo blanco muy
    opaco (~80%) — el usuario la vio "poco clara".
 2. Patrón SVG en mosaico con campesino, ganado, espigas y hojas, en azul
    institucional a baja opacidad (`public/patron-campo.svg`) — el usuario
-   pidió quitarlo por no verse "institucional de élite" (con esa misma
-   paleta monocroma tenue — el rechazo no era por ser "a color").
+   pidió quitarlo por no verse "institucional de élite".
 3. Emblema institucional abstracto sin nada de campo (escudo + estrella +
    laurel, SVG dibujado a mano) — el usuario pidió que igual "evocara el
    campo y el campesinado".
 4. Emblema tipo sello agrario (escudo con sol, cordillera y un campesino
    con azadón, corona de espigas) — seguía siendo un dibujo SVG a mano, y
    el usuario lo rechazó directamente: "ese sello se ve horrible".
-5. Foto real de campo con ganado y cordillera (Pexels, ver README), con un
-   velo más liviano (~55-60%) y `background-attachment: fixed` para que se
-   viera en toda la interfaz sin necesidad de mosaico — técnicamente
-   correcto, pero el usuario pidió volver a un patrón de todos modos
-   ("vuelvas a cambiar el fondo por patrones").
-6. **Actual**: de vuelta al patrón del punto 2 (`public/patron-campo.svg`,
-   sin cambios — mismo archivo), con `background-repeat: repeat`. Es la
-   combinación de TODO lo pedido a lo largo de las 6 vueltas: patrón (no
-   foto única), con campo y campesinado (no abstracto), en tono
-   institucional monocromo tenue (no ilustración a color ni dibujo
-   recargado). Si se vuelve a rechazar, probablemente el problema ya no es
-   ninguna de esas tres cosas — preguntar qué se ve mal concretamente.
-
-**`background-attachment: fixed` hace que un fondo se vea "en toda la
-interfaz" sin necesidad de que sea un patrón en mosaico** (queda pegado a
-la ventana, no al documento, así que sigue visible en cualquier punto de
-scroll) — pero un patrón en mosaico también lo logra, y es lo que se pidió
-explícitamente en la vuelta 6, así que ambas técnicas se usan juntas
-(patrón + `fixed`) por si acaso.
+5. Foto real de campo con ganado y cordillera (Pexels, ver README), con
+   `background-attachment: fixed` — el usuario pidió volver a un patrón de
+   todos modos ("vuelvas a cambiar el fondo por patrones").
+6. De vuelta al patrón del punto 2 (mismo archivo, sin cambios) — el
+   usuario lo rechazó otra vez, esta vez con otra palabra: "queda es como
+   de bb" (se refería al mismo patrón de campesino/ganado/espigas).
+7. **Actual**: degradado azul liso (`#eef4fb` → `#dbe7f7`), sin patrón ni
+   foto — el usuario lo pidió explícitamente ("prefiero que el fondo sea
+   un azulito... sin patrón"), como alternativa a volver a la foto de la
+   vuelta 5. **El patrón (vuelta 2/6) y la foto (vuelta 1/5) ya se
+   probaron dos veces cada uno y las dos veces se descartaron** — si se
+   pide "algo de fondo" otra vez, más vale preguntar qué tipo de elemento
+   antes de reintentar cualquiera de los dos.
 
 **Los `background-image` en CSS se apilan con el primero de la lista
-arriba de los demás** (al revés de lo que uno esperaría). Si se pone un
-degradado opaco a pantalla completa antes que el patrón en la lista de
-`background-image`, el degradado tapa el patrón por completo y no se ve
-nada aunque todo esté bien configurado (bug real ya encontrado aquí: la
+arriba de los demás** (al revés de lo que uno esperaría). Si en el futuro
+se vuelve a poner un patrón o una foto detrás de un degradado, y el
+degradado va primero en la lista, tapa por completo lo que hay detrás
+(bug real ya encontrado aquí: la
 página se veía con un degradado liso, sin ningún ícono). El o los patrones
 van siempre primero en la lista; el degradado (o color de fondo) va
 después, como capa base.

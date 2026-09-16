@@ -239,26 +239,20 @@ Rural (minagricultura.gov.co/el-ministerio/organigrama). Como la estructura
 del Estado puede cambiar, el catálogo es una semilla inicial editable desde
 la propia aplicación, no un valor fijo en el código.
 
-## Marca de agua de fondo
+## Fondo de la interfaz
 
-El fondo de toda la interfaz (`.fondo-campo` en `globals.css`) es un patrón
-SVG propio en mosaico (`public/patron-campo.svg`, sin licencia externa que
-declarar) con un campesino, ganado, espigas y hojas, en azul institucional
-a baja opacidad (fill-opacity 0.16), repetido con
-`background-repeat: repeat` para que se vea consistente en cualquier ancho
-o alto de página, no solo en la primera pantalla.
+El fondo (`.fondo-campo` en `globals.css`) es un degradado azul claro liso
+(`#eef4fb` → `#dbe7f7`), sin patrón ni foto de marca de agua.
 
-Es la sexta versión de este fondo; el historial completo (por si se pide
-cambiarlo otra vez) está en `CLAUDE.md`. En resumen: empezó como una foto
-sin velo tan opaco (el usuario la vio poco clara), pasó por este mismo
-patrón de íconos ("no parece muy institucional"), un emblema abstracto sin
-campo ("tiene que evocar el campo y el campesinado"), ese mismo emblema
-rehecho como sello agrario dibujado a mano ("se ve horrible"), una foto
-real de campo con ganado, y de vuelta a este patrón ("vuelvas a cambiar el
-fondo por patrones"). Antes de rediseñarlo de cero otra vez, vale la pena
-preguntar primero qué es lo que no funciona (¿el contenido? ¿que sea
-foto/patrón? ¿la opacidad?) — la mayoría de las vueltas anteriores salieron
-de adivinar eso.
+Es la séptima versión de este fondo; el historial completo (por si se pide
+cambiarlo otra vez) está en `CLAUDE.md`. En resumen, se probaron —y se
+descartaron— una foto con velo muy opaco, un patrón de íconos ilustrados
+("no parece muy institucional" / luego "queda como de bb"), un emblema
+abstracto sin campo, ese mismo emblema como sello agrario dibujado a mano
+("se ve horrible"), y una foto real de campo con ganado. El usuario terminó
+prefiriendo un azul liso sin ningún elemento decorativo. Antes de volver a
+proponer un patrón o una foto aquí, tener en cuenta que ya se probaron dos
+veces cada uno y ambos se descartaron.
 
 ## Logo del Ministerio y "El Campo Milagro"
 

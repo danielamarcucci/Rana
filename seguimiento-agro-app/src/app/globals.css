@@ -11,22 +11,14 @@ body {
   color: #10203a;
 }
 
-/* Marca de agua de fondo: patrón SVG en mosaico (public/patron-campo.svg)
-   con campesino, ganado, espigas y hojas, en azul institucional a baja
-   opacidad, repetido (background-repeat: repeat) para que se vea
-   consistente en cualquier ancho o alto de página. Los fondos en CSS se
-   apilan con el primero de la lista arriba de los demás: el patrón va
-   primero, el degradado va después, como capa base. Ver el historial de
-   este fondo (van 6 versiones) en CLAUDE.md antes de volver a cambiarlo. */
+/* Fondo azul claro liso, sin patrón ni foto (el usuario probó ambos y
+   los descartó: el patrón "queda como de bb", la foto real también se
+   había descartado antes). Ver el historial completo (7 versiones) en
+   CLAUDE.md antes de volver a cambiar esto. */
 .fondo-campo {
   background-color: #eef4fb;
-  background-image: url("/patron-campo.svg"), linear-gradient(180deg, #eef4fb, #e0eaf8);
-  background-size:
-    240px 240px,
-    cover;
-  background-position: center, center;
-  background-repeat: repeat, no-repeat;
-  background-attachment: fixed, fixed;
+  background-image: linear-gradient(180deg, #eef4fb, #dbe7f7);
+  background-attachment: fixed;
 }
 
 .scrollbar-fina::-webkit-scrollbar {
