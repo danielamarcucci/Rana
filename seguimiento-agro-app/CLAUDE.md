@@ -37,6 +37,23 @@ Lecciones ya aprendidas sobre ese mapa (para no repetir el mismo error):
   y el clic sobre ellas siga seleccionando el departamento y mostrando su
   panel de detalle.
 
+## Marca de agua de fondo (`.fondo-campo` en `globals.css`)
+
+Es un patrón SVG en mosaico (`public/patron-campo.svg`, campesinos, ganado,
+espigas y hojas), no una foto — una foto única con `background-size: cover`
+solo se ve una vez, arriba de la página, y queda en color plano vacío en el
+resto de una página larga; un patrón con `background-repeat: repeat` se ve
+igual en cualquier alto/ancho.
+
+**Los `background-image` en CSS se apilan con el primero de la lista
+arriba de los demás** (al revés de lo que uno esperaría). Si se pone un
+degradado opaco a pantalla completa antes que el patrón en la lista de
+`background-image`, el degradado tapa el patrón por completo y no se ve
+nada aunque todo esté bien configurado (mismo bug ya se dio aquí: la
+página se veía con un degradado liso, sin ningún ícono). El patrón va
+siempre primero en la lista; el degradado (o color de fondo) va después,
+como capa base.
+
 ## Gotchas de despliegue en Vercel (ya resueltos, no repetir)
 
 - **`.gitignore` con `data` en vez de `/data`** ignora *cualquier* carpeta
