@@ -240,17 +240,13 @@ Wikimedia Commons, bajo licencia
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es):
 <https://commons.wikimedia.org/wiki/File:Cultivo_de_arroz_en_Distracci%C3%B3n.JPG>.
 
-## Logo del Ministerio y "Campo Milagro"
+## Logo del Ministerio y "El Campo Milagro"
 
 El encabezado institucional (`src/components/EncabezadoInstitucional.tsx`)
-usa el logotipo oficial del Ministerio de Agricultura y Desarrollo Rural
-(`public/logo-minagricultura.png`, versión 2022), tomado de Wikimedia
-Commons bajo licencia
-[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.es):
-<https://es.wikipedia.org/wiki/Archivo:Logo_MinAgricultura_Colombia_2022.svg>.
-
-El texto **"Campo Milagro"** junto al logo es, por ahora, un marcador visual
-(texto con los colores azul/naranja de la app) — no se encontró un archivo
-de logo oficial descargable para esa campaña en fuentes públicas. Si se
-consigue el logo real, reemplazar ese bloque de texto en
-`EncabezadoInstitucional.tsx` por la imagen correspondiente.
+usa dos recortes (`public/sello-campo-milagro.png` y
+`public/logo-agricultura.png`) tomados directamente de una pieza gráfica
+oficial suministrada por el usuario (banner institucional del Ministerio de
+Agricultura y Desarrollo Rural con el sello de la campaña "El Campo
+Milagro"). Ambos logos están diseñados sobre fondo azul oscuro, por lo que
+la franja del encabezado usa ese mismo azul (`#16305e`) en vez de fondo
+blanco, para que se vean tal como en la pieza original.
