@@ -231,3 +231,11 @@ en el organigrama publicado por el Ministerio de Agricultura y Desarrollo
 Rural (minagricultura.gov.co/el-ministerio/organigrama). Como la estructura
 del Estado puede cambiar, el catálogo es una semilla inicial editable desde
 la propia aplicación, no un valor fijo en el código.
+
+## Créditos de la foto de fondo
+
+La foto de campo colombiano usada como marca de agua de fondo
+(`public/fondo-campo.jpg`, cultivo de arroz en Distracción, La Guajira) es de
+Wikimedia Commons, bajo licencia
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es):
+<https://commons.wikimedia.org/wiki/File:Cultivo_de_arroz_en_Distracci%C3%B3n.JPG>.

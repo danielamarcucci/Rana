@@ -20,9 +20,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang="es">
-      <body className="min-h-screen font-sans antialiased">
+      <body className={`min-h-screen font-sans antialiased ${sesion ? "fondo-campo" : ""}`}>
         {sesion && <Nav usuario={sesion} />}
-        <main className="mx-auto max-w-7xl px-4 py-6">{children}</main>
+        <main className="mx-auto max-w-7xl px-4 py-5">{children}</main>
       </body>
     </html>
   );

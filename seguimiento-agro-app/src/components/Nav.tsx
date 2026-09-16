@@ -25,9 +25,9 @@ export default function Nav({ usuario }: { usuario: SesionUsuario }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-azul-800 bg-azul-900 text-white shadow-card">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 py-3">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3 px-4 py-2">
         <div className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-naranja-500 text-lg font-bold">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-naranja-500 text-base font-bold">
             🌾
           </span>
           <div className="leading-tight">

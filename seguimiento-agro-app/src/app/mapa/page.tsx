@@ -78,25 +78,25 @@ export default function MapaPage() {
   const resumenDepartamento = porDepartamento.find((d) => d.departamento === departamento);
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-3">
       <div>
-        <h1 className="text-2xl font-bold text-azul-900">Mapa por departamento</h1>
-        <p className="text-sm text-slate-600">
+        <h1 className="text-xl font-bold text-azul-900">Mapa por departamento</h1>
+        <p className="text-xs text-slate-600">
           Seleccione un departamento para ver el detalle de actuaciones, municipios y beneficiarios.
         </p>
       </div>
 
       <FiltrosPanel dependencias={dependencias} value={filtros} onChange={setFiltros} mostrarDepartamento={false} />
 
-      <div className="flex flex-wrap items-center gap-2 rounded-lg border border-azul-100 bg-white px-3 py-2.5 shadow-card">
-        <p className="border-l-2 border-azul-400 pl-2 text-xs font-bold uppercase tracking-wide text-azul-800">
+      <div className="flex flex-wrap items-center gap-1.5 rounded-lg border border-azul-100 bg-white px-3 py-1.5 shadow-card">
+        <p className="border-l-2 border-azul-400 pl-2 text-[11px] font-bold uppercase tracking-wide text-azul-800">
           Colorear mapa por
         </p>
         {METRICAS.map((m) => (
           <button
             key={m.clave}
             onClick={() => setMetrica(m.clave)}
-            className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
+            className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium transition ${
               metrica === m.clave
                 ? "border-azul-600 bg-azul-600 text-white"
                 : "border-azul-200 text-azul-700 hover:bg-azul-50"
@@ -108,8 +108,8 @@ export default function MapaPage() {
         {cargando && <span className="ml-auto text-xs text-slate-400">Actualizando…</span>}
       </div>
 
-      <div className="grid gap-5 lg:grid-cols-[1.3fr_1fr]">
-        <div className="rounded-xl border border-azul-100 bg-white p-4 shadow-card">
+      <div className="grid gap-3 lg:grid-cols-[1.3fr_1fr]">
+        <div className="rounded-xl border border-azul-100 bg-white p-3 shadow-card">
           <MapaColombia
             valores={valoresMapa}
             seleccionado={departamento}

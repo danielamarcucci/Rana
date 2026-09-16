@@ -11,6 +11,17 @@ body {
   color: #10203a;
 }
 
+/* Foto de campo colombiano de fondo, a modo de marca de agua, para que los
+   bloques y filtros (con fondo blanco sólido) resalten más sobre la página. */
+.fondo-campo {
+  background-image: linear-gradient(rgba(238, 244, 252, 0.8), rgba(224, 234, 248, 0.82)),
+    url("/fondo-campo.jpg");
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .scrollbar-fina::-webkit-scrollbar {
   width: 8px;
   height: 8px;

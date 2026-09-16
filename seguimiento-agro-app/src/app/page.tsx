@@ -56,25 +56,25 @@ export default function TableroPage() {
   const query = construirQuery(filtros);
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-3">
       <IntroBanner />
 
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-azul-900">Tablero de control</h1>
-          <p className="text-sm text-slate-600">
+          <h1 className="text-xl font-bold text-azul-900">Tablero de control</h1>
+          <p className="text-xs text-slate-600">
             Planes, programas, convenios y líneas de acción del sector agricultura — avances y metas.
           </p>
         </div>
         <a
           href={`/api/export/excel${query ? `?${query}` : ""}`}
-          className="rounded-lg bg-naranja-500 px-4 py-2 text-sm font-semibold text-white shadow-card hover:bg-naranja-600"
+          className="rounded-lg bg-naranja-500 px-3 py-1.5 text-sm font-semibold text-white shadow-card hover:bg-naranja-600"
         >
           ⬇ Descargar Excel
         </a>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-7">
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-7">
         <StatCard etiqueta="Actuaciones" valor={formatoNumero(kpis.total)} />
         <StatCard etiqueta="Avance promedio" valor={`${kpis.avancePromedio}%`} acento="naranja" />
         <StatCard etiqueta="Recursos destinados" valor={formatoCOPCorto(kpis.recursosDestinados)} />
@@ -93,58 +93,58 @@ export default function TableroPage() {
 
       <div className="overflow-hidden rounded-xl border border-azul-100 bg-white shadow-card">
         <div className="scrollbar-fina overflow-x-auto">
-          <table className="w-full min-w-[1100px] text-sm">
-            <thead className="bg-azul-50 text-left text-xs font-semibold uppercase tracking-wide text-azul-800">
+          <table className="w-full min-w-[1100px] text-xs">
+            <thead className="bg-azul-50 text-left text-[11px] font-semibold uppercase tracking-wide text-azul-800">
               <tr>
-                <th className="px-3 py-2">Nombre</th>
-                <th className="px-3 py-2">Tipo</th>
-                <th className="px-3 py-2">Dependencia / entidad</th>
-                <th className="px-3 py-2">Ubicación</th>
-                <th className="px-3 py-2">Estado</th>
-                <th className="px-3 py-2">Avance</th>
-                <th className="px-3 py-2 text-right">Destinado</th>
-                <th className="px-3 py-2 text-right">Ejecutado</th>
-                <th className="px-3 py-2 text-right">Beneficiarios</th>
+                <th className="px-2.5 py-1.5">Nombre</th>
+                <th className="px-2.5 py-1.5">Tipo</th>
+                <th className="px-2.5 py-1.5">Dependencia / entidad</th>
+                <th className="px-2.5 py-1.5">Ubicación</th>
+                <th className="px-2.5 py-1.5">Estado</th>
+                <th className="px-2.5 py-1.5">Avance</th>
+                <th className="px-2.5 py-1.5 text-right">Destinado</th>
+                <th className="px-2.5 py-1.5 text-right">Ejecutado</th>
+                <th className="px-2.5 py-1.5 text-right">Beneficiarios</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-azul-50">
               {cargando && (
                 <tr>
-                  <td colSpan={9} className="px-3 py-6 text-center text-slate-400">
+                  <td colSpan={9} className="px-3 py-5 text-center text-slate-400">
                     Cargando…
                   </td>
                 </tr>
               )}
               {!cargando && actuaciones.length === 0 && (
                 <tr>
-                  <td colSpan={9} className="px-3 py-8 text-center text-slate-400">
+                  <td colSpan={9} className="px-3 py-6 text-center text-slate-400">
                     No hay actuaciones que coincidan con los filtros.
                   </td>
                 </tr>
               )}
               {actuaciones.map((a) => (
                 <tr key={a.id} className="hover:bg-azul-50/50">
-                  <td className="px-3 py-2.5">
+                  <td className="px-2.5 py-1.5">
                     <Link href={`/actuaciones/${a.id}`} className="font-medium text-azul-800 hover:underline">
                       {a.nombre}
                     </Link>
                   </td>
-                  <td className="px-3 py-2.5">
+                  <td className="px-2.5 py-1.5">
                     <BadgeTipo tipo={a.tipo} etiqueta={ETIQUETA_TIPO_ACTUACION[a.tipo]} />
                   </td>
-                  <td className="px-3 py-2.5 text-slate-700">{a.dependenciaNombre}</td>
-                  <td className="px-3 py-2.5 text-slate-700">
+                  <td className="px-2.5 py-1.5 text-slate-700">{a.dependenciaNombre}</td>
+                  <td className="px-2.5 py-1.5 text-slate-700">
                     {[...new Set(a.ubicaciones.map((u) => u.departamento))].join(", ") || "—"}
                   </td>
-                  <td className="px-3 py-2.5">
+                  <td className="px-2.5 py-1.5">
                     <BadgeEstado estado={a.estado} etiqueta={ETIQUETA_ESTADO[a.estado]} />
                   </td>
-                  <td className="w-40 px-3 py-2.5">
+                  <td className="w-36 px-2.5 py-1.5">
                     <ProgressBar valor={a.nivelAvance} tamano="sm" />
                   </td>
-                  <td className="px-3 py-2.5 text-right text-slate-700">{formatoCOPCorto(a.recursosDestinados)}</td>
-                  <td className="px-3 py-2.5 text-right text-slate-700">{formatoCOPCorto(a.recursosEjecutados)}</td>
-                  <td className="px-3 py-2.5 text-right text-slate-700">
+                  <td className="px-2.5 py-1.5 text-right text-slate-700">{formatoCOPCorto(a.recursosDestinados)}</td>
+                  <td className="px-2.5 py-1.5 text-right text-slate-700">{formatoCOPCorto(a.recursosEjecutados)}</td>
+                  <td className="px-2.5 py-1.5 text-right text-slate-700">
                     {formatoNumero(a.beneficiariosTotal)}
                   </td>
                 </tr>
