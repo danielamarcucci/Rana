@@ -57,18 +57,19 @@ export default function MapaColombia({ valores, seleccionado, onSeleccionar, for
             />
             <text
               x={mapaData.insetSanAndres.x + mapaData.insetSanAndres.width / 2}
-              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height + 16}
+              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height - 20}
               textAnchor="middle"
               fontSize={11}
+              fontWeight={600}
               fill="#64748b"
             >
               San Andrés y Prov.
             </text>
             <text
               x={mapaData.insetSanAndres.x + mapaData.insetSanAndres.width / 2}
-              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height + 30}
+              y={mapaData.insetSanAndres.y + mapaData.insetSanAndres.height - 7}
               textAnchor="middle"
-              fontSize={10}
+              fontSize={9.5}
               fill="#94a3b8"
             >
               (fuera de escala)
