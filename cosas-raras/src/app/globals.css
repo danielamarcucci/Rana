@@ -9,7 +9,7 @@
 }
 
 * {
-  scrollbar-color: #6e1d3d #f6f1e9;
+  scrollbar-color: #6e1e3b #f7f6d7;
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #f6f1e9;
+  background-color: #f7f6d7;
   color: #1a1112;
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -31,8 +31,8 @@ body {
 }
 
 ::selection {
-  background: #6e1d3d;
-  color: #f6f1e9;
+  background: #6e1e3b;
+  color: #f7f6d7;
 }
 
 /* film-grain / paper texture overlay, purely decorative */
@@ -69,21 +69,21 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 9999px;
-  background: #6e1d3d;
+  background: #6e1e3b;
   pointer-events: none;
   z-index: 100;
   transform: translate(-50%, -50%);
 }
 
 .text-outline {
-  -webkit-text-stroke: 1.5px #f6f1e9;
+  -webkit-text-stroke: 1.5px #f7f6d7;
   color: transparent;
 }
 
 .rays {
   background-image: repeating-conic-gradient(
     from 0deg,
-    rgba(246, 241, 233, 0.9) 0deg 2.2deg,
+    rgba(247, 246, 215, 0.9) 0deg 2.2deg,
     transparent 2.2deg 9deg
   );
   border-radius: 9999px;

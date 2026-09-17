@@ -5,25 +5,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#F6F1E9",
-        paper: "#FBF8F2",
+        cream: "#F7F6D7",
+        paper: "#FBFAE9",
         ink: "#1A1112",
         wine: {
-          DEFAULT: "#6E1D3D",
-          dark: "#4A1029",
-          light: "#8C2E4F",
+          DEFAULT: "#6E1E3B",
+          dark: "#4B1428",
+          light: "#8E5066",
         },
         olive: {
-          DEFAULT: "#C6D463",
-          dark: "#9AA83D",
+          DEFAULT: "#C9D863",
+          dark: "#899343",
         },
         teal: {
           DEFAULT: "#1C8888",
           dark: "#0F5C5C",
         },
         blush: {
-          DEFAULT: "#E6B3C6",
-          dark: "#D089A6",
+          DEFAULT: "#EAB0C8",
+          dark: "#C796AA",
         },
       },
       fontFamily: {

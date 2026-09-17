@@ -8,8 +8,8 @@ export function waLink(message: string) {
 }
 
 export const COLORWAYS = [
-  { id: "vino", label: "Vino", hex: "#6E1D3D" },
-  { id: "oliva", label: "Oliva", hex: "#C6D463" },
+  { id: "vino", label: "Vino", hex: "#6E1E3B" },
+  { id: "oliva", label: "Oliva", hex: "#C9D863" },
   { id: "verdeazulado", label: "Verde azulado", hex: "#1C8888" },
 ] as const;
 
