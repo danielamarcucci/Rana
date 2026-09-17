@@ -15,7 +15,7 @@ const ENLACES_CAPTURA = [{ href: "/cargar", label: "Cargar información" }];
 export default function Nav({ usuario }: { usuario: SesionUsuario }) {
   const pathname = usePathname();
   const router = useRouter();
-  const enlaces = usuario.rol === "captura" ? ENLACES_CAPTURA : ENLACES_GESTOR;
+  const enlaces = usuario.rol === "gestor" ? ENLACES_GESTOR : ENLACES_CAPTURA;
 
   async function cerrarSesion() {
     await fetch("/api/logout", { method: "POST" });

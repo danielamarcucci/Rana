@@ -40,7 +40,8 @@ async function migrar() {
         usuario TEXT NOT NULL UNIQUE,
         password_hash TEXT NOT NULL,
         nombre_visible TEXT NOT NULL,
-        rol TEXT NOT NULL
+        rol TEXT NOT NULL,
+        dependencia_id INTEGER REFERENCES dependencias(id) ON DELETE SET NULL
       )`,
       `CREATE TABLE IF NOT EXISTS dependencias (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -94,7 +95,23 @@ async function migrar() {
     ],
     "write"
   );
+  await asegurarColumnaDependenciaUsuarios();
   await sembrarSiVacio();
+}
+
+// `CREATE TABLE IF NOT EXISTS` no le agrega columnas a una tabla `usuarios`
+// que ya existía de antes (bases de datos desplegadas antes de que se
+// agregara el rol "dependencia"). Hay que revisar si la columna ya está y,
+// si no, agregarla con ALTER TABLE — sin esto, `usuarios.dependencia_id` en
+// la tabla CREATE de arriba solo aplica a bases de datos nuevas.
+async function asegurarColumnaDependenciaUsuarios() {
+  const columnas = await cliente.execute("PRAGMA table_info(usuarios)");
+  const yaExiste = columnas.rows.some((c) => (c as unknown as { name: string }).name === "dependencia_id");
+  if (!yaExiste) {
+    await cliente.execute(
+      "ALTER TABLE usuarios ADD COLUMN dependencia_id INTEGER REFERENCES dependencias(id) ON DELETE SET NULL"
+    );
+  }
 }
 
 async function sembrarSiVacio() {
@@ -141,6 +158,38 @@ async function sembrarSiVacio() {
     })),
     "write"
   );
+
+  await sembrarUsuariosDependencia();
+}
+
+// Un usuario por cada dependencia/entidad del catálogo (mismo hash de clave
+// para todos: "informacion#"), para que cada una pueda entrar, ver lo que ya
+// tiene cargado y actualizarlo, sin tener que volver a escribirlo desde cero
+// cada vez. Se excluye "despacho": el usuario "Despacho" (rol gestor) ya
+// existe y el nombre de usuario colisionaría con él sin importar
+// mayúsculas/minúsculas (la columna `usuario` es UNIQUE pero sensible a
+// mayúsculas a nivel de SQLite, así que "despacho"/"Despacho" se podrían
+// insertar como dos filas distintas — y el login, que sí es insensible a
+// mayúsculas, quedaría ambiguo entre las dos). Usa INSERT OR IGNORE, así que
+// es seguro volver a correr esto sobre una base de datos que ya tiene estos
+// usuarios (por ejemplo, si se agrega una dependencia nueva al catálogo más
+// adelante).
+const HASH_CLAVE_DEPENDENCIA = "$2a$12$30/vwvCob.W3QNDi7kw9ieCYhlHKtXbN2O6Iq8jRYirW1/zjM36VC"; // "informacion#"
+
+async function sembrarUsuariosDependencia() {
+  for (const dep of DEPENDENCIAS_SEED) {
+    if (dep.clave === "despacho") continue;
+    const fila = await cliente.execute({
+      sql: `SELECT id FROM dependencias WHERE clave = ?`,
+      args: [dep.clave],
+    });
+    const dependenciaId = fila.rows[0]?.id as number | undefined;
+    if (!dependenciaId) continue;
+    await cliente.execute({
+      sql: `INSERT OR IGNORE INTO usuarios (usuario, password_hash, nombre_visible, rol, dependencia_id) VALUES (?, ?, ?, 'dependencia', ?)`,
+      args: [dep.clave, HASH_CLAVE_DEPENDENCIA, dep.nombre, dependenciaId],
+    });
+  }
 }
 
 async function asegurarListo() {

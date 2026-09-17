@@ -10,10 +10,12 @@ function getSecret() {
 
 const RUTAS_PUBLICAS = ["/login", "/api/login"];
 
-// El rol "captura" (usuario Equipo) solo ve la interfaz sencilla de carga de
+// Los roles "captura" (usuario Equipo) y "dependencia" (un usuario por
+// dependencia/entidad) solo ven la interfaz sencilla de carga de
 // información — no el tablero, el mapa ni el detalle/edición de actuaciones,
 // que son la interfaz de seguimiento del rol "gestor".
-const RUTAS_PERMITIDAS_CAPTURA = ["/cargar"];
+const ROLES_SOLO_CARGA = ["captura", "dependencia"];
+const RUTAS_PERMITIDAS_CARGA = ["/cargar"];
 
 export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
@@ -48,7 +50,11 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (rol === "captura" && !pathname.startsWith("/api/") && !RUTAS_PERMITIDAS_CAPTURA.includes(pathname)) {
+  if (
+    ROLES_SOLO_CARGA.includes(rol) &&
+    !pathname.startsWith("/api/") &&
+    !RUTAS_PERMITIDAS_CARGA.includes(pathname)
+  ) {
     return NextResponse.redirect(new URL("/cargar", req.url));
   }
 

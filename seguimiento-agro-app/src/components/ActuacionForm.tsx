@@ -10,7 +10,7 @@ import type { Actuacion, ActuacionInput, Dependencia, EstadoActuacion, TipoActua
 const TIPOS = Object.entries(ETIQUETA_TIPO_ACTUACION) as [TipoActuacion, string][];
 const ESTADOS = Object.entries(ETIQUETA_ESTADO) as [EstadoActuacion, string][];
 
-function valoresIniciales(actuacion?: Actuacion): ActuacionInput {
+function valoresIniciales(actuacion?: Actuacion, dependenciaFijaId?: number): ActuacionInput {
   if (actuacion) {
     return {
       tipo: actuacion.tipo,
@@ -35,7 +35,7 @@ function valoresIniciales(actuacion?: Actuacion): ActuacionInput {
   return {
     tipo: "programa",
     nombre: "",
-    dependenciaId: 0,
+    dependenciaId: dependenciaFijaId ?? 0,
     entidadEjecutora: "",
     descripcion: "",
     fechaInicio: null,
@@ -68,18 +68,22 @@ const claseInput =
 export default function ActuacionForm({
   actuacion,
   modoRapido = false,
+  dependenciaFijaId,
   onGuardado,
 }: {
   actuacion?: Actuacion;
-  /** Al crear (no editar): en vez de navegar al detalle, limpia el formulario
-   * para poder registrar la siguiente actuación de inmediato. */
+  /** En vez de navegar al guardar (crear o actualizar), se queda en la
+   * página y limpia/recarga el formulario para seguir trabajando ahí mismo. */
   modoRapido?: boolean;
+  /** Fija y bloquea la dependencia/entidad (para cuentas de dependencia:
+   * no pueden cargar a nombre de otra). */
+  dependenciaFijaId?: number;
   /** Se llama tras guardar con éxito en modoRapido, para refrescar listas externas. */
   onGuardado?: () => void;
 }) {
   const router = useRouter();
   const [dependencias, setDependencias] = useState<Dependencia[]>([]);
-  const [datos, setDatos] = useState<ActuacionInput>(valoresIniciales(actuacion));
+  const [datos, setDatos] = useState<ActuacionInput>(valoresIniciales(actuacion, dependenciaFijaId));
   const [guardando, setGuardando] = useState(false);
   const [error, setError] = useState("");
   const [mensajeExito, setMensajeExito] = useState("");
@@ -116,9 +120,13 @@ export default function ActuacionForm({
         setError(data.error ?? "No se pudo guardar la actuación");
         return;
       }
-      if (!actuacion && modoRapido) {
-        setDatos(valoresIniciales());
-        setMensajeExito(`"${datos.nombre}" quedó registrada. Puede cargar la siguiente.`);
+      if (modoRapido) {
+        if (!actuacion) setDatos(valoresIniciales(undefined, dependenciaFijaId));
+        setMensajeExito(
+          actuacion
+            ? `"${datos.nombre}" quedó actualizada.`
+            : `"${datos.nombre}" quedó registrada. Puede cargar la siguiente.`
+        );
         window.scrollTo({ top: 0, behavior: "smooth" });
         onGuardado?.();
         return;
@@ -132,6 +140,7 @@ export default function ActuacionForm({
 
   const opciones = opcionesDependencia(dependencias);
   const grupos = [...new Set(opciones.map((o) => o.grupo))];
+  const dependenciaFija = dependenciaFijaId ? dependencias.find((d) => d.id === dependenciaFijaId) : undefined;
 
   return (
     <form onSubmit={onSubmit} className="space-y-6">
@@ -184,24 +193,30 @@ export default function ActuacionForm({
 
         <div className="md:col-span-2">
           <Campo etiqueta="Dependencia / entidad responsable *">
-            <select
-              value={datos.dependenciaId || ""}
-              onChange={(e) => set("dependenciaId", Number(e.target.value))}
-              className={claseInput}
-            >
-              <option value="">Seleccione…</option>
-              {grupos.map((grupo) => (
-                <optgroup key={grupo} label={grupo}>
-                  {opciones
-                    .filter((o) => o.grupo === grupo)
-                    .map((o) => (
-                      <option key={o.id} value={o.id}>
-                        {o.etiqueta}
-                      </option>
-                    ))}
-                </optgroup>
-              ))}
-            </select>
+            {dependenciaFijaId ? (
+              <div className={`${claseInput} bg-azul-50 text-azul-900`}>
+                {dependenciaFija?.nombre ?? "Cargando…"}
+              </div>
+            ) : (
+              <select
+                value={datos.dependenciaId || ""}
+                onChange={(e) => set("dependenciaId", Number(e.target.value))}
+                className={claseInput}
+              >
+                <option value="">Seleccione…</option>
+                {grupos.map((grupo) => (
+                  <optgroup key={grupo} label={grupo}>
+                    {opciones
+                      .filter((o) => o.grupo === grupo)
+                      .map((o) => (
+                        <option key={o.id} value={o.id}>
+                          {o.etiqueta}
+                        </option>
+                      ))}
+                  </optgroup>
+                ))}
+              </select>
+            )}
           </Campo>
         </div>
 
@@ -357,7 +372,9 @@ export default function ActuacionForm({
           {guardando
             ? "Guardando…"
             : actuacion
-              ? "Guardar cambios"
+              ? modoRapido
+                ? "Actualizar y guardar"
+                : "Guardar cambios"
               : modoRapido
                 ? "Guardar y cargar otra"
                 : "Crear actuación"}

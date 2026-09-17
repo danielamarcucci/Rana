@@ -19,26 +19,40 @@ function getSecret() {
   return new TextEncoder().encode(secret);
 }
 
-export type RolUsuario = "gestor" | "captura";
+export type RolUsuario = "gestor" | "captura" | "dependencia";
 
 export interface SesionUsuario {
   usuario: string;
   nombreVisible: string;
   rol: RolUsuario;
+  /** Solo para rol "dependencia": la dependencia/entidad a la que queda
+   * restringida esta cuenta (ver ubicaciones y actuaciones propias). */
+  dependenciaId: number | null;
 }
 
 export async function verificarCredenciales(
   usuario: string,
   clave: string
 ): Promise<SesionUsuario | null> {
-  const fila = await db.get<{ usuario: string; password_hash: string; nombre_visible: string; rol: RolUsuario }>(
-    `SELECT usuario, password_hash, nombre_visible, rol FROM usuarios WHERE usuario = ? COLLATE NOCASE`,
+  const fila = await db.get<{
+    usuario: string;
+    password_hash: string;
+    nombre_visible: string;
+    rol: RolUsuario;
+    dependencia_id: number | null;
+  }>(
+    `SELECT usuario, password_hash, nombre_visible, rol, dependencia_id FROM usuarios WHERE usuario = ? COLLATE NOCASE`,
     [usuario.trim()]
   );
   if (!fila) return null;
   const ok = await bcrypt.compare(clave, fila.password_hash);
   if (!ok) return null;
-  return { usuario: fila.usuario, nombreVisible: fila.nombre_visible, rol: fila.rol };
+  return {
+    usuario: fila.usuario,
+    nombreVisible: fila.nombre_visible,
+    rol: fila.rol,
+    dependenciaId: fila.dependencia_id,
+  };
 }
 
 export async function crearSesion(sesion: SesionUsuario) {
@@ -46,6 +60,7 @@ export async function crearSesion(sesion: SesionUsuario) {
     usuario: sesion.usuario,
     nombreVisible: sesion.nombreVisible,
     rol: sesion.rol,
+    dependenciaId: sesion.dependenciaId,
   })
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
@@ -78,6 +93,7 @@ export async function usuarioActual(): Promise<SesionUsuario | null> {
       usuario: payload.usuario as string,
       nombreVisible: (payload.nombreVisible as string) ?? (payload.usuario as string),
       rol: (payload.rol as RolUsuario) ?? "gestor",
+      dependenciaId: (payload.dependenciaId as number | null) ?? null,
     };
   } catch {
     return null;

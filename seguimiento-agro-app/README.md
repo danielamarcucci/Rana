@@ -71,6 +71,8 @@ redirigido a `/cargar` si intenta abrir cualquier otra página.
 
 ## Usuarios
 
+Hay tres tipos de cuenta, con tres niveles de acceso distintos:
+
 | Usuario | Clave | Perfil | Interfaz |
 |---|---|---|---|
 | `UnidadInformación` | `revoluciónporlavida` | Unidad de Información Estratégica del Despacho | Tablero dinámico (+ carga) |
@@ -79,12 +81,57 @@ redirigido a `/cargar` si intenta abrir cualquier otra página.
 
 `UnidadInformación` y `Despacho` tienen los mismos permisos (crear, editar,
 eliminar y descargar) y ven el tablero completo. `Equipo` solo puede cargar
-actuaciones nuevas desde `/cargar`. Los tres se crean automáticamente la
-primera vez que la aplicación se conecta a la base de datos (y también se
-agregan solos si faltan en una base ya existente). Si en algún momento se
-quiere cambiar alguna clave, se puede actualizar directamente en la tabla
-`usuarios` de la base de datos (el valor guardado es un hash `bcrypt`, nunca
-la clave en texto plano).
+actuaciones nuevas desde `/cargar`, sin ver las de otras personas.
+
+### Un usuario por dependencia/entidad
+
+Además de esos tres, cada dependencia y entidad del catálogo tiene su propia
+cuenta, todas con la misma clave **`informacion#`**. A diferencia de
+`Equipo`, estas cuentas sí ven la información que ya tienen cargada — no
+hay que volver a escribirla desde cero cada vez que toca actualizar (por
+ejemplo, cada dos meses): en `/cargar` aparece la lista de sus propias
+actuaciones, con un botón **"✏️ Actualizar"** que carga esa actuación en el
+formulario para editarla y volver a guardarla (el botón dice
+**"Actualizar y guardar"**, y al guardar se actualiza la fecha de última
+actualización), y un botón **"+ Añadir nueva actuación"** para registrar
+una nueva sin perder de vista las que ya existen. La dependencia queda fija
+en el formulario — no pueden cargar a nombre de otra.
+
+| Usuario | Dependencia / entidad |
+|---|---|
+| `oaj` | Oficina Asesora Jurídica |
+| `oai` | Oficina Asesora de Asuntos Internacionales |
+| `uied` | Unidad de Información Estratégica del Despacho |
+| `vdr` | Viceministerio de Desarrollo Rural |
+| `dmr` | Dirección de la Mujer Rural |
+| `dbpr` | Dirección de Gestión de Bienes Públicos Rurales |
+| `dcpgi` | Dirección de Capacidades Productivas y Generación de Ingresos |
+| `dospr` | Dirección de Ordenamiento Social de la Propiedad Rural y Uso Productivo del Suelo |
+| `vaa` | Viceministerio de Asuntos Agropecuarios |
+| `dfra` | Dirección de Financiamiento y Riesgos Agropecuarios |
+| `dcaf` | Dirección de Cadenas Agrícolas y Forestales |
+| `dcppa` | Dirección de Cadenas Pecuarias, Pesqueras y Acuícolas |
+| `adr` | Agencia de Desarrollo Rural (ADR) |
+| `ant` | Agencia Nacional de Tierras (ANT) |
+| `ica` | Instituto Colombiano Agropecuario (ICA) |
+| `aunap` | Autoridad Nacional de Acuicultura y Pesca (AUNAP) |
+| `urt` | Unidad Administrativa Especial de Gestión de Restitución de Tierras Despojadas (URT) |
+| `upra` | Unidad de Planificación Rural Agropecuaria (UPRA) |
+| `banagrario` | Banco Agrario de Colombia (Banagrario) |
+| `finagro` | Fondo para el Financiamiento del Sector Agropecuario (Finagro) |
+| `agrosavia` | Corporación Colombiana de Investigación Agropecuaria (Agrosavia) |
+
+No hay una cuenta `despacho` en esta tabla: el usuario `Despacho` (tablero
+completo) ya representa a esa dependencia, y el nombre de usuario habría
+colisionado con él (ver `CLAUDE.md`).
+
+Todas estas cuentas (los tres usuarios originales y las 21 de dependencia)
+se crean automáticamente la primera vez que la aplicación se conecta a la
+base de datos, y también se agregan solas si faltan en una base ya
+existente — incluidas las que se agreguen después si el catálogo de
+dependencias cambia. Si en algún momento se quiere cambiar alguna clave, se
+puede actualizar directamente en la tabla `usuarios` de la base de datos (el
+valor guardado es un hash `bcrypt`, nunca la clave en texto plano).
 
 ## Stack técnico
 

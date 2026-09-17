@@ -4,6 +4,41 @@ Ver `README.md` para la descripción funcional completa. Esto es solo lo que
 conviene tener presente al tocar código de esta app, aprendido a las malas
 en sesiones anteriores.
 
+## Rol "dependencia" (un usuario por dependencia/entidad)
+
+Tercer rol además de `gestor` y `captura` (ver `src/lib/auth.ts`). Cada fila
+de `DEPENDENCIAS_SEED` (excepto `despacho`) tiene un usuario propio
+(`usuario = clave`, misma clave "informacion#" para todos), con
+`usuarios.dependencia_id` apuntando a su dependencia. En `/cargar` ven y
+pueden actualizar solo las actuaciones de esa dependencia — no el tablero
+ni el mapa (mismo bloqueo de middleware que `captura`).
+
+**Por qué no hay usuario `despacho`**: la columna `usuarios.usuario` es
+`UNIQUE` pero el login compara con `COLLATE NOCASE` — eso significa que
+`"despacho"` y `"Despacho"` **sí podrían insertarse como dos filas
+distintas** (la restricción UNIQUE de SQLite es sensible a mayúsculas por
+defecto), pero un login con cualquiera de las dos formas encontraría una
+fila ambigua. Como ya existe el usuario `Despacho` (rol `gestor`), se
+excluye `despacho` del sembrado de cuentas de dependencia. Si se agrega
+algún otro usuario nuevo a mano, revisar que no choque así con ninguno
+existente sin importar mayúsculas/minúsculas.
+
+**Permisos reforzados en el servidor, no solo escondidos en la UI**: en
+`src/app/api/actuaciones/route.ts` y `.../[id]/route.ts`, cualquier
+petición de una cuenta `dependencia` se fuerza (después de validar con
+zod) a su propia `dependenciaId`, sin importar qué venga en el body o en
+la URL — así como se bloquea el acceso de lectura/edición/borrado a
+actuaciones de otra dependencia. No basta con ocultar el selector de
+dependencia en el formulario: los endpoints son alcanzables directamente.
+
+**Migraciones sobre una base de datos que ya existe**: `CREATE TABLE IF
+NOT EXISTS` no le agrega columnas nuevas a una tabla que ya existía
+(como pasó al agregar `usuarios.dependencia_id` sobre bases ya
+desplegadas). Para eso hace falta revisar `PRAGMA table_info(<tabla>)` y
+correr `ALTER TABLE ... ADD COLUMN` solo si falta — ver
+`asegurarColumnaDependenciaUsuarios()` en `src/lib/db.ts`, patrón a
+reutilizar si se necesita otra columna nueva más adelante.
+
 ## Mapa de Colombia (`/mapa`)
 
 **El filtro de departamento/municipio de `/api/mapa` no debe usarse para

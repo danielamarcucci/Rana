@@ -26,8 +26,8 @@ export default function LoginForm() {
         setError(data.error ?? "No se pudo iniciar sesión");
         return;
       }
-      const esCaptura = data.usuario?.rol === "captura";
-      const destino = esCaptura ? "/cargar" : searchParams.get("redirect") || "/";
+      const soloCarga = data.usuario?.rol !== "gestor";
+      const destino = soloCarga ? "/cargar" : searchParams.get("redirect") || "/";
       router.push(destino);
       router.refresh();
     } finally {
