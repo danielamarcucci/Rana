@@ -5,12 +5,39 @@ import Link from "next/link";
 import { toPng } from "html-to-image";
 import FiltrosPanel from "../../components/FiltrosPanel";
 import MapaColombia, { type ValorMapa } from "../../components/MapaColombia";
-import ProgressBar from "../../components/ProgressBar";
-import { BadgeEstado, BadgeTipo } from "../../components/Badge";
+import { BadgeTipo } from "../../components/Badge";
 import { construirQuery, FILTROS_VACIOS, type FiltrosUI } from "../../lib/client/query";
 import { formatoCOPCorto, formatoNumero } from "../../lib/format";
-import { ETIQUETA_ESTADO, ETIQUETA_TIPO_ACTUACION, type Actuacion, type Dependencia } from "../../lib/types";
+import {
+  ETIQUETA_ESTADO,
+  ETIQUETA_TIPO_ACTUACION,
+  type Actuacion,
+  type Dependencia,
+  type TipoActuacion,
+} from "../../lib/types";
 import type { AgregadoUbicacion } from "../../lib/actuaciones";
+
+// Plural de cada tipo, para armar frases como "6 líneas de acción" en vez
+// de mostrar el conteo bajo la palabra genérica "actuaciones" (que a
+// usuarios sin perfil técnico les resultaba confusa).
+const ETIQUETA_TIPO_PLURAL: Record<TipoActuacion, string> = {
+  plan: "planes",
+  programa: "programas",
+  convenio: "convenios",
+  linea: "líneas de acción",
+};
+
+function resumenPorTipo(lista: Actuacion[]): string {
+  if (lista.length === 0) return "Sin registros";
+  const conteo = new Map<TipoActuacion, number>();
+  for (const a of lista) conteo.set(a.tipo, (conteo.get(a.tipo) ?? 0) + 1);
+  return Array.from(conteo.entries())
+    .sort((a, b) => b[1] - a[1])
+    .map(([tipo, n]) =>
+      n === 1 ? `1 ${ETIQUETA_TIPO_ACTUACION[tipo].toLowerCase()}` : `${n} ${ETIQUETA_TIPO_PLURAL[tipo]}`
+    )
+    .join(" · ");
+}
 
 const METRICAS = [
   { clave: "totalActuaciones", etiqueta: "N.º de actuaciones", formato: (v: number) => `${v} actuación(es)` },
@@ -148,7 +175,7 @@ export default function MapaPage() {
         {cargando && <span className="ml-auto text-xs text-slate-400">Actualizando…</span>}
       </div>
 
-      <div ref={fichaRef} className="grid gap-3 lg:grid-cols-[1.3fr_1fr]">
+      <div ref={fichaRef} className="grid items-start gap-3 lg:grid-cols-[1.4fr_1fr]">
         <div className="rounded-xl border border-azul-100 bg-white p-3 shadow-card">
           <MapaColombia
             valores={valoresMapa}
@@ -172,7 +199,7 @@ export default function MapaPage() {
             <div className="overflow-hidden rounded-xl border border-azul-200 bg-white shadow-card">
               <div className="flex items-center justify-between gap-2 bg-azul-900 px-4 py-2.5">
                 <div className="leading-tight">
-                  <h2 className="text-lg font-bold text-white">{departamento}</h2>
+                  <h2 className="text-base font-bold text-white">{departamento}</h2>
                   {municipio && <p className="text-xs text-azul-200">{municipio}</p>}
                 </div>
                 <div className="flex items-center gap-1.5">
@@ -180,37 +207,59 @@ export default function MapaPage() {
                     onClick={descargarFicha}
                     disabled={descargando}
                     data-ficha-ignorar="true"
+                    title="Descargar ficha"
                     className="rounded-md border border-azul-700 bg-azul-800 px-2 py-0.5 text-xs text-white hover:bg-azul-700 disabled:opacity-60"
                   >
-                    {descargando ? "Generando…" : "⬇ Descargar ficha"}
+                    {descargando ? "Generando…" : "⬇"}
                   </button>
                   <button
                     onClick={() => seleccionarDepartamento(null)}
                     data-ficha-ignorar="true"
+                    title="Cerrar"
                     className="rounded-md border border-azul-700 px-2 py-0.5 text-xs text-azul-100 hover:bg-azul-800"
                   >
-                    ✕ cerrar
+                    ✕
                   </button>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-3">
               {resumenDepartamento ? (
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <Resumen etiqueta="Actuaciones" valor={formatoNumero(resumenDepartamento.totalActuaciones)} />
-                  <Resumen etiqueta="Avance promedio" valor={`${resumenDepartamento.avancePromedio}%`} />
-                  <Resumen etiqueta="Destinado" valor={formatoCOPCorto(resumenDepartamento.recursosDestinados)} />
-                  <Resumen etiqueta="Ejecutado" valor={formatoCOPCorto(resumenDepartamento.recursosEjecutados)} />
-                  <Resumen etiqueta="Beneficiarios" valor={formatoNumero(resumenDepartamento.beneficiariosTotal)} />
-                  <Resumen etiqueta="Mujeres / jóvenes" valor={`${formatoNumero(resumenDepartamento.beneficiariosMujeres)} / ${formatoNumero(resumenDepartamento.beneficiariosJovenes)}`} />
+                <div className="divide-y divide-azul-100 text-sm">
+                  <FilaFicha etiqueta="Actuaciones" valor={resumenPorTipo(actuacionesLista)} destacado />
+                  <FilaFicha etiqueta="Avance promedio" valor={`${resumenDepartamento.avancePromedio}%`} />
+                  <FilaFicha
+                    etiqueta="Destinado / ejecutado"
+                    valor={`${formatoCOPCorto(resumenDepartamento.recursosDestinados)} / ${formatoCOPCorto(resumenDepartamento.recursosEjecutados)}`}
+                  />
+                  <FilaFicha
+                    etiqueta="Beneficiarios"
+                    valor={`${formatoNumero(resumenDepartamento.beneficiariosTotal)} (${formatoNumero(resumenDepartamento.beneficiariosMujeres)} mujeres · ${formatoNumero(resumenDepartamento.beneficiariosJovenes)} jóvenes)`}
+                  />
                 </div>
               ) : (
                 <p className="text-sm text-slate-400">Sin actuaciones registradas con estos filtros.</p>
               )}
 
+              {actuacionesLista.length > 0 && (
+                <div className="mt-2.5 max-h-72 divide-y divide-azul-50 overflow-y-auto border-t border-azul-100">
+                  {actuacionesLista.map((a) => (
+                    <Link
+                      key={a.id}
+                      href={`/actuaciones/${a.id}`}
+                      className="-mx-1 flex items-center gap-2 rounded px-1 py-1.5 hover:bg-azul-50/60"
+                    >
+                      <BadgeTipo tipo={a.tipo} etiqueta={ETIQUETA_TIPO_ACTUACION[a.tipo]} />
+                      <span className="flex-1 truncate text-xs font-medium text-azul-900">{a.nombre}</span>
+                      <span className="shrink-0 text-[11px] text-slate-500">{a.nivelAvance}%</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+
               {porMunicipio.length > 0 && (
-                <div className="mt-3 rounded-lg border border-azul-100 bg-azul-50/40 p-3">
-                  <p className="mb-1.5 border-l-2 border-azul-400 pl-2 text-xs font-bold uppercase tracking-wide text-azul-800">
-                    Municipios con actuaciones
+                <div className="mt-2.5 rounded-lg border border-azul-100 bg-azul-50/40 p-2.5">
+                  <p className="mb-1.5 border-l-2 border-azul-400 pl-2 text-[11px] font-bold uppercase tracking-wide text-azul-800">
+                    Municipios
                   </p>
                   <div className="flex flex-wrap gap-1.5">
                     <button
@@ -242,35 +291,29 @@ export default function MapaPage() {
           )}
         </div>
       </div>
-
-      {departamento && actuacionesLista.length > 0 && (
-        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {actuacionesLista.map((a) => (
-            <Link
-              key={a.id}
-              href={`/actuaciones/${a.id}`}
-              className="block rounded-xl border border-azul-100 bg-white p-3 shadow-card hover:border-azul-300"
-            >
-              <div className="mb-1 flex items-center gap-2">
-                <BadgeTipo tipo={a.tipo} etiqueta={ETIQUETA_TIPO_ACTUACION[a.tipo]} />
-                <BadgeEstado estado={a.estado} etiqueta={ETIQUETA_ESTADO[a.estado]} />
-              </div>
-              <p className="text-sm font-medium text-azul-900">{a.nombre}</p>
-              <p className="mb-1 text-xs text-slate-500">{a.dependenciaNombre}</p>
-              <ProgressBar valor={a.nivelAvance} tamano="sm" />
-            </Link>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
 
-function Resumen({ etiqueta, valor }: { etiqueta: string; valor: string }) {
+function FilaFicha({
+  etiqueta,
+  valor,
+  destacado = false,
+}: {
+  etiqueta: string;
+  valor: string;
+  destacado?: boolean;
+}) {
   return (
-    <div className="rounded-lg bg-azul-50 px-2.5 py-1.5">
-      <p className="text-[10px] uppercase tracking-wide text-azul-600">{etiqueta}</p>
-      <p className="font-semibold text-azul-900">{valor}</p>
+    <div className="flex items-baseline justify-between gap-3 py-1.5 first:pt-0 last:pb-0">
+      <p className="shrink-0 text-[11px] uppercase tracking-wide text-slate-500">{etiqueta}</p>
+      <p
+        className={`text-right ${
+          destacado ? "text-[15px] font-bold text-azul-900" : "text-sm font-semibold text-azul-800"
+        }`}
+      >
+        {valor}
+      </p>
     </div>
   );
 }
