@@ -5,6 +5,10 @@ o hechos de violencia contra personas y comunidades beneficiarias de la Reforma
 Agraria, según el documento *"Paso a paso para la recepción y atención de las
 denuncias"* de la Red.
 
+> Este repositorio contiene también otras aplicaciones independientes, cada una en
+> su carpeta: `servicios-app/`, `cosas-raras/` y `control-politico/` (preparación
+> de debates de control político en el concejo municipal).
+
 ## Qué incluye
 
 - **Formulario público de denuncia** (`/denuncia`): cualquier persona puede reportar
