@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tablero electoral Huila</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="cabecera">
+  <div class="marca">
+    <h1>Tablero electoral del Huila</h1>
+    <p class="sub">Comparativo entre los 37 municipios · datos oficiales DANE, Registraduría y MinDefensa</p>
+  </div>
+  <nav class="pestanas" role="tablist">
+    <button role="tab" data-vista="indicadores" aria-selected="true">Indicadores</button>
+    <button role="tab" data-vista="electoral" aria-selected="false">Panorama electoral</button>
+    <button role="tab" data-vista="fuentes" aria-selected="false">Fuentes</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ===================== INDICADORES ===================== -->
+  <section id="vista-indicadores" class="vista">
+    <div class="filtros">
+      <label>Tema <select id="ind-tema"></select></label>
+      <label>Indicador <select id="ind-indicador"></select></label>
+      <button id="ind-csv" class="boton-sec" type="button">Descargar CSV</button>
+    </div>
+    <p id="ind-meta" class="meta"></p>
+    <div class="rejilla">
+      <figure class="tarjeta">
+        <figcaption id="ind-titulo-mapa" class="tit-tarjeta"></figcaption>
+        <div id="ind-mapa" class="mapa"></div>
+        <div id="ind-leyenda" class="leyenda"></div>
+      </figure>
+      <figure class="tarjeta">
+        <figcaption class="tit-tarjeta">Los 37 municipios ordenados <span class="muted" id="ind-mediana"></span></figcaption>
+        <div id="ind-ranking" class="ranking"></div>
+      </figure>
+    </div>
+
+    <div class="tarjeta">
+      <div class="filtros">
+        <label>Ficha del municipio <select id="ficha-a"></select></label>
+        <label>Comparar con <select id="ficha-b"></select></label>
+      </div>
+      <div id="ficha" class="tabla-scroll"></div>
+      <p class="nota">Puesto: 1 = valor más alto de los 37. La mediana es el valor del municipio del medio, no un dato departamental oficial.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PANORAMA ELECTORAL ===================== -->
+  <section id="vista-electoral" class="vista" hidden>
+    <div class="filtros">
+      <label>Año <select id="el-anio"><option>2023</option><option>2019</option></select></label>
+      <label>Corporación
+        <select id="el-corp">
+          <option value="GOBERNADOR">Gobernación</option>
+          <option value="ASAMBLEA">Asamblea</option>
+          <option value="ALCALDE">Alcaldía</option>
+          <option value="CONCEJO">Concejo</option>
+        </select>
+      </label>
+      <label>Mapa
+        <select id="el-modo">
+          <option value="ganador">Quién ganó en cada municipio</option>
+          <option value="pct">% de una opción</option>
+        </select>
+      </label>
+      <label id="el-opcion-wrap" hidden>Opción <select id="el-opcion"></select></label>
+    </div>
+    <div id="el-tiles" class="tiles"></div>
+    <div class="rejilla">
+      <figure class="tarjeta">
+        <figcaption id="el-titulo-mapa" class="tit-tarjeta"></figcaption>
+        <div id="el-mapa" class="mapa"></div>
+        <div id="el-leyenda" class="leyenda"></div>
+      </figure>
+      <figure class="tarjeta">
+        <figcaption id="el-titulo-total" class="tit-tarjeta"></figcaption>
+        <div id="el-total" class="ranking"></div>
+      </figure>
+    </div>
+    <div class="tarjeta">
+      <div class="tit-tarjeta" id="el-titulo-tabla">Resultado por municipio</div>
+      <div id="el-tabla" class="tabla-scroll"></div>
+      <p class="nota" id="el-nota"></p>
+    </div>
+  </section>
+
+  <!-- ===================== FUENTES ===================== -->
+  <section id="vista-fuentes" class="vista" hidden>
+    <div class="tarjeta texto">
+      <h2>De dónde sale cada dato</h2>
+      <ul id="fuentes-lista"></ul>
+      <h3>Reglas del tablero</h3>
+      <ul>
+        <li>La unidad de comparación es siempre el municipio (37 municipios del Huila, códigos DIVIPOLA del DANE).</li>
+        <li>Los archivos oficiales se guardan sin modificar en <code>huila/datos/crudos/</code>; todo cálculo genera un archivo nuevo en <code>huila/datos/salida/</code>.</li>
+        <li>Los resultados de la Registraduría se verificaron byte a byte con el SHA-256 que trae cada descarga.</li>
+        <li>Todo es dato público y agregado por municipio. No hay datos de personas ni se infiere cómo votó nadie.</li>
+        <li>Que dos indicadores se muevan juntos entre municipios no significa que uno cause el otro.</li>
+      </ul>
+      <h3>Pendiente</h3>
+      <ul>
+        <li>Resultados 2015 (territoriales) y Congreso (2018, 2022, 2026) para el análisis de transferencia de votos.</li>
+        <li>Potencial electoral por municipio, para mostrar participación además de % del voto válido.</li>
+        <li>Temas con fuente más reciente que el censo 2018 (educación MEN, salud, finanzas municipales DNP).</li>
+      </ul>
+      <p class="nota">Detalle completo en <code>huila/documentacion/fuentes.md</code> y <code>metodologia.md</code>.</p>
+    </div>
+  </section>
+</main>
+
+<div id="tooltip" class="tooltip" role="status" hidden></div>
+<script src="datos/tablero.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
