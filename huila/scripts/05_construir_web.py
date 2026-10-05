@@ -182,38 +182,66 @@ def electoral(munis):
     return res
 
 
+def unidad_corta(u):
+    if u.startswith("Porcentaje"):
+        return "%"
+    return {"Tasa por cada 100.000 habitantes": "por cada 100.000 habitantes", "Hab/Km2": "habitantes por km²",
+            "Personas": "personas", "Puntos": "puntos", "Pesos corrientes": "pesos corrientes"}.get(u, u[:1].lower() + u[1:])
+
+
+def redondear(v):
+    if v is None:
+        return None
+    return round(v, 2) if abs(v) < 1000 else round(v)
+
+
+def problemas():
+    """Indicadores TerriData (06) + capas CNPV nacionales (07), listos para la web."""
+    lista = json.loads((D / "salida" / "terridata_indicadores.json").read_text("utf-8"))
+    lista += json.loads((D / "salida" / "dane_cnpv_nacional.json").read_text("utf-8"))
+    out = []
+    for x in lista:
+        r = lambda d: {k: redondear(v) for k, v in d.items()}
+        out.append({
+            "id": x["id"], "tema": x["tema"], "etiqueta": x["etiqueta"], "sentido": x["sentido"],
+            "ceros": x["ceros"], "unidad": unidad_corta(x["unidad"]), "fuente": x["fuente"],
+            "nota": x.get("nota", ""), "anio": x["anio"], "huila": redondear(x["huila"]),
+            "colombia": redondear(x["colombia"]), "puesto_dep": x["puesto_dep"], "n_dep": x["n_dep"],
+            "mediana_andina": redondear(x["mediana_andina"]), "n_andina": x["n_andina"],
+            "nacional": [redondear(v) for v in x["nacional"]], "municipios": r(x["nacional_cod"]),
+            "serie_huila": r(x["serie_huila"]), "serie_colombia": r(x["serie_colombia"]),
+            "serie_municipios": {k: r(v) for k, v in x["serie_municipios"].items()},
+        })
+    return out
+
+
 def main():
     cat = leer_csv(D / "catalogos" / "homologacion_registraduria_divipola_huila.csv")
     munis = {r["cod_divipola"]: r["municipio"] for r in cat}
+    subregion = {r["cod_divipola"]: r["subregion"] for r in leer_csv(D / "catalogos" / "subregiones_huila.csv")}
+    assert set(subregion) == set(munis)
 
+    # Tabla larga de los indicadores DANE/MinDefensa del Huila (primera versión del módulo de indicadores).
     filas = indicadores(munis)
     with (D / "salida" / "indicadores_municipio.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(filas[0]))
         w.writeheader()
         w.writerows(filas)
 
-    meta, valores = {}, defaultdict(dict)
-    for r in filas:
-        meta[r["id"]] = {k: r[k] for k in ("id", "tema", "indicador", "unidad", "anio", "lectura", "fuente", "nota")}
-        valores[r["id"]][r["cod_divipola"]] = r["valor"]
-    lista = [dict(meta[i], valores=valores[i]) for i in meta]
-
     geo = json.loads((D / "geo" / "mgn2025_municipios_huila_simplificado.geojson").read_text("utf-8"))
     paths, ancho, alto = proyectar(geo)
     assert set(paths) == set(munis)
-    pob2026 = valores["poblacion"]
 
     tablero = {
         "generado": "scripts/05_construir_web.py",
         "mapa": {"ancho": ancho, "alto": alto},
-        "municipios": [{"cod": c, "nombre": munis[c], **paths[c], "poblacion2026": pob2026[c]}
-                       for c in sorted(munis)],
-        "indicadores": lista,
+        "municipios": [{"cod": c, "nombre": munis[c], "subregion": subregion[c], **paths[c]} for c in sorted(munis)],
+        "indicadores": problemas(),
         "electoral": electoral(munis),
     }
     salida = RAIZ / "web" / "datos" / "tablero.js"
     salida.write_text("window.TABLERO = " + json.dumps(tablero, ensure_ascii=False, separators=(",", ":")) + ";\n", "utf-8")
-    print(f"OK {salida.relative_to(RAIZ)}: {salida.stat().st_size / 1024:.0f} KB, {len(lista)} indicadores")
+    print(f"OK {salida.relative_to(RAIZ)}: {salida.stat().st_size / 1024:.0f} KB, {len(tablero['indicadores'])} indicadores")
 
 
 if __name__ == "__main__":
