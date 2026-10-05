@@ -31,3 +31,21 @@ web/               App estática (index.html, app.js, datos/tablero.js generado)
 ```
 
 Fuentes y validación: `documentacion/fuentes.md` y `documentacion/metodologia.md`.
+
+## Publicar con usuario y contraseña (Vercel)
+
+`web/middleware.js` pide usuario y contraseña (autenticación básica del
+navegador) antes de servir cualquier archivo del sitio. Las credenciales
+**no están en el repositorio**: se leen de variables de entorno del proyecto
+de Vercel. Si faltan, el sitio responde 503 y no muestra nada.
+
+1. Vercel → Add New → Project → importar este repositorio.
+2. Root Directory: `huila/web`. Framework Preset: Other. Sin comando de build.
+3. Environment Variables: `HUILA_USUARIO` y `HUILA_CLAVE` (Production y Preview).
+4. Settings → Deployment Protection → desactivar Vercel Authentication para
+   que el visitante vea solo el cuadro de usuario y contraseña del tablero.
+5. Production Branch: la rama donde esté el tablero (o fusionar el PR).
+
+Para cambiar la contraseña basta con editar `HUILA_CLAVE` en Vercel y volver
+a desplegar. Mientras el repositorio sea público, el código y los datos
+(oficiales y públicos) se pueden ver en GitHub aunque el sitio pida clave.
