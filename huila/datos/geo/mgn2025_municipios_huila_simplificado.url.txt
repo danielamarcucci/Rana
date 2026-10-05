@@ -1,0 +1,1 @@
+https://geoportal.dane.gov.co/mparcgis/rest/services/Divipola/Serv_DIVIPOLA_MGN_2025/FeatureServer/317/query?where=dpto_ccdgo%3D%2741%27&outFields=*&returnGeometry=true&outSR=4326&maxAllowableOffset=0.002&geometryPrecision=4&f=geojson

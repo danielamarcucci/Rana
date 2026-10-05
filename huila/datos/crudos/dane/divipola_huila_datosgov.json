@@ -1,0 +1,37 @@
+[{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41001","nom_mpio":"NEIVA","tipo_municipio":"Municipio","longitud":"-75,277327","latitud":"2,935432"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41006","nom_mpio":"ACEVEDO","tipo_municipio":"Municipio","longitud":"-75,888706","latitud":"1,805173"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41013","nom_mpio":"AGRADO","tipo_municipio":"Municipio","longitud":"-75,772022","latitud":"2,25987"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41016","nom_mpio":"AIPE","tipo_municipio":"Municipio","longitud":"-75,239017","latitud":"3,223996"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41020","nom_mpio":"ALGECIRAS","tipo_municipio":"Municipio","longitud":"-75,315389","latitud":"2,521674"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41026","nom_mpio":"ALTAMIRA","tipo_municipio":"Municipio","longitud":"-75,788471","latitud":"2,063841"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41078","nom_mpio":"BARAYA","tipo_municipio":"Municipio","longitud":"-75,054843","latitud":"3,152204"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41132","nom_mpio":"CAMPOALEGRE","tipo_municipio":"Municipio","longitud":"-75,325748","latitud":"2,686767"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41206","nom_mpio":"COLOMBIA","tipo_municipio":"Municipio","longitud":"-74,802815","latitud":"3,376745"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41244","nom_mpio":"ELÍAS","tipo_municipio":"Municipio","longitud":"-75,938301","latitud":"2,012854"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41298","nom_mpio":"GARZÓN","tipo_municipio":"Municipio","longitud":"-75,627057","latitud":"2,196493"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41306","nom_mpio":"GIGANTE","tipo_municipio":"Municipio","longitud":"-75,547681","latitud":"2,384031"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41319","nom_mpio":"GUADALUPE","tipo_municipio":"Municipio","longitud":"-75,757185","latitud":"2,02426"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41349","nom_mpio":"HOBO","tipo_municipio":"Municipio","longitud":"-75,447697","latitud":"2,580812"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41357","nom_mpio":"ÍQUIRA","tipo_municipio":"Municipio","longitud":"-75,634497","latitud":"2,649359"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41359","nom_mpio":"ISNOS","tipo_municipio":"Municipio","longitud":"-76,217637","latitud":"1,929467"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41378","nom_mpio":"LA ARGENTINA","tipo_municipio":"Municipio","longitud":"-75,979763","latitud":"2,198496"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41396","nom_mpio":"LA PLATA","tipo_municipio":"Municipio","longitud":"-75,891254","latitud":"2,389263"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41483","nom_mpio":"NÁTAGA","tipo_municipio":"Municipio","longitud":"-75,808756","latitud":"2,5451"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41503","nom_mpio":"OPORAPA","tipo_municipio":"Municipio","longitud":"-75,995165","latitud":"2,025088"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41518","nom_mpio":"PAICOL","tipo_municipio":"Municipio","longitud":"-75,773158","latitud":"2,449651"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41524","nom_mpio":"PALERMO","tipo_municipio":"Municipio","longitud":"-75,435296","latitud":"2,889649"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41530","nom_mpio":"PALESTINA","tipo_municipio":"Municipio","longitud":"-76,133251","latitud":"1,723725"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41548","nom_mpio":"PITAL","tipo_municipio":"Municipio","longitud":"-75,804544","latitud":"2,266618"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41551","nom_mpio":"PITALITO","tipo_municipio":"Municipio","longitud":"-76,049441","latitud":"1,852631"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41615","nom_mpio":"RIVERA","tipo_municipio":"Municipio","longitud":"-75,258753","latitud":"2,777586"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41660","nom_mpio":"SALADOBLANCO","tipo_municipio":"Municipio","longitud":"-76,044747","latitud":"1,9934"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41668","nom_mpio":"SAN AGUSTÍN","tipo_municipio":"Municipio","longitud":"-76,27036","latitud":"1,881081"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41676","nom_mpio":"SANTA MARÍA","tipo_municipio":"Municipio","longitud":"-75,586223","latitud":"2,939603"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41770","nom_mpio":"SUAZA","tipo_municipio":"Municipio","longitud":"-75,79525","latitud":"1,976051"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41791","nom_mpio":"TARQUI","tipo_municipio":"Municipio","longitud":"-75,823976","latitud":"2,111325"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41797","nom_mpio":"TESALIA","tipo_municipio":"Municipio","longitud":"-75,730271","latitud":"2,486364"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41799","nom_mpio":"TELLO","tipo_municipio":"Municipio","longitud":"-75,138773","latitud":"3,067538"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41801","nom_mpio":"TERUEL","tipo_municipio":"Municipio","longitud":"-75,567034","latitud":"2,740968"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41807","nom_mpio":"TIMANÁ","tipo_municipio":"Municipio","longitud":"-75,932167","latitud":"1,974539"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41872","nom_mpio":"VILLAVIEJA","tipo_municipio":"Municipio","longitud":"-75,217174","latitud":"3,218822"}
+,{"cod_dpto":"41","dpto":"HUILA","cod_mpio":"41885","nom_mpio":"YAGUARÁ","tipo_municipio":"Municipio","longitud":"-75,518023","latitud":"2,664694"}]

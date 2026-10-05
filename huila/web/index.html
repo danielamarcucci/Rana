@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Huila tablero territorial</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="banda">
+  <div class="banda-fila">
+    <div>
+      <h1>Huila · tablero territorial</h1>
+      <p class="banda-sub">Elecciones, problemas y transferencia del voto · uso interno</p>
+    </div>
+    <div class="territorio">
+      <span class="territorio-lbl">Territorio</span>
+      <select id="f-subregion" aria-label="Subregión"></select>
+      <select id="f-municipio" aria-label="Municipio"></select>
+      <button id="f-todo" type="button" class="btn-claro">Todo Huila</button>
+    </div>
+  </div>
+  <nav class="pasos" role="tablist">
+    <button role="tab" data-vista="elecciones"><span class="num">1</span>Elecciones</button>
+    <button role="tab" data-vista="problemas" aria-selected="true"><span class="num">2</span>Problemas</button>
+    <button role="tab" data-vista="caracterizacion"><span class="num">3</span>Caracterización</button>
+    <button role="tab" data-vista="transferencia"><span class="num">4</span>Transferencia del voto</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ 1. ELECCIONES ============ -->
+  <section id="v-elecciones" class="vista" hidden>
+    <div class="titulo-vista"><h2>Elecciones</h2><span class="chip-territorio" data-territorio></span></div>
+    <p class="intro">Resultados oficiales de la Registraduría, mesa a mesa, sumados por municipio. Elija la corporación y el año; el gráfico compara cada opción con la elección anterior o siguiente.</p>
+    <div class="controles">
+      <div><div class="lbl">Corporación</div><div class="seg" id="el-corp"></div></div>
+      <div><div class="lbl">Año</div><div class="seg" id="el-anio"></div></div>
+      <div><div class="lbl">Mapa</div><div class="seg" id="el-modo"></div></div>
+      <div id="el-opcion-wrap" hidden><div class="lbl">Opción</div><select id="el-opcion" class="sel-opcion"></select></div>
+    </div>
+    <div class="cifras" id="el-cifras"></div>
+    <div class="dos">
+      <section class="card">
+        <h3 id="el-tit-mapa"></h3>
+        <p class="sub" id="el-sub-mapa"></p>
+        <div class="mapa" id="el-mapa"></div>
+        <div class="leyenda" id="el-leyenda"></div>
+        <p class="pie">Clic en un municipio para abrirlo.</p>
+      </section>
+      <section class="card">
+        <h3 id="el-tit-barras"></h3>
+        <p class="sub" id="el-sub-barras"></p>
+        <div id="el-barras"></div>
+      </section>
+    </div>
+    <section class="card">
+      <h3 id="el-tit-tabla">Municipios</h3>
+      <div class="tabla-scroll" id="el-tabla"></div>
+      <p class="pie" id="el-nota"></p>
+    </section>
+  </section>
+
+  <!-- ============ 2. PROBLEMAS y 3. CARACTERIZACIÓN (misma estructura) ============ -->
+  <section id="v-problemas" class="vista"></section>
+  <section id="v-caracterizacion" class="vista" hidden></section>
+
+  <!-- ============ 4. TRANSFERENCIA ============ -->
+  <section id="v-transferencia" class="vista" hidden>
+    <div class="titulo-vista"><h2>Transferencia del voto</h2><span class="chip-territorio" data-territorio></span></div>
+    <p class="intro">Cómo se movió la votación de un partido entre elecciones, municipio por municipio: 18 elecciones oficiales en el Huila, de las territoriales 2015 a la presidencial 2026. Compara territorios, no personas: el voto es secreto.</p>
+    <div class="controles">
+      <div><div class="lbl">Partido</div><select id="tr-partido" class="sel-opcion"></select></div>
+      <div><div class="lbl">Desde</div><select id="tr-desde" class="sel-opcion sel-corta"></select></div>
+      <div><div class="lbl">Hasta</div><select id="tr-hasta" class="sel-opcion sel-corta"></select></div>
+    </div>
+    <div class="cifras" id="tr-cifras"></div>
+    <div class="dos">
+      <section class="card">
+        <h3 id="tr-tit-tray"></h3>
+        <p class="sub" id="tr-sub-tray"></p>
+        <div id="tr-tray"></div>
+      </section>
+      <section class="card">
+        <h3 id="tr-tit-mapa"></h3>
+        <p class="sub" id="tr-sub-mapa"></p>
+        <div class="mapa" id="tr-mapa"></div>
+        <div class="leyenda" id="tr-leyenda"></div>
+        <p class="pie">Clic en un municipio para abrirlo.</p>
+      </section>
+    </div>
+    <div class="dos">
+      <section class="card">
+        <h3>Frente al voto presidencial</h3>
+        <p class="sub" id="tr-sub-disp"></p>
+        <select id="tr-pres" class="sel-opcion" aria-label="Candidato presidencial"></select>
+        <div class="grafico" id="tr-disp"></div>
+        <p class="pie" id="tr-pie-disp"></p>
+      </section>
+      <section class="card">
+        <h3 id="tr-tit-tabla"></h3>
+        <p class="sub" id="tr-sub-tabla"></p>
+        <div class="tabla-scroll" id="tr-tabla"></div>
+      </section>
+    </div>
+    <section class="card texto">
+      <h3>Cómo leer esta pestaña</h3>
+      <p class="pie" id="tr-nota"></p>
+    </section>
+  </section>
+</main>
+
+<template id="tpl-indicadores">
+  <div class="titulo-vista"><h2 data-titulo></h2><span class="chip-territorio" data-territorio></span></div>
+  <p class="intro" data-intro></p>
+  <div class="lbl" data-lbl-tema>Tema</div>
+  <div class="seg" data-temas></div>
+  <div class="layout">
+    <aside class="card lista">
+      <input type="search" placeholder="Buscar indicador…" data-buscar>
+      <p class="sub" data-ayuda-lista></p>
+      <div class="lista-items" data-lista></div>
+    </aside>
+    <div class="contenido">
+      <section class="card cabecera-ind">
+        <h3 data-ind-titulo></h3>
+        <p class="sub" data-ind-meta></p>
+        <p class="pie" data-ind-nota></p>
+      </section>
+      <div class="cifras" data-cifras></div>
+      <div class="dos">
+        <section class="card">
+          <h3 data-tit-mapa>Municipios del Huila</h3>
+          <p class="sub" data-sub-mapa></p>
+          <div class="mapa" data-mapa></div>
+          <div class="leyenda" data-leyenda></div>
+          <p class="pie">Clic en un municipio para abrirlo.</p>
+        </section>
+        <div class="col">
+          <section class="card">
+            <h3>Evolución</h3>
+            <p class="sub" data-sub-serie></p>
+            <div class="grafico" data-serie></div>
+          </section>
+          <section class="card">
+            <h3>Frente a los municipios del país</h3>
+            <p class="sub" data-sub-hist></p>
+            <div class="grafico" data-hist></div>
+            <p class="pie" data-pie-hist></p>
+          </section>
+        </div>
+      </div>
+      <section class="card">
+        <h3>Municipios del Huila</h3>
+        <p class="sub" data-sub-tabla></p>
+        <div class="tabla-scroll" data-tabla></div>
+      </section>
+    </div>
+  </div>
+</template>
+
+<div id="tooltip" class="tooltip" role="status" hidden></div>
+<script src="datos/tablero.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

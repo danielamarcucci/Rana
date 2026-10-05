@@ -1,0 +1,2514 @@
+delito,cod_divipola,municipio,anio,casos
+homicidio,41001,NEIVA,2003,92
+homicidio,41001,NEIVA,2004,78
+homicidio,41001,NEIVA,2005,71
+homicidio,41001,NEIVA,2006,75
+homicidio,41001,NEIVA,2007,98
+homicidio,41001,NEIVA,2008,86
+homicidio,41001,NEIVA,2009,103
+homicidio,41001,NEIVA,2010,84
+homicidio,41001,NEIVA,2011,102
+homicidio,41001,NEIVA,2012,104
+homicidio,41001,NEIVA,2013,108
+homicidio,41001,NEIVA,2014,62
+homicidio,41001,NEIVA,2015,58
+homicidio,41001,NEIVA,2016,59
+homicidio,41001,NEIVA,2017,81
+homicidio,41001,NEIVA,2018,83
+homicidio,41001,NEIVA,2019,66
+homicidio,41001,NEIVA,2020,72
+homicidio,41001,NEIVA,2021,100
+homicidio,41001,NEIVA,2022,85
+homicidio,41001,NEIVA,2023,92
+homicidio,41001,NEIVA,2024,83
+homicidio,41001,NEIVA,2025,85
+homicidio,41001,NEIVA,2026,47
+homicidio,41006,ACEVEDO,2003,54
+homicidio,41006,ACEVEDO,2004,17
+homicidio,41006,ACEVEDO,2005,20
+homicidio,41006,ACEVEDO,2006,12
+homicidio,41006,ACEVEDO,2007,28
+homicidio,41006,ACEVEDO,2008,12
+homicidio,41006,ACEVEDO,2009,16
+homicidio,41006,ACEVEDO,2010,12
+homicidio,41006,ACEVEDO,2011,6
+homicidio,41006,ACEVEDO,2012,14
+homicidio,41006,ACEVEDO,2013,14
+homicidio,41006,ACEVEDO,2014,11
+homicidio,41006,ACEVEDO,2015,12
+homicidio,41006,ACEVEDO,2016,15
+homicidio,41006,ACEVEDO,2017,13
+homicidio,41006,ACEVEDO,2018,8
+homicidio,41006,ACEVEDO,2019,17
+homicidio,41006,ACEVEDO,2020,19
+homicidio,41006,ACEVEDO,2021,11
+homicidio,41006,ACEVEDO,2022,15
+homicidio,41006,ACEVEDO,2023,18
+homicidio,41006,ACEVEDO,2024,19
+homicidio,41006,ACEVEDO,2025,15
+homicidio,41006,ACEVEDO,2026,6
+homicidio,41013,AGRADO,2003,6
+homicidio,41013,AGRADO,2004,3
+homicidio,41013,AGRADO,2005,2
+homicidio,41013,AGRADO,2006,5
+homicidio,41013,AGRADO,2010,1
+homicidio,41013,AGRADO,2012,1
+homicidio,41013,AGRADO,2013,1
+homicidio,41013,AGRADO,2014,1
+homicidio,41013,AGRADO,2016,1
+homicidio,41013,AGRADO,2017,2
+homicidio,41013,AGRADO,2019,1
+homicidio,41013,AGRADO,2020,1
+homicidio,41013,AGRADO,2023,2
+homicidio,41013,AGRADO,2024,2
+homicidio,41013,AGRADO,2025,4
+homicidio,41013,AGRADO,2026,4
+homicidio,41016,AIPE,2003,3
+homicidio,41016,AIPE,2004,3
+homicidio,41016,AIPE,2005,5
+homicidio,41016,AIPE,2006,4
+homicidio,41016,AIPE,2007,5
+homicidio,41016,AIPE,2008,7
+homicidio,41016,AIPE,2009,4
+homicidio,41016,AIPE,2010,3
+homicidio,41016,AIPE,2011,6
+homicidio,41016,AIPE,2012,5
+homicidio,41016,AIPE,2013,4
+homicidio,41016,AIPE,2014,5
+homicidio,41016,AIPE,2015,1
+homicidio,41016,AIPE,2016,6
+homicidio,41016,AIPE,2017,2
+homicidio,41016,AIPE,2018,2
+homicidio,41016,AIPE,2019,5
+homicidio,41016,AIPE,2020,2
+homicidio,41016,AIPE,2021,2
+homicidio,41016,AIPE,2022,1
+homicidio,41016,AIPE,2023,2
+homicidio,41016,AIPE,2024,1
+homicidio,41016,AIPE,2025,2
+homicidio,41016,AIPE,2026,1
+homicidio,41020,ALGECIRAS,2003,38
+homicidio,41020,ALGECIRAS,2004,27
+homicidio,41020,ALGECIRAS,2005,23
+homicidio,41020,ALGECIRAS,2006,15
+homicidio,41020,ALGECIRAS,2007,22
+homicidio,41020,ALGECIRAS,2008,13
+homicidio,41020,ALGECIRAS,2009,9
+homicidio,41020,ALGECIRAS,2010,13
+homicidio,41020,ALGECIRAS,2011,21
+homicidio,41020,ALGECIRAS,2012,5
+homicidio,41020,ALGECIRAS,2013,10
+homicidio,41020,ALGECIRAS,2014,5
+homicidio,41020,ALGECIRAS,2015,7
+homicidio,41020,ALGECIRAS,2016,11
+homicidio,41020,ALGECIRAS,2017,1
+homicidio,41020,ALGECIRAS,2018,6
+homicidio,41020,ALGECIRAS,2019,12
+homicidio,41020,ALGECIRAS,2020,24
+homicidio,41020,ALGECIRAS,2021,24
+homicidio,41020,ALGECIRAS,2022,10
+homicidio,41020,ALGECIRAS,2023,27
+homicidio,41020,ALGECIRAS,2024,22
+homicidio,41020,ALGECIRAS,2025,30
+homicidio,41020,ALGECIRAS,2026,20
+homicidio,41026,ALTAMIRA,2003,4
+homicidio,41026,ALTAMIRA,2004,4
+homicidio,41026,ALTAMIRA,2007,1
+homicidio,41026,ALTAMIRA,2008,2
+homicidio,41026,ALTAMIRA,2009,1
+homicidio,41026,ALTAMIRA,2011,1
+homicidio,41026,ALTAMIRA,2012,1
+homicidio,41026,ALTAMIRA,2014,1
+homicidio,41026,ALTAMIRA,2019,3
+homicidio,41026,ALTAMIRA,2021,1
+homicidio,41026,ALTAMIRA,2022,1
+homicidio,41026,ALTAMIRA,2023,1
+homicidio,41026,ALTAMIRA,2024,1
+homicidio,41026,ALTAMIRA,2025,2
+homicidio,41078,BARAYA,2003,16
+homicidio,41078,BARAYA,2004,19
+homicidio,41078,BARAYA,2005,7
+homicidio,41078,BARAYA,2006,7
+homicidio,41078,BARAYA,2007,3
+homicidio,41078,BARAYA,2009,9
+homicidio,41078,BARAYA,2010,2
+homicidio,41078,BARAYA,2011,3
+homicidio,41078,BARAYA,2012,1
+homicidio,41078,BARAYA,2013,2
+homicidio,41078,BARAYA,2014,1
+homicidio,41078,BARAYA,2015,3
+homicidio,41078,BARAYA,2016,1
+homicidio,41078,BARAYA,2018,2
+homicidio,41078,BARAYA,2019,2
+homicidio,41078,BARAYA,2020,2
+homicidio,41078,BARAYA,2021,3
+homicidio,41078,BARAYA,2022,5
+homicidio,41078,BARAYA,2023,1
+homicidio,41078,BARAYA,2024,1
+homicidio,41078,BARAYA,2025,1
+homicidio,41132,CAMPOALEGRE,2003,19
+homicidio,41132,CAMPOALEGRE,2004,6
+homicidio,41132,CAMPOALEGRE,2005,20
+homicidio,41132,CAMPOALEGRE,2006,9
+homicidio,41132,CAMPOALEGRE,2007,8
+homicidio,41132,CAMPOALEGRE,2008,16
+homicidio,41132,CAMPOALEGRE,2009,6
+homicidio,41132,CAMPOALEGRE,2010,12
+homicidio,41132,CAMPOALEGRE,2011,9
+homicidio,41132,CAMPOALEGRE,2012,8
+homicidio,41132,CAMPOALEGRE,2013,16
+homicidio,41132,CAMPOALEGRE,2014,18
+homicidio,41132,CAMPOALEGRE,2015,11
+homicidio,41132,CAMPOALEGRE,2016,15
+homicidio,41132,CAMPOALEGRE,2017,14
+homicidio,41132,CAMPOALEGRE,2018,17
+homicidio,41132,CAMPOALEGRE,2019,17
+homicidio,41132,CAMPOALEGRE,2020,17
+homicidio,41132,CAMPOALEGRE,2021,20
+homicidio,41132,CAMPOALEGRE,2022,19
+homicidio,41132,CAMPOALEGRE,2023,31
+homicidio,41132,CAMPOALEGRE,2024,16
+homicidio,41132,CAMPOALEGRE,2025,12
+homicidio,41132,CAMPOALEGRE,2026,12
+homicidio,41206,COLOMBIA,2003,11
+homicidio,41206,COLOMBIA,2004,3
+homicidio,41206,COLOMBIA,2005,4
+homicidio,41206,COLOMBIA,2006,1
+homicidio,41206,COLOMBIA,2007,7
+homicidio,41206,COLOMBIA,2008,6
+homicidio,41206,COLOMBIA,2009,9
+homicidio,41206,COLOMBIA,2011,3
+homicidio,41206,COLOMBIA,2012,4
+homicidio,41206,COLOMBIA,2013,1
+homicidio,41206,COLOMBIA,2014,1
+homicidio,41206,COLOMBIA,2016,1
+homicidio,41206,COLOMBIA,2017,1
+homicidio,41206,COLOMBIA,2018,1
+homicidio,41206,COLOMBIA,2020,1
+homicidio,41206,COLOMBIA,2021,4
+homicidio,41206,COLOMBIA,2025,1
+homicidio,41206,COLOMBIA,2026,2
+homicidio,41244,ELÍAS,2003,1
+homicidio,41244,ELÍAS,2006,3
+homicidio,41244,ELÍAS,2008,2
+homicidio,41244,ELÍAS,2009,1
+homicidio,41244,ELÍAS,2012,2
+homicidio,41244,ELÍAS,2015,1
+homicidio,41244,ELÍAS,2016,2
+homicidio,41244,ELÍAS,2017,1
+homicidio,41244,ELÍAS,2023,2
+homicidio,41244,ELÍAS,2025,1
+homicidio,41298,GARZÓN,2003,42
+homicidio,41298,GARZÓN,2004,27
+homicidio,41298,GARZÓN,2005,10
+homicidio,41298,GARZÓN,2006,11
+homicidio,41298,GARZÓN,2007,15
+homicidio,41298,GARZÓN,2008,17
+homicidio,41298,GARZÓN,2009,21
+homicidio,41298,GARZÓN,2010,12
+homicidio,41298,GARZÓN,2011,9
+homicidio,41298,GARZÓN,2012,19
+homicidio,41298,GARZÓN,2013,7
+homicidio,41298,GARZÓN,2014,9
+homicidio,41298,GARZÓN,2015,14
+homicidio,41298,GARZÓN,2016,8
+homicidio,41298,GARZÓN,2017,8
+homicidio,41298,GARZÓN,2018,7
+homicidio,41298,GARZÓN,2019,10
+homicidio,41298,GARZÓN,2020,7
+homicidio,41298,GARZÓN,2021,13
+homicidio,41298,GARZÓN,2022,16
+homicidio,41298,GARZÓN,2023,16
+homicidio,41298,GARZÓN,2024,18
+homicidio,41298,GARZÓN,2025,12
+homicidio,41298,GARZÓN,2026,4
+homicidio,41306,GIGANTE,2003,13
+homicidio,41306,GIGANTE,2004,12
+homicidio,41306,GIGANTE,2005,14
+homicidio,41306,GIGANTE,2006,6
+homicidio,41306,GIGANTE,2007,4
+homicidio,41306,GIGANTE,2008,1
+homicidio,41306,GIGANTE,2009,2
+homicidio,41306,GIGANTE,2010,4
+homicidio,41306,GIGANTE,2011,6
+homicidio,41306,GIGANTE,2012,10
+homicidio,41306,GIGANTE,2013,6
+homicidio,41306,GIGANTE,2014,7
+homicidio,41306,GIGANTE,2015,2
+homicidio,41306,GIGANTE,2016,7
+homicidio,41306,GIGANTE,2017,1
+homicidio,41306,GIGANTE,2018,4
+homicidio,41306,GIGANTE,2019,16
+homicidio,41306,GIGANTE,2020,4
+homicidio,41306,GIGANTE,2021,4
+homicidio,41306,GIGANTE,2022,6
+homicidio,41306,GIGANTE,2023,3
+homicidio,41306,GIGANTE,2024,4
+homicidio,41306,GIGANTE,2025,6
+homicidio,41306,GIGANTE,2026,4
+homicidio,41319,GUADALUPE,2003,9
+homicidio,41319,GUADALUPE,2004,7
+homicidio,41319,GUADALUPE,2005,4
+homicidio,41319,GUADALUPE,2006,8
+homicidio,41319,GUADALUPE,2007,7
+homicidio,41319,GUADALUPE,2008,6
+homicidio,41319,GUADALUPE,2009,5
+homicidio,41319,GUADALUPE,2010,3
+homicidio,41319,GUADALUPE,2011,2
+homicidio,41319,GUADALUPE,2012,5
+homicidio,41319,GUADALUPE,2013,4
+homicidio,41319,GUADALUPE,2014,4
+homicidio,41319,GUADALUPE,2015,2
+homicidio,41319,GUADALUPE,2016,9
+homicidio,41319,GUADALUPE,2017,4
+homicidio,41319,GUADALUPE,2018,2
+homicidio,41319,GUADALUPE,2019,3
+homicidio,41319,GUADALUPE,2020,2
+homicidio,41319,GUADALUPE,2021,2
+homicidio,41319,GUADALUPE,2022,3
+homicidio,41319,GUADALUPE,2023,6
+homicidio,41319,GUADALUPE,2024,8
+homicidio,41319,GUADALUPE,2025,3
+homicidio,41319,GUADALUPE,2026,1
+homicidio,41349,HOBO,2003,3
+homicidio,41349,HOBO,2004,3
+homicidio,41349,HOBO,2005,8
+homicidio,41349,HOBO,2006,1
+homicidio,41349,HOBO,2007,8
+homicidio,41349,HOBO,2008,2
+homicidio,41349,HOBO,2009,2
+homicidio,41349,HOBO,2010,8
+homicidio,41349,HOBO,2012,2
+homicidio,41349,HOBO,2013,3
+homicidio,41349,HOBO,2014,5
+homicidio,41349,HOBO,2015,2
+homicidio,41349,HOBO,2017,3
+homicidio,41349,HOBO,2018,2
+homicidio,41349,HOBO,2019,1
+homicidio,41349,HOBO,2021,4
+homicidio,41349,HOBO,2022,1
+homicidio,41349,HOBO,2023,6
+homicidio,41349,HOBO,2024,10
+homicidio,41349,HOBO,2026,4
+homicidio,41357,ÍQUIRA,2003,10
+homicidio,41357,ÍQUIRA,2004,2
+homicidio,41357,ÍQUIRA,2005,1
+homicidio,41357,ÍQUIRA,2006,4
+homicidio,41357,ÍQUIRA,2007,5
+homicidio,41357,ÍQUIRA,2008,1
+homicidio,41357,ÍQUIRA,2009,1
+homicidio,41357,ÍQUIRA,2010,3
+homicidio,41357,ÍQUIRA,2012,1
+homicidio,41357,ÍQUIRA,2013,3
+homicidio,41357,ÍQUIRA,2014,1
+homicidio,41357,ÍQUIRA,2015,2
+homicidio,41357,ÍQUIRA,2016,2
+homicidio,41357,ÍQUIRA,2018,4
+homicidio,41357,ÍQUIRA,2019,4
+homicidio,41357,ÍQUIRA,2020,1
+homicidio,41357,ÍQUIRA,2021,3
+homicidio,41357,ÍQUIRA,2022,2
+homicidio,41357,ÍQUIRA,2023,7
+homicidio,41357,ÍQUIRA,2024,5
+homicidio,41357,ÍQUIRA,2025,2
+homicidio,41357,ÍQUIRA,2026,2
+homicidio,41359,ISNOS,2003,36
+homicidio,41359,ISNOS,2004,9
+homicidio,41359,ISNOS,2005,7
+homicidio,41359,ISNOS,2006,6
+homicidio,41359,ISNOS,2007,10
+homicidio,41359,ISNOS,2008,3
+homicidio,41359,ISNOS,2009,23
+homicidio,41359,ISNOS,2010,14
+homicidio,41359,ISNOS,2011,5
+homicidio,41359,ISNOS,2012,14
+homicidio,41359,ISNOS,2013,14
+homicidio,41359,ISNOS,2014,13
+homicidio,41359,ISNOS,2015,8
+homicidio,41359,ISNOS,2016,10
+homicidio,41359,ISNOS,2017,9
+homicidio,41359,ISNOS,2018,11
+homicidio,41359,ISNOS,2019,7
+homicidio,41359,ISNOS,2020,2
+homicidio,41359,ISNOS,2021,11
+homicidio,41359,ISNOS,2022,8
+homicidio,41359,ISNOS,2023,10
+homicidio,41359,ISNOS,2024,23
+homicidio,41359,ISNOS,2025,15
+homicidio,41359,ISNOS,2026,5
+homicidio,41378,LA ARGENTINA,2003,1
+homicidio,41378,LA ARGENTINA,2004,1
+homicidio,41378,LA ARGENTINA,2005,3
+homicidio,41378,LA ARGENTINA,2006,2
+homicidio,41378,LA ARGENTINA,2007,4
+homicidio,41378,LA ARGENTINA,2008,6
+homicidio,41378,LA ARGENTINA,2009,5
+homicidio,41378,LA ARGENTINA,2010,4
+homicidio,41378,LA ARGENTINA,2011,6
+homicidio,41378,LA ARGENTINA,2012,4
+homicidio,41378,LA ARGENTINA,2013,4
+homicidio,41378,LA ARGENTINA,2014,2
+homicidio,41378,LA ARGENTINA,2015,3
+homicidio,41378,LA ARGENTINA,2016,2
+homicidio,41378,LA ARGENTINA,2018,1
+homicidio,41378,LA ARGENTINA,2019,2
+homicidio,41378,LA ARGENTINA,2020,2
+homicidio,41378,LA ARGENTINA,2023,2
+homicidio,41378,LA ARGENTINA,2024,1
+homicidio,41378,LA ARGENTINA,2025,2
+homicidio,41378,LA ARGENTINA,2026,4
+homicidio,41396,LA PLATA,2003,9
+homicidio,41396,LA PLATA,2004,9
+homicidio,41396,LA PLATA,2005,16
+homicidio,41396,LA PLATA,2006,13
+homicidio,41396,LA PLATA,2007,18
+homicidio,41396,LA PLATA,2008,19
+homicidio,41396,LA PLATA,2009,15
+homicidio,41396,LA PLATA,2010,20
+homicidio,41396,LA PLATA,2011,20
+homicidio,41396,LA PLATA,2012,11
+homicidio,41396,LA PLATA,2013,19
+homicidio,41396,LA PLATA,2014,5
+homicidio,41396,LA PLATA,2015,18
+homicidio,41396,LA PLATA,2016,8
+homicidio,41396,LA PLATA,2017,8
+homicidio,41396,LA PLATA,2018,9
+homicidio,41396,LA PLATA,2019,9
+homicidio,41396,LA PLATA,2020,9
+homicidio,41396,LA PLATA,2021,17
+homicidio,41396,LA PLATA,2022,14
+homicidio,41396,LA PLATA,2023,24
+homicidio,41396,LA PLATA,2024,21
+homicidio,41396,LA PLATA,2025,45
+homicidio,41396,LA PLATA,2026,17
+homicidio,41483,NÁTAGA,2003,2
+homicidio,41483,NÁTAGA,2004,3
+homicidio,41483,NÁTAGA,2005,5
+homicidio,41483,NÁTAGA,2006,4
+homicidio,41483,NÁTAGA,2007,2
+homicidio,41483,NÁTAGA,2008,4
+homicidio,41483,NÁTAGA,2009,2
+homicidio,41483,NÁTAGA,2010,3
+homicidio,41483,NÁTAGA,2011,1
+homicidio,41483,NÁTAGA,2012,1
+homicidio,41483,NÁTAGA,2013,3
+homicidio,41483,NÁTAGA,2014,2
+homicidio,41483,NÁTAGA,2015,1
+homicidio,41483,NÁTAGA,2021,2
+homicidio,41483,NÁTAGA,2023,2
+homicidio,41483,NÁTAGA,2024,7
+homicidio,41483,NÁTAGA,2025,5
+homicidio,41483,NÁTAGA,2026,1
+homicidio,41503,OPORAPA,2003,5
+homicidio,41503,OPORAPA,2004,3
+homicidio,41503,OPORAPA,2005,1
+homicidio,41503,OPORAPA,2006,3
+homicidio,41503,OPORAPA,2007,3
+homicidio,41503,OPORAPA,2008,3
+homicidio,41503,OPORAPA,2009,3
+homicidio,41503,OPORAPA,2010,5
+homicidio,41503,OPORAPA,2011,3
+homicidio,41503,OPORAPA,2012,4
+homicidio,41503,OPORAPA,2013,2
+homicidio,41503,OPORAPA,2014,4
+homicidio,41503,OPORAPA,2016,3
+homicidio,41503,OPORAPA,2017,4
+homicidio,41503,OPORAPA,2018,1
+homicidio,41503,OPORAPA,2019,1
+homicidio,41503,OPORAPA,2020,2
+homicidio,41503,OPORAPA,2021,1
+homicidio,41503,OPORAPA,2022,2
+homicidio,41503,OPORAPA,2023,5
+homicidio,41503,OPORAPA,2024,6
+homicidio,41503,OPORAPA,2025,4
+homicidio,41503,OPORAPA,2026,5
+homicidio,41518,PAICOL,2003,3
+homicidio,41518,PAICOL,2004,1
+homicidio,41518,PAICOL,2007,2
+homicidio,41518,PAICOL,2008,2
+homicidio,41518,PAICOL,2011,2
+homicidio,41518,PAICOL,2012,1
+homicidio,41518,PAICOL,2013,2
+homicidio,41518,PAICOL,2016,2
+homicidio,41518,PAICOL,2018,4
+homicidio,41518,PAICOL,2021,4
+homicidio,41518,PAICOL,2023,2
+homicidio,41518,PAICOL,2025,1
+homicidio,41524,PALERMO,2003,9
+homicidio,41524,PALERMO,2004,11
+homicidio,41524,PALERMO,2005,5
+homicidio,41524,PALERMO,2006,7
+homicidio,41524,PALERMO,2007,4
+homicidio,41524,PALERMO,2008,8
+homicidio,41524,PALERMO,2009,6
+homicidio,41524,PALERMO,2010,7
+homicidio,41524,PALERMO,2011,8
+homicidio,41524,PALERMO,2012,9
+homicidio,41524,PALERMO,2013,5
+homicidio,41524,PALERMO,2014,2
+homicidio,41524,PALERMO,2015,3
+homicidio,41524,PALERMO,2016,5
+homicidio,41524,PALERMO,2017,2
+homicidio,41524,PALERMO,2018,3
+homicidio,41524,PALERMO,2019,7
+homicidio,41524,PALERMO,2020,4
+homicidio,41524,PALERMO,2021,3
+homicidio,41524,PALERMO,2022,6
+homicidio,41524,PALERMO,2023,3
+homicidio,41524,PALERMO,2024,9
+homicidio,41524,PALERMO,2025,11
+homicidio,41524,PALERMO,2026,5
+homicidio,41530,PALESTINA,2003,3
+homicidio,41530,PALESTINA,2004,9
+homicidio,41530,PALESTINA,2005,4
+homicidio,41530,PALESTINA,2006,3
+homicidio,41530,PALESTINA,2007,7
+homicidio,41530,PALESTINA,2008,3
+homicidio,41530,PALESTINA,2009,4
+homicidio,41530,PALESTINA,2010,5
+homicidio,41530,PALESTINA,2011,5
+homicidio,41530,PALESTINA,2012,2
+homicidio,41530,PALESTINA,2013,1
+homicidio,41530,PALESTINA,2014,2
+homicidio,41530,PALESTINA,2016,2
+homicidio,41530,PALESTINA,2018,1
+homicidio,41530,PALESTINA,2019,2
+homicidio,41530,PALESTINA,2020,2
+homicidio,41530,PALESTINA,2021,1
+homicidio,41530,PALESTINA,2022,1
+homicidio,41530,PALESTINA,2023,2
+homicidio,41530,PALESTINA,2024,6
+homicidio,41530,PALESTINA,2025,11
+homicidio,41530,PALESTINA,2026,2
+homicidio,41548,PITAL,2003,5
+homicidio,41548,PITAL,2004,6
+homicidio,41548,PITAL,2005,1
+homicidio,41548,PITAL,2006,4
+homicidio,41548,PITAL,2007,4
+homicidio,41548,PITAL,2008,4
+homicidio,41548,PITAL,2009,11
+homicidio,41548,PITAL,2010,7
+homicidio,41548,PITAL,2011,6
+homicidio,41548,PITAL,2012,1
+homicidio,41548,PITAL,2013,2
+homicidio,41548,PITAL,2014,1
+homicidio,41548,PITAL,2015,2
+homicidio,41548,PITAL,2016,2
+homicidio,41548,PITAL,2017,2
+homicidio,41548,PITAL,2018,1
+homicidio,41548,PITAL,2019,2
+homicidio,41548,PITAL,2020,1
+homicidio,41548,PITAL,2021,1
+homicidio,41548,PITAL,2023,2
+homicidio,41548,PITAL,2025,1
+homicidio,41551,PITALITO,2003,74
+homicidio,41551,PITALITO,2004,63
+homicidio,41551,PITALITO,2005,82
+homicidio,41551,PITALITO,2006,70
+homicidio,41551,PITALITO,2007,63
+homicidio,41551,PITALITO,2008,53
+homicidio,41551,PITALITO,2009,44
+homicidio,41551,PITALITO,2010,52
+homicidio,41551,PITALITO,2011,41
+homicidio,41551,PITALITO,2012,47
+homicidio,41551,PITALITO,2013,43
+homicidio,41551,PITALITO,2014,30
+homicidio,41551,PITALITO,2015,21
+homicidio,41551,PITALITO,2016,34
+homicidio,41551,PITALITO,2017,23
+homicidio,41551,PITALITO,2018,33
+homicidio,41551,PITALITO,2019,28
+homicidio,41551,PITALITO,2020,32
+homicidio,41551,PITALITO,2021,47
+homicidio,41551,PITALITO,2022,42
+homicidio,41551,PITALITO,2023,50
+homicidio,41551,PITALITO,2024,71
+homicidio,41551,PITALITO,2025,53
+homicidio,41551,PITALITO,2026,55
+homicidio,41615,RIVERA,2003,11
+homicidio,41615,RIVERA,2004,6
+homicidio,41615,RIVERA,2005,5
+homicidio,41615,RIVERA,2006,11
+homicidio,41615,RIVERA,2007,7
+homicidio,41615,RIVERA,2008,3
+homicidio,41615,RIVERA,2009,9
+homicidio,41615,RIVERA,2010,6
+homicidio,41615,RIVERA,2011,7
+homicidio,41615,RIVERA,2012,6
+homicidio,41615,RIVERA,2013,12
+homicidio,41615,RIVERA,2014,6
+homicidio,41615,RIVERA,2015,2
+homicidio,41615,RIVERA,2016,2
+homicidio,41615,RIVERA,2017,4
+homicidio,41615,RIVERA,2018,5
+homicidio,41615,RIVERA,2019,3
+homicidio,41615,RIVERA,2020,6
+homicidio,41615,RIVERA,2021,2
+homicidio,41615,RIVERA,2022,5
+homicidio,41615,RIVERA,2023,5
+homicidio,41615,RIVERA,2024,6
+homicidio,41615,RIVERA,2025,4
+homicidio,41615,RIVERA,2026,3
+homicidio,41660,SALADOBLANCO,2003,5
+homicidio,41660,SALADOBLANCO,2004,5
+homicidio,41660,SALADOBLANCO,2005,4
+homicidio,41660,SALADOBLANCO,2006,1
+homicidio,41660,SALADOBLANCO,2007,5
+homicidio,41660,SALADOBLANCO,2008,2
+homicidio,41660,SALADOBLANCO,2009,7
+homicidio,41660,SALADOBLANCO,2010,3
+homicidio,41660,SALADOBLANCO,2011,2
+homicidio,41660,SALADOBLANCO,2012,6
+homicidio,41660,SALADOBLANCO,2013,7
+homicidio,41660,SALADOBLANCO,2015,4
+homicidio,41660,SALADOBLANCO,2016,3
+homicidio,41660,SALADOBLANCO,2017,3
+homicidio,41660,SALADOBLANCO,2018,3
+homicidio,41660,SALADOBLANCO,2019,9
+homicidio,41660,SALADOBLANCO,2020,2
+homicidio,41660,SALADOBLANCO,2021,3
+homicidio,41660,SALADOBLANCO,2022,4
+homicidio,41660,SALADOBLANCO,2024,4
+homicidio,41660,SALADOBLANCO,2025,10
+homicidio,41660,SALADOBLANCO,2026,3
+homicidio,41668,SAN AGUSTÍN,2003,25
+homicidio,41668,SAN AGUSTÍN,2004,12
+homicidio,41668,SAN AGUSTÍN,2005,9
+homicidio,41668,SAN AGUSTÍN,2006,5
+homicidio,41668,SAN AGUSTÍN,2007,8
+homicidio,41668,SAN AGUSTÍN,2008,5
+homicidio,41668,SAN AGUSTÍN,2009,1
+homicidio,41668,SAN AGUSTÍN,2010,11
+homicidio,41668,SAN AGUSTÍN,2011,12
+homicidio,41668,SAN AGUSTÍN,2012,6
+homicidio,41668,SAN AGUSTÍN,2013,5
+homicidio,41668,SAN AGUSTÍN,2014,2
+homicidio,41668,SAN AGUSTÍN,2015,4
+homicidio,41668,SAN AGUSTÍN,2016,7
+homicidio,41668,SAN AGUSTÍN,2017,1
+homicidio,41668,SAN AGUSTÍN,2018,4
+homicidio,41668,SAN AGUSTÍN,2019,4
+homicidio,41668,SAN AGUSTÍN,2020,5
+homicidio,41668,SAN AGUSTÍN,2021,3
+homicidio,41668,SAN AGUSTÍN,2022,9
+homicidio,41668,SAN AGUSTÍN,2023,4
+homicidio,41668,SAN AGUSTÍN,2024,9
+homicidio,41668,SAN AGUSTÍN,2025,3
+homicidio,41668,SAN AGUSTÍN,2026,3
+homicidio,41676,SANTA MARÍA,2003,3
+homicidio,41676,SANTA MARÍA,2004,18
+homicidio,41676,SANTA MARÍA,2005,2
+homicidio,41676,SANTA MARÍA,2006,2
+homicidio,41676,SANTA MARÍA,2007,3
+homicidio,41676,SANTA MARÍA,2008,4
+homicidio,41676,SANTA MARÍA,2009,1
+homicidio,41676,SANTA MARÍA,2010,2
+homicidio,41676,SANTA MARÍA,2011,1
+homicidio,41676,SANTA MARÍA,2013,4
+homicidio,41676,SANTA MARÍA,2014,4
+homicidio,41676,SANTA MARÍA,2015,2
+homicidio,41676,SANTA MARÍA,2016,6
+homicidio,41676,SANTA MARÍA,2017,1
+homicidio,41676,SANTA MARÍA,2018,4
+homicidio,41676,SANTA MARÍA,2019,2
+homicidio,41676,SANTA MARÍA,2020,1
+homicidio,41676,SANTA MARÍA,2021,2
+homicidio,41676,SANTA MARÍA,2022,5
+homicidio,41676,SANTA MARÍA,2023,3
+homicidio,41676,SANTA MARÍA,2024,2
+homicidio,41676,SANTA MARÍA,2025,2
+homicidio,41676,SANTA MARÍA,2026,3
+homicidio,41770,SUAZA,2003,14
+homicidio,41770,SUAZA,2004,2
+homicidio,41770,SUAZA,2005,2
+homicidio,41770,SUAZA,2006,7
+homicidio,41770,SUAZA,2007,4
+homicidio,41770,SUAZA,2008,7
+homicidio,41770,SUAZA,2009,4
+homicidio,41770,SUAZA,2010,5
+homicidio,41770,SUAZA,2011,1
+homicidio,41770,SUAZA,2012,7
+homicidio,41770,SUAZA,2013,5
+homicidio,41770,SUAZA,2014,2
+homicidio,41770,SUAZA,2015,5
+homicidio,41770,SUAZA,2016,7
+homicidio,41770,SUAZA,2017,6
+homicidio,41770,SUAZA,2018,5
+homicidio,41770,SUAZA,2019,9
+homicidio,41770,SUAZA,2020,6
+homicidio,41770,SUAZA,2021,9
+homicidio,41770,SUAZA,2022,5
+homicidio,41770,SUAZA,2023,10
+homicidio,41770,SUAZA,2024,15
+homicidio,41770,SUAZA,2025,16
+homicidio,41770,SUAZA,2026,8
+homicidio,41791,TARQUI,2003,4
+homicidio,41791,TARQUI,2004,4
+homicidio,41791,TARQUI,2005,4
+homicidio,41791,TARQUI,2006,8
+homicidio,41791,TARQUI,2007,6
+homicidio,41791,TARQUI,2008,3
+homicidio,41791,TARQUI,2009,11
+homicidio,41791,TARQUI,2010,1
+homicidio,41791,TARQUI,2011,3
+homicidio,41791,TARQUI,2012,9
+homicidio,41791,TARQUI,2013,5
+homicidio,41791,TARQUI,2014,4
+homicidio,41791,TARQUI,2015,3
+homicidio,41791,TARQUI,2016,8
+homicidio,41791,TARQUI,2018,5
+homicidio,41791,TARQUI,2019,4
+homicidio,41791,TARQUI,2020,1
+homicidio,41791,TARQUI,2021,4
+homicidio,41791,TARQUI,2022,4
+homicidio,41791,TARQUI,2023,4
+homicidio,41791,TARQUI,2024,1
+homicidio,41791,TARQUI,2025,3
+homicidio,41791,TARQUI,2026,3
+homicidio,41797,TESALIA,2004,1
+homicidio,41797,TESALIA,2005,1
+homicidio,41797,TESALIA,2007,2
+homicidio,41797,TESALIA,2010,1
+homicidio,41797,TESALIA,2011,4
+homicidio,41797,TESALIA,2013,3
+homicidio,41797,TESALIA,2014,1
+homicidio,41797,TESALIA,2015,2
+homicidio,41797,TESALIA,2016,1
+homicidio,41797,TESALIA,2017,1
+homicidio,41797,TESALIA,2023,1
+homicidio,41797,TESALIA,2024,3
+homicidio,41797,TESALIA,2025,10
+homicidio,41797,TESALIA,2026,3
+homicidio,41799,TELLO,2003,17
+homicidio,41799,TELLO,2004,3
+homicidio,41799,TELLO,2005,6
+homicidio,41799,TELLO,2006,4
+homicidio,41799,TELLO,2007,3
+homicidio,41799,TELLO,2008,4
+homicidio,41799,TELLO,2009,4
+homicidio,41799,TELLO,2010,4
+homicidio,41799,TELLO,2011,3
+homicidio,41799,TELLO,2012,4
+homicidio,41799,TELLO,2013,2
+homicidio,41799,TELLO,2014,5
+homicidio,41799,TELLO,2016,4
+homicidio,41799,TELLO,2017,5
+homicidio,41799,TELLO,2018,1
+homicidio,41799,TELLO,2019,4
+homicidio,41799,TELLO,2020,4
+homicidio,41799,TELLO,2021,4
+homicidio,41799,TELLO,2022,1
+homicidio,41799,TELLO,2023,9
+homicidio,41799,TELLO,2024,5
+homicidio,41799,TELLO,2025,1
+homicidio,41799,TELLO,2026,1
+homicidio,41801,TERUEL,2003,7
+homicidio,41801,TERUEL,2004,1
+homicidio,41801,TERUEL,2005,1
+homicidio,41801,TERUEL,2007,7
+homicidio,41801,TERUEL,2008,3
+homicidio,41801,TERUEL,2009,1
+homicidio,41801,TERUEL,2010,2
+homicidio,41801,TERUEL,2011,3
+homicidio,41801,TERUEL,2012,1
+homicidio,41801,TERUEL,2013,8
+homicidio,41801,TERUEL,2014,6
+homicidio,41801,TERUEL,2015,3
+homicidio,41801,TERUEL,2016,3
+homicidio,41801,TERUEL,2017,1
+homicidio,41801,TERUEL,2018,2
+homicidio,41801,TERUEL,2019,4
+homicidio,41801,TERUEL,2020,2
+homicidio,41801,TERUEL,2021,1
+homicidio,41801,TERUEL,2022,2
+homicidio,41801,TERUEL,2023,7
+homicidio,41801,TERUEL,2024,4
+homicidio,41801,TERUEL,2025,2
+homicidio,41801,TERUEL,2026,1
+homicidio,41807,TIMANÁ,2003,5
+homicidio,41807,TIMANÁ,2004,9
+homicidio,41807,TIMANÁ,2005,8
+homicidio,41807,TIMANÁ,2006,5
+homicidio,41807,TIMANÁ,2007,6
+homicidio,41807,TIMANÁ,2008,5
+homicidio,41807,TIMANÁ,2009,2
+homicidio,41807,TIMANÁ,2010,2
+homicidio,41807,TIMANÁ,2011,5
+homicidio,41807,TIMANÁ,2012,2
+homicidio,41807,TIMANÁ,2013,8
+homicidio,41807,TIMANÁ,2014,5
+homicidio,41807,TIMANÁ,2015,5
+homicidio,41807,TIMANÁ,2016,3
+homicidio,41807,TIMANÁ,2017,4
+homicidio,41807,TIMANÁ,2018,4
+homicidio,41807,TIMANÁ,2019,3
+homicidio,41807,TIMANÁ,2021,4
+homicidio,41807,TIMANÁ,2022,6
+homicidio,41807,TIMANÁ,2023,4
+homicidio,41807,TIMANÁ,2024,5
+homicidio,41807,TIMANÁ,2025,14
+homicidio,41807,TIMANÁ,2026,4
+homicidio,41872,VILLAVIEJA,2004,1
+homicidio,41872,VILLAVIEJA,2005,1
+homicidio,41872,VILLAVIEJA,2006,3
+homicidio,41872,VILLAVIEJA,2007,3
+homicidio,41872,VILLAVIEJA,2008,2
+homicidio,41872,VILLAVIEJA,2009,2
+homicidio,41872,VILLAVIEJA,2011,2
+homicidio,41872,VILLAVIEJA,2014,1
+homicidio,41872,VILLAVIEJA,2016,1
+homicidio,41872,VILLAVIEJA,2017,1
+homicidio,41872,VILLAVIEJA,2018,1
+homicidio,41872,VILLAVIEJA,2019,1
+homicidio,41872,VILLAVIEJA,2021,2
+homicidio,41872,VILLAVIEJA,2023,4
+homicidio,41885,YAGUARÁ,2003,3
+homicidio,41885,YAGUARÁ,2004,1
+homicidio,41885,YAGUARÁ,2005,1
+homicidio,41885,YAGUARÁ,2006,2
+homicidio,41885,YAGUARÁ,2007,1
+homicidio,41885,YAGUARÁ,2009,1
+homicidio,41885,YAGUARÁ,2010,1
+homicidio,41885,YAGUARÁ,2011,2
+homicidio,41885,YAGUARÁ,2012,2
+homicidio,41885,YAGUARÁ,2013,2
+homicidio,41885,YAGUARÁ,2015,1
+homicidio,41885,YAGUARÁ,2018,1
+homicidio,41885,YAGUARÁ,2020,1
+homicidio,41885,YAGUARÁ,2021,2
+homicidio,41885,YAGUARÁ,2022,1
+homicidio,41885,YAGUARÁ,2025,1
+homicidio,41885,YAGUARÁ,2026,3
+violencia_intrafamiliar,41001,NEIVA,2003,222
+violencia_intrafamiliar,41001,NEIVA,2004,221
+violencia_intrafamiliar,41001,NEIVA,2005,436
+violencia_intrafamiliar,41001,NEIVA,2006,518
+violencia_intrafamiliar,41001,NEIVA,2007,106
+violencia_intrafamiliar,41001,NEIVA,2008,205
+violencia_intrafamiliar,41001,NEIVA,2009,387
+violencia_intrafamiliar,41001,NEIVA,2010,575
+violencia_intrafamiliar,41001,NEIVA,2011,680
+violencia_intrafamiliar,41001,NEIVA,2012,635
+violencia_intrafamiliar,41001,NEIVA,2013,763
+violencia_intrafamiliar,41001,NEIVA,2014,1153
+violencia_intrafamiliar,41001,NEIVA,2015,994
+violencia_intrafamiliar,41001,NEIVA,2016,1235
+violencia_intrafamiliar,41001,NEIVA,2017,1568
+violencia_intrafamiliar,41001,NEIVA,2018,882
+violencia_intrafamiliar,41001,NEIVA,2019,1124
+violencia_intrafamiliar,41001,NEIVA,2020,1375
+violencia_intrafamiliar,41001,NEIVA,2021,1435
+violencia_intrafamiliar,41001,NEIVA,2022,755
+violencia_intrafamiliar,41001,NEIVA,2023,671
+violencia_intrafamiliar,41001,NEIVA,2024,882
+violencia_intrafamiliar,41001,NEIVA,2025,1131
+violencia_intrafamiliar,41001,NEIVA,2026,920
+violencia_intrafamiliar,41006,ACEVEDO,2005,2
+violencia_intrafamiliar,41006,ACEVEDO,2006,3
+violencia_intrafamiliar,41006,ACEVEDO,2007,3
+violencia_intrafamiliar,41006,ACEVEDO,2008,6
+violencia_intrafamiliar,41006,ACEVEDO,2009,9
+violencia_intrafamiliar,41006,ACEVEDO,2010,10
+violencia_intrafamiliar,41006,ACEVEDO,2011,12
+violencia_intrafamiliar,41006,ACEVEDO,2012,18
+violencia_intrafamiliar,41006,ACEVEDO,2013,32
+violencia_intrafamiliar,41006,ACEVEDO,2014,27
+violencia_intrafamiliar,41006,ACEVEDO,2015,46
+violencia_intrafamiliar,41006,ACEVEDO,2016,45
+violencia_intrafamiliar,41006,ACEVEDO,2017,56
+violencia_intrafamiliar,41006,ACEVEDO,2018,65
+violencia_intrafamiliar,41006,ACEVEDO,2019,44
+violencia_intrafamiliar,41006,ACEVEDO,2020,81
+violencia_intrafamiliar,41006,ACEVEDO,2021,92
+violencia_intrafamiliar,41006,ACEVEDO,2022,51
+violencia_intrafamiliar,41006,ACEVEDO,2023,58
+violencia_intrafamiliar,41006,ACEVEDO,2024,35
+violencia_intrafamiliar,41006,ACEVEDO,2025,70
+violencia_intrafamiliar,41006,ACEVEDO,2026,32
+violencia_intrafamiliar,41013,AGRADO,2003,3
+violencia_intrafamiliar,41013,AGRADO,2004,2
+violencia_intrafamiliar,41013,AGRADO,2005,4
+violencia_intrafamiliar,41013,AGRADO,2006,5
+violencia_intrafamiliar,41013,AGRADO,2007,1
+violencia_intrafamiliar,41013,AGRADO,2008,4
+violencia_intrafamiliar,41013,AGRADO,2009,3
+violencia_intrafamiliar,41013,AGRADO,2010,1
+violencia_intrafamiliar,41013,AGRADO,2011,3
+violencia_intrafamiliar,41013,AGRADO,2012,8
+violencia_intrafamiliar,41013,AGRADO,2013,16
+violencia_intrafamiliar,41013,AGRADO,2014,9
+violencia_intrafamiliar,41013,AGRADO,2015,13
+violencia_intrafamiliar,41013,AGRADO,2016,24
+violencia_intrafamiliar,41013,AGRADO,2017,10
+violencia_intrafamiliar,41013,AGRADO,2018,9
+violencia_intrafamiliar,41013,AGRADO,2019,14
+violencia_intrafamiliar,41013,AGRADO,2020,15
+violencia_intrafamiliar,41013,AGRADO,2021,16
+violencia_intrafamiliar,41013,AGRADO,2022,11
+violencia_intrafamiliar,41013,AGRADO,2023,11
+violencia_intrafamiliar,41013,AGRADO,2024,16
+violencia_intrafamiliar,41013,AGRADO,2025,18
+violencia_intrafamiliar,41013,AGRADO,2026,30
+violencia_intrafamiliar,41016,AIPE,2003,4
+violencia_intrafamiliar,41016,AIPE,2004,6
+violencia_intrafamiliar,41016,AIPE,2005,3
+violencia_intrafamiliar,41016,AIPE,2006,10
+violencia_intrafamiliar,41016,AIPE,2007,1
+violencia_intrafamiliar,41016,AIPE,2008,2
+violencia_intrafamiliar,41016,AIPE,2009,2
+violencia_intrafamiliar,41016,AIPE,2010,2
+violencia_intrafamiliar,41016,AIPE,2011,6
+violencia_intrafamiliar,41016,AIPE,2012,14
+violencia_intrafamiliar,41016,AIPE,2013,13
+violencia_intrafamiliar,41016,AIPE,2014,10
+violencia_intrafamiliar,41016,AIPE,2015,12
+violencia_intrafamiliar,41016,AIPE,2016,24
+violencia_intrafamiliar,41016,AIPE,2017,28
+violencia_intrafamiliar,41016,AIPE,2018,28
+violencia_intrafamiliar,41016,AIPE,2019,33
+violencia_intrafamiliar,41016,AIPE,2020,26
+violencia_intrafamiliar,41016,AIPE,2021,47
+violencia_intrafamiliar,41016,AIPE,2022,50
+violencia_intrafamiliar,41016,AIPE,2023,27
+violencia_intrafamiliar,41016,AIPE,2024,23
+violencia_intrafamiliar,41016,AIPE,2025,23
+violencia_intrafamiliar,41016,AIPE,2026,17
+violencia_intrafamiliar,41020,ALGECIRAS,2004,2
+violencia_intrafamiliar,41020,ALGECIRAS,2005,5
+violencia_intrafamiliar,41020,ALGECIRAS,2007,2
+violencia_intrafamiliar,41020,ALGECIRAS,2008,3
+violencia_intrafamiliar,41020,ALGECIRAS,2009,4
+violencia_intrafamiliar,41020,ALGECIRAS,2010,1
+violencia_intrafamiliar,41020,ALGECIRAS,2011,7
+violencia_intrafamiliar,41020,ALGECIRAS,2012,3
+violencia_intrafamiliar,41020,ALGECIRAS,2013,7
+violencia_intrafamiliar,41020,ALGECIRAS,2014,16
+violencia_intrafamiliar,41020,ALGECIRAS,2015,20
+violencia_intrafamiliar,41020,ALGECIRAS,2016,19
+violencia_intrafamiliar,41020,ALGECIRAS,2017,21
+violencia_intrafamiliar,41020,ALGECIRAS,2018,29
+violencia_intrafamiliar,41020,ALGECIRAS,2019,25
+violencia_intrafamiliar,41020,ALGECIRAS,2020,28
+violencia_intrafamiliar,41020,ALGECIRAS,2021,38
+violencia_intrafamiliar,41020,ALGECIRAS,2022,25
+violencia_intrafamiliar,41020,ALGECIRAS,2023,31
+violencia_intrafamiliar,41020,ALGECIRAS,2024,23
+violencia_intrafamiliar,41020,ALGECIRAS,2025,43
+violencia_intrafamiliar,41020,ALGECIRAS,2026,30
+violencia_intrafamiliar,41026,ALTAMIRA,2003,9
+violencia_intrafamiliar,41026,ALTAMIRA,2004,5
+violencia_intrafamiliar,41026,ALTAMIRA,2005,4
+violencia_intrafamiliar,41026,ALTAMIRA,2006,3
+violencia_intrafamiliar,41026,ALTAMIRA,2007,3
+violencia_intrafamiliar,41026,ALTAMIRA,2008,2
+violencia_intrafamiliar,41026,ALTAMIRA,2009,1
+violencia_intrafamiliar,41026,ALTAMIRA,2010,2
+violencia_intrafamiliar,41026,ALTAMIRA,2011,3
+violencia_intrafamiliar,41026,ALTAMIRA,2012,1
+violencia_intrafamiliar,41026,ALTAMIRA,2013,4
+violencia_intrafamiliar,41026,ALTAMIRA,2014,6
+violencia_intrafamiliar,41026,ALTAMIRA,2015,4
+violencia_intrafamiliar,41026,ALTAMIRA,2016,5
+violencia_intrafamiliar,41026,ALTAMIRA,2017,4
+violencia_intrafamiliar,41026,ALTAMIRA,2018,9
+violencia_intrafamiliar,41026,ALTAMIRA,2019,4
+violencia_intrafamiliar,41026,ALTAMIRA,2020,6
+violencia_intrafamiliar,41026,ALTAMIRA,2021,2
+violencia_intrafamiliar,41026,ALTAMIRA,2022,4
+violencia_intrafamiliar,41026,ALTAMIRA,2023,3
+violencia_intrafamiliar,41026,ALTAMIRA,2024,5
+violencia_intrafamiliar,41026,ALTAMIRA,2025,8
+violencia_intrafamiliar,41026,ALTAMIRA,2026,3
+violencia_intrafamiliar,41078,BARAYA,2003,2
+violencia_intrafamiliar,41078,BARAYA,2004,9
+violencia_intrafamiliar,41078,BARAYA,2005,4
+violencia_intrafamiliar,41078,BARAYA,2006,6
+violencia_intrafamiliar,41078,BARAYA,2007,5
+violencia_intrafamiliar,41078,BARAYA,2008,9
+violencia_intrafamiliar,41078,BARAYA,2009,1
+violencia_intrafamiliar,41078,BARAYA,2010,6
+violencia_intrafamiliar,41078,BARAYA,2011,2
+violencia_intrafamiliar,41078,BARAYA,2012,7
+violencia_intrafamiliar,41078,BARAYA,2013,14
+violencia_intrafamiliar,41078,BARAYA,2014,8
+violencia_intrafamiliar,41078,BARAYA,2015,5
+violencia_intrafamiliar,41078,BARAYA,2016,3
+violencia_intrafamiliar,41078,BARAYA,2017,7
+violencia_intrafamiliar,41078,BARAYA,2018,6
+violencia_intrafamiliar,41078,BARAYA,2019,7
+violencia_intrafamiliar,41078,BARAYA,2020,20
+violencia_intrafamiliar,41078,BARAYA,2021,9
+violencia_intrafamiliar,41078,BARAYA,2022,9
+violencia_intrafamiliar,41078,BARAYA,2023,12
+violencia_intrafamiliar,41078,BARAYA,2024,9
+violencia_intrafamiliar,41078,BARAYA,2025,12
+violencia_intrafamiliar,41078,BARAYA,2026,5
+violencia_intrafamiliar,41132,CAMPOALEGRE,2003,11
+violencia_intrafamiliar,41132,CAMPOALEGRE,2004,7
+violencia_intrafamiliar,41132,CAMPOALEGRE,2005,6
+violencia_intrafamiliar,41132,CAMPOALEGRE,2006,10
+violencia_intrafamiliar,41132,CAMPOALEGRE,2007,22
+violencia_intrafamiliar,41132,CAMPOALEGRE,2008,24
+violencia_intrafamiliar,41132,CAMPOALEGRE,2009,26
+violencia_intrafamiliar,41132,CAMPOALEGRE,2010,25
+violencia_intrafamiliar,41132,CAMPOALEGRE,2011,23
+violencia_intrafamiliar,41132,CAMPOALEGRE,2012,16
+violencia_intrafamiliar,41132,CAMPOALEGRE,2013,12
+violencia_intrafamiliar,41132,CAMPOALEGRE,2014,28
+violencia_intrafamiliar,41132,CAMPOALEGRE,2015,46
+violencia_intrafamiliar,41132,CAMPOALEGRE,2016,45
+violencia_intrafamiliar,41132,CAMPOALEGRE,2017,34
+violencia_intrafamiliar,41132,CAMPOALEGRE,2018,42
+violencia_intrafamiliar,41132,CAMPOALEGRE,2019,36
+violencia_intrafamiliar,41132,CAMPOALEGRE,2020,63
+violencia_intrafamiliar,41132,CAMPOALEGRE,2021,82
+violencia_intrafamiliar,41132,CAMPOALEGRE,2022,72
+violencia_intrafamiliar,41132,CAMPOALEGRE,2023,60
+violencia_intrafamiliar,41132,CAMPOALEGRE,2024,69
+violencia_intrafamiliar,41132,CAMPOALEGRE,2025,93
+violencia_intrafamiliar,41132,CAMPOALEGRE,2026,59
+violencia_intrafamiliar,41206,COLOMBIA,2003,2
+violencia_intrafamiliar,41206,COLOMBIA,2004,5
+violencia_intrafamiliar,41206,COLOMBIA,2005,3
+violencia_intrafamiliar,41206,COLOMBIA,2007,1
+violencia_intrafamiliar,41206,COLOMBIA,2008,5
+violencia_intrafamiliar,41206,COLOMBIA,2010,4
+violencia_intrafamiliar,41206,COLOMBIA,2012,2
+violencia_intrafamiliar,41206,COLOMBIA,2013,1
+violencia_intrafamiliar,41206,COLOMBIA,2014,3
+violencia_intrafamiliar,41206,COLOMBIA,2015,7
+violencia_intrafamiliar,41206,COLOMBIA,2016,5
+violencia_intrafamiliar,41206,COLOMBIA,2017,7
+violencia_intrafamiliar,41206,COLOMBIA,2018,10
+violencia_intrafamiliar,41206,COLOMBIA,2019,10
+violencia_intrafamiliar,41206,COLOMBIA,2020,18
+violencia_intrafamiliar,41206,COLOMBIA,2021,13
+violencia_intrafamiliar,41206,COLOMBIA,2022,9
+violencia_intrafamiliar,41206,COLOMBIA,2023,8
+violencia_intrafamiliar,41206,COLOMBIA,2024,12
+violencia_intrafamiliar,41206,COLOMBIA,2025,7
+violencia_intrafamiliar,41206,COLOMBIA,2026,5
+violencia_intrafamiliar,41244,ELÍAS,2006,3
+violencia_intrafamiliar,41244,ELÍAS,2008,2
+violencia_intrafamiliar,41244,ELÍAS,2010,2
+violencia_intrafamiliar,41244,ELÍAS,2011,1
+violencia_intrafamiliar,41244,ELÍAS,2012,1
+violencia_intrafamiliar,41244,ELÍAS,2014,1
+violencia_intrafamiliar,41244,ELÍAS,2015,5
+violencia_intrafamiliar,41244,ELÍAS,2016,5
+violencia_intrafamiliar,41244,ELÍAS,2017,9
+violencia_intrafamiliar,41244,ELÍAS,2018,8
+violencia_intrafamiliar,41244,ELÍAS,2019,7
+violencia_intrafamiliar,41244,ELÍAS,2020,4
+violencia_intrafamiliar,41244,ELÍAS,2021,6
+violencia_intrafamiliar,41244,ELÍAS,2022,3
+violencia_intrafamiliar,41244,ELÍAS,2023,4
+violencia_intrafamiliar,41244,ELÍAS,2024,12
+violencia_intrafamiliar,41244,ELÍAS,2025,4
+violencia_intrafamiliar,41244,ELÍAS,2026,6
+violencia_intrafamiliar,41298,GARZÓN,2003,17
+violencia_intrafamiliar,41298,GARZÓN,2004,23
+violencia_intrafamiliar,41298,GARZÓN,2005,39
+violencia_intrafamiliar,41298,GARZÓN,2006,41
+violencia_intrafamiliar,41298,GARZÓN,2007,39
+violencia_intrafamiliar,41298,GARZÓN,2008,80
+violencia_intrafamiliar,41298,GARZÓN,2009,81
+violencia_intrafamiliar,41298,GARZÓN,2010,35
+violencia_intrafamiliar,41298,GARZÓN,2011,52
+violencia_intrafamiliar,41298,GARZÓN,2012,84
+violencia_intrafamiliar,41298,GARZÓN,2013,120
+violencia_intrafamiliar,41298,GARZÓN,2014,116
+violencia_intrafamiliar,41298,GARZÓN,2015,132
+violencia_intrafamiliar,41298,GARZÓN,2016,149
+violencia_intrafamiliar,41298,GARZÓN,2017,169
+violencia_intrafamiliar,41298,GARZÓN,2018,149
+violencia_intrafamiliar,41298,GARZÓN,2019,151
+violencia_intrafamiliar,41298,GARZÓN,2020,130
+violencia_intrafamiliar,41298,GARZÓN,2021,159
+violencia_intrafamiliar,41298,GARZÓN,2022,133
+violencia_intrafamiliar,41298,GARZÓN,2023,116
+violencia_intrafamiliar,41298,GARZÓN,2024,148
+violencia_intrafamiliar,41298,GARZÓN,2025,222
+violencia_intrafamiliar,41298,GARZÓN,2026,136
+violencia_intrafamiliar,41306,GIGANTE,2003,2
+violencia_intrafamiliar,41306,GIGANTE,2004,7
+violencia_intrafamiliar,41306,GIGANTE,2005,3
+violencia_intrafamiliar,41306,GIGANTE,2006,4
+violencia_intrafamiliar,41306,GIGANTE,2007,3
+violencia_intrafamiliar,41306,GIGANTE,2008,30
+violencia_intrafamiliar,41306,GIGANTE,2009,34
+violencia_intrafamiliar,41306,GIGANTE,2010,24
+violencia_intrafamiliar,41306,GIGANTE,2011,5
+violencia_intrafamiliar,41306,GIGANTE,2012,14
+violencia_intrafamiliar,41306,GIGANTE,2013,15
+violencia_intrafamiliar,41306,GIGANTE,2014,6
+violencia_intrafamiliar,41306,GIGANTE,2015,13
+violencia_intrafamiliar,41306,GIGANTE,2016,22
+violencia_intrafamiliar,41306,GIGANTE,2017,38
+violencia_intrafamiliar,41306,GIGANTE,2018,30
+violencia_intrafamiliar,41306,GIGANTE,2019,19
+violencia_intrafamiliar,41306,GIGANTE,2020,70
+violencia_intrafamiliar,41306,GIGANTE,2021,83
+violencia_intrafamiliar,41306,GIGANTE,2022,35
+violencia_intrafamiliar,41306,GIGANTE,2023,30
+violencia_intrafamiliar,41306,GIGANTE,2024,32
+violencia_intrafamiliar,41306,GIGANTE,2025,48
+violencia_intrafamiliar,41306,GIGANTE,2026,34
+violencia_intrafamiliar,41319,GUADALUPE,2003,2
+violencia_intrafamiliar,41319,GUADALUPE,2004,2
+violencia_intrafamiliar,41319,GUADALUPE,2005,4
+violencia_intrafamiliar,41319,GUADALUPE,2006,2
+violencia_intrafamiliar,41319,GUADALUPE,2007,1
+violencia_intrafamiliar,41319,GUADALUPE,2008,2
+violencia_intrafamiliar,41319,GUADALUPE,2011,4
+violencia_intrafamiliar,41319,GUADALUPE,2012,10
+violencia_intrafamiliar,41319,GUADALUPE,2013,2
+violencia_intrafamiliar,41319,GUADALUPE,2014,6
+violencia_intrafamiliar,41319,GUADALUPE,2015,3
+violencia_intrafamiliar,41319,GUADALUPE,2016,10
+violencia_intrafamiliar,41319,GUADALUPE,2017,19
+violencia_intrafamiliar,41319,GUADALUPE,2018,32
+violencia_intrafamiliar,41319,GUADALUPE,2019,8
+violencia_intrafamiliar,41319,GUADALUPE,2020,16
+violencia_intrafamiliar,41319,GUADALUPE,2021,24
+violencia_intrafamiliar,41319,GUADALUPE,2022,14
+violencia_intrafamiliar,41319,GUADALUPE,2023,19
+violencia_intrafamiliar,41319,GUADALUPE,2024,5
+violencia_intrafamiliar,41319,GUADALUPE,2025,16
+violencia_intrafamiliar,41319,GUADALUPE,2026,10
+violencia_intrafamiliar,41349,HOBO,2003,2
+violencia_intrafamiliar,41349,HOBO,2004,12
+violencia_intrafamiliar,41349,HOBO,2005,17
+violencia_intrafamiliar,41349,HOBO,2006,3
+violencia_intrafamiliar,41349,HOBO,2007,1
+violencia_intrafamiliar,41349,HOBO,2008,5
+violencia_intrafamiliar,41349,HOBO,2009,4
+violencia_intrafamiliar,41349,HOBO,2010,3
+violencia_intrafamiliar,41349,HOBO,2011,2
+violencia_intrafamiliar,41349,HOBO,2012,1
+violencia_intrafamiliar,41349,HOBO,2013,1
+violencia_intrafamiliar,41349,HOBO,2014,2
+violencia_intrafamiliar,41349,HOBO,2015,4
+violencia_intrafamiliar,41349,HOBO,2016,3
+violencia_intrafamiliar,41349,HOBO,2017,8
+violencia_intrafamiliar,41349,HOBO,2018,20
+violencia_intrafamiliar,41349,HOBO,2019,14
+violencia_intrafamiliar,41349,HOBO,2020,33
+violencia_intrafamiliar,41349,HOBO,2021,22
+violencia_intrafamiliar,41349,HOBO,2022,29
+violencia_intrafamiliar,41349,HOBO,2023,11
+violencia_intrafamiliar,41349,HOBO,2024,10
+violencia_intrafamiliar,41349,HOBO,2025,27
+violencia_intrafamiliar,41349,HOBO,2026,17
+violencia_intrafamiliar,41357,ÍQUIRA,2003,2
+violencia_intrafamiliar,41357,ÍQUIRA,2004,2
+violencia_intrafamiliar,41357,ÍQUIRA,2005,1
+violencia_intrafamiliar,41357,ÍQUIRA,2006,8
+violencia_intrafamiliar,41357,ÍQUIRA,2007,2
+violencia_intrafamiliar,41357,ÍQUIRA,2008,1
+violencia_intrafamiliar,41357,ÍQUIRA,2009,1
+violencia_intrafamiliar,41357,ÍQUIRA,2010,4
+violencia_intrafamiliar,41357,ÍQUIRA,2011,2
+violencia_intrafamiliar,41357,ÍQUIRA,2012,2
+violencia_intrafamiliar,41357,ÍQUIRA,2013,10
+violencia_intrafamiliar,41357,ÍQUIRA,2014,7
+violencia_intrafamiliar,41357,ÍQUIRA,2016,4
+violencia_intrafamiliar,41357,ÍQUIRA,2017,6
+violencia_intrafamiliar,41357,ÍQUIRA,2018,12
+violencia_intrafamiliar,41357,ÍQUIRA,2019,10
+violencia_intrafamiliar,41357,ÍQUIRA,2020,22
+violencia_intrafamiliar,41357,ÍQUIRA,2021,19
+violencia_intrafamiliar,41357,ÍQUIRA,2022,6
+violencia_intrafamiliar,41357,ÍQUIRA,2023,9
+violencia_intrafamiliar,41357,ÍQUIRA,2024,1
+violencia_intrafamiliar,41357,ÍQUIRA,2025,13
+violencia_intrafamiliar,41357,ÍQUIRA,2026,7
+violencia_intrafamiliar,41359,ISNOS,2003,2
+violencia_intrafamiliar,41359,ISNOS,2004,4
+violencia_intrafamiliar,41359,ISNOS,2005,6
+violencia_intrafamiliar,41359,ISNOS,2006,7
+violencia_intrafamiliar,41359,ISNOS,2007,12
+violencia_intrafamiliar,41359,ISNOS,2008,11
+violencia_intrafamiliar,41359,ISNOS,2009,8
+violencia_intrafamiliar,41359,ISNOS,2010,11
+violencia_intrafamiliar,41359,ISNOS,2011,7
+violencia_intrafamiliar,41359,ISNOS,2012,15
+violencia_intrafamiliar,41359,ISNOS,2013,27
+violencia_intrafamiliar,41359,ISNOS,2014,22
+violencia_intrafamiliar,41359,ISNOS,2015,44
+violencia_intrafamiliar,41359,ISNOS,2016,47
+violencia_intrafamiliar,41359,ISNOS,2017,41
+violencia_intrafamiliar,41359,ISNOS,2018,45
+violencia_intrafamiliar,41359,ISNOS,2019,74
+violencia_intrafamiliar,41359,ISNOS,2020,66
+violencia_intrafamiliar,41359,ISNOS,2021,74
+violencia_intrafamiliar,41359,ISNOS,2022,41
+violencia_intrafamiliar,41359,ISNOS,2023,27
+violencia_intrafamiliar,41359,ISNOS,2024,38
+violencia_intrafamiliar,41359,ISNOS,2025,80
+violencia_intrafamiliar,41359,ISNOS,2026,44
+violencia_intrafamiliar,41378,LA ARGENTINA,2003,2
+violencia_intrafamiliar,41378,LA ARGENTINA,2004,2
+violencia_intrafamiliar,41378,LA ARGENTINA,2007,3
+violencia_intrafamiliar,41378,LA ARGENTINA,2008,1
+violencia_intrafamiliar,41378,LA ARGENTINA,2009,5
+violencia_intrafamiliar,41378,LA ARGENTINA,2010,1
+violencia_intrafamiliar,41378,LA ARGENTINA,2011,3
+violencia_intrafamiliar,41378,LA ARGENTINA,2012,5
+violencia_intrafamiliar,41378,LA ARGENTINA,2013,2
+violencia_intrafamiliar,41378,LA ARGENTINA,2014,2
+violencia_intrafamiliar,41378,LA ARGENTINA,2015,3
+violencia_intrafamiliar,41378,LA ARGENTINA,2016,5
+violencia_intrafamiliar,41378,LA ARGENTINA,2017,5
+violencia_intrafamiliar,41378,LA ARGENTINA,2018,11
+violencia_intrafamiliar,41378,LA ARGENTINA,2019,13
+violencia_intrafamiliar,41378,LA ARGENTINA,2020,11
+violencia_intrafamiliar,41378,LA ARGENTINA,2021,12
+violencia_intrafamiliar,41378,LA ARGENTINA,2022,14
+violencia_intrafamiliar,41378,LA ARGENTINA,2023,15
+violencia_intrafamiliar,41378,LA ARGENTINA,2024,10
+violencia_intrafamiliar,41378,LA ARGENTINA,2025,38
+violencia_intrafamiliar,41378,LA ARGENTINA,2026,17
+violencia_intrafamiliar,41396,LA PLATA,2003,15
+violencia_intrafamiliar,41396,LA PLATA,2004,29
+violencia_intrafamiliar,41396,LA PLATA,2005,26
+violencia_intrafamiliar,41396,LA PLATA,2006,6
+violencia_intrafamiliar,41396,LA PLATA,2007,17
+violencia_intrafamiliar,41396,LA PLATA,2008,42
+violencia_intrafamiliar,41396,LA PLATA,2009,56
+violencia_intrafamiliar,41396,LA PLATA,2010,36
+violencia_intrafamiliar,41396,LA PLATA,2011,36
+violencia_intrafamiliar,41396,LA PLATA,2012,63
+violencia_intrafamiliar,41396,LA PLATA,2013,69
+violencia_intrafamiliar,41396,LA PLATA,2014,75
+violencia_intrafamiliar,41396,LA PLATA,2015,82
+violencia_intrafamiliar,41396,LA PLATA,2016,60
+violencia_intrafamiliar,41396,LA PLATA,2017,57
+violencia_intrafamiliar,41396,LA PLATA,2018,90
+violencia_intrafamiliar,41396,LA PLATA,2019,71
+violencia_intrafamiliar,41396,LA PLATA,2020,116
+violencia_intrafamiliar,41396,LA PLATA,2021,136
+violencia_intrafamiliar,41396,LA PLATA,2022,97
+violencia_intrafamiliar,41396,LA PLATA,2023,56
+violencia_intrafamiliar,41396,LA PLATA,2024,67
+violencia_intrafamiliar,41396,LA PLATA,2025,129
+violencia_intrafamiliar,41396,LA PLATA,2026,102
+violencia_intrafamiliar,41483,NÁTAGA,2004,1
+violencia_intrafamiliar,41483,NÁTAGA,2005,2
+violencia_intrafamiliar,41483,NÁTAGA,2006,5
+violencia_intrafamiliar,41483,NÁTAGA,2007,1
+violencia_intrafamiliar,41483,NÁTAGA,2008,3
+violencia_intrafamiliar,41483,NÁTAGA,2009,4
+violencia_intrafamiliar,41483,NÁTAGA,2010,2
+violencia_intrafamiliar,41483,NÁTAGA,2011,1
+violencia_intrafamiliar,41483,NÁTAGA,2012,2
+violencia_intrafamiliar,41483,NÁTAGA,2013,2
+violencia_intrafamiliar,41483,NÁTAGA,2014,3
+violencia_intrafamiliar,41483,NÁTAGA,2015,3
+violencia_intrafamiliar,41483,NÁTAGA,2016,3
+violencia_intrafamiliar,41483,NÁTAGA,2017,1
+violencia_intrafamiliar,41483,NÁTAGA,2018,4
+violencia_intrafamiliar,41483,NÁTAGA,2019,5
+violencia_intrafamiliar,41483,NÁTAGA,2020,9
+violencia_intrafamiliar,41483,NÁTAGA,2021,8
+violencia_intrafamiliar,41483,NÁTAGA,2022,5
+violencia_intrafamiliar,41483,NÁTAGA,2023,9
+violencia_intrafamiliar,41483,NÁTAGA,2024,2
+violencia_intrafamiliar,41483,NÁTAGA,2025,2
+violencia_intrafamiliar,41483,NÁTAGA,2026,2
+violencia_intrafamiliar,41503,OPORAPA,2004,1
+violencia_intrafamiliar,41503,OPORAPA,2005,1
+violencia_intrafamiliar,41503,OPORAPA,2006,2
+violencia_intrafamiliar,41503,OPORAPA,2007,2
+violencia_intrafamiliar,41503,OPORAPA,2008,5
+violencia_intrafamiliar,41503,OPORAPA,2009,4
+violencia_intrafamiliar,41503,OPORAPA,2010,1
+violencia_intrafamiliar,41503,OPORAPA,2011,5
+violencia_intrafamiliar,41503,OPORAPA,2012,6
+violencia_intrafamiliar,41503,OPORAPA,2013,9
+violencia_intrafamiliar,41503,OPORAPA,2014,5
+violencia_intrafamiliar,41503,OPORAPA,2015,5
+violencia_intrafamiliar,41503,OPORAPA,2016,16
+violencia_intrafamiliar,41503,OPORAPA,2017,22
+violencia_intrafamiliar,41503,OPORAPA,2018,10
+violencia_intrafamiliar,41503,OPORAPA,2019,21
+violencia_intrafamiliar,41503,OPORAPA,2020,8
+violencia_intrafamiliar,41503,OPORAPA,2021,11
+violencia_intrafamiliar,41503,OPORAPA,2022,10
+violencia_intrafamiliar,41503,OPORAPA,2023,10
+violencia_intrafamiliar,41503,OPORAPA,2024,15
+violencia_intrafamiliar,41503,OPORAPA,2025,12
+violencia_intrafamiliar,41503,OPORAPA,2026,25
+violencia_intrafamiliar,41518,PAICOL,2004,1
+violencia_intrafamiliar,41518,PAICOL,2006,1
+violencia_intrafamiliar,41518,PAICOL,2008,1
+violencia_intrafamiliar,41518,PAICOL,2009,2
+violencia_intrafamiliar,41518,PAICOL,2011,1
+violencia_intrafamiliar,41518,PAICOL,2012,2
+violencia_intrafamiliar,41518,PAICOL,2013,8
+violencia_intrafamiliar,41518,PAICOL,2014,4
+violencia_intrafamiliar,41518,PAICOL,2015,7
+violencia_intrafamiliar,41518,PAICOL,2016,8
+violencia_intrafamiliar,41518,PAICOL,2017,2
+violencia_intrafamiliar,41518,PAICOL,2018,4
+violencia_intrafamiliar,41518,PAICOL,2019,11
+violencia_intrafamiliar,41518,PAICOL,2020,14
+violencia_intrafamiliar,41518,PAICOL,2021,5
+violencia_intrafamiliar,41518,PAICOL,2022,4
+violencia_intrafamiliar,41518,PAICOL,2023,4
+violencia_intrafamiliar,41518,PAICOL,2024,12
+violencia_intrafamiliar,41518,PAICOL,2025,10
+violencia_intrafamiliar,41518,PAICOL,2026,11
+violencia_intrafamiliar,41524,PALERMO,2003,2
+violencia_intrafamiliar,41524,PALERMO,2004,6
+violencia_intrafamiliar,41524,PALERMO,2005,8
+violencia_intrafamiliar,41524,PALERMO,2006,16
+violencia_intrafamiliar,41524,PALERMO,2007,3
+violencia_intrafamiliar,41524,PALERMO,2008,11
+violencia_intrafamiliar,41524,PALERMO,2009,11
+violencia_intrafamiliar,41524,PALERMO,2010,9
+violencia_intrafamiliar,41524,PALERMO,2011,7
+violencia_intrafamiliar,41524,PALERMO,2012,8
+violencia_intrafamiliar,41524,PALERMO,2013,8
+violencia_intrafamiliar,41524,PALERMO,2014,16
+violencia_intrafamiliar,41524,PALERMO,2015,17
+violencia_intrafamiliar,41524,PALERMO,2016,15
+violencia_intrafamiliar,41524,PALERMO,2017,38
+violencia_intrafamiliar,41524,PALERMO,2018,25
+violencia_intrafamiliar,41524,PALERMO,2019,19
+violencia_intrafamiliar,41524,PALERMO,2020,23
+violencia_intrafamiliar,41524,PALERMO,2021,39
+violencia_intrafamiliar,41524,PALERMO,2022,35
+violencia_intrafamiliar,41524,PALERMO,2023,26
+violencia_intrafamiliar,41524,PALERMO,2024,25
+violencia_intrafamiliar,41524,PALERMO,2025,35
+violencia_intrafamiliar,41524,PALERMO,2026,18
+violencia_intrafamiliar,41530,PALESTINA,2003,1
+violencia_intrafamiliar,41530,PALESTINA,2005,2
+violencia_intrafamiliar,41530,PALESTINA,2007,6
+violencia_intrafamiliar,41530,PALESTINA,2008,11
+violencia_intrafamiliar,41530,PALESTINA,2009,2
+violencia_intrafamiliar,41530,PALESTINA,2010,2
+violencia_intrafamiliar,41530,PALESTINA,2011,2
+violencia_intrafamiliar,41530,PALESTINA,2012,6
+violencia_intrafamiliar,41530,PALESTINA,2013,6
+violencia_intrafamiliar,41530,PALESTINA,2014,3
+violencia_intrafamiliar,41530,PALESTINA,2015,14
+violencia_intrafamiliar,41530,PALESTINA,2016,11
+violencia_intrafamiliar,41530,PALESTINA,2017,11
+violencia_intrafamiliar,41530,PALESTINA,2018,9
+violencia_intrafamiliar,41530,PALESTINA,2019,11
+violencia_intrafamiliar,41530,PALESTINA,2020,32
+violencia_intrafamiliar,41530,PALESTINA,2021,29
+violencia_intrafamiliar,41530,PALESTINA,2022,15
+violencia_intrafamiliar,41530,PALESTINA,2023,14
+violencia_intrafamiliar,41530,PALESTINA,2024,15
+violencia_intrafamiliar,41530,PALESTINA,2025,8
+violencia_intrafamiliar,41530,PALESTINA,2026,8
+violencia_intrafamiliar,41548,PITAL,2003,2
+violencia_intrafamiliar,41548,PITAL,2004,2
+violencia_intrafamiliar,41548,PITAL,2005,3
+violencia_intrafamiliar,41548,PITAL,2006,7
+violencia_intrafamiliar,41548,PITAL,2007,6
+violencia_intrafamiliar,41548,PITAL,2008,4
+violencia_intrafamiliar,41548,PITAL,2009,2
+violencia_intrafamiliar,41548,PITAL,2010,3
+violencia_intrafamiliar,41548,PITAL,2011,5
+violencia_intrafamiliar,41548,PITAL,2012,6
+violencia_intrafamiliar,41548,PITAL,2013,9
+violencia_intrafamiliar,41548,PITAL,2014,14
+violencia_intrafamiliar,41548,PITAL,2015,14
+violencia_intrafamiliar,41548,PITAL,2016,24
+violencia_intrafamiliar,41548,PITAL,2017,38
+violencia_intrafamiliar,41548,PITAL,2018,40
+violencia_intrafamiliar,41548,PITAL,2019,45
+violencia_intrafamiliar,41548,PITAL,2020,36
+violencia_intrafamiliar,41548,PITAL,2021,47
+violencia_intrafamiliar,41548,PITAL,2022,15
+violencia_intrafamiliar,41548,PITAL,2023,11
+violencia_intrafamiliar,41548,PITAL,2024,17
+violencia_intrafamiliar,41548,PITAL,2025,9
+violencia_intrafamiliar,41548,PITAL,2026,20
+violencia_intrafamiliar,41551,PITALITO,2003,12
+violencia_intrafamiliar,41551,PITALITO,2004,35
+violencia_intrafamiliar,41551,PITALITO,2005,50
+violencia_intrafamiliar,41551,PITALITO,2006,112
+violencia_intrafamiliar,41551,PITALITO,2007,85
+violencia_intrafamiliar,41551,PITALITO,2008,104
+violencia_intrafamiliar,41551,PITALITO,2009,97
+violencia_intrafamiliar,41551,PITALITO,2010,123
+violencia_intrafamiliar,41551,PITALITO,2011,131
+violencia_intrafamiliar,41551,PITALITO,2012,158
+violencia_intrafamiliar,41551,PITALITO,2013,219
+violencia_intrafamiliar,41551,PITALITO,2014,161
+violencia_intrafamiliar,41551,PITALITO,2015,253
+violencia_intrafamiliar,41551,PITALITO,2016,293
+violencia_intrafamiliar,41551,PITALITO,2017,229
+violencia_intrafamiliar,41551,PITALITO,2018,247
+violencia_intrafamiliar,41551,PITALITO,2019,321
+violencia_intrafamiliar,41551,PITALITO,2020,378
+violencia_intrafamiliar,41551,PITALITO,2021,378
+violencia_intrafamiliar,41551,PITALITO,2022,341
+violencia_intrafamiliar,41551,PITALITO,2023,352
+violencia_intrafamiliar,41551,PITALITO,2024,358
+violencia_intrafamiliar,41551,PITALITO,2025,355
+violencia_intrafamiliar,41551,PITALITO,2026,295
+violencia_intrafamiliar,41615,RIVERA,2003,12
+violencia_intrafamiliar,41615,RIVERA,2004,12
+violencia_intrafamiliar,41615,RIVERA,2005,15
+violencia_intrafamiliar,41615,RIVERA,2006,11
+violencia_intrafamiliar,41615,RIVERA,2007,23
+violencia_intrafamiliar,41615,RIVERA,2008,9
+violencia_intrafamiliar,41615,RIVERA,2009,9
+violencia_intrafamiliar,41615,RIVERA,2010,10
+violencia_intrafamiliar,41615,RIVERA,2011,7
+violencia_intrafamiliar,41615,RIVERA,2012,19
+violencia_intrafamiliar,41615,RIVERA,2013,25
+violencia_intrafamiliar,41615,RIVERA,2014,35
+violencia_intrafamiliar,41615,RIVERA,2015,29
+violencia_intrafamiliar,41615,RIVERA,2016,36
+violencia_intrafamiliar,41615,RIVERA,2017,44
+violencia_intrafamiliar,41615,RIVERA,2018,35
+violencia_intrafamiliar,41615,RIVERA,2019,22
+violencia_intrafamiliar,41615,RIVERA,2020,15
+violencia_intrafamiliar,41615,RIVERA,2021,35
+violencia_intrafamiliar,41615,RIVERA,2022,29
+violencia_intrafamiliar,41615,RIVERA,2023,33
+violencia_intrafamiliar,41615,RIVERA,2024,33
+violencia_intrafamiliar,41615,RIVERA,2025,67
+violencia_intrafamiliar,41615,RIVERA,2026,26
+violencia_intrafamiliar,41660,SALADOBLANCO,2004,1
+violencia_intrafamiliar,41660,SALADOBLANCO,2005,1
+violencia_intrafamiliar,41660,SALADOBLANCO,2007,5
+violencia_intrafamiliar,41660,SALADOBLANCO,2008,3
+violencia_intrafamiliar,41660,SALADOBLANCO,2009,4
+violencia_intrafamiliar,41660,SALADOBLANCO,2010,6
+violencia_intrafamiliar,41660,SALADOBLANCO,2011,6
+violencia_intrafamiliar,41660,SALADOBLANCO,2012,3
+violencia_intrafamiliar,41660,SALADOBLANCO,2013,4
+violencia_intrafamiliar,41660,SALADOBLANCO,2014,1
+violencia_intrafamiliar,41660,SALADOBLANCO,2015,7
+violencia_intrafamiliar,41660,SALADOBLANCO,2016,7
+violencia_intrafamiliar,41660,SALADOBLANCO,2017,3
+violencia_intrafamiliar,41660,SALADOBLANCO,2018,8
+violencia_intrafamiliar,41660,SALADOBLANCO,2019,5
+violencia_intrafamiliar,41660,SALADOBLANCO,2020,18
+violencia_intrafamiliar,41660,SALADOBLANCO,2021,15
+violencia_intrafamiliar,41660,SALADOBLANCO,2022,8
+violencia_intrafamiliar,41660,SALADOBLANCO,2023,10
+violencia_intrafamiliar,41660,SALADOBLANCO,2024,18
+violencia_intrafamiliar,41660,SALADOBLANCO,2025,23
+violencia_intrafamiliar,41660,SALADOBLANCO,2026,9
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2004,4
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2005,10
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2006,12
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2007,4
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2008,10
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2009,9
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2010,12
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2011,22
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2012,25
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2013,50
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2014,40
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2015,37
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2016,60
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2017,69
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2018,68
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2019,90
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2020,146
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2021,108
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2022,76
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2023,54
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2024,64
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2025,52
+violencia_intrafamiliar,41668,SAN AGUSTÍN,2026,49
+violencia_intrafamiliar,41676,SANTA MARÍA,2005,2
+violencia_intrafamiliar,41676,SANTA MARÍA,2006,5
+violencia_intrafamiliar,41676,SANTA MARÍA,2007,3
+violencia_intrafamiliar,41676,SANTA MARÍA,2008,2
+violencia_intrafamiliar,41676,SANTA MARÍA,2009,5
+violencia_intrafamiliar,41676,SANTA MARÍA,2010,4
+violencia_intrafamiliar,41676,SANTA MARÍA,2011,1
+violencia_intrafamiliar,41676,SANTA MARÍA,2013,2
+violencia_intrafamiliar,41676,SANTA MARÍA,2014,5
+violencia_intrafamiliar,41676,SANTA MARÍA,2015,10
+violencia_intrafamiliar,41676,SANTA MARÍA,2016,9
+violencia_intrafamiliar,41676,SANTA MARÍA,2017,11
+violencia_intrafamiliar,41676,SANTA MARÍA,2018,7
+violencia_intrafamiliar,41676,SANTA MARÍA,2019,11
+violencia_intrafamiliar,41676,SANTA MARÍA,2020,12
+violencia_intrafamiliar,41676,SANTA MARÍA,2021,6
+violencia_intrafamiliar,41676,SANTA MARÍA,2022,14
+violencia_intrafamiliar,41676,SANTA MARÍA,2023,9
+violencia_intrafamiliar,41676,SANTA MARÍA,2024,5
+violencia_intrafamiliar,41676,SANTA MARÍA,2025,7
+violencia_intrafamiliar,41676,SANTA MARÍA,2026,5
+violencia_intrafamiliar,41770,SUAZA,2003,1
+violencia_intrafamiliar,41770,SUAZA,2004,2
+violencia_intrafamiliar,41770,SUAZA,2005,2
+violencia_intrafamiliar,41770,SUAZA,2006,5
+violencia_intrafamiliar,41770,SUAZA,2007,1
+violencia_intrafamiliar,41770,SUAZA,2008,6
+violencia_intrafamiliar,41770,SUAZA,2012,2
+violencia_intrafamiliar,41770,SUAZA,2013,1
+violencia_intrafamiliar,41770,SUAZA,2014,2
+violencia_intrafamiliar,41770,SUAZA,2015,6
+violencia_intrafamiliar,41770,SUAZA,2016,4
+violencia_intrafamiliar,41770,SUAZA,2017,20
+violencia_intrafamiliar,41770,SUAZA,2018,11
+violencia_intrafamiliar,41770,SUAZA,2019,18
+violencia_intrafamiliar,41770,SUAZA,2020,31
+violencia_intrafamiliar,41770,SUAZA,2021,34
+violencia_intrafamiliar,41770,SUAZA,2022,32
+violencia_intrafamiliar,41770,SUAZA,2023,42
+violencia_intrafamiliar,41770,SUAZA,2024,31
+violencia_intrafamiliar,41770,SUAZA,2025,47
+violencia_intrafamiliar,41770,SUAZA,2026,34
+violencia_intrafamiliar,41791,TARQUI,2003,2
+violencia_intrafamiliar,41791,TARQUI,2004,1
+violencia_intrafamiliar,41791,TARQUI,2005,1
+violencia_intrafamiliar,41791,TARQUI,2006,2
+violencia_intrafamiliar,41791,TARQUI,2007,3
+violencia_intrafamiliar,41791,TARQUI,2008,2
+violencia_intrafamiliar,41791,TARQUI,2009,2
+violencia_intrafamiliar,41791,TARQUI,2010,2
+violencia_intrafamiliar,41791,TARQUI,2011,1
+violencia_intrafamiliar,41791,TARQUI,2012,6
+violencia_intrafamiliar,41791,TARQUI,2013,9
+violencia_intrafamiliar,41791,TARQUI,2014,14
+violencia_intrafamiliar,41791,TARQUI,2015,5
+violencia_intrafamiliar,41791,TARQUI,2016,5
+violencia_intrafamiliar,41791,TARQUI,2017,7
+violencia_intrafamiliar,41791,TARQUI,2018,13
+violencia_intrafamiliar,41791,TARQUI,2019,6
+violencia_intrafamiliar,41791,TARQUI,2020,26
+violencia_intrafamiliar,41791,TARQUI,2021,22
+violencia_intrafamiliar,41791,TARQUI,2022,11
+violencia_intrafamiliar,41791,TARQUI,2023,9
+violencia_intrafamiliar,41791,TARQUI,2024,21
+violencia_intrafamiliar,41791,TARQUI,2025,13
+violencia_intrafamiliar,41791,TARQUI,2026,7
+violencia_intrafamiliar,41797,TESALIA,2004,2
+violencia_intrafamiliar,41797,TESALIA,2006,1
+violencia_intrafamiliar,41797,TESALIA,2007,2
+violencia_intrafamiliar,41797,TESALIA,2009,3
+violencia_intrafamiliar,41797,TESALIA,2010,6
+violencia_intrafamiliar,41797,TESALIA,2011,2
+violencia_intrafamiliar,41797,TESALIA,2012,8
+violencia_intrafamiliar,41797,TESALIA,2013,18
+violencia_intrafamiliar,41797,TESALIA,2014,4
+violencia_intrafamiliar,41797,TESALIA,2015,9
+violencia_intrafamiliar,41797,TESALIA,2016,10
+violencia_intrafamiliar,41797,TESALIA,2017,8
+violencia_intrafamiliar,41797,TESALIA,2018,16
+violencia_intrafamiliar,41797,TESALIA,2019,12
+violencia_intrafamiliar,41797,TESALIA,2020,14
+violencia_intrafamiliar,41797,TESALIA,2021,35
+violencia_intrafamiliar,41797,TESALIA,2022,13
+violencia_intrafamiliar,41797,TESALIA,2023,10
+violencia_intrafamiliar,41797,TESALIA,2024,19
+violencia_intrafamiliar,41797,TESALIA,2025,12
+violencia_intrafamiliar,41797,TESALIA,2026,19
+violencia_intrafamiliar,41799,TELLO,2004,5
+violencia_intrafamiliar,41799,TELLO,2005,5
+violencia_intrafamiliar,41799,TELLO,2006,2
+violencia_intrafamiliar,41799,TELLO,2007,7
+violencia_intrafamiliar,41799,TELLO,2008,7
+violencia_intrafamiliar,41799,TELLO,2009,2
+violencia_intrafamiliar,41799,TELLO,2010,5
+violencia_intrafamiliar,41799,TELLO,2012,12
+violencia_intrafamiliar,41799,TELLO,2013,1
+violencia_intrafamiliar,41799,TELLO,2014,13
+violencia_intrafamiliar,41799,TELLO,2015,9
+violencia_intrafamiliar,41799,TELLO,2016,8
+violencia_intrafamiliar,41799,TELLO,2017,15
+violencia_intrafamiliar,41799,TELLO,2018,22
+violencia_intrafamiliar,41799,TELLO,2019,17
+violencia_intrafamiliar,41799,TELLO,2020,56
+violencia_intrafamiliar,41799,TELLO,2021,33
+violencia_intrafamiliar,41799,TELLO,2022,10
+violencia_intrafamiliar,41799,TELLO,2023,9
+violencia_intrafamiliar,41799,TELLO,2024,11
+violencia_intrafamiliar,41799,TELLO,2025,7
+violencia_intrafamiliar,41799,TELLO,2026,10
+violencia_intrafamiliar,41801,TERUEL,2003,1
+violencia_intrafamiliar,41801,TERUEL,2004,1
+violencia_intrafamiliar,41801,TERUEL,2005,5
+violencia_intrafamiliar,41801,TERUEL,2006,6
+violencia_intrafamiliar,41801,TERUEL,2007,5
+violencia_intrafamiliar,41801,TERUEL,2008,2
+violencia_intrafamiliar,41801,TERUEL,2009,1
+violencia_intrafamiliar,41801,TERUEL,2010,2
+violencia_intrafamiliar,41801,TERUEL,2011,3
+violencia_intrafamiliar,41801,TERUEL,2012,1
+violencia_intrafamiliar,41801,TERUEL,2013,14
+violencia_intrafamiliar,41801,TERUEL,2014,4
+violencia_intrafamiliar,41801,TERUEL,2015,10
+violencia_intrafamiliar,41801,TERUEL,2016,12
+violencia_intrafamiliar,41801,TERUEL,2017,19
+violencia_intrafamiliar,41801,TERUEL,2018,11
+violencia_intrafamiliar,41801,TERUEL,2019,20
+violencia_intrafamiliar,41801,TERUEL,2020,6
+violencia_intrafamiliar,41801,TERUEL,2021,7
+violencia_intrafamiliar,41801,TERUEL,2022,4
+violencia_intrafamiliar,41801,TERUEL,2023,3
+violencia_intrafamiliar,41801,TERUEL,2024,5
+violencia_intrafamiliar,41801,TERUEL,2025,5
+violencia_intrafamiliar,41801,TERUEL,2026,10
+violencia_intrafamiliar,41807,TIMANÁ,2004,2
+violencia_intrafamiliar,41807,TIMANÁ,2005,6
+violencia_intrafamiliar,41807,TIMANÁ,2006,17
+violencia_intrafamiliar,41807,TIMANÁ,2007,6
+violencia_intrafamiliar,41807,TIMANÁ,2008,18
+violencia_intrafamiliar,41807,TIMANÁ,2009,5
+violencia_intrafamiliar,41807,TIMANÁ,2010,5
+violencia_intrafamiliar,41807,TIMANÁ,2011,10
+violencia_intrafamiliar,41807,TIMANÁ,2012,4
+violencia_intrafamiliar,41807,TIMANÁ,2013,6
+violencia_intrafamiliar,41807,TIMANÁ,2014,16
+violencia_intrafamiliar,41807,TIMANÁ,2015,10
+violencia_intrafamiliar,41807,TIMANÁ,2016,36
+violencia_intrafamiliar,41807,TIMANÁ,2017,23
+violencia_intrafamiliar,41807,TIMANÁ,2018,31
+violencia_intrafamiliar,41807,TIMANÁ,2019,32
+violencia_intrafamiliar,41807,TIMANÁ,2020,65
+violencia_intrafamiliar,41807,TIMANÁ,2021,63
+violencia_intrafamiliar,41807,TIMANÁ,2022,37
+violencia_intrafamiliar,41807,TIMANÁ,2023,44
+violencia_intrafamiliar,41807,TIMANÁ,2024,33
+violencia_intrafamiliar,41807,TIMANÁ,2025,41
+violencia_intrafamiliar,41807,TIMANÁ,2026,28
+violencia_intrafamiliar,41872,VILLAVIEJA,2003,5
+violencia_intrafamiliar,41872,VILLAVIEJA,2004,5
+violencia_intrafamiliar,41872,VILLAVIEJA,2005,2
+violencia_intrafamiliar,41872,VILLAVIEJA,2006,2
+violencia_intrafamiliar,41872,VILLAVIEJA,2007,5
+violencia_intrafamiliar,41872,VILLAVIEJA,2008,1
+violencia_intrafamiliar,41872,VILLAVIEJA,2009,1
+violencia_intrafamiliar,41872,VILLAVIEJA,2010,2
+violencia_intrafamiliar,41872,VILLAVIEJA,2011,2
+violencia_intrafamiliar,41872,VILLAVIEJA,2012,4
+violencia_intrafamiliar,41872,VILLAVIEJA,2013,4
+violencia_intrafamiliar,41872,VILLAVIEJA,2014,6
+violencia_intrafamiliar,41872,VILLAVIEJA,2015,6
+violencia_intrafamiliar,41872,VILLAVIEJA,2016,3
+violencia_intrafamiliar,41872,VILLAVIEJA,2017,9
+violencia_intrafamiliar,41872,VILLAVIEJA,2018,5
+violencia_intrafamiliar,41872,VILLAVIEJA,2019,9
+violencia_intrafamiliar,41872,VILLAVIEJA,2020,24
+violencia_intrafamiliar,41872,VILLAVIEJA,2021,36
+violencia_intrafamiliar,41872,VILLAVIEJA,2022,25
+violencia_intrafamiliar,41872,VILLAVIEJA,2023,16
+violencia_intrafamiliar,41872,VILLAVIEJA,2024,9
+violencia_intrafamiliar,41872,VILLAVIEJA,2025,12
+violencia_intrafamiliar,41872,VILLAVIEJA,2026,10
+violencia_intrafamiliar,41885,YAGUARÁ,2003,2
+violencia_intrafamiliar,41885,YAGUARÁ,2004,1
+violencia_intrafamiliar,41885,YAGUARÁ,2005,1
+violencia_intrafamiliar,41885,YAGUARÁ,2006,1
+violencia_intrafamiliar,41885,YAGUARÁ,2007,4
+violencia_intrafamiliar,41885,YAGUARÁ,2008,2
+violencia_intrafamiliar,41885,YAGUARÁ,2009,11
+violencia_intrafamiliar,41885,YAGUARÁ,2010,2
+violencia_intrafamiliar,41885,YAGUARÁ,2011,1
+violencia_intrafamiliar,41885,YAGUARÁ,2012,8
+violencia_intrafamiliar,41885,YAGUARÁ,2013,12
+violencia_intrafamiliar,41885,YAGUARÁ,2014,17
+violencia_intrafamiliar,41885,YAGUARÁ,2015,20
+violencia_intrafamiliar,41885,YAGUARÁ,2016,25
+violencia_intrafamiliar,41885,YAGUARÁ,2017,20
+violencia_intrafamiliar,41885,YAGUARÁ,2018,10
+violencia_intrafamiliar,41885,YAGUARÁ,2019,8
+violencia_intrafamiliar,41885,YAGUARÁ,2020,18
+violencia_intrafamiliar,41885,YAGUARÁ,2021,17
+violencia_intrafamiliar,41885,YAGUARÁ,2022,15
+violencia_intrafamiliar,41885,YAGUARÁ,2023,9
+violencia_intrafamiliar,41885,YAGUARÁ,2024,18
+violencia_intrafamiliar,41885,YAGUARÁ,2025,7
+violencia_intrafamiliar,41885,YAGUARÁ,2026,3
+lesiones_personales,41001,NEIVA,2003,718
+lesiones_personales,41001,NEIVA,2004,653
+lesiones_personales,41001,NEIVA,2005,708
+lesiones_personales,41001,NEIVA,2006,757
+lesiones_personales,41001,NEIVA,2007,496
+lesiones_personales,41001,NEIVA,2008,1128
+lesiones_personales,41001,NEIVA,2009,876
+lesiones_personales,41001,NEIVA,2010,1147
+lesiones_personales,41001,NEIVA,2011,1349
+lesiones_personales,41001,NEIVA,2012,1636
+lesiones_personales,41001,NEIVA,2013,1714
+lesiones_personales,41001,NEIVA,2014,1717
+lesiones_personales,41001,NEIVA,2015,1594
+lesiones_personales,41001,NEIVA,2016,1524
+lesiones_personales,41001,NEIVA,2017,1492
+lesiones_personales,41001,NEIVA,2018,1498
+lesiones_personales,41001,NEIVA,2019,1172
+lesiones_personales,41001,NEIVA,2020,825
+lesiones_personales,41001,NEIVA,2021,1135
+lesiones_personales,41001,NEIVA,2022,1112
+lesiones_personales,41001,NEIVA,2023,1279
+lesiones_personales,41001,NEIVA,2024,1090
+lesiones_personales,41001,NEIVA,2025,1128
+lesiones_personales,41001,NEIVA,2026,771
+lesiones_personales,41006,ACEVEDO,2003,18
+lesiones_personales,41006,ACEVEDO,2004,1
+lesiones_personales,41006,ACEVEDO,2005,23
+lesiones_personales,41006,ACEVEDO,2006,10
+lesiones_personales,41006,ACEVEDO,2007,23
+lesiones_personales,41006,ACEVEDO,2008,27
+lesiones_personales,41006,ACEVEDO,2009,27
+lesiones_personales,41006,ACEVEDO,2010,24
+lesiones_personales,41006,ACEVEDO,2011,28
+lesiones_personales,41006,ACEVEDO,2012,40
+lesiones_personales,41006,ACEVEDO,2013,28
+lesiones_personales,41006,ACEVEDO,2014,44
+lesiones_personales,41006,ACEVEDO,2015,51
+lesiones_personales,41006,ACEVEDO,2016,41
+lesiones_personales,41006,ACEVEDO,2017,55
+lesiones_personales,41006,ACEVEDO,2018,52
+lesiones_personales,41006,ACEVEDO,2019,69
+lesiones_personales,41006,ACEVEDO,2020,39
+lesiones_personales,41006,ACEVEDO,2021,61
+lesiones_personales,41006,ACEVEDO,2022,50
+lesiones_personales,41006,ACEVEDO,2023,43
+lesiones_personales,41006,ACEVEDO,2024,45
+lesiones_personales,41006,ACEVEDO,2025,52
+lesiones_personales,41006,ACEVEDO,2026,50
+lesiones_personales,41013,AGRADO,2003,7
+lesiones_personales,41013,AGRADO,2004,1
+lesiones_personales,41013,AGRADO,2005,4
+lesiones_personales,41013,AGRADO,2006,2
+lesiones_personales,41013,AGRADO,2007,18
+lesiones_personales,41013,AGRADO,2008,19
+lesiones_personales,41013,AGRADO,2009,8
+lesiones_personales,41013,AGRADO,2010,17
+lesiones_personales,41013,AGRADO,2011,25
+lesiones_personales,41013,AGRADO,2012,33
+lesiones_personales,41013,AGRADO,2013,22
+lesiones_personales,41013,AGRADO,2014,23
+lesiones_personales,41013,AGRADO,2015,36
+lesiones_personales,41013,AGRADO,2016,25
+lesiones_personales,41013,AGRADO,2017,20
+lesiones_personales,41013,AGRADO,2018,46
+lesiones_personales,41013,AGRADO,2019,31
+lesiones_personales,41013,AGRADO,2020,25
+lesiones_personales,41013,AGRADO,2021,25
+lesiones_personales,41013,AGRADO,2022,29
+lesiones_personales,41013,AGRADO,2023,32
+lesiones_personales,41013,AGRADO,2024,31
+lesiones_personales,41013,AGRADO,2025,25
+lesiones_personales,41013,AGRADO,2026,17
+lesiones_personales,41016,AIPE,2003,17
+lesiones_personales,41016,AIPE,2004,8
+lesiones_personales,41016,AIPE,2005,21
+lesiones_personales,41016,AIPE,2006,8
+lesiones_personales,41016,AIPE,2007,9
+lesiones_personales,41016,AIPE,2008,38
+lesiones_personales,41016,AIPE,2009,45
+lesiones_personales,41016,AIPE,2010,28
+lesiones_personales,41016,AIPE,2011,25
+lesiones_personales,41016,AIPE,2012,48
+lesiones_personales,41016,AIPE,2013,47
+lesiones_personales,41016,AIPE,2014,51
+lesiones_personales,41016,AIPE,2015,45
+lesiones_personales,41016,AIPE,2016,63
+lesiones_personales,41016,AIPE,2017,46
+lesiones_personales,41016,AIPE,2018,67
+lesiones_personales,41016,AIPE,2019,54
+lesiones_personales,41016,AIPE,2020,28
+lesiones_personales,41016,AIPE,2021,35
+lesiones_personales,41016,AIPE,2022,48
+lesiones_personales,41016,AIPE,2023,49
+lesiones_personales,41016,AIPE,2024,35
+lesiones_personales,41016,AIPE,2025,54
+lesiones_personales,41016,AIPE,2026,33
+lesiones_personales,41020,ALGECIRAS,2003,18
+lesiones_personales,41020,ALGECIRAS,2004,21
+lesiones_personales,41020,ALGECIRAS,2005,21
+lesiones_personales,41020,ALGECIRAS,2006,24
+lesiones_personales,41020,ALGECIRAS,2007,34
+lesiones_personales,41020,ALGECIRAS,2008,55
+lesiones_personales,41020,ALGECIRAS,2009,39
+lesiones_personales,41020,ALGECIRAS,2010,37
+lesiones_personales,41020,ALGECIRAS,2011,22
+lesiones_personales,41020,ALGECIRAS,2012,44
+lesiones_personales,41020,ALGECIRAS,2013,28
+lesiones_personales,41020,ALGECIRAS,2014,24
+lesiones_personales,41020,ALGECIRAS,2015,36
+lesiones_personales,41020,ALGECIRAS,2016,49
+lesiones_personales,41020,ALGECIRAS,2017,64
+lesiones_personales,41020,ALGECIRAS,2018,57
+lesiones_personales,41020,ALGECIRAS,2019,46
+lesiones_personales,41020,ALGECIRAS,2020,42
+lesiones_personales,41020,ALGECIRAS,2021,42
+lesiones_personales,41020,ALGECIRAS,2022,46
+lesiones_personales,41020,ALGECIRAS,2023,27
+lesiones_personales,41020,ALGECIRAS,2024,26
+lesiones_personales,41020,ALGECIRAS,2025,18
+lesiones_personales,41020,ALGECIRAS,2026,20
+lesiones_personales,41026,ALTAMIRA,2003,11
+lesiones_personales,41026,ALTAMIRA,2004,4
+lesiones_personales,41026,ALTAMIRA,2005,3
+lesiones_personales,41026,ALTAMIRA,2006,9
+lesiones_personales,41026,ALTAMIRA,2007,10
+lesiones_personales,41026,ALTAMIRA,2008,9
+lesiones_personales,41026,ALTAMIRA,2009,10
+lesiones_personales,41026,ALTAMIRA,2010,7
+lesiones_personales,41026,ALTAMIRA,2011,4
+lesiones_personales,41026,ALTAMIRA,2012,10
+lesiones_personales,41026,ALTAMIRA,2013,13
+lesiones_personales,41026,ALTAMIRA,2014,11
+lesiones_personales,41026,ALTAMIRA,2015,8
+lesiones_personales,41026,ALTAMIRA,2016,10
+lesiones_personales,41026,ALTAMIRA,2017,16
+lesiones_personales,41026,ALTAMIRA,2018,23
+lesiones_personales,41026,ALTAMIRA,2019,19
+lesiones_personales,41026,ALTAMIRA,2020,13
+lesiones_personales,41026,ALTAMIRA,2021,23
+lesiones_personales,41026,ALTAMIRA,2022,17
+lesiones_personales,41026,ALTAMIRA,2023,13
+lesiones_personales,41026,ALTAMIRA,2024,11
+lesiones_personales,41026,ALTAMIRA,2025,13
+lesiones_personales,41026,ALTAMIRA,2026,7
+lesiones_personales,41078,BARAYA,2003,5
+lesiones_personales,41078,BARAYA,2004,20
+lesiones_personales,41078,BARAYA,2005,10
+lesiones_personales,41078,BARAYA,2006,9
+lesiones_personales,41078,BARAYA,2007,20
+lesiones_personales,41078,BARAYA,2008,21
+lesiones_personales,41078,BARAYA,2009,15
+lesiones_personales,41078,BARAYA,2010,19
+lesiones_personales,41078,BARAYA,2011,27
+lesiones_personales,41078,BARAYA,2012,28
+lesiones_personales,41078,BARAYA,2013,43
+lesiones_personales,41078,BARAYA,2014,27
+lesiones_personales,41078,BARAYA,2015,42
+lesiones_personales,41078,BARAYA,2016,18
+lesiones_personales,41078,BARAYA,2017,37
+lesiones_personales,41078,BARAYA,2018,26
+lesiones_personales,41078,BARAYA,2019,38
+lesiones_personales,41078,BARAYA,2020,16
+lesiones_personales,41078,BARAYA,2021,21
+lesiones_personales,41078,BARAYA,2022,20
+lesiones_personales,41078,BARAYA,2023,22
+lesiones_personales,41078,BARAYA,2024,15
+lesiones_personales,41078,BARAYA,2025,21
+lesiones_personales,41078,BARAYA,2026,23
+lesiones_personales,41132,CAMPOALEGRE,2003,54
+lesiones_personales,41132,CAMPOALEGRE,2004,28
+lesiones_personales,41132,CAMPOALEGRE,2005,45
+lesiones_personales,41132,CAMPOALEGRE,2006,33
+lesiones_personales,41132,CAMPOALEGRE,2007,134
+lesiones_personales,41132,CAMPOALEGRE,2008,114
+lesiones_personales,41132,CAMPOALEGRE,2009,117
+lesiones_personales,41132,CAMPOALEGRE,2010,132
+lesiones_personales,41132,CAMPOALEGRE,2011,140
+lesiones_personales,41132,CAMPOALEGRE,2012,163
+lesiones_personales,41132,CAMPOALEGRE,2013,169
+lesiones_personales,41132,CAMPOALEGRE,2014,125
+lesiones_personales,41132,CAMPOALEGRE,2015,118
+lesiones_personales,41132,CAMPOALEGRE,2016,134
+lesiones_personales,41132,CAMPOALEGRE,2017,147
+lesiones_personales,41132,CAMPOALEGRE,2018,128
+lesiones_personales,41132,CAMPOALEGRE,2019,120
+lesiones_personales,41132,CAMPOALEGRE,2020,84
+lesiones_personales,41132,CAMPOALEGRE,2021,69
+lesiones_personales,41132,CAMPOALEGRE,2022,80
+lesiones_personales,41132,CAMPOALEGRE,2023,101
+lesiones_personales,41132,CAMPOALEGRE,2024,56
+lesiones_personales,41132,CAMPOALEGRE,2025,71
+lesiones_personales,41132,CAMPOALEGRE,2026,64
+lesiones_personales,41206,COLOMBIA,2003,2
+lesiones_personales,41206,COLOMBIA,2004,7
+lesiones_personales,41206,COLOMBIA,2005,8
+lesiones_personales,41206,COLOMBIA,2006,6
+lesiones_personales,41206,COLOMBIA,2007,22
+lesiones_personales,41206,COLOMBIA,2008,38
+lesiones_personales,41206,COLOMBIA,2009,22
+lesiones_personales,41206,COLOMBIA,2010,16
+lesiones_personales,41206,COLOMBIA,2011,35
+lesiones_personales,41206,COLOMBIA,2012,17
+lesiones_personales,41206,COLOMBIA,2013,13
+lesiones_personales,41206,COLOMBIA,2014,13
+lesiones_personales,41206,COLOMBIA,2015,7
+lesiones_personales,41206,COLOMBIA,2016,4
+lesiones_personales,41206,COLOMBIA,2017,19
+lesiones_personales,41206,COLOMBIA,2018,28
+lesiones_personales,41206,COLOMBIA,2019,20
+lesiones_personales,41206,COLOMBIA,2020,29
+lesiones_personales,41206,COLOMBIA,2021,20
+lesiones_personales,41206,COLOMBIA,2022,27
+lesiones_personales,41206,COLOMBIA,2023,27
+lesiones_personales,41206,COLOMBIA,2024,21
+lesiones_personales,41206,COLOMBIA,2025,20
+lesiones_personales,41206,COLOMBIA,2026,12
+lesiones_personales,41244,ELÍAS,2003,5
+lesiones_personales,41244,ELÍAS,2004,1
+lesiones_personales,41244,ELÍAS,2005,1
+lesiones_personales,41244,ELÍAS,2007,4
+lesiones_personales,41244,ELÍAS,2008,7
+lesiones_personales,41244,ELÍAS,2009,5
+lesiones_personales,41244,ELÍAS,2010,2
+lesiones_personales,41244,ELÍAS,2011,8
+lesiones_personales,41244,ELÍAS,2012,8
+lesiones_personales,41244,ELÍAS,2013,5
+lesiones_personales,41244,ELÍAS,2014,13
+lesiones_personales,41244,ELÍAS,2015,10
+lesiones_personales,41244,ELÍAS,2016,6
+lesiones_personales,41244,ELÍAS,2017,5
+lesiones_personales,41244,ELÍAS,2018,7
+lesiones_personales,41244,ELÍAS,2019,7
+lesiones_personales,41244,ELÍAS,2020,3
+lesiones_personales,41244,ELÍAS,2021,1
+lesiones_personales,41244,ELÍAS,2022,5
+lesiones_personales,41244,ELÍAS,2023,6
+lesiones_personales,41244,ELÍAS,2024,5
+lesiones_personales,41244,ELÍAS,2025,2
+lesiones_personales,41244,ELÍAS,2026,3
+lesiones_personales,41298,GARZÓN,2003,60
+lesiones_personales,41298,GARZÓN,2004,71
+lesiones_personales,41298,GARZÓN,2005,92
+lesiones_personales,41298,GARZÓN,2006,84
+lesiones_personales,41298,GARZÓN,2007,190
+lesiones_personales,41298,GARZÓN,2008,181
+lesiones_personales,41298,GARZÓN,2009,222
+lesiones_personales,41298,GARZÓN,2010,211
+lesiones_personales,41298,GARZÓN,2011,199
+lesiones_personales,41298,GARZÓN,2012,143
+lesiones_personales,41298,GARZÓN,2013,191
+lesiones_personales,41298,GARZÓN,2014,244
+lesiones_personales,41298,GARZÓN,2015,250
+lesiones_personales,41298,GARZÓN,2016,231
+lesiones_personales,41298,GARZÓN,2017,308
+lesiones_personales,41298,GARZÓN,2018,315
+lesiones_personales,41298,GARZÓN,2019,256
+lesiones_personales,41298,GARZÓN,2020,166
+lesiones_personales,41298,GARZÓN,2021,199
+lesiones_personales,41298,GARZÓN,2022,243
+lesiones_personales,41298,GARZÓN,2023,204
+lesiones_personales,41298,GARZÓN,2024,194
+lesiones_personales,41298,GARZÓN,2025,222
+lesiones_personales,41298,GARZÓN,2026,183
+lesiones_personales,41306,GIGANTE,2003,19
+lesiones_personales,41306,GIGANTE,2004,21
+lesiones_personales,41306,GIGANTE,2005,21
+lesiones_personales,41306,GIGANTE,2006,7
+lesiones_personales,41306,GIGANTE,2007,29
+lesiones_personales,41306,GIGANTE,2008,56
+lesiones_personales,41306,GIGANTE,2009,53
+lesiones_personales,41306,GIGANTE,2010,71
+lesiones_personales,41306,GIGANTE,2011,67
+lesiones_personales,41306,GIGANTE,2012,55
+lesiones_personales,41306,GIGANTE,2013,44
+lesiones_personales,41306,GIGANTE,2014,31
+lesiones_personales,41306,GIGANTE,2015,23
+lesiones_personales,41306,GIGANTE,2016,46
+lesiones_personales,41306,GIGANTE,2017,76
+lesiones_personales,41306,GIGANTE,2018,82
+lesiones_personales,41306,GIGANTE,2019,45
+lesiones_personales,41306,GIGANTE,2020,26
+lesiones_personales,41306,GIGANTE,2021,43
+lesiones_personales,41306,GIGANTE,2022,49
+lesiones_personales,41306,GIGANTE,2023,71
+lesiones_personales,41306,GIGANTE,2024,47
+lesiones_personales,41306,GIGANTE,2025,71
+lesiones_personales,41306,GIGANTE,2026,36
+lesiones_personales,41319,GUADALUPE,2003,17
+lesiones_personales,41319,GUADALUPE,2004,9
+lesiones_personales,41319,GUADALUPE,2005,11
+lesiones_personales,41319,GUADALUPE,2006,3
+lesiones_personales,41319,GUADALUPE,2007,29
+lesiones_personales,41319,GUADALUPE,2008,20
+lesiones_personales,41319,GUADALUPE,2009,18
+lesiones_personales,41319,GUADALUPE,2010,11
+lesiones_personales,41319,GUADALUPE,2011,18
+lesiones_personales,41319,GUADALUPE,2012,14
+lesiones_personales,41319,GUADALUPE,2013,17
+lesiones_personales,41319,GUADALUPE,2014,19
+lesiones_personales,41319,GUADALUPE,2015,17
+lesiones_personales,41319,GUADALUPE,2016,23
+lesiones_personales,41319,GUADALUPE,2017,26
+lesiones_personales,41319,GUADALUPE,2018,39
+lesiones_personales,41319,GUADALUPE,2019,29
+lesiones_personales,41319,GUADALUPE,2020,11
+lesiones_personales,41319,GUADALUPE,2021,27
+lesiones_personales,41319,GUADALUPE,2022,42
+lesiones_personales,41319,GUADALUPE,2023,38
+lesiones_personales,41319,GUADALUPE,2024,23
+lesiones_personales,41319,GUADALUPE,2025,30
+lesiones_personales,41319,GUADALUPE,2026,22
+lesiones_personales,41349,HOBO,2003,12
+lesiones_personales,41349,HOBO,2004,9
+lesiones_personales,41349,HOBO,2005,13
+lesiones_personales,41349,HOBO,2006,10
+lesiones_personales,41349,HOBO,2007,9
+lesiones_personales,41349,HOBO,2008,24
+lesiones_personales,41349,HOBO,2009,27
+lesiones_personales,41349,HOBO,2010,31
+lesiones_personales,41349,HOBO,2011,19
+lesiones_personales,41349,HOBO,2012,39
+lesiones_personales,41349,HOBO,2013,25
+lesiones_personales,41349,HOBO,2014,18
+lesiones_personales,41349,HOBO,2015,19
+lesiones_personales,41349,HOBO,2016,22
+lesiones_personales,41349,HOBO,2017,24
+lesiones_personales,41349,HOBO,2018,24
+lesiones_personales,41349,HOBO,2019,20
+lesiones_personales,41349,HOBO,2020,21
+lesiones_personales,41349,HOBO,2021,26
+lesiones_personales,41349,HOBO,2022,24
+lesiones_personales,41349,HOBO,2023,38
+lesiones_personales,41349,HOBO,2024,22
+lesiones_personales,41349,HOBO,2025,16
+lesiones_personales,41349,HOBO,2026,18
+lesiones_personales,41357,ÍQUIRA,2003,6
+lesiones_personales,41357,ÍQUIRA,2004,3
+lesiones_personales,41357,ÍQUIRA,2005,9
+lesiones_personales,41357,ÍQUIRA,2006,2
+lesiones_personales,41357,ÍQUIRA,2007,14
+lesiones_personales,41357,ÍQUIRA,2008,13
+lesiones_personales,41357,ÍQUIRA,2009,3
+lesiones_personales,41357,ÍQUIRA,2010,6
+lesiones_personales,41357,ÍQUIRA,2011,9
+lesiones_personales,41357,ÍQUIRA,2012,6
+lesiones_personales,41357,ÍQUIRA,2013,18
+lesiones_personales,41357,ÍQUIRA,2014,11
+lesiones_personales,41357,ÍQUIRA,2015,6
+lesiones_personales,41357,ÍQUIRA,2016,19
+lesiones_personales,41357,ÍQUIRA,2017,8
+lesiones_personales,41357,ÍQUIRA,2018,22
+lesiones_personales,41357,ÍQUIRA,2019,6
+lesiones_personales,41357,ÍQUIRA,2020,2
+lesiones_personales,41357,ÍQUIRA,2021,10
+lesiones_personales,41357,ÍQUIRA,2022,10
+lesiones_personales,41357,ÍQUIRA,2023,10
+lesiones_personales,41357,ÍQUIRA,2024,6
+lesiones_personales,41357,ÍQUIRA,2025,5
+lesiones_personales,41357,ÍQUIRA,2026,12
+lesiones_personales,41359,ISNOS,2003,28
+lesiones_personales,41359,ISNOS,2004,5
+lesiones_personales,41359,ISNOS,2005,18
+lesiones_personales,41359,ISNOS,2006,22
+lesiones_personales,41359,ISNOS,2007,46
+lesiones_personales,41359,ISNOS,2008,32
+lesiones_personales,41359,ISNOS,2009,21
+lesiones_personales,41359,ISNOS,2010,55
+lesiones_personales,41359,ISNOS,2011,33
+lesiones_personales,41359,ISNOS,2012,55
+lesiones_personales,41359,ISNOS,2013,69
+lesiones_personales,41359,ISNOS,2014,64
+lesiones_personales,41359,ISNOS,2015,44
+lesiones_personales,41359,ISNOS,2016,69
+lesiones_personales,41359,ISNOS,2017,82
+lesiones_personales,41359,ISNOS,2018,68
+lesiones_personales,41359,ISNOS,2019,70
+lesiones_personales,41359,ISNOS,2020,38
+lesiones_personales,41359,ISNOS,2021,64
+lesiones_personales,41359,ISNOS,2022,50
+lesiones_personales,41359,ISNOS,2023,43
+lesiones_personales,41359,ISNOS,2024,32
+lesiones_personales,41359,ISNOS,2025,42
+lesiones_personales,41359,ISNOS,2026,17
+lesiones_personales,41378,LA ARGENTINA,2003,3
+lesiones_personales,41378,LA ARGENTINA,2004,5
+lesiones_personales,41378,LA ARGENTINA,2005,8
+lesiones_personales,41378,LA ARGENTINA,2006,2
+lesiones_personales,41378,LA ARGENTINA,2007,34
+lesiones_personales,41378,LA ARGENTINA,2008,17
+lesiones_personales,41378,LA ARGENTINA,2009,29
+lesiones_personales,41378,LA ARGENTINA,2010,21
+lesiones_personales,41378,LA ARGENTINA,2011,23
+lesiones_personales,41378,LA ARGENTINA,2012,26
+lesiones_personales,41378,LA ARGENTINA,2013,16
+lesiones_personales,41378,LA ARGENTINA,2014,21
+lesiones_personales,41378,LA ARGENTINA,2015,20
+lesiones_personales,41378,LA ARGENTINA,2016,16
+lesiones_personales,41378,LA ARGENTINA,2017,22
+lesiones_personales,41378,LA ARGENTINA,2018,21
+lesiones_personales,41378,LA ARGENTINA,2019,19
+lesiones_personales,41378,LA ARGENTINA,2020,14
+lesiones_personales,41378,LA ARGENTINA,2021,10
+lesiones_personales,41378,LA ARGENTINA,2022,40
+lesiones_personales,41378,LA ARGENTINA,2023,25
+lesiones_personales,41378,LA ARGENTINA,2024,38
+lesiones_personales,41378,LA ARGENTINA,2025,38
+lesiones_personales,41378,LA ARGENTINA,2026,17
+lesiones_personales,41396,LA PLATA,2003,61
+lesiones_personales,41396,LA PLATA,2004,44
+lesiones_personales,41396,LA PLATA,2005,74
+lesiones_personales,41396,LA PLATA,2006,42
+lesiones_personales,41396,LA PLATA,2007,120
+lesiones_personales,41396,LA PLATA,2008,169
+lesiones_personales,41396,LA PLATA,2009,177
+lesiones_personales,41396,LA PLATA,2010,190
+lesiones_personales,41396,LA PLATA,2011,225
+lesiones_personales,41396,LA PLATA,2012,217
+lesiones_personales,41396,LA PLATA,2013,215
+lesiones_personales,41396,LA PLATA,2014,196
+lesiones_personales,41396,LA PLATA,2015,234
+lesiones_personales,41396,LA PLATA,2016,241
+lesiones_personales,41396,LA PLATA,2017,243
+lesiones_personales,41396,LA PLATA,2018,234
+lesiones_personales,41396,LA PLATA,2019,247
+lesiones_personales,41396,LA PLATA,2020,179
+lesiones_personales,41396,LA PLATA,2021,215
+lesiones_personales,41396,LA PLATA,2022,171
+lesiones_personales,41396,LA PLATA,2023,189
+lesiones_personales,41396,LA PLATA,2024,160
+lesiones_personales,41396,LA PLATA,2025,217
+lesiones_personales,41396,LA PLATA,2026,114
+lesiones_personales,41483,NÁTAGA,2003,4
+lesiones_personales,41483,NÁTAGA,2004,3
+lesiones_personales,41483,NÁTAGA,2005,7
+lesiones_personales,41483,NÁTAGA,2006,2
+lesiones_personales,41483,NÁTAGA,2007,13
+lesiones_personales,41483,NÁTAGA,2008,8
+lesiones_personales,41483,NÁTAGA,2009,8
+lesiones_personales,41483,NÁTAGA,2010,4
+lesiones_personales,41483,NÁTAGA,2011,8
+lesiones_personales,41483,NÁTAGA,2012,9
+lesiones_personales,41483,NÁTAGA,2013,16
+lesiones_personales,41483,NÁTAGA,2014,9
+lesiones_personales,41483,NÁTAGA,2015,18
+lesiones_personales,41483,NÁTAGA,2016,14
+lesiones_personales,41483,NÁTAGA,2017,13
+lesiones_personales,41483,NÁTAGA,2018,11
+lesiones_personales,41483,NÁTAGA,2019,15
+lesiones_personales,41483,NÁTAGA,2020,11
+lesiones_personales,41483,NÁTAGA,2021,9
+lesiones_personales,41483,NÁTAGA,2022,17
+lesiones_personales,41483,NÁTAGA,2023,7
+lesiones_personales,41483,NÁTAGA,2024,12
+lesiones_personales,41483,NÁTAGA,2025,3
+lesiones_personales,41483,NÁTAGA,2026,6
+lesiones_personales,41503,OPORAPA,2004,1
+lesiones_personales,41503,OPORAPA,2005,8
+lesiones_personales,41503,OPORAPA,2006,9
+lesiones_personales,41503,OPORAPA,2007,11
+lesiones_personales,41503,OPORAPA,2008,18
+lesiones_personales,41503,OPORAPA,2009,16
+lesiones_personales,41503,OPORAPA,2010,16
+lesiones_personales,41503,OPORAPA,2011,17
+lesiones_personales,41503,OPORAPA,2012,13
+lesiones_personales,41503,OPORAPA,2013,12
+lesiones_personales,41503,OPORAPA,2014,18
+lesiones_personales,41503,OPORAPA,2015,10
+lesiones_personales,41503,OPORAPA,2016,26
+lesiones_personales,41503,OPORAPA,2017,17
+lesiones_personales,41503,OPORAPA,2018,24
+lesiones_personales,41503,OPORAPA,2019,15
+lesiones_personales,41503,OPORAPA,2020,15
+lesiones_personales,41503,OPORAPA,2021,18
+lesiones_personales,41503,OPORAPA,2022,16
+lesiones_personales,41503,OPORAPA,2023,21
+lesiones_personales,41503,OPORAPA,2024,17
+lesiones_personales,41503,OPORAPA,2025,24
+lesiones_personales,41503,OPORAPA,2026,18
+lesiones_personales,41518,PAICOL,2003,1
+lesiones_personales,41518,PAICOL,2004,2
+lesiones_personales,41518,PAICOL,2005,5
+lesiones_personales,41518,PAICOL,2006,4
+lesiones_personales,41518,PAICOL,2007,8
+lesiones_personales,41518,PAICOL,2008,13
+lesiones_personales,41518,PAICOL,2009,7
+lesiones_personales,41518,PAICOL,2010,5
+lesiones_personales,41518,PAICOL,2011,10
+lesiones_personales,41518,PAICOL,2012,7
+lesiones_personales,41518,PAICOL,2013,9
+lesiones_personales,41518,PAICOL,2014,11
+lesiones_personales,41518,PAICOL,2015,7
+lesiones_personales,41518,PAICOL,2016,9
+lesiones_personales,41518,PAICOL,2017,2
+lesiones_personales,41518,PAICOL,2018,16
+lesiones_personales,41518,PAICOL,2019,10
+lesiones_personales,41518,PAICOL,2020,4
+lesiones_personales,41518,PAICOL,2021,4
+lesiones_personales,41518,PAICOL,2022,10
+lesiones_personales,41518,PAICOL,2023,8
+lesiones_personales,41518,PAICOL,2024,7
+lesiones_personales,41518,PAICOL,2025,25
+lesiones_personales,41518,PAICOL,2026,12
+lesiones_personales,41524,PALERMO,2003,30
+lesiones_personales,41524,PALERMO,2004,33
+lesiones_personales,41524,PALERMO,2005,31
+lesiones_personales,41524,PALERMO,2006,21
+lesiones_personales,41524,PALERMO,2007,42
+lesiones_personales,41524,PALERMO,2008,43
+lesiones_personales,41524,PALERMO,2009,62
+lesiones_personales,41524,PALERMO,2010,47
+lesiones_personales,41524,PALERMO,2011,68
+lesiones_personales,41524,PALERMO,2012,76
+lesiones_personales,41524,PALERMO,2013,69
+lesiones_personales,41524,PALERMO,2014,59
+lesiones_personales,41524,PALERMO,2015,54
+lesiones_personales,41524,PALERMO,2016,67
+lesiones_personales,41524,PALERMO,2017,65
+lesiones_personales,41524,PALERMO,2018,58
+lesiones_personales,41524,PALERMO,2019,42
+lesiones_personales,41524,PALERMO,2020,39
+lesiones_personales,41524,PALERMO,2021,66
+lesiones_personales,41524,PALERMO,2022,69
+lesiones_personales,41524,PALERMO,2023,64
+lesiones_personales,41524,PALERMO,2024,56
+lesiones_personales,41524,PALERMO,2025,59
+lesiones_personales,41524,PALERMO,2026,23
+lesiones_personales,41530,PALESTINA,2003,4
+lesiones_personales,41530,PALESTINA,2004,2
+lesiones_personales,41530,PALESTINA,2005,4
+lesiones_personales,41530,PALESTINA,2006,4
+lesiones_personales,41530,PALESTINA,2007,13
+lesiones_personales,41530,PALESTINA,2008,12
+lesiones_personales,41530,PALESTINA,2009,3
+lesiones_personales,41530,PALESTINA,2010,13
+lesiones_personales,41530,PALESTINA,2011,17
+lesiones_personales,41530,PALESTINA,2012,13
+lesiones_personales,41530,PALESTINA,2013,12
+lesiones_personales,41530,PALESTINA,2014,15
+lesiones_personales,41530,PALESTINA,2015,19
+lesiones_personales,41530,PALESTINA,2016,17
+lesiones_personales,41530,PALESTINA,2017,12
+lesiones_personales,41530,PALESTINA,2018,16
+lesiones_personales,41530,PALESTINA,2019,16
+lesiones_personales,41530,PALESTINA,2020,15
+lesiones_personales,41530,PALESTINA,2021,12
+lesiones_personales,41530,PALESTINA,2022,15
+lesiones_personales,41530,PALESTINA,2023,17
+lesiones_personales,41530,PALESTINA,2024,15
+lesiones_personales,41530,PALESTINA,2025,19
+lesiones_personales,41530,PALESTINA,2026,10
+lesiones_personales,41548,PITAL,2003,16
+lesiones_personales,41548,PITAL,2004,10
+lesiones_personales,41548,PITAL,2005,6
+lesiones_personales,41548,PITAL,2006,16
+lesiones_personales,41548,PITAL,2007,17
+lesiones_personales,41548,PITAL,2008,21
+lesiones_personales,41548,PITAL,2009,32
+lesiones_personales,41548,PITAL,2010,29
+lesiones_personales,41548,PITAL,2011,44
+lesiones_personales,41548,PITAL,2012,29
+lesiones_personales,41548,PITAL,2013,32
+lesiones_personales,41548,PITAL,2014,15
+lesiones_personales,41548,PITAL,2015,38
+lesiones_personales,41548,PITAL,2016,20
+lesiones_personales,41548,PITAL,2017,25
+lesiones_personales,41548,PITAL,2018,29
+lesiones_personales,41548,PITAL,2019,33
+lesiones_personales,41548,PITAL,2020,14
+lesiones_personales,41548,PITAL,2021,23
+lesiones_personales,41548,PITAL,2022,23
+lesiones_personales,41548,PITAL,2023,19
+lesiones_personales,41548,PITAL,2024,22
+lesiones_personales,41548,PITAL,2025,27
+lesiones_personales,41548,PITAL,2026,40
+lesiones_personales,41551,PITALITO,2003,56
+lesiones_personales,41551,PITALITO,2004,65
+lesiones_personales,41551,PITALITO,2005,144
+lesiones_personales,41551,PITALITO,2006,114
+lesiones_personales,41551,PITALITO,2007,283
+lesiones_personales,41551,PITALITO,2008,290
+lesiones_personales,41551,PITALITO,2009,197
+lesiones_personales,41551,PITALITO,2010,243
+lesiones_personales,41551,PITALITO,2011,355
+lesiones_personales,41551,PITALITO,2012,341
+lesiones_personales,41551,PITALITO,2013,331
+lesiones_personales,41551,PITALITO,2014,309
+lesiones_personales,41551,PITALITO,2015,357
+lesiones_personales,41551,PITALITO,2016,433
+lesiones_personales,41551,PITALITO,2017,462
+lesiones_personales,41551,PITALITO,2018,476
+lesiones_personales,41551,PITALITO,2019,422
+lesiones_personales,41551,PITALITO,2020,420
+lesiones_personales,41551,PITALITO,2021,399
+lesiones_personales,41551,PITALITO,2022,369
+lesiones_personales,41551,PITALITO,2023,293
+lesiones_personales,41551,PITALITO,2024,304
+lesiones_personales,41551,PITALITO,2025,311
+lesiones_personales,41551,PITALITO,2026,247
+lesiones_personales,41615,RIVERA,2003,20
+lesiones_personales,41615,RIVERA,2004,25
+lesiones_personales,41615,RIVERA,2005,12
+lesiones_personales,41615,RIVERA,2006,23
+lesiones_personales,41615,RIVERA,2007,40
+lesiones_personales,41615,RIVERA,2008,46
+lesiones_personales,41615,RIVERA,2009,47
+lesiones_personales,41615,RIVERA,2010,74
+lesiones_personales,41615,RIVERA,2011,85
+lesiones_personales,41615,RIVERA,2012,107
+lesiones_personales,41615,RIVERA,2013,84
+lesiones_personales,41615,RIVERA,2014,65
+lesiones_personales,41615,RIVERA,2015,64
+lesiones_personales,41615,RIVERA,2016,72
+lesiones_personales,41615,RIVERA,2017,51
+lesiones_personales,41615,RIVERA,2018,72
+lesiones_personales,41615,RIVERA,2019,86
+lesiones_personales,41615,RIVERA,2020,59
+lesiones_personales,41615,RIVERA,2021,63
+lesiones_personales,41615,RIVERA,2022,66
+lesiones_personales,41615,RIVERA,2023,115
+lesiones_personales,41615,RIVERA,2024,85
+lesiones_personales,41615,RIVERA,2025,89
+lesiones_personales,41615,RIVERA,2026,70
+lesiones_personales,41660,SALADOBLANCO,2003,5
+lesiones_personales,41660,SALADOBLANCO,2004,1
+lesiones_personales,41660,SALADOBLANCO,2005,9
+lesiones_personales,41660,SALADOBLANCO,2006,5
+lesiones_personales,41660,SALADOBLANCO,2007,12
+lesiones_personales,41660,SALADOBLANCO,2008,16
+lesiones_personales,41660,SALADOBLANCO,2009,18
+lesiones_personales,41660,SALADOBLANCO,2010,15
+lesiones_personales,41660,SALADOBLANCO,2011,18
+lesiones_personales,41660,SALADOBLANCO,2012,18
+lesiones_personales,41660,SALADOBLANCO,2013,21
+lesiones_personales,41660,SALADOBLANCO,2014,14
+lesiones_personales,41660,SALADOBLANCO,2015,22
+lesiones_personales,41660,SALADOBLANCO,2016,15
+lesiones_personales,41660,SALADOBLANCO,2017,14
+lesiones_personales,41660,SALADOBLANCO,2018,14
+lesiones_personales,41660,SALADOBLANCO,2019,10
+lesiones_personales,41660,SALADOBLANCO,2020,10
+lesiones_personales,41660,SALADOBLANCO,2021,8
+lesiones_personales,41660,SALADOBLANCO,2022,23
+lesiones_personales,41660,SALADOBLANCO,2023,14
+lesiones_personales,41660,SALADOBLANCO,2024,16
+lesiones_personales,41660,SALADOBLANCO,2025,18
+lesiones_personales,41660,SALADOBLANCO,2026,5
+lesiones_personales,41668,SAN AGUSTÍN,2003,11
+lesiones_personales,41668,SAN AGUSTÍN,2004,9
+lesiones_personales,41668,SAN AGUSTÍN,2005,28
+lesiones_personales,41668,SAN AGUSTÍN,2006,55
+lesiones_personales,41668,SAN AGUSTÍN,2007,13
+lesiones_personales,41668,SAN AGUSTÍN,2008,68
+lesiones_personales,41668,SAN AGUSTÍN,2009,25
+lesiones_personales,41668,SAN AGUSTÍN,2010,56
+lesiones_personales,41668,SAN AGUSTÍN,2011,54
+lesiones_personales,41668,SAN AGUSTÍN,2012,82
+lesiones_personales,41668,SAN AGUSTÍN,2013,99
+lesiones_personales,41668,SAN AGUSTÍN,2014,93
+lesiones_personales,41668,SAN AGUSTÍN,2015,127
+lesiones_personales,41668,SAN AGUSTÍN,2016,105
+lesiones_personales,41668,SAN AGUSTÍN,2017,104
+lesiones_personales,41668,SAN AGUSTÍN,2018,72
+lesiones_personales,41668,SAN AGUSTÍN,2019,98
+lesiones_personales,41668,SAN AGUSTÍN,2020,50
+lesiones_personales,41668,SAN AGUSTÍN,2021,83
+lesiones_personales,41668,SAN AGUSTÍN,2022,56
+lesiones_personales,41668,SAN AGUSTÍN,2023,63
+lesiones_personales,41668,SAN AGUSTÍN,2024,57
+lesiones_personales,41668,SAN AGUSTÍN,2025,82
+lesiones_personales,41668,SAN AGUSTÍN,2026,45
+lesiones_personales,41676,SANTA MARÍA,2003,9
+lesiones_personales,41676,SANTA MARÍA,2004,11
+lesiones_personales,41676,SANTA MARÍA,2005,11
+lesiones_personales,41676,SANTA MARÍA,2006,18
+lesiones_personales,41676,SANTA MARÍA,2007,25
+lesiones_personales,41676,SANTA MARÍA,2008,18
+lesiones_personales,41676,SANTA MARÍA,2009,23
+lesiones_personales,41676,SANTA MARÍA,2010,22
+lesiones_personales,41676,SANTA MARÍA,2011,23
+lesiones_personales,41676,SANTA MARÍA,2012,16
+lesiones_personales,41676,SANTA MARÍA,2013,8
+lesiones_personales,41676,SANTA MARÍA,2014,30
+lesiones_personales,41676,SANTA MARÍA,2015,15
+lesiones_personales,41676,SANTA MARÍA,2016,12
+lesiones_personales,41676,SANTA MARÍA,2017,21
+lesiones_personales,41676,SANTA MARÍA,2018,12
+lesiones_personales,41676,SANTA MARÍA,2019,19
+lesiones_personales,41676,SANTA MARÍA,2020,13
+lesiones_personales,41676,SANTA MARÍA,2021,17
+lesiones_personales,41676,SANTA MARÍA,2022,13
+lesiones_personales,41676,SANTA MARÍA,2023,10
+lesiones_personales,41676,SANTA MARÍA,2024,16
+lesiones_personales,41676,SANTA MARÍA,2025,12
+lesiones_personales,41676,SANTA MARÍA,2026,11
+lesiones_personales,41770,SUAZA,2003,10
+lesiones_personales,41770,SUAZA,2004,3
+lesiones_personales,41770,SUAZA,2005,11
+lesiones_personales,41770,SUAZA,2006,14
+lesiones_personales,41770,SUAZA,2007,17
+lesiones_personales,41770,SUAZA,2008,14
+lesiones_personales,41770,SUAZA,2009,12
+lesiones_personales,41770,SUAZA,2010,12
+lesiones_personales,41770,SUAZA,2011,6
+lesiones_personales,41770,SUAZA,2012,20
+lesiones_personales,41770,SUAZA,2013,22
+lesiones_personales,41770,SUAZA,2014,27
+lesiones_personales,41770,SUAZA,2015,22
+lesiones_personales,41770,SUAZA,2016,16
+lesiones_personales,41770,SUAZA,2017,26
+lesiones_personales,41770,SUAZA,2018,48
+lesiones_personales,41770,SUAZA,2019,41
+lesiones_personales,41770,SUAZA,2020,28
+lesiones_personales,41770,SUAZA,2021,21
+lesiones_personales,41770,SUAZA,2022,44
+lesiones_personales,41770,SUAZA,2023,43
+lesiones_personales,41770,SUAZA,2024,23
+lesiones_personales,41770,SUAZA,2025,22
+lesiones_personales,41770,SUAZA,2026,19
+lesiones_personales,41791,TARQUI,2003,22
+lesiones_personales,41791,TARQUI,2004,9
+lesiones_personales,41791,TARQUI,2005,9
+lesiones_personales,41791,TARQUI,2006,13
+lesiones_personales,41791,TARQUI,2007,46
+lesiones_personales,41791,TARQUI,2008,23
+lesiones_personales,41791,TARQUI,2009,19
+lesiones_personales,41791,TARQUI,2010,22
+lesiones_personales,41791,TARQUI,2011,24
+lesiones_personales,41791,TARQUI,2012,19
+lesiones_personales,41791,TARQUI,2013,24
+lesiones_personales,41791,TARQUI,2014,27
+lesiones_personales,41791,TARQUI,2015,19
+lesiones_personales,41791,TARQUI,2016,22
+lesiones_personales,41791,TARQUI,2017,26
+lesiones_personales,41791,TARQUI,2018,44
+lesiones_personales,41791,TARQUI,2019,48
+lesiones_personales,41791,TARQUI,2020,27
+lesiones_personales,41791,TARQUI,2021,36
+lesiones_personales,41791,TARQUI,2022,33
+lesiones_personales,41791,TARQUI,2023,34
+lesiones_personales,41791,TARQUI,2024,26
+lesiones_personales,41791,TARQUI,2025,31
+lesiones_personales,41791,TARQUI,2026,24
+lesiones_personales,41797,TESALIA,2003,5
+lesiones_personales,41797,TESALIA,2004,1
+lesiones_personales,41797,TESALIA,2005,7
+lesiones_personales,41797,TESALIA,2006,2
+lesiones_personales,41797,TESALIA,2007,16
+lesiones_personales,41797,TESALIA,2008,13
+lesiones_personales,41797,TESALIA,2009,14
+lesiones_personales,41797,TESALIA,2010,23
+lesiones_personales,41797,TESALIA,2011,34
+lesiones_personales,41797,TESALIA,2012,17
+lesiones_personales,41797,TESALIA,2013,30
+lesiones_personales,41797,TESALIA,2014,20
+lesiones_personales,41797,TESALIA,2015,18
+lesiones_personales,41797,TESALIA,2016,30
+lesiones_personales,41797,TESALIA,2017,18
+lesiones_personales,41797,TESALIA,2018,13
+lesiones_personales,41797,TESALIA,2019,26
+lesiones_personales,41797,TESALIA,2020,17
+lesiones_personales,41797,TESALIA,2021,23
+lesiones_personales,41797,TESALIA,2022,24
+lesiones_personales,41797,TESALIA,2023,23
+lesiones_personales,41797,TESALIA,2024,30
+lesiones_personales,41797,TESALIA,2025,22
+lesiones_personales,41797,TESALIA,2026,15
+lesiones_personales,41799,TELLO,2003,9
+lesiones_personales,41799,TELLO,2004,12
+lesiones_personales,41799,TELLO,2005,13
+lesiones_personales,41799,TELLO,2006,7
+lesiones_personales,41799,TELLO,2007,31
+lesiones_personales,41799,TELLO,2008,31
+lesiones_personales,41799,TELLO,2009,18
+lesiones_personales,41799,TELLO,2010,18
+lesiones_personales,41799,TELLO,2011,18
+lesiones_personales,41799,TELLO,2012,18
+lesiones_personales,41799,TELLO,2013,12
+lesiones_personales,41799,TELLO,2014,16
+lesiones_personales,41799,TELLO,2015,53
+lesiones_personales,41799,TELLO,2016,23
+lesiones_personales,41799,TELLO,2017,13
+lesiones_personales,41799,TELLO,2018,28
+lesiones_personales,41799,TELLO,2019,30
+lesiones_personales,41799,TELLO,2020,36
+lesiones_personales,41799,TELLO,2021,44
+lesiones_personales,41799,TELLO,2022,30
+lesiones_personales,41799,TELLO,2023,15
+lesiones_personales,41799,TELLO,2024,22
+lesiones_personales,41799,TELLO,2025,24
+lesiones_personales,41799,TELLO,2026,16
+lesiones_personales,41801,TERUEL,2003,6
+lesiones_personales,41801,TERUEL,2004,7
+lesiones_personales,41801,TERUEL,2005,19
+lesiones_personales,41801,TERUEL,2006,22
+lesiones_personales,41801,TERUEL,2007,25
+lesiones_personales,41801,TERUEL,2008,8
+lesiones_personales,41801,TERUEL,2009,27
+lesiones_personales,41801,TERUEL,2010,28
+lesiones_personales,41801,TERUEL,2011,16
+lesiones_personales,41801,TERUEL,2012,14
+lesiones_personales,41801,TERUEL,2013,16
+lesiones_personales,41801,TERUEL,2014,17
+lesiones_personales,41801,TERUEL,2015,20
+lesiones_personales,41801,TERUEL,2016,21
+lesiones_personales,41801,TERUEL,2017,21
+lesiones_personales,41801,TERUEL,2018,15
+lesiones_personales,41801,TERUEL,2019,22
+lesiones_personales,41801,TERUEL,2020,12
+lesiones_personales,41801,TERUEL,2021,13
+lesiones_personales,41801,TERUEL,2022,18
+lesiones_personales,41801,TERUEL,2023,14
+lesiones_personales,41801,TERUEL,2024,14
+lesiones_personales,41801,TERUEL,2025,7
+lesiones_personales,41801,TERUEL,2026,13
+lesiones_personales,41807,TIMANÁ,2003,7
+lesiones_personales,41807,TIMANÁ,2004,8
+lesiones_personales,41807,TIMANÁ,2005,5
+lesiones_personales,41807,TIMANÁ,2006,9
+lesiones_personales,41807,TIMANÁ,2007,23
+lesiones_personales,41807,TIMANÁ,2008,40
+lesiones_personales,41807,TIMANÁ,2009,19
+lesiones_personales,41807,TIMANÁ,2010,30
+lesiones_personales,41807,TIMANÁ,2011,34
+lesiones_personales,41807,TIMANÁ,2012,31
+lesiones_personales,41807,TIMANÁ,2013,44
+lesiones_personales,41807,TIMANÁ,2014,39
+lesiones_personales,41807,TIMANÁ,2015,42
+lesiones_personales,41807,TIMANÁ,2016,75
+lesiones_personales,41807,TIMANÁ,2017,63
+lesiones_personales,41807,TIMANÁ,2018,85
+lesiones_personales,41807,TIMANÁ,2019,73
+lesiones_personales,41807,TIMANÁ,2020,41
+lesiones_personales,41807,TIMANÁ,2021,42
+lesiones_personales,41807,TIMANÁ,2022,50
+lesiones_personales,41807,TIMANÁ,2023,56
+lesiones_personales,41807,TIMANÁ,2024,34
+lesiones_personales,41807,TIMANÁ,2025,20
+lesiones_personales,41807,TIMANÁ,2026,15
+lesiones_personales,41872,VILLAVIEJA,2003,6
+lesiones_personales,41872,VILLAVIEJA,2004,4
+lesiones_personales,41872,VILLAVIEJA,2005,4
+lesiones_personales,41872,VILLAVIEJA,2006,9
+lesiones_personales,41872,VILLAVIEJA,2007,19
+lesiones_personales,41872,VILLAVIEJA,2008,29
+lesiones_personales,41872,VILLAVIEJA,2009,25
+lesiones_personales,41872,VILLAVIEJA,2010,10
+lesiones_personales,41872,VILLAVIEJA,2011,16
+lesiones_personales,41872,VILLAVIEJA,2012,16
+lesiones_personales,41872,VILLAVIEJA,2013,13
+lesiones_personales,41872,VILLAVIEJA,2014,23
+lesiones_personales,41872,VILLAVIEJA,2015,22
+lesiones_personales,41872,VILLAVIEJA,2016,11
+lesiones_personales,41872,VILLAVIEJA,2017,25
+lesiones_personales,41872,VILLAVIEJA,2018,26
+lesiones_personales,41872,VILLAVIEJA,2019,18
+lesiones_personales,41872,VILLAVIEJA,2020,13
+lesiones_personales,41872,VILLAVIEJA,2021,23
+lesiones_personales,41872,VILLAVIEJA,2022,35
+lesiones_personales,41872,VILLAVIEJA,2023,18
+lesiones_personales,41872,VILLAVIEJA,2024,16
+lesiones_personales,41872,VILLAVIEJA,2025,28
+lesiones_personales,41872,VILLAVIEJA,2026,11
+lesiones_personales,41885,YAGUARÁ,2003,15
+lesiones_personales,41885,YAGUARÁ,2004,10
+lesiones_personales,41885,YAGUARÁ,2005,8
+lesiones_personales,41885,YAGUARÁ,2006,8
+lesiones_personales,41885,YAGUARÁ,2007,18
+lesiones_personales,41885,YAGUARÁ,2008,23
+lesiones_personales,41885,YAGUARÁ,2009,22
+lesiones_personales,41885,YAGUARÁ,2010,17
+lesiones_personales,41885,YAGUARÁ,2011,20
+lesiones_personales,41885,YAGUARÁ,2012,18
+lesiones_personales,41885,YAGUARÁ,2013,20
+lesiones_personales,41885,YAGUARÁ,2014,19
+lesiones_personales,41885,YAGUARÁ,2015,47
+lesiones_personales,41885,YAGUARÁ,2016,34
+lesiones_personales,41885,YAGUARÁ,2017,45
+lesiones_personales,41885,YAGUARÁ,2018,40
+lesiones_personales,41885,YAGUARÁ,2019,36
+lesiones_personales,41885,YAGUARÁ,2020,12
+lesiones_personales,41885,YAGUARÁ,2021,22
+lesiones_personales,41885,YAGUARÁ,2022,25
+lesiones_personales,41885,YAGUARÁ,2023,28
+lesiones_personales,41885,YAGUARÁ,2024,24
+lesiones_personales,41885,YAGUARÁ,2025,19
+lesiones_personales,41885,YAGUARÁ,2026,17
