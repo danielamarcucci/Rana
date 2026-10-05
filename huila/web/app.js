@@ -753,6 +753,232 @@
       ". Fuente: Registraduría Nacional, archivos mesa a mesa (MMV) " + ANIOS.join(" y ") + ".";
   }
 
+
+  // =====================================================================
+  // TRANSFERENCIA DEL VOTO
+  // =====================================================================
+  const X = T.transferencia;
+  const ELEC = Object.fromEntries(X.elecciones.map((e) => [e.id, e]));
+  const estTr = { partido: null, desde: null, hasta: null, pres: null };
+  const fmtPP = (v) => (hay(v) ? `${v > 0 ? "+" : v < 0 ? "−" : ""}${fmt1.format(Math.abs(v))}` : "—");
+  const etqPartido = (k) => titulo(X.partidos[k].etiqueta);
+
+  function eleccionesDe(k) { return X.elecciones.filter((e) => X.partidos[k].votos[e.id]).map((e) => e.id); }
+  // % del voto válido de un partido en un conjunto de municipios
+  function pctPartido(k, e, cods) {
+    const v = X.partidos[k].votos[e] || {};
+    let a = 0, b = 0;
+    for (const c of cods) { a += v[c] || 0; b += X.validos[e][c] || 0; }
+    return b ? (100 * a) / b : null;
+  }
+  function votosPartido(k, e, cods) { const v = X.partidos[k].votos[e] || {}; return cods.reduce((s, c) => s + (v[c] || 0), 0); }
+  function presente(k, e, cod) { return ((X.partidos[k].votos[e] || {})[cod] || 0) > 0; }
+
+  function porDefecto(k) {
+    const els = eleccionesDe(k);
+    // la última pareja de elecciones de la misma corporación; si no hay, las dos últimas en que se presentó
+    for (let i = els.length - 1; i > 0; i--) {
+      for (let j = i - 1; j >= 0; j--) if (ELEC[els[j]].corp === ELEC[els[i]].corp) return [els[j], els[i]];
+    }
+    return [els[Math.max(0, els.length - 2)], els[els.length - 1]];
+  }
+  function presPorDefecto(k) {
+    const anio = ELEC[estTr.hasta].anio;
+    const propio = X.presidenciales.find((p) => (X.partidos[k].votos[p.eleccion] || null) && presDeFamilia(p, k));
+    if (propio) return propio.id;
+    const cerca = X.presidenciales.filter((p) => p.eleccion.endsWith("_2v"))
+      .sort((a, b) => Math.abs(ELEC[a.eleccion].anio - anio) - Math.abs(ELEC[b.eleccion].anio - anio));
+    return cerca[0].id;
+  }
+  function presDeFamilia(p, k) {
+    // el candidato presidencial pertenece al partido si el partido tiene esos mismos votos en esa elección
+    const v = X.partidos[k].votos[p.eleccion];
+    return v && Object.keys(p.votos).every((c) => (v[c] || 0) === p.votos[c]);
+  }
+  function pctPres(p, cod) { return (100 * (p.votos[cod] || 0)) / X.validos[p.eleccion][cod]; }
+  function nombrePres(p) {
+    const e = ELEC[p.eleccion];
+    return `${titulo(p.candidato)} (${e.corp.endsWith("1V") ? "1.ª" : "2.ª"} vuelta ${e.anio})`;
+  }
+
+  function iniciarTransferencia() {
+    const sel = $("tr-partido");
+    sel.innerHTML = Object.keys(X.partidos).map((k) =>
+      `<option value="${esc(k)}">${esc(etqPartido(k))} · ${eleccionesDe(k).length} elecciones</option>`).join("");
+    // por defecto, el partido con presencia en más elecciones (a igualdad, el de más votos)
+    // Por defecto, el partido de más votos entre los que se presentaron a las tres Asambleas (2015, 2019, 2023).
+    const asambleas = X.elecciones.filter((e) => e.corp === "ASAMBLEA").map((e) => e.id);
+    estTr.partido = Object.keys(X.partidos).find((k) => asambleas.every((e) => X.partidos[k].votos[e])) || Object.keys(X.partidos)[0];
+    [estTr.desde, estTr.hasta] = porDefecto(estTr.partido);
+    sel.addEventListener("change", () => {
+      estTr.partido = sel.value;
+      [estTr.desde, estTr.hasta] = porDefecto(sel.value);
+      estTr.pres = null;
+      pintarTransferencia();
+    });
+    $("tr-desde").addEventListener("change", () => { estTr.desde = $("tr-desde").value; pintarTransferencia(); });
+    $("tr-hasta").addEventListener("change", () => { estTr.hasta = $("tr-hasta").value; pintarTransferencia(); });
+    $("tr-pres").addEventListener("change", () => { estTr.pres = $("tr-pres").value; pintarTransferencia(); });
+    $("tr-pres").innerHTML = X.presidenciales.map((p) => `<option value="${esc(p.id)}">${esc(nombrePres(p))}</option>`).join("");
+  }
+
+  function pintarTransferencia() {
+    const k = estTr.partido, P = X.partidos[k];
+    const els = eleccionesDe(k);
+    const { desde, hasta } = estTr;
+    if (!estTr.pres) estTr.pres = presPorDefecto(k);
+    document.querySelectorAll("#v-transferencia [data-territorio]").forEach((e) => (e.textContent = chipTerritorio()));
+    $("tr-partido").value = k;
+    const opciones = els.map((e) => `<option value="${e}">${esc(ELEC[e].nombre)}</option>`).join("");
+    $("tr-desde").innerHTML = opciones; $("tr-desde").value = desde;
+    $("tr-hasta").innerHTML = opciones; $("tr-hasta").value = hasta;
+    $("tr-pres").value = estTr.pres;
+
+    const cods = codsTerritorio();
+    const todos = MUNIS.map((m) => m.cod);
+    const pD = pctPartido(k, desde, cods), pH = pctPartido(k, hasta, cods);
+    // Cambio solo donde se presentó en las dos elecciones; si se presentó en una sola, no es un cambio de votos.
+    const cambio = {}, enUna = {};
+    for (const c of todos) {
+      const a = presente(k, desde, c), b = presente(k, hasta, c);
+      cambio[c] = a && b ? pctPartido(k, hasta, [c]) - pctPartido(k, desde, [c]) : null;
+      enUna[c] = a !== b;
+    }
+    const enTerr = cods.filter((c) => hay(cambio[c]));
+    const suben = enTerr.filter((c) => cambio[c] > 0);
+    const orden = enTerr.slice().sort((a, b) => cambio[b] - cambio[a]);
+    const nH = ELEC[hasta].nombre, nD = ELEC[desde].nombre;
+
+    // Cifras
+    $("tr-cifras").innerHTML = [
+      cifra(`${esc(nH)} en ${esc(nombreTerritorio())}`, `${fmtV(pH, "%")}`, `${fmtN.format(votosPartido(k, hasta, cods))} votos de ${esc(etqPartido(k))}`, true),
+      cifra(`Cambio desde ${esc(nD)}`, `${fmtPP(hay(pD) && hay(pH) ? pH - pD : null)} <small>pp</small>`, `de ${fmtV(pD, "%")} a ${fmtV(pH, "%")} del voto válido`),
+      cifra("Municipios donde sube", enTerr.length ? `${suben.length} <small>de ${enTerr.length}</small>` : "—", "con lista o candidato en las dos elecciones"),
+      cifra("Mayor subida", orden.length && cambio[orden[0]] > 0 ? esc(NOMBRE[orden[0]]) : "—", orden.length && cambio[orden[0]] > 0 ? `${fmtPP(cambio[orden[0]])} pp` : "ningún municipio sube"),
+      cifra("Mayor caída", orden.length && cambio[orden[orden.length - 1]] < 0 ? esc(NOMBRE[orden[orden.length - 1]]) : "—", orden.length && cambio[orden[orden.length - 1]] < 0 ? `${fmtPP(cambio[orden[orden.length - 1]])} pp` : "ningún municipio cae"),
+    ].join("");
+
+    // Trayectoria
+    $("tr-tit-tray").textContent = `${etqPartido(k)} en ${nombreTerritorio()}, elección por elección`;
+    $("tr-sub-tray").innerHTML = `% del voto válido. Clic en una elección para compararla.` + (terr.tipo === "todo" ? "" :
+      ` <span class="leyenda-serie" style="display:inline-flex"><span><i class="b-actual"></i>${esc(nombreTerritorio())}</span><span><i class="b-otro"></i>Huila</span></span>`);
+    // Sin lista ni candidato en el territorio: «—», no 0 %.
+    const filasT = els.map((e) => ({ e, t: votosPartido(k, e, cods) ? pctPartido(k, e, cods) : null, h: pctPartido(k, e, todos) }));
+    const maxT = Math.max(1, ...filasT.map((f) => Math.max(f.t || 0, terr.tipo === "todo" ? 0 : f.h || 0)));
+    let anioPrevio = null, ht = "";
+    for (const f of filasT) {
+      const el = ELEC[f.e];
+      if (el.anio !== anioPrevio) { ht += `<div class="tray-anio">${el.anio}</div>`; anioPrevio = el.anio; }
+      ht += `<div class="tray-fila${f.e === desde || f.e === hasta ? " marcada" : ""}" data-e="${f.e}" title="${f.e === hasta ? "Hasta" : f.e === desde ? "Desde" : "Usar como «Hasta»"}">` +
+        `<span>${esc(CORP_CORTA[el.corp] || el.corp)}${f.e === desde ? " · desde" : f.e === hasta ? " · hasta" : ""}</span>` +
+        `<span class="barras2"><span class="b-actual" style="width:${(100 * (f.t || 0)) / maxT}%"></span>` +
+        (terr.tipo === "todo" ? "" : `<span class="b-otro" style="width:${(100 * (f.h || 0)) / maxT}%"></span>`) + `</span>` +
+        `<span class="val">${hay(f.t) ? fmtV(f.t, "%") : "—"}${terr.tipo === "todo" ? "" : `<small> / ${fmtV(f.h, "")}</small>`}</span></div>`;
+    }
+    $("tr-tray").innerHTML = ht;
+    $("tr-tray").querySelectorAll(".tray-fila").forEach((d) => d.addEventListener("click", () => {
+      const e = d.dataset.e;
+      if (e === estTr.hasta) return;
+      if (els.indexOf(e) < els.indexOf(estTr.hasta)) estTr.desde = e; else { estTr.desde = estTr.hasta; estTr.hasta = e; }
+      pintarTransferencia();
+    }));
+
+    // Mapa de cambio (naranja = cae, morado = sube)
+    const cortes = [-10, -3, 3, 10];
+    const binCambio = (v) => (v < cortes[0] ? 0 : v < cortes[1] ? 1 : v <= cortes[2] ? 2 : v <= cortes[3] ? 3 : 4);
+    const ETQ_CAMBIO = ["Cae más de 10 pp", "Cae de 3 a 10 pp", "Estable (±3 pp)", "Sube de 3 a 10 pp", "Sube más de 10 pp"];
+    $("tr-tit-mapa").textContent = `Cambio de ${nD} a ${nH}`;
+    $("tr-sub-mapa").textContent = "Diferencia en puntos porcentuales del voto válido en cada municipio.";
+    const colorCambio = (c) => (hay(cambio[c]) ? css(`--q${binCambio(cambio[c]) + 1}`) : enUna[c] ? css("--otro") : css("--sin-dato"));
+    dibujarMapa($("tr-mapa"), colorCambio, (c) =>
+      `<div class="t">${esc(NOMBRE[c])}</div><div class="s">Subregión ${esc(SUBREG[c])}</div>` +
+      `<div>${esc(nD)}: <b>${fmtV(pctPartido(k, desde, [c]), "%")}</b></div><div>${esc(nH)}: <b>${fmtV(pctPartido(k, hasta, [c]), "%")}</b></div>` +
+      `<div class="s">${hay(cambio[c]) ? `Cambio ${fmtPP(cambio[c])} pp` : enUna[c] ? "Se presentó solo en una de las dos: no hay cambio que medir" : "No se presentó en ninguna de las dos"}</div>`);
+    $("tr-leyenda").innerHTML = `<span class="tit">Cambio en el municipio</span>` +
+      ETQ_CAMBIO.map((t, i) => `<span><span class="chip" style="background:${css(`--q${i + 1}`)}"></span>${t}</span>`).join("") +
+      `<span><span class="chip" style="background:${css("--otro")}"></span>Se presentó solo en una</span>` +
+      `<span><span class="chip" style="background:${css("--sin-dato")};border:1px solid var(--borde)"></span>No se presentó</span>`;
+
+    // Dispersión frente al voto presidencial
+    const pr = X.presidenciales.find((p) => p.id === estTr.pres);
+    pintarDispersion(k, hasta, pr);
+
+    // Tabla
+    $("tr-tit-tabla").textContent = terr.tipo === "sub" ? `Municipios de la subregión ${terr.valor}` : "Municipios del Huila";
+    $("tr-sub-tabla").textContent = "Ordenados de mayor subida a mayor caída. pp = puntos porcentuales; — = no se presentó.";
+    const filas = (terr.tipo === "sub" ? cods : todos).slice()
+      .sort((a, b) => (hay(cambio[b]) - hay(cambio[a])) || (cambio[b] - cambio[a]));
+    const corto = (e) => `${CORP_CORTA[ELEC[e].corp]} ${ELEC[e].anio}`;
+    let h = `<table><thead><tr><th>Municipio</th><th class="n">${esc(corto(desde))}</th><th class="n">${esc(corto(hasta))}</th><th class="n">Cambio</th><th class="n">Votos ${esc(String(ELEC[hasta].anio))}</th></tr></thead><tbody>`;
+    for (const c of filas) {
+      h += `<tr data-cod="${c}"${terr.tipo === "mun" && terr.valor === c ? ' class="sel"' : ""}><td>${esc(NOMBRE[c])}</td>` +
+        `<td class="n">${presente(k, desde, c) ? fmtV(pctPartido(k, desde, [c]), "%") : "—"}</td><td class="n">${presente(k, hasta, c) ? fmtV(pctPartido(k, hasta, [c]), "%") : "—"}</td>` +
+        `<td class="n"><span class="sit"><span class="chip" style="background:${colorCambio(c)}"></span>${fmtPP(cambio[c])}</span></td>` +
+        `<td class="n">${fmtN.format(votosPartido(k, hasta, [c]))}</td></tr>`;
+    }
+    $("tr-tabla").innerHTML = h + "</tbody></table>";
+    $("tr-tabla").querySelectorAll("tbody tr").forEach((tr) => tr.addEventListener("click", () => clicMunicipio(tr.dataset.cod)));
+    const sel = $("tr-tabla").querySelector("tr.sel");
+    $("tr-tabla").scrollTop = sel ? Math.max(0, sel.offsetTop - $("tr-tabla").clientHeight / 2) : 0;
+
+    const nombres = P.nombres.map(titulo);
+    $("tr-nota").innerHTML = `Porcentajes sobre el voto válido (votos por partidos y candidatos + voto en blanco) de cada elección. ` +
+      `En Gobernación y Alcaldías cuenta el partido o la coalición que avaló al candidato; una coalición con nombre propio no se suma a cada partido que la forma. ` +
+      `En Alcaldías y Concejos, «—» significa que el partido no presentó candidato o lista en ese municipio. ` +
+      `Nombres oficiales agrupados en este partido: ${esc(nombres.join(" · "))}. ` +
+      `Todo es una comparación entre territorios: que un partido suba donde otro baja no prueba que los mismos votantes se hayan pasado de uno a otro. ` +
+      `Fuente: Registraduría Nacional, archivos mesa a mesa (territoriales 2015, 2019 y 2023; Congreso 2022; presidenciales 2022 y 2026, escrutinio). Congreso 2026 no se incluye: la Registraduría solo publica el preconteo.`;
+  }
+  const CORP_CORTA = { GOBERNADOR: "Gobernación", ASAMBLEA: "Asamblea", ALCALDE: "Alcaldías", CONCEJO: "Concejos", CAMARA: "Cámara", SENADO: "Senado", "PRESIDENTE 1V": "Pres. 1.ª v.", "PRESIDENTE 2V": "Pres. 2.ª v." };
+
+  function pearson(xs, ys) {
+    const n = xs.length, mx = xs.reduce((a, b) => a + b, 0) / n, my = ys.reduce((a, b) => a + b, 0) / n;
+    let sxy = 0, sxx = 0, syy = 0;
+    for (let i = 0; i < n; i++) { sxy += (xs[i] - mx) * (ys[i] - my); sxx += (xs[i] - mx) ** 2; syy += (ys[i] - my) ** 2; }
+    return sxx && syy ? sxy / Math.sqrt(sxx * syy) : null;
+  }
+
+  function pintarDispersion(k, e, pr) {
+    const cont = $("tr-disp");
+    const todos = MUNIS.map((m) => m.cod);
+    const pts = todos.filter((c) => presente(k, e, c)).map((c) => ({ c, x: pctPres(pr, c), y: pctPartido(k, e, [c]), n: X.validos[e][c] }));
+    const fuera = todos.length - pts.length;
+    if (pts.length < 3) {
+      cont.innerHTML = `<p class="vacio">El partido se presentó en muy pocos municipios en ${esc(ELEC[e].nombre)} para comparar.</p>`;
+      $("tr-pie-disp").textContent = "";
+      return;
+    }
+    const W = 520, H = 290, m = { l: 44, r: 14, t: 26, b: 34 };
+    const tx = ticks(0, Math.max(...pts.map((p) => p.x))), ty = ticks(0, Math.max(...pts.map((p) => p.y), 1));
+    const x = (v) => m.l + (v / tx[tx.length - 1]) * (W - m.l - m.r);
+    const y = (v) => H - m.b - (v / ty[ty.length - 1]) * (H - m.t - m.b);
+    const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", class: "disp", "aria-label": "Dispersión de municipios" });
+    ty.forEach((v) => { svg.appendChild(svgEl("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), class: "eje" })); svg.appendChild(svgEl("text", { x: m.l - 6, y: y(v) + 4, "text-anchor": "end" }, fmtN.format(v))); });
+    tx.forEach((v) => svg.appendChild(svgEl("text", { x: x(v), y: H - m.b + 16, "text-anchor": "middle" }, fmtN.format(v))));
+    svg.appendChild(svgEl("text", { x: (m.l + W - m.r) / 2, y: H - 4, "text-anchor": "middle" }, `% ${titulo(pr.candidato)}`));
+    svg.appendChild(svgEl("text", { x: m.l, y: 10, "text-anchor": "start" }, `% ${etqPartido(k)} · ${ELEC[e].nombre}`));
+    const nMax = Math.max(...pts.map((p) => p.n));
+    const orden = pts.slice().sort((a, b) => b.n - a.n);
+    for (const p of orden) {
+      const dentro = enTerritorio(p.c);
+      const cir = svgEl("circle", { cx: x(p.x), cy: y(p.y), r: 3 + 9 * Math.sqrt(p.n / nMax), fill: css("--serie-1"), "fill-opacity": dentro ? 0.75 : 0.18 });
+      if (terr.tipo === "mun" && p.c === terr.valor) cir.classList.add("sel");
+      conTip(cir, `<div class="t">${esc(NOMBRE[p.c])}</div><div>${esc(titulo(pr.candidato))}: <b>${fmt1.format(p.x)} %</b></div><div>${esc(etqPartido(k))}: <b>${fmt1.format(p.y)} %</b></div><div class="s">${fmtN.format(p.n)} votos válidos</div>`);
+      cir.addEventListener("click", () => clicMunicipio(p.c));
+      svg.appendChild(cir);
+    }
+    const sel = svg.querySelector("circle.sel");
+    if (sel) svg.appendChild(sel);
+    cont.replaceChildren(svg);
+    const r = pearson(pts.map((p) => p.x), pts.map((p) => p.y));
+    const fuerza = !hay(r) ? "" : Math.abs(r) < 0.3 ? "débil o nula" : Math.abs(r) < 0.6 ? "moderada" : "fuerte";
+    $("tr-sub-disp").textContent = "Cada punto es un municipio (tamaño = votos válidos). Elija el candidato presidencial:";
+    $("tr-pie-disp").textContent = hay(r)
+      ? `Correlación entre los ${pts.length} municipios donde se presentó${fuera ? ` (${fuera} sin lista no se dibujan)` : ""}: r = ${fmt2.format(r)}, relación ${fuerza}${Math.abs(r) >= 0.3 ? (r > 0 ? ": donde a uno le fue mejor, al otro también" : ": donde a uno le fue mejor, al otro le fue peor") : ""}. ` +
+        "Es una relación entre territorios: no dice que las mismas personas votaron por ambos."
+      : "";
+  }
+
   // =====================================================================
   // NAVEGACIÓN
   // =====================================================================
@@ -761,6 +987,7 @@
     ocultarTip();
     if (vista === "elecciones") pintarElecciones();
     else if (vista in VISTAS_IND) pintarVistaInd(vista);
+    else if (vista === "transferencia") pintarTransferencia();
   }
   function irA(v) {
     vista = v;
@@ -773,6 +1000,7 @@
   iniciarTerritorio();
   Object.keys(VISTAS_IND).forEach(iniciarVistaInd);
   iniciarElecciones();
+  iniciarTransferencia();
   document.querySelectorAll(".pasos button").forEach((b) => b.addEventListener("click", () => irA(b.dataset.vista)));
   const inicial = (location.hash || "").slice(1);
   irA(["elecciones", "problemas", "caracterizacion", "transferencia"].includes(inicial) ? inicial : "problemas");

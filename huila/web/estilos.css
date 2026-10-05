@@ -166,3 +166,13 @@ tr.sel td { background: var(--morado-suave); font-weight: 600; }
 .barra-fila { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 78px; }
 .contenido { min-width: 0; }
 @media (max-width: 600px) { td, th { white-space: nowrap; } }
+.sel-corta { max-width: 240px; }
+.tray-fila { display: grid; grid-template-columns: 150px minmax(0, 1fr) 70px; gap: 8px; align-items: center; padding: 3px 4px; font-size: 12.5px; border-radius: 6px; cursor: pointer; }
+.tray-fila:hover { background: var(--plano); }
+.tray-fila.marcada { background: var(--morado-suave); font-weight: 600; }
+.tray-fila .val { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tray-fila .val small { color: var(--muted); font-weight: 400; }
+.tray-anio { color: var(--muted); font-size: 11px; font-weight: 600; margin: 8px 0 2px 4px; }
+.disp circle { stroke: var(--superficie); stroke-width: 1; }
+.disp circle.sel { stroke: var(--tinta); stroke-width: 2; }
+@media (max-width: 600px) { .tray-fila { grid-template-columns: 110px minmax(0, 1fr) 62px; } .sel-corta { max-width: none; } }

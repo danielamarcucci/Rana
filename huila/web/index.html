@@ -68,16 +68,45 @@
 
   <!-- ============ 4. TRANSFERENCIA ============ -->
   <section id="v-transferencia" class="vista" hidden>
-    <div class="titulo-vista"><h2>Transferencia del voto</h2></div>
+    <div class="titulo-vista"><h2>Transferencia del voto</h2><span class="chip-territorio" data-territorio></span></div>
+    <p class="intro">Cómo se movió la votación de un partido entre elecciones, municipio por municipio: 18 elecciones oficiales en el Huila, de las territoriales 2015 a la presidencial 2026. Compara territorios, no personas: el voto es secreto.</p>
+    <div class="controles">
+      <div><div class="lbl">Partido</div><select id="tr-partido" class="sel-opcion"></select></div>
+      <div><div class="lbl">Desde</div><select id="tr-desde" class="sel-opcion sel-corta"></select></div>
+      <div><div class="lbl">Hasta</div><select id="tr-hasta" class="sel-opcion sel-corta"></select></div>
+    </div>
+    <div class="cifras" id="tr-cifras"></div>
+    <div class="dos">
+      <section class="card">
+        <h3 id="tr-tit-tray"></h3>
+        <p class="sub" id="tr-sub-tray"></p>
+        <div id="tr-tray"></div>
+      </section>
+      <section class="card">
+        <h3 id="tr-tit-mapa"></h3>
+        <p class="sub" id="tr-sub-mapa"></p>
+        <div class="mapa" id="tr-mapa"></div>
+        <div class="leyenda" id="tr-leyenda"></div>
+        <p class="pie">Clic en un municipio para abrirlo.</p>
+      </section>
+    </div>
+    <div class="dos">
+      <section class="card">
+        <h3>Frente al voto presidencial</h3>
+        <p class="sub" id="tr-sub-disp"></p>
+        <select id="tr-pres" class="sel-opcion" aria-label="Candidato presidencial"></select>
+        <div class="grafico" id="tr-disp"></div>
+        <p class="pie" id="tr-pie-disp"></p>
+      </section>
+      <section class="card">
+        <h3 id="tr-tit-tabla"></h3>
+        <p class="sub" id="tr-sub-tabla"></p>
+        <div class="tabla-scroll" id="tr-tabla"></div>
+      </section>
+    </div>
     <section class="card texto">
-      <h3>Pendiente: faltan resultados para construirla</h3>
-      <p>Para ver hacia dónde se movieron los votos entre elecciones hacen falta, además de 2019 y 2023 (ya cargados), los resultados oficiales mesa a mesa de:</p>
-      <ul>
-        <li>Elecciones territoriales <b>2015</b> en el Huila.</li>
-        <li><b>Congreso</b> 2018, 2022 y 2026 (Cámara por el Huila y Senado).</li>
-        <li>Presidenciales 2022 y 2026, que ya están descargadas en el tablero de Bogotá y se pueden reutilizar.</li>
-      </ul>
-      <p>Cuando estén, esta pestaña compara por municipio y por puesto la votación de cada partido entre elecciones. Será siempre una comparación de territorios: el voto es secreto y no se puede saber cómo votó cada persona.</p>
+      <h3>Cómo leer esta pestaña</h3>
+      <p class="pie" id="tr-nota"></p>
     </section>
   </section>
 </main>

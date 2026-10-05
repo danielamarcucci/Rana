@@ -12,7 +12,10 @@ Tablero territorial de los 37 municipios del Huila, con filtro de territorio
    municipios del país (mapa por quintiles, evolución e histograma).
 3. **Caracterización**: población, densidad, ruralidad, edad y pertenencia
    étnica (contexto, sin juicio de bueno o malo).
-4. **Transferencia del voto**: pendiente de los resultados 2015 y de Congreso.
+4. **Transferencia del voto**: cómo cambió la votación de cada partido por
+   municipio entre 18 elecciones (territoriales 2015-2023, Congreso 2022,
+   presidenciales 2022 y 2026), con mapa de cambio y relación con el voto
+   presidencial. Compara territorios, no personas.
 
 Es independiente del resto del repositorio (no usa Next.js ni dependencias):
 abrir `web/index.html` en el navegador.
@@ -22,7 +25,7 @@ datos/crudos/      Archivos oficiales tal como se descargan (no se editan)
 datos/catalogos/   Homologación Registraduría ↔ DIVIPOLA, subregiones, catálogo de indicadores
 datos/geo/         Límites municipales (DANE MGN 2025, simplificados)
 datos/salida/      Tablas procesadas y validadas
-scripts/           Construcción y validación (01 → 04, 06, 07 y al final 05)
+scripts/           Construcción y validación (01 → 04, 06 → 08 y al final 05)
 documentacion/     fuentes.md, metodologia.md
 web/               App estática (index.html, app.js, datos/tablero.js generado)
 ```

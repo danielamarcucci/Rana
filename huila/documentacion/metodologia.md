@@ -11,6 +11,7 @@ python3 scripts/03_descargar_dane.py           # descarga 18 capas del geoportal
 python3 scripts/04_poblacion_seguridad.py      # proyecciones DANE + delitos MinDefensa
 python3 scripts/06_terridata.py                # indicadores TerriData (Colombia, departamentos, municipios)
 python3 scripts/07_dane_nacional.py            # capas CNPV 2018 de todos los municipios del país
+python3 scripts/08_otras_elecciones.py         # 2015, Congreso 2022 y presidenciales, por municipio
 python3 scripts/05_construir_web.py            # web/datos/tablero.js (se corre al final)
 ```
 
@@ -56,6 +57,16 @@ de mesas). No se completa ni se aproxima nada a mano.
 - **Región Andina** (para la mediana regional): municipios de los departamentos de Antioquia, Bogotá, Boyacá, Caldas, Cundinamarca, Huila, Norte de Santander, Quindío, Risaralda, Santander y Tolima. Se eligió Andina y no Sur porque el Huila pertenece a la región natural andina y comparte con esos departamentos economía cafetera y de montaña; la región "Sur" no tiene una definición oficial única.
 - **Subregiones del Huila**: ver fuentes.md (fuente secundaria, por confirmar).
 - **Elecciones**: las cifras de una subregión o de todo el Huila suman los municipios. En Alcaldía y Concejo cada municipio elige por separado, así que ese total es una suma de elecciones distintas.
+
+## Transferencia del voto
+
+- 18 elecciones por municipio: territoriales 2015, 2019 y 2023 (Gobernación, Asamblea, Alcaldías, Concejos), Cámara y Senado 2022, presidenciales 2022 y 2026 (dos vueltas). JAL excluida.
+- **Partido**: se agrupan los nombres oficiales que solo difieren en tildes, puntuación o el prefijo "Partido", "Movimiento (Político)" o "Coalición". Los cambios de nombre del mismo partido se agrupan solo con la tabla explícita `datos/catalogos/partidos_alias.csv` (Partido de la U, ASI, AICO, "PactoHistorico"). Las coaliciones con nombre propio no se reparten entre los partidos que la forman. La nota de la pestaña lista los nombres agrupados en cada partido.
+- En Gobernación, Alcaldía y presidenciales cuenta el partido o coalición que avaló al candidato.
+- **% del partido** = votos del partido / votos válidos de esa elección en el mismo territorio (subregión o Huila = suma de municipios).
+- **Cambio** (pp) = % en la elección "Hasta" − % en la elección "Desde", solo en municipios donde el partido se presentó en ambas. Si se presentó en una sola, se marca aparte y no se cuenta como subida ni caída.
+- **Dispersión presidencial**: correlación de Pearson, sin ponderar, entre el % del candidato presidencial y el % del partido, en los municipios donde el partido se presentó. Es una relación entre territorios (ecológica): no dice que las mismas personas votaron por ambos. Lectura: |r| < 0,3 débil o nula; 0,3-0,6 moderada; > 0,6 fuerte.
+- Controles: 2015, los 13 elegidos de Gobernación y Asamblea cuadran voto a voto con `Elegidos.txt` (gobernador Carlos Julio González Villa, 214.134 votos); Congreso 2022 y presidenciales 2026 con SHA-256 verificado; totales en el Huila: Cámara 2022 390.118, Senado 2022 393.573, presidencial 2022 507.464 y 539.805, 2026 555.368 y 620.224 votos.
 
 ## Lo que este tablero no hace
 

@@ -10,6 +10,8 @@ index.html directamente, sin servidor.
 import csv
 import json
 import math
+import re
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -215,6 +217,65 @@ def problemas():
     return out
 
 
+CORP_NOMBRE = {"GOBERNADOR": "Gobernación", "ASAMBLEA": "Asamblea", "ALCALDE": "Alcaldías", "CONCEJO": "Concejos",
+               "CAMARA": "Cámara", "SENADO": "Senado", "PRESIDENTE 1V": "Presidencia 1.ª vuelta",
+               "PRESIDENTE 2V": "Presidencia 2.ª vuelta"}
+ORDEN_CORP = list(CORP_NOMBRE)
+
+
+def familia(nombre, alias):
+    s = unicodedata.normalize("NFKD", nombre).encode("ascii", "ignore").decode().upper()
+    s = re.sub(r"\s+", " ", re.sub(r"[^A-Z0-9 ]", " ", s)).strip()
+    s = re.sub(r"^(PARTIDO POLITICO|PARTIDO|MOVIMIENTO POLITICO|MOVIMIENTO|COALICION) ", "", s)
+    return alias.get(s, s)
+
+
+def transferencia(munis):
+    """Votos por partido (familia de nombres) y municipio en las 18 elecciones de 08_otras_elecciones.py."""
+    alias = {r["nombre_normalizado"]: r["familia"] for r in leer_csv(D / "catalogos" / "partidos_alias.csv")}
+    validos = defaultdict(lambda: defaultdict(int))
+    fam_votos = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    fam_nombres = defaultdict(lambda: defaultdict(int))
+    pres = defaultdict(lambda: defaultdict(int))
+    meta = {}
+    for r in leer_csv(D / "salida" / "elecciones_huila_municipio.csv"):
+        e, cod, op, v = r["eleccion"], r["cod_divipola"], r["opcion"], int(r["votos"])
+        meta[e] = (int(r["anio"]), r["corporacion"])
+        if op in ("__NULOS__", "__NO_MARCADOS__"):
+            continue
+        validos[e][cod] += v
+        if op == "__BLANCO__":
+            continue
+        partido = op.split("|")[-1]
+        f = familia(partido, alias)
+        fam_votos[f][e][cod] += v
+        fam_nombres[f][partido.strip()] += v
+        if r["corporacion"].startswith("PRESIDENTE"):
+            pres[(e, op.split("|")[0])][cod] += v
+    orden = sorted(meta, key=lambda e: (meta[e][0], ORDEN_CORP.index(meta[e][1])))
+    elecciones = [{"id": e, "anio": meta[e][0], "corp": meta[e][1],
+                   "nombre": f"{CORP_NOMBRE[meta[e][1]]} {meta[e][0]}"} for e in orden]
+    partidos = {}
+    for f, porel in fam_votos.items():
+        total = sum(sum(x.values()) for x in porel.values())
+        if len(porel) < 2 or total < 5000:
+            continue  # partidos de una sola elección o muy pequeños: no hay trayectoria que seguir
+        partidos[f] = {"etiqueta": max(fam_nombres[f].items(), key=lambda x: x[1])[0], "total": total,
+                       "votos": {e: dict(x) for e, x in porel.items()},
+                       "nombres": sorted(fam_nombres[f])}
+    presidenciales = []
+    for (e, cand), x in pres.items():
+        tot = sum(x.values())
+        if tot / sum(validos[e].values()) >= 0.03:
+            presidenciales.append({"id": f"{e}|{cand}", "eleccion": e, "candidato": cand, "votos": dict(x)})
+    presidenciales.sort(key=lambda p: (p["eleccion"], -sum(p["votos"].values())))
+    for e in validos:
+        assert set(validos[e]) == set(munis), e
+    return {"elecciones": elecciones, "validos": {e: dict(x) for e, x in validos.items()},
+            "partidos": dict(sorted(partidos.items(), key=lambda x: -x[1]["total"])),
+            "presidenciales": presidenciales}
+
+
 def main():
     cat = leer_csv(D / "catalogos" / "homologacion_registraduria_divipola_huila.csv")
     munis = {r["cod_divipola"]: r["municipio"] for r in cat}
@@ -238,6 +299,7 @@ def main():
         "municipios": [{"cod": c, "nombre": munis[c], "subregion": subregion[c], **paths[c]} for c in sorted(munis)],
         "indicadores": problemas(),
         "electoral": electoral(munis),
+        "transferencia": transferencia(munis),
     }
     salida = RAIZ / "web" / "datos" / "tablero.js"
     salida.write_text("window.TABLERO = " + json.dumps(tablero, ensure_ascii=False, separators=(",", ":")) + ";\n", "utf-8")
