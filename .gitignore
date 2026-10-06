@@ -14,3 +14,4 @@ data/*.db-shm
 data/uploads
 next-env.d.ts
 tsconfig.tsbuildinfo
+__pycache__/
