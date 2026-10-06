@@ -1,0 +1,20 @@
+{
+  "id": "cede_bg_idf",
+  "tema": "Buen gobierno",
+  "etiqueta": "Índice de desempeño fiscal (DNP)",
+  "descripcion": "Índice sintético del DNP (0 a 100) que resume solvencia, autofinanciación del funcionamiento, dependencia de transferencias, esfuerzo tributario, inversión, respaldo de la deuda y ahorro corriente del municipio. Más alto = mejor desempeño fiscal.",
+  "unidad": "puntos (0-100)",
+  "sentido": "mejor",
+  "periodo": "2000-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable DF_desemp_fisc; fuente original DNP, evaluación de desempeño fiscal)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Metodología ANTERIOR del IDF del DNP (seis componentes, Anexo 1 del diccionario). La metodología nueva del DNP (desde la vigencia 2020) no está en el archivo oficial de Dataverse 2021, por lo que no se une con ella; el valor 2020 aquí está en la escala anterior (mediana nacional 67,3 vs 69,5 en 2019). El componente de ingresos propios cambió de denominador en el panel en 2010 (ver cede_bg_ingresos_propios): comparar con cautela antes y después de 2010. 2000-2002 con menor cobertura (955-1.021 municipios). Hay 31 valores iguales a 0 (2005, 2010 y 2011), muy por debajo del resto (mínimo de los demás alrededor de 11); se dejan tal como vienen y conviene leerlos como dato dudoso.",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88"
+  }
+}

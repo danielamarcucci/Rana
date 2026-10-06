@@ -14,3 +14,8 @@ data/*.db-shm
 data/uploads
 next-env.d.ts
 tsconfig.tsbuildinfo
+__pycache__/
+huila/datos/crudos/ucdp/ged261-csv.zip
+# Crudos grandes del Huila (repo público): URL y SHA-256 en cada manifiesto; los scripts los descargan si faltan
+huila/datos/crudos/cnmh/Casos*.xlsx
+huila/datos/crudos/moe/2023__MRE-Elecciones-Autoridades-Locales-2023_DIGITAL.pdf

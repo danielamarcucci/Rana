@@ -146,7 +146,8 @@
   const VISTAS_IND = {
     problemas: {
       titulo: "Problemas del territorio",
-      temas: ["Salud", "Seguridad", "Economía", "Educación y servicios"],
+      temas: ["Salud", "Seguridad", "Conflicto y violencia", "Economía", "Educación y servicios",
+        "Tierra y agricultura", "Buen gobierno"].filter((t) => T.indicadores.some((i) => i.tema === t)),
       intro: "Cada indicador ubica al territorio frente a Colombia, a los 32 departamentos y a los municipios del país. El mapa y el histograma comparan a cada municipio del Huila con los cerca de 1.100 municipios de Colombia.",
     },
     caracterizacion: {
@@ -161,7 +162,10 @@
   };
 
   // Conteos absolutos (población): se suman, no se comparan con Colombia.
-  const esAditivo = (ind) => ind.unidad === "personas";
+  const esAditivo = (ind) => ind.unidad === "personas" || ind.agregable === "suma";
+  // Conteos (población, hechos, hectáreas, grupos): el total del país no es comparable con un municipio,
+  // así que se muestra la parte del total y el lugar entre municipios, no "frente a Colombia".
+  const esConteo = (ind) => esAditivo(ind) || ind.agregable === "grupos";
   // valor de un municipio para el último año (con relleno de ceros si aplica)
   function valorMun(ind, cod) { return hay(ind.municipios[cod]) ? ind.municipios[cod] : null; }
 
@@ -215,6 +219,7 @@
   }
   function tagDe(ind) {
     if (ind.sentido === "contexto") return { cls: "contexto", txt: "Contexto" };
+    if (esConteo(ind)) return { cls: "contexto", txt: "Conteo" };
     const t = valorTerritorio(ind).v, c = valorColombia(ind).v;
     const d = comparacion(ind, t, c);
     if (d === null) return t === c && hay(t) ? { cls: "similar", txt: "Similar" } : { cls: "similar", txt: "Sin dato" };
@@ -222,8 +227,19 @@
     const peor = ind.sentido === "peor" ? d > 0 : d < 0;
     return peor ? { cls: "peor", txt: "Peor" } : { cls: "mejor", txt: "Mejor" };
   }
+  // "año 2024", o el periodo que declara la fuente cuando no es un año (p. ej. 12 meses, 2024-2026).
+  function textoPeriodo(ind) {
+    if (/^\d{4}$/.test(String(ind.anio))) return `año ${ind.anio}`;
+    if (/^\d{4}-\d{4}$/.test(String(ind.anio))) return `periodo ${ind.anio}`;
+    return `periodo ${ind.periodo || ind.anio}`;
+  }
+  // Forma corta para subtítulos: el año, el rango de años o "los últimos 12 meses".
+  function anioCorto(ind) {
+    return /^\d{4}(-\d{4})?$/.test(String(ind.anio)) ? String(ind.anio) : "los últimos 12 meses";
+  }
   function notaInd(ind) {
     const partes = [];
+    if (ind.descripcion) partes.push(ind.descripcion);
     if (ind.nota) partes.push(ind.nota);
     if (ind.ceros) partes.push("TerriData no publica un municipio el año en que no hubo casos; esos municipios se cuentan como 0 si tienen dato en otros años.");
     if (!hay(ind.huila) && ind.sentido !== "contexto") partes.push("No hay dato departamental del Huila para este año: se usa la mediana de sus municipios.");
@@ -326,7 +342,8 @@
     const ind = IND.find((i) => i.id === est.id);
 
     q("ind-titulo").textContent = ind.etiqueta;
-    q("ind-meta").innerHTML = `${esc(ind.unidad)} · año ${ind.anio} · Fuente: ${esc(ind.fuente)}` +
+    q("ind-meta").innerHTML = `${esc(ind.unidad)} · ${esc(textoPeriodo(ind))} · Fuente: ${esc(ind.fuente)}` +
+      (ind.fecha ? ` · consultado ${esc(ind.fecha)}` : "") +
       (ind.sentido === "contexto" ? "" : ` · ${ind.sentido === "peor" ? "un valor más alto es peor" : "un valor más alto es mejor"}`);
     q("ind-nota").textContent = notaInd(ind);
     q("ind-nota").hidden = !notaInd(ind);
@@ -347,17 +364,21 @@
     const u = ind.unidad;
     const html = [];
     html.push(cifra(esc(nombreTerritorio()), fmtV(t.v, u), esc(t.como), true));
-    if (esAditivo(ind)) {
+    if (esConteo(ind)) {
+      const pob = ind.unidad === "personas";
       const pctDe = (base) => (hay(t.v) && base ? fmt1.format((100 * t.v) / base) + " %" : "—");
-      html.push(cifra("Colombia", fmtV(ind.colombia, u), "dato nacional"));
-      html.push(terr.tipo === "todo"
-        ? cifra("Parte del país", pctDe(ind.colombia), "de la población de Colombia")
+      html.push(cifra("Colombia", fmtV(ind.colombia, u), "total del país"));
+      if (ind.agregable === "grupos") html.push(cifra("Grupos distintos", "—", "no se suman entre territorios"));
+      else html.push(terr.tipo === "todo"
+        ? cifra("Parte del país", pctDe(ind.colombia), pob ? "de la población de Colombia" : "del total de Colombia")
         : cifra("Parte del Huila", pctDe(ind.huila), `del Huila (${fmtV(ind.huila, u)})`));
       if (terr.tipo === "mun" && hay(t.v)) {
         const p = Math.round(100 * percentil(ind, t.v));
-        html.push(cifra("Lugar en el país", `${p} %`, "de los municipios tiene menos habitantes"));
+        html.push(cifra("Lugar en el país", `${p} %`, pob ? "de los municipios tiene menos habitantes" : "de los municipios tiene un valor menor"));
+      } else if (terr.tipo === "todo" && hay(ind.puesto_dep) && ind.sentido !== "contexto") {
+        html.push(cifra("Puesto entre departamentos", `${ind.puesto_dep} <small>de ${ind.n_dep}</small>`, "1 = valor más alto"));
       } else html.push(cifra("Municipios", fmtN.format(codsTerritorio().length), "en el territorio"));
-      html.push(cifra("Mediana región Andina", fmtV(ind.mediana_andina, u), "habitantes por municipio"));
+      html.push(cifra("Mediana región Andina", fmtV(ind.mediana_andina, u), pob ? "habitantes por municipio" : "por municipio"));
       cont.innerHTML = html.join("");
       return;
     }
@@ -401,7 +422,7 @@
     const n = fmtN.format(ind.nacional.length);
     q("sub-mapa").textContent = ind.sentido === "contexto"
       ? `Color según el lugar de cada municipio entre los ${n} del país (quintiles).`
-      : `Color según la situación de cada municipio frente a los ${n} del país (quintiles, ${ind.anio}).`;
+      : `Color según la situación de cada municipio frente a los ${n} del país (quintiles, ${anioCorto(ind)}).`;
     dibujarMapa(q("mapa"), (cod) => colorQ(ind, quintil(ind, valorMun(ind, cod))), (cod) => {
       const v = valorMun(ind, cod);
       const qq = quintil(ind, v);
@@ -437,12 +458,12 @@
       const sh = Object.keys(ind.serie_huila).length ? ind.serie_huila : serieMediana(ind, MUNIS.map((m) => m.cod));
       lineas.push({ nombre: Object.keys(ind.serie_huila).length ? "Huila" : "Huila (mediana)", s: sh, color: css("--serie-1"), ancho: 1.6, guion: "5 4" });
     }
-    if (esAditivo(ind)) lineas.splice(1);
+    if (esConteo(ind)) lineas.splice(1);
     else if (Object.keys(ind.serie_colombia).length) lineas.push({ nombre: "Colombia", s: ind.serie_colombia, color: css("--serie-2"), ancho: 2 });
     const anios = [...new Set(lineas.flatMap((l) => Object.keys(l.s)))].map(Number).sort((a, b) => a - b);
     if (anios.length < 2) {
       q("sub-serie").textContent = "";
-      cont.innerHTML = `<p class="vacio">Solo hay un año publicado (${ind.anio}); no hay serie para comparar.</p>`;
+      cont.innerHTML = `<p class="vacio">Solo hay un dato publicado (${anioCorto(ind)}); no hay serie para comparar.</p>`;
       return;
     }
     q("sub-serie").textContent = `${anios[0]}–${anios[anios.length - 1]} · ${ind.unidad}`;
@@ -533,7 +554,7 @@
     svg.appendChild(svgEl("text", { x: W - m.r, y: H - 6, "text-anchor": "end" }, (resto ? "≥ " : "") + fmtV(hi, ind.unidad)));
     // marcadores
     const marcas = [
-      { v: esAditivo(ind) ? null : c, nombre: hay(ind.colombia) ? "Colombia" : "Colombia (mediana)", color: css("--serie-2"), guion: "" },
+      { v: esConteo(ind) ? null : c, nombre: hay(ind.colombia) ? "Colombia" : "Colombia (mediana)", color: css("--serie-2"), guion: "" },
       { v: r, nombre: "Mediana Andina", color: css("--naranja"), guion: "4 3" },
       { v: t, nombre: nombreTerritorio(), color: css("--tinta"), guion: "" },
     ].filter((mk) => hay(mk.v));
@@ -552,12 +573,18 @@
       svg.appendChild(svgEl("text", { x: mx, y: ty, "text-anchor": anchor, style: `fill:${mk.color};font-weight:600` }, txt));
     });
     cont.replaceChildren(svg);
-    q("sub-hist").textContent = `${fmtN.format(n)} municipios con dato en ${ind.anio}. Cada barra cuenta municipios en un rango de valores.`;
+    q("sub-hist").textContent = `${fmtN.format(n)} municipios con dato en ${anioCorto(ind)}. Cada barra cuenta municipios en un rango de valores.`;
     q("pie-hist").textContent = (resto ? `${fmtN.format(resto)} municipios con valores mayores a ${fmtV(hi, ind.unidad)} se suman en la última barra.` : "") +
       (marcas.some((mk) => mk.v > hi) ? " ▸ = valor fuera del rango dibujado." : "");
   }
 
   // ---------- tabla ----------
+  const FUENTE_GRUPO = { sat: "Defensoría", pares: "Pares", cnmh: "CNMH", ucdp: "UCDP" };
+  function gruposTexto(ind, cod) {
+    const g = ind.grupos_municipio[cod];
+    if (!g) return "—";
+    return Object.entries(g).map(([n, fs]) => `${esc(n)} <small>(${fs.map((f) => FUENTE_GRUPO[f] || f).join(", ")})</small>`).join("<br>");
+  }
   function pintarTablaInd(q, ind) {
     const cods = (terr.tipo === "sub" ? codsTerritorio() : MUNIS.map((m) => m.cod));
     const filas = cods.map((cod) => ({ cod, v: valorMun(ind, cod) }));
@@ -567,12 +594,14 @@
       (ind.sentido === "contexto" ? "Ordenados de mayor a menor." : "Ordenados de peor a mejor situación. Puesto entre los municipios del país, 1 = peor.");
     const n = fmtN.format(ind.nacional.length);
     let h = `<table><thead><tr><th>Municipio</th><th>Subregión</th><th class="n">${esc(ind.unidad.length > 18 ? "Valor" : ind.unidad)}</th><th>Frente al país</th>` +
-      (ind.sentido === "contexto" ? "" : `<th class="n">Puesto de ${n}</th>`) + `</tr></thead><tbody>`;
+      (ind.sentido === "contexto" ? "" : `<th class="n">Puesto de ${n}</th>`) +
+      (ind.grupos_municipio ? "<th>Grupos y fuentes que los nombran</th>" : "") + `</tr></thead><tbody>`;
     for (const f of filas) {
       const qq = quintil(ind, f.v);
       h += `<tr data-cod="${f.cod}"${terr.tipo === "mun" && terr.valor === f.cod ? ' class="sel"' : ""}><td>${esc(NOMBRE[f.cod])}</td><td>${esc(SUBREG[f.cod])}</td>` +
         `<td class="n">${fmtV(f.v, ind.unidad)}</td><td><span class="sit"><span class="chip" style="background:${colorQ(ind, qq)}"></span>${etqQ(ind, qq)}</span></td>` +
-        (ind.sentido === "contexto" ? "" : `<td class="n">${hay(f.v) ? fmtN.format(puestoNacional(ind, f.v)) : "—"}</td>`) + `</tr>`;
+        (ind.sentido === "contexto" ? "" : `<td class="n">${hay(f.v) ? fmtN.format(puestoNacional(ind, f.v)) : "—"}</td>`) +
+        (ind.grupos_municipio ? `<td class="grupos">${gruposTexto(ind, f.cod)}</td>` : "") + `</tr>`;
     }
     h += "</tbody></table>";
     const cont = q("tabla");

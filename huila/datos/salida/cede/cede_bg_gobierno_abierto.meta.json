@@ -1,0 +1,20 @@
+{
+  "id": "cede_bg_gobierno_abierto",
+  "tema": "Buen gobierno",
+  "etiqueta": "Índice de Gobierno Abierto (Procuraduría)",
+  "descripcion": "Índice de la Procuraduría General de la Nación (0 a 100) sobre organización de la información (control interno, gestión documental), exposición (contratación, reportes a sistemas nacionales) y diálogo con la ciudadanía (gobierno en línea, rendición de cuentas, atención al ciudadano).",
+  "unidad": "puntos (0-100)",
+  "sentido": "mejor",
+  "periodo": "2010-2015",
+  "anio_principal": "2015",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable IGA_total; fuente original Procuraduría General de la Nación)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Se excluye 2016 porque el diccionario señala cambio de metodología ese año. Entre 2010 y 2015 algunos subcomponentes también cambiaron (p. ej. procesos actualizados 2010-2013 vs plan anual de adquisiciones 2014-2015); la mediana nacional sube de 52 (2010-2011) a 69 (2012). Mide cumplimiento de reportes y normas, no corrupción.",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88"
+  }
+}

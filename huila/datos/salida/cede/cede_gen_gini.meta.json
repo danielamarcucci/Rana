@@ -1,0 +1,20 @@
+{
+ "id": "cede_gen_gini",
+ "tema": "Caracterización",
+ "etiqueta": "Desigualdad del consumo (Gini)",
+ "descripcion": "Coeficiente de Gini municipal del consumo per cápita de los hogares (0 = igualdad total, 1 = desigualdad máxima).",
+ "unidad": "Índice 0-1",
+ "sentido": "peor",
+ "periodo": "1993 y 2005",
+ "anio_principal": "2005",
+ "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+ "base": "Panel Características generales (variable gini; fuente original cálculos del CEDE a partir de CASEN 1993, ECV 2003 y censos 1993 y 2005 del DANE)",
+ "enlace": "https://doi.org/10.57924/IX38JI",
+ "fecha_consulta": "2026-10-06",
+ "agregable": "no",
+ "factor": null,
+ "nota": "Estimación de áreas pequeñas (metodología Elbers, Lanjouw y Lanjouw 2003): combina encuestas de hogares, que solo son representativas por región, con el censo. Solo 1993 y 2005; es la única medida municipal de desigualdad disponible, pero tiene más de 20 años.",
+ "sha256": {
+  "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+ }
+}

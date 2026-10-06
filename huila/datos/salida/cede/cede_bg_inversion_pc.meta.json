@@ -1,0 +1,22 @@
+{
+  "id": "cede_bg_inversion_pc",
+  "tema": "Buen gobierno",
+  "etiqueta": "Inversión pública municipal por habitante",
+  "descripcion": "Gastos de capital (inversión: formación bruta de capital fijo e inversión social, como nómina de maestros y médicos, subsidios y dotaciones) del municipio por habitante.",
+  "unidad": "pesos corrientes por habitante",
+  "sentido": "contexto",
+  "periodo": "2000-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable g_cap; fuente original DNP, ejecuciones presupuestales)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1,
+  "nota": "Construido: g_cap (millones de pesos) × 1.000.000 / población. Incluye inversión financiada con SGP; no incluye proyectos del SGR (que tienen presupuesto aparte). Más inversión por habitante no implica mejores resultados. Pesos CORRIENTES de cada año (sin deflactar): sirve para comparar municipios en un mismo año; la evolución en el tiempo incluye inflación. Se excluyen los registros sin reporte fiscal (ingresos totales, gasto total o gasto de capital = 0 en el panel). Denominador: población total DANE base CNPV 2018 — retro_pobl_tot del módulo Características generales del Panel CEDE (https://doi.org/10.57924/IX38JI) hasta 2017 y proyecciones DANE 2018-2030 del proyecto (poblacion_municipal_nacional.csv) desde 2018.",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88",
+    "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1",
+    "poblacion_municipal_nacional.csv": "9d125afa05ddfe2ab3a1b74042a7b8cc9ac35327edb4788259aa64984e65cb62"
+  }
+}

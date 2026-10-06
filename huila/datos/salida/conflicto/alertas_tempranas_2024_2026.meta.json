@@ -1,0 +1,19 @@
+{
+  "id": "alertas_tempranas_2024_2026",
+  "etiqueta": "Alertas tempranas (Defensoría)",
+  "descripcion": "Número de alertas tempranas (estructurales y de inminencia) emitidas por el Sistema de Alertas Tempranas de la Defensoría del Pueblo entre 2024 y 2026 cuyo lugar de advertencia incluye al municipio.",
+  "unidad": "alertas tempranas",
+  "sentido": "contexto",
+  "periodo": "2024-01-01 a 2026-10-05 (2026 parcial; alertas 001-24 a 024-26)",
+  "institucion": "Defensoría del Pueblo – Delegada para la Prevención de Riesgos y Sistema de Alertas Tempranas (SAT)",
+  "base": "SISAT – Alertas Tempranas emitidas (módulo Reportes, exportación Excel, y fichas por alerta)",
+  "enlace": "https://alertastempranas.defensoria.gov.co/",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "71 alertas emitidas en 2024-2026 (27 en 2024, 20 en 2025, 24 en 2026 hasta 2026-10-05). El listado es completo: 370 alertas desde 001-17, numeración consecutiva sin huecos por año, igual al contador del aplicativo; por eso ausente = 0. No se cuentan las alertas de alcance nacional o temático (más de 200 municipios; en el periodo: 013-25, p. ej. la 013-25 electoral que cubre 1.122 municipios), porque no distinguen territorios; están en alertas_sat_detalle.csv. Como una alerta cubre varios municipios, el valor no se suma (agregable: no). Una alerta advierte un riesgo, no registra hechos ocurridos. Municipios tomados de la tabla 'Lugar de advertencia' de cada ficha (el Excel corta la lista con '... y Otros' en 11 alertas) y homologados por nombre a DIVIPOLA. Se muestra como contexto, sin ranking.",
+  "sha256": {
+    "Reporte_de_Alertas_Tempranas.xlsx": "be4ec9c9a91cef5b95c331450709f809faf8382fcf47eb52f72eb6acaf24fe91",
+    "sisat_paginas.zip": "00c8bc21a64cc362b2b61e277c0f7b06a3ec6a655eb8b7b7d951c4df6b27c5b9"
+  }
+}

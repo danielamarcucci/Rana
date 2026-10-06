@@ -1,0 +1,20 @@
+{
+  "id": "cede_agr_rend_cafe",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Rendimiento del café",
+  "descripcion": "Toneladas de café producidas por hectárea cosechada en el año.",
+  "unidad": "t/ha",
+  "sentido": "mejor",
+  "periodo": "2007-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variable r_cafe; fuente original EVA - MinAgricultura)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Variable del panel tal como viene (producción / área cosechada). El diccionario no precisa el estado del grano (pergamino o verde). Hay 11 valores mayores a 4 t/ha (casi todos de Cundinamarca en 2008, hasta 10,7) que se dejan tal como vienen y conviene leer como dudosos. Total nacional de producción en el panel 2019: 885.120 t (≈14,75 millones de sacos de 60 kg), consistente con la cosecha publicada por la FNC. Municipios sin café registrado quedan sin dato.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac"
+  }
+}

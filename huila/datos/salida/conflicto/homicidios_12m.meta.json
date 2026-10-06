@@ -1,0 +1,21 @@
+{
+  "id": "homicidios_12m",
+  "etiqueta": "Homicidios por 100.000 hab. (12 meses)",
+  "descripcion": "Víctimas de homicidio intencional registradas por la Policía Nacional entre septiembre de 2025 y agosto de 2026, por municipio del hecho, por cada 100.000 habitantes (población DANE proyectada 2026).",
+  "unidad": "homicidios por 100.000 habitantes",
+  "sentido": "peor",
+  "periodo": "Septiembre 2025 – agosto 2026 (12 meses)",
+  "institucion": "Ministerio de Defensa Nacional – Policía Nacional (SIEDCO)",
+  "base": "HOMICIDIO (datos.gov.co, m8fd-ahd9), agregado por municipio con SoQL",
+  "enlace": "https://www.datos.gov.co/d/m8fd-ahd9",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100000,
+  "nota": "Cifras de la Policía Nacional, preliminares y sujetas a actualización; suelen ser menores que las de Medicina Legal o DANE. Agosto de 2026 era el último mes completo publicado al consultar. Municipio sin registros en el periodo = 0 (cobertura nacional). Mapiripana (ANM, 94663) tiene población DANE 2026 = 0: tasa vacía. En municipios pequeños pocos casos producen tasas altas. Chequeo: total 2025 en el dataset 14038 vs 14037 publicado por la Policía (SIEDCO, corte 12-jun-2026, citado por U. Externado).",
+  "sha256": {
+    "homicidio_12m_municipio.json": "49b5e9597af7b2dcadcab28cdcc73c5327475595f458f89448ea0b9ae1c2a711",
+    "homicidio_12m_mensual_nacional.json": "0b99f7f72fdef9f7a10fcaf3836793e822a66d51195eb9c183ef1fa64243d118",
+    "homicidio_2025_nacional.json": "a35139906131185c0bde7bad95e7cc4e500bc30aeb4d9a6730ffb520d989f4b3",
+    "homicidio_fecha_maxima.json": "e76cb2201ce9ef24fe41173ba42b23a9ac6314896404f3200040e9c121f4f969"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "cede_edu_repitencia",
+  "tema": "Educación y servicios",
+  "etiqueta": "Tasa de repitencia",
+  "descripcion": "Alumnos repitentes de preescolar, primaria, secundaria y media como porcentaje del total de alumnos de esos niveles en el municipio.",
+  "unidad": "% de la matrícula",
+  "sentido": "peor",
+  "periodo": "2005-2013 (sin 2007)",
+  "anio_principal": "2013",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Educación (variable alumn_totalre y alumn_total; fuente original C600 DANE - MEN)",
+  "enlace": "https://doi.org/10.57924/EPRE6V",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100,
+  "nota": "Porcentaje construido: alumn_totalre / alumn_total × 100. El panel solo trae repitentes 2005-2013. Se verificó que alumn_totalre corresponde a los niveles tradicionales (igual a la suma de repitentes por nivel y sexo sin ciclos en 98 % de las filas), igual que alumn_total. La repitencia depende también de las políticas de promoción de cada año (p. ej. el Decreto 230 de 2002 limitaba la reprobación), así que los cambios en el tiempo no son solo de desempeño. Se excluye 2007: el C600 de ese año viene incompleto en el panel (matrícula nacional 9,05 millones vs 9,6-9,7 en 2006 y 2008, filas imposibles como más repitentes que alumnos).",
+  "sha256": {
+    "PANEL_DE_EDUCACION(2021).tab": "8bda7ac46e53550c0b28977cca04a6a1e91dfa4a9953233fe2a173b3d33290b3"
+  }
+}

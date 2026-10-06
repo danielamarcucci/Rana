@@ -1,0 +1,889 @@
+[{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"80","eventos":"86"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"463","eventos":"481"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"39902","eventos":"42602"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"30","eventos":"34"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"47","eventos":"52"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"47","eventos":"49"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2615","eventos":"2734"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"9","eventos":"10"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"78","eventos":"89"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"18","eventos":"18"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"28","eventos":"30"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"35","eventos":"38"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"63","eventos":"63"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"25","eventos":"25"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"21","eventos":"22"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"33","eventos":"34"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"2030","eventos":"2084"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"12","eventos":"12"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"29","eventos":"34"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"124","eventos":"128"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"203","eventos":"219"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"382","eventos":"402"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"9722","eventos":"10006"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"46","eventos":"50"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"678","eventos":"683"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"53","eventos":"56"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"8972","eventos":"9310"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"19","eventos":"20"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"108","eventos":"108"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"33","eventos":"34"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"53","eventos":"59"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"110","eventos":"122"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"8742","eventos":"9057"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"102","eventos":"106"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"2549","eventos":"2615"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"8","eventos":"9"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"21","eventos":"21"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1501","eventos":"1569"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1145","eventos":"1176"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"38","eventos":"38"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"5","eventos":"8"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"38","eventos":"39"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"12","eventos":"14"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"12"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"514","eventos":"519"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1302","eventos":"1327"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"20","eventos":"21"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"31","eventos":"34"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"18","eventos":"22"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"14","eventos":"16"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"11"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"13","eventos":"15"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"31","eventos":"37"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"14","eventos":"17"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"219","eventos":"228"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"44","eventos":"50"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"92","eventos":"98"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 0 y 5","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"42","eventos":"45"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"50","eventos":"51"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"15","eventos":"17"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"5","eventos":"8"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"36","eventos":"38"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"13","eventos":"14"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"18","eventos":"18"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"54","eventos":"55"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"20","eventos":"20"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"218","eventos":"224"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"11"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"97","eventos":"104"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"16","eventos":"16"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"5","eventos":"6"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 0 y 5","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"3324","eventos":"3475"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"58","eventos":"64"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"156","eventos":"167"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"6830","eventos":"7092"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"18","eventos":"19"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"207","eventos":"226"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"108","eventos":"112"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1030","eventos":"1080"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"19719","eventos":"21190"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"48","eventos":"56"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"46","eventos":"52"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"42","eventos":"44"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"23","eventos":"27"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"9","eventos":"9"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"21","eventos":"24"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"26","eventos":"26"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"11","eventos":"13"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"31","eventos":"36"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1574","eventos":"1637"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"7","eventos":"9"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"7","eventos":"9"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"55","eventos":"56"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"438","eventos":"492"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"164","eventos":"169"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"9226","eventos":"9413"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"152","eventos":"164"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"53","eventos":"54"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"20","eventos":"20"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"2304","eventos":"2392"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"14","eventos":"15"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"57","eventos":"63"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"13492","eventos":"14571"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"14","eventos":"16"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"252","eventos":"263"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"12","eventos":"13"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"99","eventos":"106"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"29","eventos":"31"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"231","eventos":"244"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"9353","eventos":"10073"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"76","eventos":"85"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"124","eventos":"130"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"25","eventos":"26"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"14001","eventos":"15210"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"14","eventos":"14"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"25","eventos":"26"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"32","eventos":"37"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"9","eventos":"9"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Intersexual","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"385","eventos":"405"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"5","eventos":"6"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"9","eventos":"9"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1477","eventos":"1511"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"ND","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"30","eventos":"32"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"120","eventos":"129"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"10","eventos":"12"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"74","eventos":"79"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"76","eventos":"81"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"32","eventos":"32"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"2509","eventos":"2612"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"11"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"46","eventos":"46"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"15","eventos":"16"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"15","eventos":"16"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"23","eventos":"27"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"40","eventos":"44"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"64","eventos":"70"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"18","eventos":"18"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"670","eventos":"690"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"124","eventos":"134"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1313","eventos":"1381"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"9","eventos":"9"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"73","eventos":"73"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"12","eventos":"15"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"23","eventos":"23"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"127","eventos":"149"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"36","eventos":"36"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"185","eventos":"187"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"549","eventos":"578"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1168","eventos":"1197"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"49","eventos":"51"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"426","eventos":"434"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 0 y 5","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"50","eventos":"51"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"160","eventos":"164"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"104","eventos":"114"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"408","eventos":"419"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"5977","eventos":"6156"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"5443","eventos":"5638"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"43","eventos":"43"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"845","eventos":"878"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1474","eventos":"1515"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"76","eventos":"79"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1604","eventos":"1653"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"30","eventos":"32"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"79","eventos":"84"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"68","eventos":"71"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"20","eventos":"24"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"13","eventos":"13"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"97","eventos":"101"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"12175","eventos":"12624"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"62","eventos":"65"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"17","eventos":"18"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"204","eventos":"210"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"9","eventos":"10"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"13","eventos":"13"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"27","eventos":"27"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1046","eventos":"1087"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"82","eventos":"85"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1945","eventos":"2045"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"10"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"698","eventos":"714"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1088","eventos":"1141"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"477","eventos":"507"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"32","eventos":"34"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"55","eventos":"55"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"135","eventos":"142"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"4462","eventos":"4641"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"33","eventos":"38"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"18","eventos":"19"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"201","eventos":"211"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"20","eventos":"21"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"26","eventos":"26"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"12523","eventos":"13083"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"220","eventos":"227"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"968","eventos":"1002"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"243","eventos":"256"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"68","eventos":"74"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"28","eventos":"28"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"20","eventos":"20"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"44","eventos":"47"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"198","eventos":"205"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"12","eventos":"12"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"21","eventos":"22"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"420","eventos":"433"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"20","eventos":"23"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"14","eventos":"14"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"48","eventos":"48"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"9265","eventos":"9451"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"20","eventos":"21"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"92","eventos":"96"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"43","eventos":"48"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"18","eventos":"21"}
+,{"vigencia":"2025","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"144","eventos":"147"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"11","eventos":"13"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"3970","eventos":"4158"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"922","eventos":"955"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"34885","eventos":"35851"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"103","eventos":"119"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"48","eventos":"52"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"9344","eventos":"9621"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"3795","eventos":"3973"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"10165","eventos":"10980"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"343","eventos":"351"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"14","eventos":"14"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"44","eventos":"45"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"116","eventos":"134"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"24","eventos":"25"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"31","eventos":"33"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"13","eventos":"13"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1193","eventos":"1225"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"64","eventos":"67"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"511","eventos":"521"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"23","eventos":"25"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"16","eventos":"16"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"18","eventos":"19"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"167","eventos":"180"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"30","eventos":"33"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"49","eventos":"52"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"12","eventos":"12"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"469","eventos":"486"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"239","eventos":"252"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"23","eventos":"27"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"11"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"9200","eventos":"9514"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"14","eventos":"14"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"30","eventos":"31"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"32","eventos":"34"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"9"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"576","eventos":"592"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"2429","eventos":"2540"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"11"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"662","eventos":"685"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"49","eventos":"51"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"9","eventos":"9"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"800","eventos":"848"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"50","eventos":"51"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"338","eventos":"345"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"ND","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"56","eventos":"60"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"49","eventos":"53"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"2924","eventos":"3028"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"57","eventos":"59"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"269","eventos":"278"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"9","eventos":"9"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"84","eventos":"89"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"14","eventos":"14"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"49","eventos":"51"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"16","eventos":"16"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 0 y 5","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"172","eventos":"192"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"11","eventos":"13"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"408","eventos":"415"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"1017","eventos":"1069"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"9","eventos":"10"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"38","eventos":"40"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"260","eventos":"269"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"3406","eventos":"3572"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"45817","eventos":"48835"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"8","eventos":"11"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"17","eventos":"17"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"14","eventos":"15"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"16","eventos":"17"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"12","eventos":"12"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"10","eventos":"11"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"59","eventos":"63"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1711","eventos":"1793"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"836","eventos":"859"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 0 y 5","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"16","eventos":"17"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1179","eventos":"1215"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"13","eventos":"15"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"271","eventos":"290"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"273","eventos":"280"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"13","eventos":"16"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"9","eventos":"10"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"29","eventos":"30"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Intersexual","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"24","eventos":"26"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"58","eventos":"62"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"21","eventos":"23"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"124","eventos":"132"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"118","eventos":"137"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"4","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"ND","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"48","eventos":"49"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"18","eventos":"20"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"2722","eventos":"2827"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"2405","eventos":"2516"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"190","eventos":"196"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"2029","eventos":"2108"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"15","eventos":"16"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 0 y 5","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"409","eventos":"417"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"26","eventos":"27"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"1094","eventos":"1126"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"109","eventos":"116"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"51","eventos":"51"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"93","eventos":"96"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"26","eventos":"27"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"6328","eventos":"6606"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1474","eventos":"1522"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"13","eventos":"15"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"5779","eventos":"5943"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"76","eventos":"76"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"14413","eventos":"14809"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"116","eventos":"121"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"50","eventos":"53"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"12","eventos":"14"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1984","eventos":"2037"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"39","eventos":"41"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"14","eventos":"14"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 0 y 5","per_ocu":"2","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"1115","eventos":"1153"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"728","eventos":"819"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"18","eventos":"19"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1747","eventos":"1833"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"81","eventos":"89"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"197","eventos":"201"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 6 y 11","per_ocu":"6","eventos":"9"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"11","eventos":"12"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"6"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 18 y 28","per_ocu":"37","eventos":"41"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"124","eventos":"125"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"26","eventos":"28"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"3466","eventos":"3565"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"62","eventos":"67"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"5","eventos":"6"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"40","eventos":"44"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"11","eventos":"11"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"27","eventos":"30"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"52","eventos":"54"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"92","eventos":"96"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1948","eventos":"2027"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"43","eventos":"45"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"22530","eventos":"24319"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"21","eventos":"21"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"9","eventos":"10"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"40","eventos":"40"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"55","eventos":"60"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"52","eventos":"56"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"17","eventos":"18"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 60 y 110","per_ocu":"10","eventos":"10"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"31","eventos":"31"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"23","eventos":"24"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"9480","eventos":"9774"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"303","eventos":"318"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"30","eventos":"31"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"ND","per_ocu":"1043","eventos":"1087"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"7","eventos":"8"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"5","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"13344","eventos":"14397"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 0 y 5","per_ocu":"6","eventos":"8"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"11733","eventos":"12185"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"23","eventos":"23"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"40","eventos":"48"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"26","eventos":"27"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"12","eventos":"15"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"45","eventos":"46"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"ND","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"15968","eventos":"16432"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"28","eventos":"28"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"4","eventos":"4"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"978","eventos":"994"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"35","eventos":"39"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"204","eventos":"218"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"233","eventos":"251"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"50","eventos":"53"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"2238","eventos":"2322"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"50","eventos":"55"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"14112","eventos":"15269"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"8","eventos":"8"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"22","eventos":"23"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"17","eventos":"17"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"4"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Multiple","ciclo_vital":"entre 0 y 5","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 12 y 17","per_ocu":"13","eventos":"13"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Por Establecer","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"15","eventos":"15"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"55","eventos":"55"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1389","eventos":"1443"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"3"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Intelectual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"66","eventos":"68"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Ninguna","ciclo_vital":"entre 12 y 17","per_ocu":"2644","eventos":"2771"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"201","eventos":"219"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"36","eventos":"42"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 18 y 28","per_ocu":"51","eventos":"54"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 12 y 17","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 0 y 5","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Gitano (RROM) (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 60 y 110","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"19","eventos":"19"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Indigena","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Multiple","ciclo_vital":"entre 60 y 110","per_ocu":"94","eventos":"98"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Fisica","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"12","eventos":"12"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Visual","ciclo_vital":"entre 12 y 17","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Palenquero","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 29 y 59","per_ocu":"29417","eventos":"30281"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"7","eventos":"7"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 12 y 17","per_ocu":"19","eventos":"20"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"90","eventos":"91"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"27","eventos":"30"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Indigena","discapacidad":"Visual","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Gitano(a) ROM","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"21","eventos":"26"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena","discapacidad":"Por Establecer","ciclo_vital":"entre 60 y 110","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"96","eventos":"104"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 6 y 11","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Sin Informaci�n","etnia":"Indigena","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Afrocolombiano (Acreditado RA)","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 60 y 110","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 18 y 28","per_ocu":"10","eventos":"12"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Multiple","ciclo_vital":"entre 29 y 59","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Sin Informaci�n","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 29 y 59","per_ocu":"22","eventos":"22"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Intelectual","ciclo_vital":"entre 29 y 59","per_ocu":"52","eventos":"55"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"51","eventos":"58"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Auditiva","ciclo_vital":"entre 12 y 17","per_ocu":"6","eventos":"7"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Indigena (Acreditado RA)","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"6","eventos":"6"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Por Establecer","ciclo_vital":"entre 29 y 59","per_ocu":"29","eventos":"29"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 29 y 59","per_ocu":"134","eventos":"141"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Raizal del Archipielago de San Andres y Providencia","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"3","eventos":"3"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 12 y 17","per_ocu":"22","eventos":"22"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Auditiva","ciclo_vital":"entre 60 y 110","per_ocu":"65","eventos":"69"}
+,{"vigencia":"2025","sexo":"Intersexual","etnia":"Ninguna","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"1","eventos":"1"}
+,{"vigencia":"2025","sexo":"Mujer","etnia":"Negro(a) o Afrocolombiano(a)","discapacidad":"Fisica","ciclo_vital":"entre 60 y 110","per_ocu":"107","eventos":"117"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Psicosocial (Mental)","ciclo_vital":"entre 6 y 11","per_ocu":"5","eventos":"5"}
+,{"vigencia":"2024","sexo":"Mujer","etnia":"Ninguna","discapacidad":"Intelectual","ciclo_vital":"entre 60 y 110","per_ocu":"44","eventos":"45"}
+,{"vigencia":"2025","sexo":"Hombre","etnia":"Ninguna","discapacidad":"Fisica","ciclo_vital":"entre 18 y 28","per_ocu":"155","eventos":"176"}
+,{"vigencia":"2024","sexo":"Intersexual","etnia":"Indigena (Acreditado RA)","discapacidad":"Ninguna","ciclo_vital":"entre 18 y 28","per_ocu":"2","eventos":"2"}
+,{"vigencia":"2024","sexo":"Hombre","etnia":"Palenquero","discapacidad":"Ninguna","ciclo_vital":"entre 6 y 11","per_ocu":"13","eventos":"14"}]

@@ -1,0 +1,21 @@
+{
+  "id": "cede_sal_mortalidad_bruta",
+  "tema": "Salud",
+  "etiqueta": "Tasa bruta de mortalidad",
+  "descripcion": "Defunciones de residentes en el municipio por cada 1.000 habitantes (todas las edades y causas).",
+  "unidad": "defunciones por 1.000 hab.",
+  "sentido": "contexto",
+  "periodo": "1998-2015",
+  "anio_principal": "2015",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variable defunciones; fuente original Estadísticas vitales DANE)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1000,
+  "nota": "Tasa construida: defunciones (municipio de residencia) / retro_pobl_tot × 1.000. Denominador: retro_pobl_tot (población total retroproyectada DANE, base CNPV 2018) del módulo Características generales del Panel CEDE (https://doi.org/10.57924/IX38JI). Tasa bruta: no está ajustada por edad, así que municipios con población más envejecida muestran tasas más altas sin que eso indique peor salud. Posible subregistro de defunciones en zonas apartadas.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f",
+    "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+  }
+}

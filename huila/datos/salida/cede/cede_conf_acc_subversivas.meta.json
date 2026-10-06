@@ -1,0 +1,21 @@
+{
+ "id": "cede_conf_acc_subversivas",
+ "tema": "Conflicto y violencia",
+ "etiqueta": "Acciones subversivas",
+ "descripcion": "Total de acciones subversivas por 100.000 habitantes: acciones de carácter militar que implican interacción armada entre grupos guerrilleros y la fuerza pública.",
+ "unidad": "Por cada 100.000 habitantes",
+ "sentido": "peor",
+ "periodo": "2003-2020",
+ "anio_principal": "2019",
+ "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+ "base": "Panel Conflicto y violencia (variable acc_subversivas; fuente original Ministerio de Defensa)",
+ "enlace": "https://doi.org/10.57924/BN57KJ",
+ "fecha_consulta": "2026-10-06",
+ "agregable": "tasa",
+ "factor": 100000,
+ "nota": "Fuente original Ministerio de Defensa, compilada por el CEDE. 2003-2019 trae fila para todos los municipios (0 explícito); 2020 solo trae los municipios con al menos un hecho, así que en 2020 el resto queda sin dato (no se imputa 0) y el año principal es 2019. 2021 aparece en el archivo pero no está documentado en el diccionario y se excluye. Tasa construida: numerador = conteo del panel; denominador = población total DANE del mismo año (retroproyección CNPV 2018, variable retro_pobl_tot del Panel de Características Generales, para 1993-2017; proyección CNPV 2018 de poblacion_municipal_nacional.csv para 2018-2020). En municipios pequeños pocos hechos producen tasas altas.",
+ "sha256": {
+  "PANEL_CONFLICTO_Y_VIOLENCIA(2021).tab": "889790c81e65891fb588fd535d7ee244ae87051597e74b4cfc43dcbe91c7ea6a",
+  "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+ }
+}

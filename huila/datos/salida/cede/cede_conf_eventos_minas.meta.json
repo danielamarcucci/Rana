@@ -1,0 +1,21 @@
+{
+ "id": "cede_conf_eventos_minas",
+ "tema": "Conflicto y violencia",
+ "etiqueta": "Eventos con minas antipersonal",
+ "descripcion": "Número de eventos relacionados con minas antipersonal (accidentes, incidentes, desminado, incautaciones, sospecha de campo minado) por 100.000 habitantes.",
+ "unidad": "Por cada 100.000 habitantes",
+ "sentido": "peor",
+ "periodo": "1993-2020",
+ "anio_principal": "2020",
+ "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+ "base": "Panel Conflicto y violencia (variable eventos_minas; fuente original DAIMA)",
+ "enlace": "https://doi.org/10.57924/BN57KJ",
+ "fecha_consulta": "2026-10-06",
+ "agregable": "tasa",
+ "factor": 100000,
+ "nota": "Fuente original Dirección para la Acción Integral contra Minas Antipersonal (DAIMA), corte 1 de enero de 2021, compilada por el CEDE. El panel solo trae filas de municipio-año con al menos un registro: los demás quedan sin dato (es probable que sean 0, pero el diccionario no lo dice y no se imputa). Por eso el número de municipios con dato varía cada año. Tasa construida: numerador = conteo del panel; denominador = población total DANE del mismo año (retroproyección CNPV 2018, variable retro_pobl_tot del Panel de Características Generales, para 1993-2017; proyección CNPV 2018 de poblacion_municipal_nacional.csv para 2018-2020). En municipios pequeños pocos hechos producen tasas altas.",
+ "sha256": {
+  "PANEL_CONFLICTO_Y_VIOLENCIA(2021).tab": "889790c81e65891fb588fd535d7ee244ae87051597e74b4cfc43dcbe91c7ea6a",
+  "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+ }
+}

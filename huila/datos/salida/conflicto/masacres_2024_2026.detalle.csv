@@ -1,0 +1,244 @@
+anio,fecha,departamento_original,municipio_original,cod_divipola,victimas
+2024,08/01/2024,Putumayo,Valle Del Guamuez,86865,3
+2024,12/01/2024,Valle del Cauca,Toro,76823,3
+2024,14/01/2024,Huila,Pitalito,41551,3
+2024,15/01/2024,Valle del Cauca,Candelaria,76130,3
+2024,21/01/2024,Cesar,El Copey,20238,3
+2024,21/01/2024,Bolívar,Morales,13473,3
+2024,21/01/2024,Huila,Pitalito,41551,3
+2024,07/02/2024,Magdalena,Fundación,47288,4
+2024,10/02/2024,Casanare,Hato Corozal,85125,3
+2024,12/02/2024,Cauca,Piamonte,19533,4
+2024,13/02/2024,Valle del Cauca,Ansermanuevo,76041,3
+2024,18/02/2024,Cauca,Páez,19517,3
+2024,22/02/2024,Risaralda,Santuario,66687,4
+2024,03/03/2024,Chocó,Quibdó,27001,4
+2024,03/03/2024,Magdalena,Pueblo Viejo,47570,3
+2024,08/03/2024,Valle del Cauca,Ansermanuevo,76041,4
+2024,12/03/2024,Chocó,Lloró,27413,3
+2024,30/03/2024,Bogotá D.C.,Bogotá D.C.,11001,3
+2024,05/04/2024,Guaviare,Miraflores,95200,3
+2024,07/04/2024,Valle del Cauca,Toro,76823,5
+2024,13/04/2024,Norte de Santander,Cúcuta,54001,3
+2024,19/04/2024,Atlántico,Barranquilla,08001,3
+2024,20/04/2024,Antioquia,Urrao,05847,3
+2024,27/04/2024,Cauca,Corinto,19212,4
+2024,10/05/2024,Atlántico,Barranquilla,08001,3
+2024,14/05/2024,Magdalena,San Zenon,47703,3
+2024,14/05/2024,Cauca,Cajibío,19130,3
+2024,17/05/2024,Norte de Santander,Cúcuta,54001,3
+2024,19/05/2024,Cauca,Corinto,19212,3
+2024,25/05/2024,Antioquia,Amalfi,05031,3
+2024,02/06/2024,Valle del Cauca,Cartago,76147,3
+2024,05/06/2024,Caquetá,Belén De Los Andaquies,18094,3
+2024,14/06/2024,Valle del Cauca,Florida,76275,3
+2024,14/06/2024,Cauca,Miranda,19455,3
+2024,18/06/2024,Cauca,Miranda,19455,3
+2024,25/06/2024,Antioquia,Rionegro,05615,7
+2024,26/06/2024,Norte de Santander,Villa Del Rosario,54874,4
+2024,15/07/2024,Antioquia,Amalfi,05031,3
+2024,19/07/2024,Antioquia,Titiribí,05809,3
+2024,21/07/2024,Antioquia,Cocorná,05197,3
+2024,21/07/2024,Huila,Hobo,41349,5
+2024,13/08/2024,Cesar,Valledupar,20001,4
+2024,17/08/2024,Antioquia,La Estrella,05380,3
+2024,22/08/2024,Antioquia,Remedios,05604,3
+2024,25/08/2024,Caquetá,Puerto Rico,18592,5
+2024,08/09/2024,Cauca,López de Micay,19418,12
+2024,09/09/2024,Atlántico,Soledad,08758,3
+2024,12/09/2024,Córdoba,Ciénaga De Oro,23189,3
+2024,14/09/2024,Norte de Santander,Cúcuta,54001,3
+2024,30/09/2024,Antioquia,Yondó,05893,5
+2024,04/10/2024,Norte de Santander,La Playa,54398,3
+2024,04/10/2024,Norte de Santander,Abrego,54003,3
+2024,05/10/2024,Santander,Cimitarra,68190,3
+2024,05/10/2024,Valle del Cauca,La Victoria,76403,3
+2024,07/10/24,Cauca,Toribio,19821,3
+2024,07/10/24,Huila,Acevedo,41006,3
+2024,09/10/24,Santander,Barrancabermeja,68081,3
+2024,22/10/2024,Cauca,Suárez,19780,3
+2024,22/10/2024,Atlántico,Soledad,08758,3
+2024,27/10/2024,Valle del Cauca,Palmira,76520,3
+2024,24/10/2024,Risaralda,Pereira,66001,3
+2024,31/10/2024,Putumayo,Valle del Guamuéz,86865,3
+2024,15/11/2024,La Guajira,Riohacha,44001,4
+2024,17/11/2024,Valle del Cauca,Bugalagrande,76113,3
+2024,21/11/2024,Cauca,Buenos Aires,19110,5
+2024,22/11/2024,Atlántico,Barranquilla,08001,4
+2024,27/11/2024,Nariño,Policarpa,52540,4
+2024,23/11/2024,Nariño,Ipiales,52356,3
+2024,27/11/2024,Nariño,Ipiales,52356,5
+2024,01/12/2024,Cauca,Mercaderes,19450,4
+2024,02/12/2024,Guaviare,San José del Guaviare,95001,4
+2024,10/12/2024,Sucre,San Juan de Betulia,70702,3
+2024,15/12/2024,Antioquia,Medellín,05001,3
+2024,18/12/2024,Putumayo,Puerto Asís,86568,3
+2024,24/12/2024,Cauca,Balboa,19075,3
+2024,29/12/2024,Cesar,Aguachica,20011,4
+2025,12/01/25,Valle del Cauca,Cali,76001,3
+2025,13/01/25,Cauca,Puerto Tejada,19573,3
+2025,14/01/25,Santander,Barrancabermeja,68081,3
+2025,15/01/25,Norte de Santander,Tibú,54810,3
+2025,16/01/25,Norte de Santander,Teorama,54800,Por determinar
+2025,18/01/25,Santander,Barrancabermeja,68081,3
+2025,18/01/25,Valle del Cauca,Buga,76111,3
+2025,25/01/25,Antioquia,Yarumal,05887,3
+2025,28/01/25,La Guajira,Albania,44035,3
+2025,16/02/25,Valle del Cauca,Jamundí,76364,3
+2025,16/02/25,Valle del Cauca,Candelaria,76130,3
+2025,01/03/2025,Antioquia,Urrao,05847,3
+2025,09/03/2025,Norte de Santander,Ocaña,54498,5
+2025,12/03/2025,Bogotá D.C.,Bogotá D.C.,11001,3
+2025,19/03/2025,Antioquia,Andes,05034,4
+2025,27/03/2025,Cauca,Guachené,19300,3
+2025,19/04/2025,Valle del Cauca,Tuluá,76834,3
+2025,19/04/2025,Norte de Santander,Tibú,54810,3
+2025,20/04/2025,Antioquia,Anorí,05040,3
+2025,20/04/2025,Meta,Puerto Gaitán,50568,4
+2025,04/05/2025,Norte de Santander,Tibú,54810,3
+2025,04/05/2025,Bogotá D.C.,Bogotá D.C.,11001,3
+2025,08/05/2025,Valle del Cauca,Argelia,76054,3
+2025,16/05/2025,Cauca,Mercaderes,19450,4
+2025,18/05/2025,Norte de Santander,Ocaña,54498,3
+2025,18/05/2025,Valle del Cauca,Riofrio,76616,3
+2025,31/05/2025,Magdalena,Ciénaga,47189,3
+2025,02/06/2025,Atlántico,Puerto Colombia,08573,3
+2025,03/06/2025,Nariño,Ricaurte,52612,3
+2025,07/06/2025,Nariño,Magüí Payán,52427,4
+2025,10/06/2025,Valle del Cauca,Jamundí,76364,3
+2025,12/06/2025,Valle del Cauca,Pradera,76563,3
+2025,20/06/2025,Valle del Cauca,Buenaventura,76109,4
+2025,28/06/2025,Risaralda,Pueblo Rico,66572,3
+2025,02/07/2025,Guaviare,Calamar,95015,8
+2025,02/07/2025,La Guajira,Riohacha,44001,3
+2025,10/07/2025,Valle del Cauca,Cartago,76147,3
+2025,17/07/2025,Antioquia,Yondó,05893,3
+2025,20/07/2025,Huila,Timaná,41807,3
+2025,25/07/2025,Huila,La Plata,41396,4
+2025,01/08/2025,Norte de Santander,Cúcuta,54001,3
+2025,06/08/2025,Nariño,Consaca,52207,3
+2025,07/08/2025,Antioquia,Santa Barbara,05679,5
+2025,09/08/2025,Antioquia,Betulia,05093,3
+2025,10/08/2025,Valle del Cauca,Buga,76111,3
+2025,10/08/2025,Risaralda,Pereira,66001,3
+2025,11/08/2025,Cauca,Bolívar,19100,3
+2025,19/08/2025,Cundinamarca,El Colegio,25245,3
+2025,20/08/2025,Magdalena,Sabanas De San Angel,47660,3
+2025,21/08/2025,Valle del Cauca,Cali,76001,6
+2025,23/08/2025,Antioquia,San Pedro De Uraba,05665,3
+2025,25/08/2025,Arauca,Tame,81794,3
+2025,30/08/2025,Antioquia,La Unión,05400,4
+2025,31/08/2025,La Guajira,Dibulla,44090,4
+2025,31/08/2025,Bogotá D.C.,Bogotá D.C.,11001,3
+2025,07/09/2025,Norte de Santander,Cúcuta,54001,3
+2025,09/09/2025,Bolívar,Santa Catalina,13673,3
+2025,14/09/2025,Cauca,Popayán,19001,3
+2025,18/09/2025,Valle del Cauca,Cali,76001,3
+2025,19/09/2025,Valle del Cauca,Ginebra,76306,3
+2025,21/09/2025,Meta,Villavicencio,50001,3
+2025,25/09/2025,Norte de Santander,Convención,54206,3
+2025,28/09/2025,Huila,Palestina,41530,3
+2025,03/10/2025,Atlántico,Barranquilla,08001,3
+2025,09/10/2025,Magdalena,Zona Bananera,47980,3
+2025,25/10/2025,Santander,Floridablanca,68276,4
+2025,26/10/2025,Antioquia,Carmen De Viboral,05148,3
+2025,01/11/2025,Valle del Cauca,El Águila,76243,4
+2025,03/11/2025,Cauca,Corinto,19212,4
+2025,04/11/2025,Bolívar,San Pablo,13670,5
+2025,08/11/2025,Antioquia,Carmen De Viboral,05148,3
+2025,08/11/2025,Huila,Suaza,41770,3
+2025,12/11/2025,Atlántico,Barranquilla,08001,3
+2025,15/11/2025,Magdalena,Ciénega,47189,3
+2025,24/11/2025,Antioquia,Yondó,05893,3
+2025,03/12/2025,Cauca,Toribio,19821,3
+2025,13/12/2025,Valle del Cauca,Versalles,76863,3
+2025,20/12/2025,Cesar,Rio de Oro,20614,3
+2026,03/01/2026,Cauca,Santander De Quilichao,19698,3
+2026,06/01/2026,Norte de Santander,Cúcuta,54001,3
+2026,06/01/2026,Antioquia,Amalfi,05031,4
+2026,09/01/2026,La Guajira,Maicao,44430,5
+2026,10/01/2026,Antioquia,Abejorral,05002,3
+2026,15/01/2026,Valle del Cauca,Ansermanuevo,76041,3
+2026,16/01/2026,Guaviare,El Retorno,95025,26
+2026,16/01/2026,Meta,Granada,50313,3
+2026,18/01/2026,Cauca,Padilla,19513,4
+2026,24/01/2026,Norte de Santander,Guamalito,,3
+2026,24/01/2026,Tolima,Lerida,73408,3
+2026,28/01/2026,Antioquia,Tarso,05792,3
+2026,31/01/2026,La Guajira,Riohacha,44001,3
+2026,01/02/2026,Nariño,Mallama,52435,3
+2026,08/02/2026,Caldas,Marquetalia,17444,3
+2026,14/02/2026,Atlántico,Barranquilla,08001,3
+2026,15/02/2026,Huila,Suaza,41770,4
+2026,18/02/2026,Antioquia,Remedios,05604,3
+2026,18/02/2026,Atlántico,Ponedera,08560,3
+2026,22/02/2026,Córdoba,Tuchín,23815,3
+2026,25/02/2026,Antioquia,Titiribí,05809,3
+2026,26/02/2026,Antioquia,Segovia,05736,3
+2026,03/03/2026,Valle del Cauca,Cartago,76147,3
+2026,03/03/2026,Nariño,Tumaco,52835,3
+2026,05/03/2026,Nariño,Policarpa,52540,3
+2026,08/03/2026,Tolima,Ataco,73067,3
+2026,10/03/2026,Magdalena,Aracataca,47053,3
+2026,13/03/2026,Valle del Cauca,Ansermanuevo,76041,3
+2026,14/03/2026,Norte de Santander,Cimitarra,68190,3
+2026,17/03/2026,Risaralda,Belén De Umbría,66088,3
+2026,18/03/2026,Santander,Bucaramanga,68001,3
+2026,18/03/2026,Huila,Pitalito,41551,3
+2026,21/03/2026,Atlántico,Soledad,08758,3
+2026,24/03/2026,Bogotá D.C.,Bogotá D.C.,11001,3
+2026,26/03/2026,Cauca,Cajibío,19130,3
+2026,28/03/2026,Atlántico,Sabanalarga,08638,3
+2026,07/04/2026,Cauca,Popayán,19001,6
+2026,12/04/2026,La Guajira,Maicao,44430,5
+2026,16/04/2026,Casanare,Villanueva,85440,5
+2026,16/04/2026,Meta,La Macarena,50350,3
+2026,18/04/2026,Nariño,La Florida,52381,3
+2026,19/04/2026,Norte de Santander,El Zulia,54261,4
+2026,21/04/2026,Cauca,Guachené,19300,3
+2026,21/04/2026,Valle del Cauca,Jamundí,76364,4
+2026,22/04/2026,Putumayo,Mocoa,86001,5
+2026,23/04/2026,Norte de Santander,Cúcuta,54001,3
+2026,25/04/2026,Cauca,Cajibío,19130,20
+2026,26/04/2026,Valle del Cauca,Toro,76823,3
+2026,29/04/2026,Santander,Barrancabermeja,68081,3
+2026,02/05/2026,Cesar,Valledupar,20001,4
+2026,03/05/2026,Norte de Santander,Cúcuta,54001,3
+2026,05/05/2026,Valle del Cauca,Yotoco,76890,3
+2026,10/05/2026,Magdalena,Pueblo Viejo,47570,4
+2026,15/05/2026,Antioquia,Andes,05034,3
+2026,16/05/2026,Antioquia,Marinilla,05440,4
+2026,17/05/2026,Cauca,Santander De Quilichao,19698,3
+2026,19/05/2026,Norte de Santander,Abrego,54003,6
+2026,21/05/2026,Cauca,Silvia,19743,6
+2026,27/05/2026,Nariño,Ipiales,52356,3
+2026,02/06/2026,Valle del Cauca,Candelaria,76130,3
+2026,03/06/2026,Cauca,Santander De Quilichao,19698,4
+2026,04/06/2026,Cundinamarca,Soacha,25754,3
+2026,07/06/2026,Antioquia,Remedios,05604,4
+2026,07/06/2026,Atlántico,Soledad,08758,3
+2026,08/06/2026,Norte de Santander,Cúcuta,54001,3
+2026,08/06/2026,Atlántico,Soledad,08758,3
+2026,26/06/2026,Cauca,Guachené,19300,3
+2026,28/06/2026,Atlántico,Barranquilla,08001,4
+2026,02/04/2026,Antioquia,Santa Fé De Antioquia,05042,3
+2026,04/07/2026,Cauca,Corinto,19212,3
+2026,12/07/2026,Cauca,Almaguer,19022,4
+2026,16/07/2026,Caquetá,San Jose Del Fragua,18610,3
+2026,17/07/2026,Vichada,Cumaribo,99773,3
+2026,26/07/2026,Nariño,Cumbal,52227,3
+2026,27/07/2026,Antioquia,Andes,05034,3
+2026,28/07/2026,Cundinamarca,Soacha,25754,3
+2026,30/07/2026,Cauca,Silvia,19743,3
+2026,02/08/2026,Valle del Cauca,Florida,76275,3
+2026,07/08/2026,Antioquia,Abejorral,05002,3
+2026,02/08/2026,Atlántico,Barranquilla,08001,3
+2026,15/08/2026,Norte de Santander,Cúcuta,54001,3
+2026,17/08/2026,Valle del Cauca,Santiago de Cali,76001,3
+2026,20/08/2026,Atlántico,Barranquilla,08001,3
+2026,23/08/2026,Valle del Cauca,Sevilla,76736,3
+2026,26/08/2026,Bogotá D.C.,Bogotá D.C.,11001,3
+2026,27/08/2026,Meta,La Macarena,50350,3
+2026,02/09/2026,Antioquia,Cáceres,05120,3
+2026,04/09/2026,Valle del Cauca,Obando,76497,3
+2026,06/09/2026,Valle del Cauca,Cali,76001,3

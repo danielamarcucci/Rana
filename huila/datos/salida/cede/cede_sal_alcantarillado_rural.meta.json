@@ -1,0 +1,20 @@
+{
+  "id": "cede_sal_alcantarillado_rural",
+  "tema": "Educación y servicios",
+  "etiqueta": "Cobertura de alcantarillado rural",
+  "descripcion": "Cobertura del servicio de alcantarillado en el área rural del municipio, según el SUI.",
+  "unidad": "%",
+  "sentido": "mejor",
+  "periodo": "2005, 2008-2016",
+  "anio_principal": "2016",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variable truralcan; fuente original Sistema Único de Información de Servicios Públicos - SUI)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Valor tal como lo publica el panel. Sin dato para 2006-2007. La cobertura total de alcantarillado ya está en el tablero (TerriData); este indicador aporta la brecha rural.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f"
+  }
+}

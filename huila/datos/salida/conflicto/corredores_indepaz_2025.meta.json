@@ -1,0 +1,18 @@
+{
+  "id": "corredores_indepaz_2025",
+  "etiqueta": "Corredores armados (Indepaz 2025)",
+  "descripcion": "Número de corredores de grupos armados identificados por Indepaz en 'Los corredores de la muerte' (agosto de 2025) en cuya tabla 'Municipios y territorios clave' aparece el municipio (0 a 13).",
+  "unidad": "corredores",
+  "sentido": "contexto",
+  "periodo": "2025 (análisis 2022-2025, publicado en agosto de 2025)",
+  "institucion": "Indepaz – Instituto de Estudios para el Desarrollo y la Paz, Observatorio de DDHH y Conflictividades",
+  "base": "Los corredores de la muerte (Leonardo González Perafán, agosto de 2025)",
+  "enlace": "https://indepaz.org.co/wp-content/uploads/2025/08/CORREDORES-DE-LA-MUERTE-.-Leonardo-Gonzalez-P.-Agosto-2025-1.pdf",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Informe analítico, no registro estadístico: las tablas listan municipios 'clave' de cada corredor y el propio informe advierte que no agotan la totalidad del fenómeno ni son una división fija; un 0 significa 'no listado como municipio clave', no ausencia de grupos armados. Se excluyeron corregimientos, ríos, territorios extranjeros, Santa Rita (Vichada) y dos nombres ambiguos ('Pueblo Nuevo' en Magdalena, 'Santa Rosa' en Bolívar). 'Medio y litoral San Juan' = Medio San Juan + El Litoral del San Juan. Detalle en corredores_indepaz_2025.detalle.csv.",
+  "sha256": {
+    "corredores_de_la_muerte_2025.pdf": "64859de69528937c790cbff479b81859e6f07147a8de115ac35111d64adf7160"
+  }
+}

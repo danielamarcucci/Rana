@@ -1,0 +1,21 @@
+{
+  "id": "cede_sal_sedes_publicas",
+  "tema": "Salud",
+  "etiqueta": "Sedes de prestadores públicos de salud por 10.000 hab.",
+  "descripcion": "Número de sedes de prestadoras públicas de servicios de salud registradas en el REPS por cada 10.000 habitantes.",
+  "unidad": "sedes por 10.000 hab.",
+  "sentido": "contexto",
+  "periodo": "2010-2016",
+  "anio_principal": "2016",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variable sedes; fuente original REPS - MinSalud)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 10000,
+  "nota": "Tasa construida: sedes / retro_pobl_tot × 10.000. Denominador: retro_pobl_tot (población total retroproyectada DANE, base CNPV 2018) del módulo Características generales del Panel CEDE (https://doi.org/10.57924/IX38JI). Según el diccionario cuenta sedes de prestadoras de servicio de salud PÚBLICA (red pública), no la oferta privada; por eso Neiva tiene pocas sedes. Las cifras saltan entre años en algunos municipios (Neiva 29 en 2013 y 12 en 2014). Los municipios pequeños tienden a tener tasas altas por escala; se marca como contexto, no para ranking.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f",
+    "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+  }
+}

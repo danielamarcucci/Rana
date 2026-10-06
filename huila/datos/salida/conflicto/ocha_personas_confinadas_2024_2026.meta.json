@@ -1,0 +1,19 @@
+{
+  "id": "ocha_personas_confinadas_2024_2026",
+  "etiqueta": "Personas confinadas (OCHA)",
+  "descripcion": "Número de personas afectadas por eventos de confinamiento o bloqueo de comunidades por actores armados registrados por OCHA en el municipio en el año.",
+  "unidad": "personas",
+  "sentido": "peor",
+  "periodo": "2024-2026 (2026: enero-mayo)",
+  "anio_principal": "2024-2025",
+  "institucion": "Oficina de las Naciones Unidas para la Coordinación de Asuntos Humanitarios (OCHA) Colombia",
+  "base": "Monitor OCHA Colombia — Incidentes de acceso humanitario con confinamientos (HDX: Colombia: Acceso Humanitario, monitor_hist_2026_acc.xlsx)",
+  "enlace": "https://data.humdata.org/dataset/acceso-humanitario-colombia",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Registro del Monitor de OCHA Colombia (categoría 'Confinamiento/Bloqueo de comunidades'), alimentado por los Equipos Locales de Coordinación, socios humanitarios y fuentes abiertas; OCHA solo monitorea emergencias masivas y advierte que las cifras se actualizan y validan continuamente (pueden cambiar). 2026 llega solo hasta mayo (corte del archivo publicado el 25-may-2026): no es comparable con años completos. Totales Colombia: 2024: 92 eventos, 137.446 personas; 2025: 113 eventos, 155.203 personas; 2026: 29 eventos, 44.178 personas. Chequeo: 2025 coincide con el informe de OCHA (113 eventos, 155,2 mil personas, publicado 5-mar-2026); 2024 difiere levemente del informe de feb-2025 (90 eventos y 138.419 personas) porque el archivo es un corte posterior. Año = fecha de inicio del evento. Cobertura nacional: municipio sin registro = 0 (ausencia de registro, no certeza de ausencia de confinamiento). Registros con código DIVIPOLA fuera del universo de 1.123 municipios del DANE (no se reasignan, cuentan en el total nacional pero en ningún municipio): 27086 Belén De Bajirá (Chocó) 2025: 1 eventos, 472 personas.",
+  "sha256": {
+    "monitor_hist_2026_acc.xlsx": "169fb79c83f09f2270ce4845fdcfd5daba6c7952f5015f9128d39eabd85cc2e5"
+  }
+}

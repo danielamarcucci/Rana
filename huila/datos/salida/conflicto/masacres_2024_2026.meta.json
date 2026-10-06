@@ -1,0 +1,19 @@
+{
+  "id": "masacres_2024_2026",
+  "etiqueta": "Masacres (Indepaz)",
+  "descripcion": "Número de masacres registradas por Indepaz en 2024-2026 por municipio del hecho; Indepaz define masacre como el homicidio intencional y simultáneo de 3 o más personas en estado de indefensión, por un mismo autor y en iguales circunstancias de modo, tiempo y lugar.",
+  "unidad": "masacres",
+  "sentido": "contexto",
+  "periodo": "2024-01-01 a 11 de septiembre de 2026 (2026 parcial)",
+  "institucion": "Indepaz – Instituto de Estudios para el Desarrollo y la Paz, Observatorio de DDHH y Conflictividades",
+  "base": "Masacres en Colombia durante el 2020, 2021, 2022, 2023, 2024, 2025 y 2026",
+  "enlace": "https://indepaz.org.co/informe-de-masacres-en-colombia-durante-el-2020-2021/",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Registro de una organización de la sociedad civil con definición propia de masacre (3 o más víctimas); no coincide con cifras oficiales. Cuenta hechos, no víctimas (las víctimas están en masacres_2024_2026.detalle.csv). Totales contrastados con los encabezados de Indepaz: 2024=76, 2025=78, 2026=89 (corte 11 de septiembre de 2026). En 2026 la página repite una tabla antigua con las 21 primeras masacres; se verificó que está contenida en la principal y se descartó. Ausente = 0 porque el registro es nacional. Se muestra como contexto, sin ranking.",
+  "sha256": {
+    "masacres_2020_2026.html": "0376361a7caa4797440c97e48221acea375ec92c9d77b65918cbcd40cbc103dc",
+    "balance_2025.pdf": "b2fd77cbe3acbed9852153f629e95d0c89ec019691f5ce1124818a5be5dcad24"
+  }
+}

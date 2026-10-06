@@ -1,0 +1,20 @@
+{
+  "id": "cede_bg_dependencia_transf",
+  "tema": "Buen gobierno",
+  "etiqueta": "Dependencia de transferencias y regalías",
+  "descripcion": "Porcentaje de los ingresos totales del municipio que proviene de transferencias de la Nación y regalías (sin cofinanciación). Por encima de 60 % el municipio financia sus gastos principalmente con esos recursos.",
+  "unidad": "% de los ingresos totales",
+  "sentido": "peor",
+  "periodo": "2000-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable DF_ing_trans; fuente original DNP, evaluación de desempeño fiscal)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Componente del Índice de Desempeño Fiscal del DNP (metodología anterior, la única en este archivo). Umbral de referencia del DNP: 60 %. La subida de 2020 (mediana 79 % vs 72 % en 2019) coincide con el año de la pandemia; es dato, no se interpreta causalmente. Hay 18 valores iguales a 0 (16 en 2011), que se dejan tal como vienen.",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88"
+  }
+}

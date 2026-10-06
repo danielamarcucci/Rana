@@ -1,0 +1,22 @@
+{
+  "id": "cede_agr_credito_pc",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Crédito agropecuario por habitante",
+  "descripcion": "Valor total de los créditos agropecuarios registrados por FINAGRO en el municipio durante el año, por habitante.",
+  "unidad": "pesos corrientes por habitante",
+  "sentido": "contexto",
+  "periodo": "2003-2021",
+  "anio_principal": "2021",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variables vrf_* de las 27 categorías de beneficiario; fuente original FINAGRO / Agronet)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1,
+  "nota": "Construido: suma de vrf_* (millones de pesos) × 1.000.000 / población total. Pesos corrientes (sin deflactar). Se normaliza por población total porque el panel no trae número de productores ni población rural para todos los años. Fuente original FINAGRO (cartera de crédito agropecuario por tipo de beneficiario, publicada en Agronet). El diccionario indica disponibilidad 2000-2020; el .tab trae 2003-2021. Total = suma de las 27 categorías vrf_ con dato (el panel deja vacía una categoría en la que el municipio nunca tuvo crédito y pone 0 en los demás años). Incluye crédito agrícola y pecuario, capital de trabajo, inversión y normalización; se asigna al municipio que registra FINAGRO. 19 filas del .tab sin código de municipio (créditos no asignados) quedan fuera. Denominador: población total DANE base CNPV 2018 — retro_pobl_tot del módulo Características generales del Panel CEDE (https://doi.org/10.57924/IX38JI) hasta 2017 y proyecciones DANE 2018-2030 del proyecto (poblacion_municipal_nacional.csv) desde 2018.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac",
+    "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1",
+    "poblacion_municipal_nacional.csv": "9d125afa05ddfe2ab3a1b74042a7b8cc9ac35327edb4788259aa64984e65cb62"
+  }
+}

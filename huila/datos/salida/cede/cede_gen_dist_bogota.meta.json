@@ -1,0 +1,20 @@
+{
+ "id": "cede_gen_dist_bogota",
+ "tema": "Caracterización",
+ "etiqueta": "Distancia a Bogotá",
+ "descripcion": "Distancia lineal del municipio a Bogotá, en kilómetros.",
+ "unidad": "km",
+ "sentido": "contexto",
+ "periodo": "1993-2020 (dato fijo)",
+ "anio_principal": "2020",
+ "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+ "base": "Panel Características generales (variable disbogota; fuente original cálculos del CEDE con datos del IGAC)",
+ "enlace": "https://doi.org/10.57924/IX38JI",
+ "fecha_consulta": "2026-10-06",
+ "agregable": "no",
+ "factor": null,
+ "nota": "Distancia en línea recta (no por carretera) calculada por el CEDE con coordenadas del IGAC; no refleja tiempo de viaje ni estado de las vías. Dato fijo: el panel repite el mismo valor en 1993-2020 y se publica una sola fila con el corte 2020. ",
+ "sha256": {
+  "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+ }
+}

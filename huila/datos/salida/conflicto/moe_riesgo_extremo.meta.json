@@ -1,0 +1,19 @@
+{
+  "id": "moe_riesgo_extremo",
+  "etiqueta": "Riesgo electoral extremo (MOE)",
+  "descripcion": "1 si el municipio está en riesgo extremo en el mapa consolidado de la MOE (coincidencia de factores indicativos de fraude electoral y de factores de violencia), 0 si no; para elecciones locales 2023 y nacionales 2026, y '2023-2026' = 1 si lo estuvo en alguna.",
+  "unidad": "municipios en riesgo extremo",
+  "sentido": "peor",
+  "periodo": "2023 (elecciones de autoridades locales) y 2026 (elecciones nacionales)",
+  "institucion": "Misión de Observación Electoral (MOE) – Observatorio Político-Electoral de la Democracia",
+  "base": "Mapas y Factores de Riesgo Electoral: Elecciones de Autoridades Locales 2023 (Mapa #1) y Elecciones Nacionales 2026 (resumen ejecutivo)",
+  "enlace": "https://moe.org.co/datos-electorales/mapas-de-riesgo-electoral/",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Riesgo extremo: 81 municipios en 2023 y 81 en 2026, iguales a las cifras que publica la MOE en el texto (2023: 'a 81 municipios en riesgo extremo'; 2026: '170 municipios ... de los cuales 81 se encuentran en riesgo extremo'); 127 distintos en 2023-2026 (35 en ambos). El mapa consolidado cubre todo el país, así que fuera de la lista vale 0. 2023 usa el consolidado SIN trashumancia (Mapa #1 del libro, comparable con 2019 y con 2026); la versión CON trashumancia de la presentación de lanzamiento tiene 83 en extremo y difiere en algunos municipios (en el Huila, Neiva está en ambas). Es una evaluación de riesgo de una organización de la sociedad civil, no un registro de hechos; listas extraídas con pdftotext de tablas regulares y verificadas contra los conteos por departamento y los totales impresos.",
+  "sha256": {
+    "2023__MRE-Elecciones-Autoridades-Locales-2023_DIGITAL.pdf": "5f42e82cd8c1023b4983a4b0d8b373ab9b6b0c3b5075ccb7b544a042281ff1ea",
+    "Mapa-de-riesgo-electoral-2026-Resumen-ejecutivo-MOE-1.pdf": "eb1e35a151753065859fdc772e12b10c0d8495715a2bdb10e475d670cefb2b17"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "cede_bg_desempeno_integral",
+  "tema": "Buen gobierno",
+  "etiqueta": "Índice de desempeño integral (DNP, hasta 2017)",
+  "descripcion": "Índice del DNP (0 a 100) que evaluaba la gestión municipal en eficacia (metas del plan de desarrollo), eficiencia (educación, salud, agua), cumplimiento de requisitos legales del SGP y capacidad administrativa.",
+  "unidad": "puntos (0-100)",
+  "sentido": "mejor",
+  "periodo": "2005-2017",
+  "anio_principal": "2017",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable DI_desemp_int; fuente original DNP, evaluación de desempeño integral)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Medición descontinuada: el DNP la reemplazó por la Medición de Desempeño Municipal (MDM, ver cede_bg_mdm); son índices distintos y no se unen. Algunos municipios tienen valores muy bajos (0-20) cuando no reportaron información al DNP.",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88"
+  }
+}

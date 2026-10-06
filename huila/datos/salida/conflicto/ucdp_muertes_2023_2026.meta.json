@@ -1,0 +1,22 @@
+{
+  "id": "ucdp_muertes_2023_2026",
+  "etiqueta": "Muertes en violencia organizada (UCDP)",
+  "descripcion": "Suma de la estimación más probable (best) de muertes en eventos de violencia armada organizada ocurridos en el municipio en el año, según UCDP.",
+  "unidad": "muertes",
+  "sentido": "peor",
+  "periodo": "2023-2026 (2026: enero-agosto, preliminar)",
+  "anio_principal": "2023-2025",
+  "institucion": "Uppsala Conflict Data Program (UCDP), Universidad de Uppsala",
+  "base": "UCDP Georeferenced Event Dataset (GED) Global 26.1 + UCDP Candidate Events 26.0.x",
+  "enlace": "https://ucdp.uu.se/downloads/",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Años 2023-2025: UCDP GED 26.1 (versión anual depurada). 2026: UCDP Candidate (enero-agosto 2026, preliminar: 929 eventos y 1392 muertes; 598 eventos aún tienen code_status distinto de 'Clear', la mayoría con actor sin identificar 'XXX100'; solo 'Clear': 331 eventos y 660 muertes). 2026 NO es comparable con 2023-2025: Candidate incluye eventos aún sin verificar que GED puede descartar o reclasificar cuando salga GED 27.1. Solo eventos con al menos un muerto directo (violencia estatal, no estatal y unilateral contra civiles), codificados a partir de prensa y fuentes abiertas: no es un registro oficial colombiano ni un censo de homicidios. Municipio asignado por punto-en-polígono (coordenadas UCDP contra MGN 2025 del DANE) para where_prec 1-2; por nombre adm_2/adm_1 de UCDP homologado a DIVIPOLA para where_prec 3 y para puntos que caen fuera del departamento que UCDP declara (1512 eventos por punto, 837 por nombre con where_prec 3, 13 por nombre por punto fuera del departamento declarado). Se excluyen eventos con where_prec >= 4 (ubicados solo a nivel departamento/región/país) — por año: 2023: 8; 2024: 1; 2025: 2; 2026: 27; esos eventos sí cuentan en el total de Colombia que publica UCDP pero no en ningún municipio. Eventos sin municipio asignable (adm_2 que no es un municipio, p. ej. 'Catatumbo region', o que no existe en DIVIPOLA): 5. Cobertura global: municipio sin eventos = 0. Mapiripana (94663) no está en la capa MGN 2025 consultada: un evento allí quedaría asignado al municipio vecino que contiene el punto.",
+  "sha256": {
+    "ged261-csv.zip": "8c941d84954e555ee2e54f40fa04d9203bf1e2f962203d0a9930966c4947c667",
+    "GEDEvent_v26_01_26_06.csv": "68dd3d363b8edf4808bd6bf6f5d0412c3c722ffb1db367aeb8eff48bab80589a",
+    "GEDEvent_v26_0_7.csv": "9fc2c6dd85eee91845512e8ef1055281d9fd028fb98748a6f2a27c6e8aa8c562",
+    "GEDEvent_v26_0_8.csv": "2ad6e0b2bfdbaa31873716a3455096923a8539519d69d96aeeea2d0f44a34593"
+  }
+}

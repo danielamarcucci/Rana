@@ -1,0 +1,20 @@
+{
+  "id": "cede_edu_alumnos_docente",
+  "tema": "Educación y servicios",
+  "etiqueta": "Alumnos por docente",
+  "descripcion": "Alumnos matriculados en preescolar, primaria, secundaria y media por cada docente (docente-servicio) de los establecimientos del municipio, oficiales y no oficiales.",
+  "unidad": "alumnos por docente",
+  "sentido": "peor",
+  "periodo": "2004-2020 (sin 2007)",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Educación (variable alumn_total y docen_total; fuente original C600 DANE - MEN)",
+  "enlace": "https://doi.org/10.57924/EPRE6V",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1,
+  "nota": "Razón construida: alumn_total / docen_total. Desde 2004 el C600 cuenta docentes como 'docente-servicio' (un docente que trabaja en dos jornadas cuenta dos veces), por eso se omite 1996-2003 (otra metodología). alumn_total excluye aceleración del aprendizaje y ciclos de adultos, mientras que docen_total incluye a todos los docentes de aula: la razón es una aproximación de la carga, no la relación técnica oficial del MEN. Se excluye 2007: el C600 de ese año viene incompleto en el panel (matrícula nacional 9,05 millones vs 9,6-9,7 en 2006 y 2008, filas imposibles como más repitentes que alumnos). En municipios rurales pequeños la razón baja por escuelas multigrado, no necesariamente por mejor dotación.",
+  "sha256": {
+    "PANEL_DE_EDUCACION(2021).tab": "8bda7ac46e53550c0b28977cca04a6a1e91dfa4a9953233fe2a173b3d33290b3"
+  }
+}

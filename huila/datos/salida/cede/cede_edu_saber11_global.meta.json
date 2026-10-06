@@ -1,0 +1,20 @@
+{
+  "id": "cede_edu_saber11_global",
+  "tema": "Educación y servicios",
+  "etiqueta": "Saber 11: puntaje global (normalizado)",
+  "descripcion": "Promedio del puntaje total de la prueba Saber 11 de los estudiantes de los colegios ubicados en el municipio, con los puntajes por área normalizados a media 50 y desviación 10 a nivel nacional y ponderados (3 matemáticas, 3 lectura crítica, 3 sociales y ciudadanas, 3 ciencias naturales, 1 inglés).",
+  "unidad": "puntos (media nacional = 50)",
+  "sentido": "mejor",
+  "periodo": "2015-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Educación (variable s11_total; fuente original ICFES)",
+  "enlace": "https://doi.org/10.57924/EPRE6V",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Valor tal como lo publica el panel. Solo se usa el periodo comparable vigente (2014-2 en adelante, Anexo 1 del diccionario); 2014 se excluye porque mezcla 2014-1 y 2014-2, y los años anteriores no son comparables. Por la normalización, un cambio en el tiempo indica cambio de posición frente al promedio nacional de ese año, no de nivel absoluto. Municipio = ubicación del colegio, no residencia del estudiante. No es el mismo dato que Saber 11 matemáticas y lectura crítica ya presentes (TerriData).",
+  "sha256": {
+    "PANEL_DE_EDUCACION(2021).tab": "8bda7ac46e53550c0b28977cca04a6a1e91dfa4a9953233fe2a173b3d33290b3"
+  }
+}

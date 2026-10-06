@@ -12,6 +12,24 @@ python3 scripts/04_poblacion_seguridad.py      # proyecciones DANE + delitos Min
 python3 scripts/06_terridata.py                # indicadores TerriData (Colombia, departamentos, municipios)
 python3 scripts/07_dane_nacional.py            # capas CNPV 2018 de todos los municipios del país
 python3 scripts/08_otras_elecciones.py         # 2015, Congreso 2022 y presidenciales, por municipio
+python3 scripts/09_poblacion_nacional.py       # población DANE de todos los municipios (denominador)
+python3 scripts/10_homicidios_12m.py           # 10 a 19: fuentes de conflicto (ver fuentes.md)
+python3 scripts/11_desplazamiento.py
+python3 scripts/12_coca.py
+python3 scripts/13_ucdp.py                     # capa MGN en HUILA_CACHE_MGN (se descarga si falta)
+python3 scripts/14_ocha_confinamiento.py
+python3 scripts/15_indepaz.py
+python3 scripts/16_alertas_tempranas_sat.py
+python3 scripts/17_moe_riesgo_electoral.py
+python3 scripts/18_pares.py
+python3 scripts/19_cnmh.py
+CEDE_DIR=/ruta/a/cede/dataverse python3 scripts/21_cede_conflicto.py   # 21 a 26: Panel CEDE
+CEDE_DIR=/ruta/a/cede/dataverse python3 scripts/22_cede_caracteristicas.py
+CEDE_DIR=/ruta/a/cede/dataverse python3 scripts/23_cede_agricultura.py
+CEDE_DIR=/ruta/a/cede/dataverse python3 scripts/24_cede_buen_gobierno.py
+CEDE_DIR=/ruta/a/cede/dataverse python3 scripts/25_cede_salud.py
+CEDE_DIR=/ruta/a/cede/dataverse python3 scripts/26_cede_educacion.py
+python3 scripts/20_conflicto.py                # une conflicto y CEDE en el formato de Problemas
 python3 scripts/05_construir_web.py            # web/datos/tablero.js (se corre al final)
 ```
 
@@ -67,6 +85,47 @@ de mesas). No se completa ni se aproxima nada a mano.
 - **Cambio** (pp) = % en la elección "Hasta" − % en la elección "Desde", solo en municipios donde el partido se presentó en ambas. Si se presentó en una sola, se marca aparte y no se cuenta como subida ni caída.
 - **Dispersión presidencial**: correlación de Pearson, sin ponderar, entre el % del candidato presidencial y el % del partido, en los municipios donde el partido se presentó. Es una relación entre territorios (ecológica): no dice que las mismas personas votaron por ambos. Lectura: |r| < 0,3 débil o nula; 0,3-0,6 moderada; > 0,6 fuerte.
 - Controles: 2015, los 13 elegidos de Gobernación y Asamblea cuadran voto a voto con `Elegidos.txt` (gobernador Carlos Julio González Villa, 214.134 votos); Congreso 2022 y presidenciales 2026 con SHA-256 verificado; totales en el Huila: Cámara 2022 390.118, Senado 2022 393.573, presidencial 2022 507.464 y 539.805, 2026 555.368 y 620.224 votos.
+
+## Conflicto y Panel Municipal del CEDE (2026-10-06)
+
+La pestaña Problemas suma dos temas nuevos (Tierra y agricultura, Buen gobierno),
+amplía Conflicto y violencia y agrega indicadores CEDE a Salud, Educación y
+servicios y Caracterización. Reglas comunes:
+
+- **Universo**: los 1.123 municipios de la proyección DANE. Toda tasa usa esa
+  población (2018 en adelante) o la retroproyección DANE del propio CEDE
+  (`retro_pobl_tot`, base CNPV 2018) para años anteriores; empatan en 2017-2018.
+- **Ausente = 0 solo si la fuente es exhaustiva** (registro nacional completo:
+  MinDefensa, RUV, SIMCI, UCDP, OCHA, Indepaz, SAT, MOE, CNMH). Cuando la fuente
+  solo trae municipio-año con registro y no se sabe si el vacío es 0 (minas y RUV
+  dentro del CEDE, cultivos no registrados), queda sin dato. Un indicador con
+  menos de 30 de los 37 municipios del Huila con dato en su año principal no se
+  muestra (`MIN_HUILA` en `20_conflicto.py`; hoy: minas, desaparición,
+  reclutamiento y homicidio del RUV en el CEDE, arroz y gas natural).
+- **Valor departamental y de Colombia**: suma de municipios para conteos; suma de
+  numeradores sobre suma de denominadores para tasas. Para índices y porcentajes
+  que no se pueden agregar sin ponderar (IDF, MDM, coberturas) no se inventa un
+  valor del Huila: el tablero muestra la mediana de sus municipios y lo dice.
+- **Conteos frente a Colombia**: un conteo municipal no se compara con el total
+  del país; se muestra la parte del total y el lugar entre municipios.
+- **Periodos**: cuando el último año es parcial o preliminar (UCDP 2026, CNMH y
+  OCHA 2026), el valor principal suma los años completos y el año parcial se ve
+  solo en la serie.
+- **Grupos armados con presencia (desde 2024)**: grupos distintos con nombre que
+  ubican en el municipio la Defensoría (SAT), Pares, CNMH o UCDP. Se excluyen
+  categorías genéricas (no identificado, posdesmovilización sin nombre, agentes
+  del Estado) y se unifican nombres (AGC = EGC = Clan del Golfo; Gentil Duarte =
+  EMC). «Disidencias FARC» sin estructura (CNMH, SAT) solo cuenta si ninguna
+  fuente nombra una estructura concreta en ese municipio. La Defensoría nombra
+  grupos por alerta y no por municipio, y sus alertas de alcance nacional no se
+  usan. La tabla del indicador dice qué fuente nombra cada grupo.
+- **No duplicar**: de CEDE se dejaron fuera las series que ya están en el tablero
+  desde TerriData, DANE o las fuentes nuevas (coca, desplazamiento, homicidio,
+  secuestro, extorsión, población, IPM total, NBI, coberturas totales de
+  servicios, Saber 11 matemáticas y lectura, entre otras).
+- **Datos panel**: los indicadores CEDE se entregan como serie municipio-año
+  completa (`datos/salida/cede/<id>.csv`), sin unir metodologías distintas
+  (p. ej. Saber 11 desde 2015, ingresos propios desde 2010, IGA hasta 2015).
 
 ## Lo que este tablero no hace
 

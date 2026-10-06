@@ -1,0 +1,20 @@
+{
+ "id": "cede_gen_priv_trabajo_infantil",
+ "tema": "Caracterización",
+ "etiqueta": "Privación por trabajo infantil",
+ "descripcion": "Porcentaje de la población en privación por trabajo infantil, una de las 15 variables del IPM (peso 5 %).",
+ "unidad": "% de personas",
+ "sentido": "peor",
+ "periodo": "2005 y 2018",
+ "anio_principal": "2018",
+ "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+ "base": "Panel Características generales (variable ipm_ti_p; fuente original DANE - DNP)",
+ "enlace": "https://doi.org/10.57924/IX38JI",
+ "fecha_consulta": "2026-10-06",
+ "agregable": "no",
+ "factor": null,
+ "nota": "Privación del Índice de Pobreza Multidimensional de fuente censal (DANE-DNP, censos 2005 y 2018), tal como la publica el diccionario del CEDE: porcentaje de la población en privación. El diccionario no señala cambio de metodología entre 2005 y 2018 y se publican ambos años, pero son censos con cuestionarios distintos: comparar con cautela (TerriData también publica el IPM total de ambos censos como una serie, y el IPM total de este panel coincide con el de TerriData en los 37 municipios del Huila, diferencia máxima 0,005 puntos). Solo años censales; no hay serie anual.",
+ "sha256": {
+  "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+ }
+}

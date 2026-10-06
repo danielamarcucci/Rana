@@ -1,0 +1,20 @@
+{
+  "id": "cede_sal_energia_subnormal",
+  "tema": "Educación y servicios",
+  "etiqueta": "Usuarios de energía subnormales",
+  "descripcion": "Porcentaje del total de usuarios de energía eléctrica del municipio que son usuarios subnormales conectados al Sistema Interconectado Nacional (conexiones en asentamientos subnormales).",
+  "unidad": "% de usuarios",
+  "sentido": "peor",
+  "periodo": "2011-2015",
+  "anio_principal": "2015",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variables uee_subn_sin y tot_uee; fuente original UPME)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100,
+  "nota": "Porcentaje construido: uee_subn_sin / tot_uee × 100 (ambas del panel). Se usa tot_uee y no ueetot_sin porque el panel cambia la contabilidad: en 2011-2013 tot_uee = ueetot_sin + ueetot_zni + uee_subn_sin (ueetot_sin excluye a los subnormales) y en 2014-2015 tot_uee = ueetot_sin + ueetot_zni (los incluye); ambas identidades se verificaron fila a fila, y con tot_uee el cociente mide lo mismo en los dos tramos. Los valores se repiten entre años consecutivos en muchos municipios (misma observación que el ICEE). Algunos municipios del Magdalena muestran porcentajes cercanos a 100 en 2011-2013 por cómo la UPME clasificó a sus usuarios; se publican tal cual.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f"
+  }
+}
