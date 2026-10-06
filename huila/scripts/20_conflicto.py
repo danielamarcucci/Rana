@@ -34,6 +34,9 @@ C = D / "conflicto"
 CEDE = D / "cede"
 ANDINA = {"05", "11", "15", "17", "25", "41", "54", "63", "66", "68", "73"}
 TEMA = "Conflicto y violencia"
+# Un indicador sin dato en la mayoría de municipios del Huila en su año principal no se muestra: la fuente
+# solo trae municipio-año con registro y no se imputa 0 (ver metodologia.md).
+MIN_HUILA = 30
 FUENTES_GRUPOS = ["sat", "pares", "cnmh", "ucdp"]
 
 
@@ -180,13 +183,18 @@ def grupos(univ):
 
 def main():
     univ = set(universo())
-    salida = []
+    salida, excluidos = [], []
     for meta in sorted(C.glob("*.meta.json")) + sorted(CEDE.glob("*.meta.json")):
         ident = meta.name[:-len(".meta.json")]
         x = construir(meta.parent, ident, univ)
+        if len(x["nacional_cod"]) < MIN_HUILA:
+            excluidos.append(f"{ident} ({len(x['nacional_cod'])} de 37 municipios del Huila con dato en {x['anio']})")
+            continue
         salida.append(x)
         print(f"  {ident}: {x['anio']} · Huila {x['huila']} · Colombia {x['colombia']} · "
               f"puesto {x['puesto_dep']}/{x['n_dep']} · {len(x['nacional'])} municipios")
+    if excluidos:
+        print("No se muestran por cobertura insuficiente en el Huila:\n  " + "\n  ".join(excluidos))
     g = grupos(univ)
     if g:
         salida.insert(0, g)

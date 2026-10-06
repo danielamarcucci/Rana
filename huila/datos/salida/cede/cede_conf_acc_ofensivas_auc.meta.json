@@ -1,0 +1,21 @@
+{
+ "id": "cede_conf_acc_ofensivas_auc",
+ "tema": "Conflicto y violencia",
+ "etiqueta": "Acciones ofensivas de las AUC (histórico)",
+ "descripcion": "Actos de acción ofensiva atribuidos a las Autodefensas Unidas de Colombia por 100.000 habitantes.",
+ "unidad": "Por cada 100.000 habitantes",
+ "sentido": "peor",
+ "periodo": "1993-2008",
+ "anio_principal": "2008",
+ "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+ "base": "Panel Conflicto y violencia (variable tactof_AUC; fuente original Policía Nacional / DAS)",
+ "enlace": "https://doi.org/10.57924/BN57KJ",
+ "fecha_consulta": "2026-10-06",
+ "agregable": "tasa",
+ "factor": 100000,
+ "nota": "Fuente original Policía Nacional / DAS, compilada por el CEDE. El diccionario documenta 1993-2010, pero 2009 y 2010 vienen en 0 para todos los municipios y actores, por lo que se excluyen: la serie útil es 1993-2008. Mide hechos registrados por la fuerza pública, no el total real de acciones. Las AUC se desmovilizaron entre 2003 y 2006; los primeros registros del panel son de 1997. Tasa construida: numerador = conteo del panel; denominador = población total DANE del mismo año (retroproyección CNPV 2018, variable retro_pobl_tot del Panel de Características Generales, para 1993-2017; proyección CNPV 2018 de poblacion_municipal_nacional.csv para 2018-2020). En municipios pequeños pocos hechos producen tasas altas.",
+ "sha256": {
+  "PANEL_CONFLICTO_Y_VIOLENCIA(2021).tab": "889790c81e65891fb588fd535d7ee244ae87051597e74b4cfc43dcbe91c7ea6a",
+  "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1"
+ }
+}
