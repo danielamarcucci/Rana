@@ -176,3 +176,5 @@ tr.sel td { background: var(--morado-suave); font-weight: 600; }
 .disp circle { stroke: var(--superficie); stroke-width: 1; }
 .disp circle.sel { stroke: var(--tinta); stroke-width: 2; }
 @media (max-width: 600px) { .tray-fila { grid-template-columns: 110px minmax(0, 1fr) 62px; } .sel-corta { max-width: none; } }
+td.grupos{white-space:normal;min-width:16rem;font-size:.85em;line-height:1.35}
+td.grupos small{color:var(--muted)}

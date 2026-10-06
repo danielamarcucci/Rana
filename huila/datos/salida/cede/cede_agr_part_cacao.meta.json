@@ -1,0 +1,20 @@
+{
+  "id": "cede_agr_part_cacao",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Peso del cacao en el área cosechada",
+  "descripcion": "Porcentaje del área agrícola cosechada del municipio que corresponde a cacao.",
+  "unidad": "% del área cosechada",
+  "sentido": "contexto",
+  "periodo": "2007-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variables ac_cacao y ac_* de todos los cultivos; fuente original EVA - MinAgricultura)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100,
+  "nota": " Construido: área cosechada del cultivo / suma del área cosechada de todos los cultivos con dato del municipio (variables ac_) × 100. Solo municipios con el cultivo registrado en la EVA (sin registro = sin dato, no 0). Área cosechada de transitorios asociada al semestre de siembra (Anexo 1 del diccionario). No incluye pastos ni bosques. 2020: el área total nacional baja de 4,75 a 4,25 millones de ha frente a 2019; tómese con cautela. Un agregado departamental (suma de numeradores / suma de denominadores) solo incluye los municipios con el cultivo, por lo que sobrestima levemente el peso del cultivo en el departamento.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac"
+  }
+}

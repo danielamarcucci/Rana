@@ -107,9 +107,9 @@ def construir(carpeta, ident, univ):
     serie = lambda cods: {a: agregar(por_anio[a], meta, cods) for a in anios if a.isdigit()}
     return {
         "id": ident, "tema": meta.get("tema", TEMA), "etiqueta": meta["etiqueta"], "descripcion": meta.get("descripcion", ""),
-        "sentido": meta["sentido"], "ceros": True, "unidad": meta["unidad"],
+        "sentido": meta["sentido"], "ceros": False, "unidad": meta["unidad"], "agregable": meta["agregable"],
         "fuente": f"{meta['institucion']} — {meta['base']}", "fecha": meta["fecha_consulta"],
-        "nota": meta.get("nota", ""), "anio": ultimo, "huila": dep, "colombia": agregar(filas, meta, univ),
+        "nota": meta.get("nota", ""), "periodo": meta.get("periodo", ""), "anio": ultimo, "huila": dep, "colombia": agregar(filas, meta, univ),
         "puesto_dep": puesto, "n_dep": len(val_dep),
         "mediana_andina": mediana([v for k, v in nacional.items() if k[:2] in ANDINA]),
         "n_andina": sum(1 for k in nacional if k[:2] in ANDINA),
@@ -166,11 +166,11 @@ def grupos(univ):
         "descripcion": ("Número de grupos armados distintos, con nombre, que alguna de las fuentes ubica en el "
                         "municipio desde 2024. Se excluyen categorías genéricas y se unifican nombres escritos "
                         "de dos maneras; «disidencias FARC» sin estructura solo cuenta si ninguna fuente nombra una."),
-        "sentido": "peor", "ceros": True, "unidad": "grupos armados distintos",
-        "fuente": "Compuesto: " + ", ".join(nombres[f] for f in presentes), "fecha": "ver cada fuente",
+        "sentido": "peor", "ceros": False, "unidad": "grupos armados distintos", "agregable": "grupos",
+        "fuente": "Compuesto: " + ", ".join(nombres[f] for f in presentes), "fecha": "2026-10-06",
         "nota": f"Fuentes usadas: {', '.join(nombres[f] for f in presentes)}. El departamento y Colombia cuentan "
                 "grupos distintos (no suman municipios).",
-        "anio": "2024-2026", "huila": val_dep["41"], "colombia": len(set().union(*por_mun.values())),
+        "periodo": "2024-2026 (cada fuente con su corte)", "anio": "2024-2026", "huila": val_dep["41"], "colombia": len(set().union(*por_mun.values())),
         "puesto_dep": orden.index(val_dep["41"]) + 1, "n_dep": len(val_dep),
         "mediana_andina": mediana([v for k, v in nacional.items() if k[:2] in ANDINA]),
         "n_andina": sum(1 for k in nacional if k[:2] in ANDINA),

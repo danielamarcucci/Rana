@@ -1,0 +1,20 @@
+{
+  "id": "cede_agr_rend_cacao",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Rendimiento del cacao",
+  "descripcion": "Toneladas de cacao producidas por hectárea cosechada en el año.",
+  "unidad": "t/ha",
+  "sentido": "mejor",
+  "periodo": "2007-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variable r_cacao; fuente original EVA - MinAgricultura)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Variable del panel tal como viene (producción / área cosechada). Municipios sin cacao registrado quedan sin dato.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac"
+  }
+}

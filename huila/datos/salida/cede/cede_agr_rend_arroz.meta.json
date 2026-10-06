@@ -1,0 +1,20 @@
+{
+  "id": "cede_agr_rend_arroz",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Rendimiento del arroz",
+  "descripcion": "Toneladas de arroz producidas por hectárea cosechada (riego, secano manual y secano mecanizado juntos).",
+  "unidad": "t/ha",
+  "sentido": "mejor",
+  "periodo": "2007-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variables p_arrozr, p_arrozsm, p_arrozsme, ac_arrozr, ac_arrozsm, ac_arrozsme; fuente original EVA - MinAgricultura)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1,
+  "nota": "Construido: (p_arrozr + p_arrozsm + p_arrozsme) / (ac_arrozr + ac_arrozsm + ac_arrozsme), sumando solo los sistemas con dato. Numerador en toneladas, denominador en hectáreas cosechadas. En el Huila todo el arroz registrado es de riego (18 municipios en 2020); el de riego rinde más que el de secano, así que la comparación nacional mezcla sistemas.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac"
+  }
+}

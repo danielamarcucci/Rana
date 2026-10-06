@@ -1,0 +1,22 @@
+{
+  "id": "cede_bg_regalias_sgr_pc",
+  "tema": "Buen gobierno",
+  "etiqueta": "Asignaciones del SGR por habitante (bienio)",
+  "descripcion": "Recursos del Sistema General de Regalías asignados al municipio en el bienio presupuestal (asignaciones directas, fondos de compensación y desarrollo regional, ciencia y tecnología, ahorro), por habitante.",
+  "unidad": "pesos corrientes por habitante por bienio",
+  "sentido": "contexto",
+  "periodo": "2013-2019 (bienios)",
+  "anio_principal": "2019",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable SGR_total; fuente original DNP, Sistema General de Regalías)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1,
+  "nota": "Construido: SGR_total / población del primer año del bienio. Según el diccionario cada dato corresponde al año indicado y el siguiente: 2013 = 2013-2014, 2015 = 2015-2016, 2017 = 2017-2018, 2019 = 2019-2020. Se excluye 2012 (primer año del SGR, de un solo año). El diccionario no indica la unidad; por su magnitud son pesos (Neiva 2019-2020: 31.660 millones). Son asignaciones presupuestales, no giros ni ejecución. Denominador: población total DANE base CNPV 2018 — retro_pobl_tot del módulo Características generales del Panel CEDE (https://doi.org/10.57924/IX38JI) hasta 2017 y proyecciones DANE 2018-2030 del proyecto (poblacion_municipal_nacional.csv) desde 2018.",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88",
+    "PANEL_CARACTERISTICAS_GENERALES(2021).tab": "c4d9275b4c80c97236fce4f00bb58c1bb7096b3444975edc8a3e47ce22b5ffc1",
+    "poblacion_municipal_nacional.csv": "9d125afa05ddfe2ab3a1b74042a7b8cc9ac35327edb4788259aa64984e65cb62"
+  }
+}

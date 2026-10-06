@@ -6,8 +6,11 @@ Tablero territorial de los 37 municipios del Huila, con filtro de territorio
 1. **Elecciones**: Gobernación, Asamblea, Alcaldía y Concejo 2019 y 2023
    (Registraduría, mesa a mesa): más votado por municipio, % de cada opción,
    comparación con la otra elección o con todo el Huila.
-2. **Problemas**: 41 indicadores (salud, seguridad, economía, educación y
-   servicios) de TerriData/DNP. Cada uno compara el territorio con Colombia,
+2. **Problemas**: 102 indicadores en siete temas (salud, seguridad, conflicto
+   y violencia, economía, educación y servicios, tierra y agricultura, buen
+   gobierno) de TerriData/DNP, el Panel Municipal del CEDE y diez fuentes de
+   conflicto (MinDefensa, RUV, SIMCI, UCDP, OCHA, Indepaz, Defensoría, MOE,
+   Pares, CNMH), cada uno con fuente y fecha. Cada uno compara el territorio con Colombia,
    los 32 departamentos, la mediana de la región Andina y los ~1.100
    municipios del país (mapa por quintiles, evolución e histograma).
 3. **Caracterización**: población, densidad, ruralidad, edad y pertenencia

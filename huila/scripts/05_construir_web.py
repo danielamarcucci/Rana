@@ -199,20 +199,26 @@ def redondear(v):
 
 def problemas():
     """Indicadores TerriData (06) + capas CNPV nacionales (07), listos para la web."""
-    lista = json.loads((D / "salida" / "terridata_indicadores.json").read_text("utf-8"))
-    lista += json.loads((D / "salida" / "dane_cnpv_nacional.json").read_text("utf-8"))
+    fecha_td = max(r["fecha_verificacion"] for r in leer_csv(D / "crudos" / "terridata" / "manifiesto.csv"))
+    lista = [{**x, "fecha": fecha_td} for x in json.loads((D / "salida" / "terridata_indicadores.json").read_text("utf-8"))]
+    fecha_cnpv = max(r["fecha_consulta"] for r in leer_csv(D / "crudos" / "dane" / "geoportal_nacional" / "manifiesto.csv"))
+    lista += [{**x, "fecha": fecha_cnpv} for x in json.loads((D / "salida" / "dane_cnpv_nacional.json").read_text("utf-8"))]
+    # Conflicto (fuentes 10-19) y Panel Municipal del CEDE (21-26), unidos por 20_conflicto.py
+    lista += json.loads((D / "salida" / "conflicto_indicadores.json").read_text("utf-8"))
     out = []
     for x in lista:
         r = lambda d: {k: redondear(v) for k, v in d.items()}
         out.append({
             "id": x["id"], "tema": x["tema"], "etiqueta": x["etiqueta"], "sentido": x["sentido"],
             "ceros": x["ceros"], "unidad": unidad_corta(x["unidad"]), "fuente": x["fuente"],
-            "nota": x.get("nota", ""), "anio": x["anio"], "huila": redondear(x["huila"]),
+            "nota": x.get("nota", ""), "descripcion": x.get("descripcion", ""), "fecha": x.get("fecha", ""),
+            "periodo": x.get("periodo", ""), "agregable": x.get("agregable", ""), "anio": x["anio"], "huila": redondear(x["huila"]),
             "colombia": redondear(x["colombia"]), "puesto_dep": x["puesto_dep"], "n_dep": x["n_dep"],
             "mediana_andina": redondear(x["mediana_andina"]), "n_andina": x["n_andina"],
             "nacional": [redondear(v) for v in x["nacional"]], "municipios": r(x["nacional_cod"]),
             "serie_huila": r(x["serie_huila"]), "serie_colombia": r(x["serie_colombia"]),
             "serie_municipios": {k: r(v) for k, v in x["serie_municipios"].items()},
+            **({"grupos_municipio": x["grupos_municipio"]} if "grupos_municipio" in x else {}),
         })
     return out
 

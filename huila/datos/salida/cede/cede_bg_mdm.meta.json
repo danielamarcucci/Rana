@@ -1,0 +1,20 @@
+{
+  "id": "cede_bg_mdm",
+  "tema": "Buen gobierno",
+  "etiqueta": "Medición de Desempeño Municipal (MDM)",
+  "descripcion": "Puntaje del DNP que combina la gestión de la administración (movilización de recursos propios, ejecución, gobierno abierto, ordenamiento territorial) con el cambio en resultados de educación, salud, servicios públicos y seguridad.",
+  "unidad": "puntos (0-100)",
+  "sentido": "mejor",
+  "periodo": "2016-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Buen gobierno (variable MDM; fuente original DNP, Medición de Desempeño Municipal)",
+  "enlace": "https://doi.org/10.57924/JS7H35",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "El DNP compara el MDM dentro de grupos de municipios con capacidades iniciales similares (variable MDM_grupocap del panel); entre grupos distintos la comparación es solo referencial. Reemplaza al desempeño integral (cede_bg_desempeno_integral).",
+  "sha256": {
+    "PANEL_BUEN_GOBIERNO(2021).tab": "3c59001051f5df79adf2cebeb8db4e874470cd32c3bbbcc01486d393312d9e88"
+  }
+}

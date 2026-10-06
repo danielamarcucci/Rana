@@ -1,0 +1,20 @@
+{
+  "id": "cede_agr_credito_promedio",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Valor promedio por crédito agropecuario",
+  "descripcion": "Valor promedio de cada crédito agropecuario registrado por FINAGRO en el municipio durante el año.",
+  "unidad": "millones de pesos corrientes por crédito",
+  "sentido": "contexto",
+  "periodo": "2003-2021",
+  "anio_principal": "2021",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variables vrf_* y nuf_* de las 27 categorías de beneficiario; fuente original FINAGRO / Agronet)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1,
+  "nota": "Construido: suma de vrf_* (millones de pesos) / suma de nuf_* (número de créditos). Un promedio alto puede reflejar pocos créditos grandes de medianos y grandes productores. Fuente original FINAGRO (cartera de crédito agropecuario por tipo de beneficiario, publicada en Agronet). El diccionario indica disponibilidad 2000-2020; el .tab trae 2003-2021. Total = suma de las 27 categorías vrf_ con dato (el panel deja vacía una categoría en la que el municipio nunca tuvo crédito y pone 0 en los demás años). Incluye crédito agrícola y pecuario, capital de trabajo, inversión y normalización; se asigna al municipio que registra FINAGRO. 19 filas del .tab sin código de municipio (créditos no asignados) quedan fuera.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac"
+  }
+}

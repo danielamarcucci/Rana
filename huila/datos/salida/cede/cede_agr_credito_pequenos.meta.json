@@ -1,0 +1,20 @@
+{
+  "id": "cede_agr_credito_pequenos",
+  "tema": "Tierra y agricultura",
+  "etiqueta": "Participación de pequeños productores en el crédito",
+  "descripcion": "Porcentaje del valor del crédito agropecuario FINAGRO del municipio colocado en pequeños productores (todas las líneas de pequeño productor, mujer rural y jóvenes rurales).",
+  "unidad": "% del valor del crédito",
+  "sentido": "mejor",
+  "periodo": "2003-2021",
+  "anio_principal": "2021",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Tierra y agricultura (variables vrf_peq_productor, vrf_agrem_peq_productor, vrf_desplazados_pp, vrf_victimas_conflicto_pp, vrf_desarrollo_alt_pp, vrf_microempresario_peq, vrf_mujer_rural, vrf_jovenes_rurales sobre vrf_* total; fuente original FINAGRO / Agronet)",
+  "enlace": "https://doi.org/10.57924/GH6KPE",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100,
+  "nota": "Construido: suma de vrf_peq_productor, vrf_agrem_peq_productor, vrf_desplazados_pp, vrf_victimas_conflicto_pp, vrf_desarrollo_alt_pp, vrf_microempresario_peq, vrf_mujer_rural, vrf_jovenes_rurales / suma de todas las vrf_* × 100. Mujer rural y jóvenes rurales se incluyen porque su definición (Anexo 2 del diccionario) exige activos de hasta 70 % de los de pequeño productor. La definición legal de pequeño productor cambió (Decreto 1071 de 2015, modificado por el 691 de 2018). Sentido 'mejor' en cuanto mide acceso de pequeños productores al crédito formal; no evalúa la calidad del crédito. Fuente original FINAGRO (cartera de crédito agropecuario por tipo de beneficiario, publicada en Agronet). El diccionario indica disponibilidad 2000-2020; el .tab trae 2003-2021. Total = suma de las 27 categorías vrf_ con dato (el panel deja vacía una categoría en la que el municipio nunca tuvo crédito y pone 0 en los demás años). Incluye crédito agrícola y pecuario, capital de trabajo, inversión y normalización; se asigna al municipio que registra FINAGRO. 19 filas del .tab sin código de municipio (créditos no asignados) quedan fuera.",
+  "sha256": {
+    "PANEL_AGRICULTURA_Y_TIERRA(2021).tab": "9eca1556ed1527b3ccc616c0347e76f896244821ba699bfd8d003ac0d0e5f9ac"
+  }
+}
