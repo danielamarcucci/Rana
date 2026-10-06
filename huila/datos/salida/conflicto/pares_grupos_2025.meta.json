@@ -1,0 +1,20 @@
+{
+  "id": "pares_grupos_2025",
+  "etiqueta": "Grupos armados con presencia (Pares 2025)",
+  "descripcion": "Número de grupos armados organizados distintos que la Fundación Pares registra con presencia en el municipio en su medición de 2025.",
+  "unidad": "grupos",
+  "sentido": "peor",
+  "periodo": "2025",
+  "institucion": "Fundación Paz & Reconciliación (Pares)",
+  "base": "Base de monitoreo de presencia armada (presencia_grupos.csv, tabla del Mapa de Presencia de Grupos Armados Organizados en Colombia), mediciones 2018, 2019, 2022 y 2025",
+  "enlace": "https://www.pares.com.co/wp-content/uploads/2025/12/presencia_grupos.csv",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Presencia no equivale a control territorial (Pares). Base de una organización de la sociedad civil, construida con monitoreo propio, trabajo de campo y prensa; no es un registro oficial del Estado. Cobertura nacional: municipio sin presencia registrada = 0. Verificada contra la Tabla 2 del informe 'Tiempos violentos' (Pares, sept. 2026): municipios por grupo 2019, 2022 y 2025 y total 2025 (518) coinciden exactamente. El 'Balance de grupos armados 2025' (Pares, dic. 2025) publicó cifras previas distintas (497 municipios en 2025, 410 en 2022). La medición 2026 (527 municipios) solo existe en cifras agregadas. Nombres unificados: Gentil Duarte/EMC -> FARC disidencias - EMC; AGC/EGC -> EGC (Clan del Golfo). Categorías genéricas excluidas del conteo de grupos: 2018 Disidencias dispersas: 9 municipios; 2019 Otras organizaciones: 51 municipios; 2022 Disidencias postfarc indeterminadas: 8 municipios. Filas no homologables a un municipio: 2019 NORTE DE SANTANDER/CATATUMBO (Disidencias de las FARC); 2019 NORTE DE SANTANDER/CATATUMBO (ELN); 2019 NORTE DE SANTANDER/CATATUMBO (EPL).",
+  "sha256": {
+    "presencia_grupos.csv": "1c78ff5d3fe88a1bf614b001b556cc582e67584fba962074238f1fa95b42be91",
+    "media_54567.json": "008c4885f8e5ff775583e3bc69c48e3ff451e9774207ac98ca97a04fae58cb5f",
+    "tiempos_violentos_parte2.pdf": "6490652affdd6911d3eb7b34b6ceb1b0aac1519d8d1a867dbce115c178124a1e"
+  }
+}

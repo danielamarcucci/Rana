@@ -135,6 +135,19 @@ def grupos(univ):
                     sys.exit(f"grupos_{fte}: código {cod} fuera del universo")
                 por_mun[cod].add(r["grupo"])
                 fuentes_de[cod][r["grupo"]].add(fte)
+    # "FARC disidencias (…)" sin estructura (CNMH, SAT, Pares 2019) es una etiqueta de familia, no un
+    # grupo: solo cuenta si en el municipio ninguna fuente nombra una estructura disidente concreta.
+    for c, g in por_mun.items():
+        genericos = {x for x in g if x.startswith("FARC disidencias (")}  # CNMH, SAT y Pares 2019
+        if genericos and any(x.startswith("FARC disidencias -") for x in g):
+            g -= genericos
+            for x in genericos:
+                fuentes_de[c].pop(x, None)
+        elif len(genericos) > 1:  # varias fuentes con la misma familia sin estructura: un solo grupo
+            g -= genericos
+            g.add("FARC disidencias (sin distinguir estructura)")
+            fusion = set().union(*(fuentes_de[c].pop(x) for x in genericos))
+            fuentes_de[c]["FARC disidencias (sin distinguir estructura)"] = fusion
     deps = defaultdict(set)
     for c, g in por_mun.items():
         deps[c[:2]] |= g
@@ -149,7 +162,7 @@ def grupos(univ):
         "id": "grupos_armados_2024", "tema": TEMA, "etiqueta": "Grupos armados con presencia (desde 2024)",
         "descripcion": ("Número de grupos armados distintos, con nombre, que alguna de las fuentes ubica en el "
                         "municipio desde 2024. Se excluyen categorías genéricas y se unifican nombres escritos "
-                        "de dos maneras."),
+                        "de dos maneras; «disidencias FARC» sin estructura solo cuenta si ninguna fuente nombra una."),
         "sentido": "peor", "ceros": True, "unidad": "grupos armados distintos",
         "fuente": "Compuesto: " + ", ".join(nombres[f] for f in presentes), "fecha": "ver cada fuente",
         "nota": f"Fuentes usadas: {', '.join(nombres[f] for f in presentes)}. El departamento y Colombia cuentan "

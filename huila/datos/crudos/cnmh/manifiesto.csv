@@ -1,0 +1,12 @@
+archivo,url,fecha_consulta,corte,sha256,bytes
+CasosAB_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-acciones-belicas/?wpdmdl=1240,2026-10-06,2026-03-31,db27026dc4602e9acde35c05f83ff9006b2b9cb73df8c273d03e88c8f8f36e31,6313750
+CasosAS_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-asesinatos-selectivos/?wpdmdl=1252,2026-10-06,2026-03-31,0547ad7532967f312534b58029b90506034ce6be52335a8f8ad66ec8ac787313,16771835
+CasosAP_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-ataques-poblaciones/?wpdmdl=1242,2026-10-06,2026-03-31,be709216b1dcb68b1d22f0f0489483389f851976fb41f74d6b731ec0f3d9cab8,98568
+CasosAT_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-atentados-terroristas/?wpdmdl=1253,2026-10-06,2026-03-31,7da2cf64b6363f34d7a0fbc5e25cdcfba09226f92e02cbd32f66eb9830e29e08,46165
+CasosDB_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-danos-bienes-civiles/?wpdmdl=1254,2026-10-06,2026-03-31,13413e1156bcb0122541c67f4c7305961960e8b6065a69c8f8adcbde54ef1ced,4049120
+CasosDF_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-desaparicion-forzada/?wpdmdl=1255,2026-10-06,2026-03-31,f9e23a7699914833aa24c0d6370cd9dd6622299a901375f0a120ce229da41d2f,7643529
+CasosMA_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-ma/?wpdmdl=1256,2026-10-06,2026-03-31,92a0fae1be74a9759c2d94f0171a3f74cd9e6fca52ec48009043a340c2859caa,558709
+CasosMI_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-mi/?wpdmdl=1257,2026-10-06,2026-03-31,2cc15bec3ad20a3e7852f18eb6af977942f7430e50a840ddccbb172310811625,1274124
+CasosRU_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-ru/?wpdmdl=1258,2026-10-06,2026-03-31,7029888c67e288a442737d243f58dca2de79c31c55d38d8954e05da6bb37a3b4,1634074
+CasosSE_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-se/?wpdmdl=1259,2026-10-06,2026-03-31,271cf4860062f69eee3f072cc4c728f6418f5e61b53a80f814e8eec47a471291,3799131
+CasosVS_202603.xlsx,https://micrositios.centrodememoriahistorica.gov.co/observatorio/download/casos-vs/?wpdmdl=1260,2026-10-06,2026-03-31,4fe46aedcb223b60485f7aa86e6e6f4225055f13fae1227a4e9a5b7442259072,1845230

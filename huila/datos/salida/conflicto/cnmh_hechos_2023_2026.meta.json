@@ -1,0 +1,29 @@
+{
+  "id": "cnmh_hechos_2023_2026",
+  "etiqueta": "Hechos de violencia del conflicto (CNMH)",
+  "descripcion": "Número de casos de violencia del conflicto armado registrados por el SIEVCAC del CNMH en el municipio en el año, sumando sus 11 modalidades.",
+  "unidad": "casos",
+  "sentido": "peor",
+  "periodo": "2023-2026 (2026: enero-marzo; corte 31-mar-2026)",
+  "anio_principal": "2023-2025",
+  "institucion": "Centro Nacional de Memoria Histórica (CNMH) - Observatorio de Memoria y Conflicto",
+  "base": "SIEVCAC, bases de casos por modalidad (AB, AS, AP, AT, DB, DF, MA, MI, RU, SE, VS), corte 31 de marzo de 2026",
+  "enlace": "https://micrositios.centrodememoriahistorica.gov.co/observatorio/portal-de-datos/base-de-datos/",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Modalidades: acciones bélicas, asesinatos selectivos, ataques a poblaciones, atentados terroristas, daño a bienes civiles, desaparición forzada, masacres, minas/MUSE/AEI, reclutamiento y utilización de NNA, secuestro y violencia sexual (no incluye desplazamiento forzado, que el SIEVCAC no documenta). Un caso = un hecho, con independencia del número de víctimas. Casos por año y modalidad en Colombia: 2023: AB 264, AS 456, AP 2, AT 2, DB 89, DF 15, MA 13, MI 140, RU 17, SE 91, VS 4; 2024: AB 363, AS 343, AP 1, AT 14, DB 102, DF 25, MA 14, MI 245, RU 28, SE 93, VS 9; 2025: AB 442, AS 276, AT 22, DB 107, DF 27, MA 7, MI 184, RU 18, SE 72, VS 3; 2026: AB 15, AS 5, DB 4, MA 1, MI 18, SE 4. Total Colombia por año: {'2023': 1093, '2024': 1237, '2025': 1158, '2026': 47}; asignados a municipio: {'2023': 1088, '2024': 1233, '2025': 1156, '2026': 47}. Casos sin municipio del universo (cuentan en Colombia pero en ningún municipio): 2023: 52000 SIN INFORMACION/NARIÑO (2); 2023: 27086 BELEN DE BAJIRA/CHOCO (1); 2023: 00000 SIN INFORMACION/SIN INFORMACION (1); 2023: EXVEN FRONTERA VENEZUELA/EXTERIOR (1); 2024: 00000 SIN INFORMACION/SIN INFORMACION (3); 2024: 19000 SIN INFORMACION/CAUCA (1); 2025: 19000 SIN INFORMACION/CAUCA (2). Los años recientes tienen subregistro por rezago de documentación y se actualizan en cada corte trimestral; 2026 solo cubre enero-marzo. Cobertura nacional: municipio sin casos = 0. Conteos verificado contra el tablero oficial del CNMH (mismo corte): casos por modalidad y año coinciden en Colombia y Huila.",
+  "sha256": {
+    "CasosAB_202603.xlsx": "db27026dc4602e9acde35c05f83ff9006b2b9cb73df8c273d03e88c8f8f36e31",
+    "CasosAS_202603.xlsx": "0547ad7532967f312534b58029b90506034ce6be52335a8f8ad66ec8ac787313",
+    "CasosAP_202603.xlsx": "be709216b1dcb68b1d22f0f0489483389f851976fb41f74d6b731ec0f3d9cab8",
+    "CasosAT_202603.xlsx": "7da2cf64b6363f34d7a0fbc5e25cdcfba09226f92e02cbd32f66eb9830e29e08",
+    "CasosDB_202603.xlsx": "13413e1156bcb0122541c67f4c7305961960e8b6065a69c8f8adcbde54ef1ced",
+    "CasosDF_202603.xlsx": "f9e23a7699914833aa24c0d6370cd9dd6622299a901375f0a120ce229da41d2f",
+    "CasosMA_202603.xlsx": "92a0fae1be74a9759c2d94f0171a3f74cd9e6fca52ec48009043a340c2859caa",
+    "CasosMI_202603.xlsx": "2cc15bec3ad20a3e7852f18eb6af977942f7430e50a840ddccbb172310811625",
+    "CasosRU_202603.xlsx": "7029888c67e288a442737d243f58dca2de79c31c55d38d8954e05da6bb37a3b4",
+    "CasosSE_202603.xlsx": "271cf4860062f69eee3f072cc4c728f6418f5e61b53a80f814e8eec47a471291",
+    "CasosVS_202603.xlsx": "4fe46aedcb223b60485f7aa86e6e6f4225055f13fae1227a4e9a5b7442259072"
+  }
+}
