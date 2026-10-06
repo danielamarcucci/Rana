@@ -22,6 +22,7 @@ Salida: datos/salida/conflicto_indicadores.json
 """
 import csv
 import json
+import re
 import statistics
 import sys
 from collections import defaultdict
@@ -74,7 +75,20 @@ def construir(carpeta, ident, univ):
             por_anio[r["anio"]][cod] = (num(r["valor"]), num(r["numerador"]), num(r["denominador"]))
     anios = sorted(por_anio, key=lambda a: (not a.isdigit(), a))
     ultimo = meta.get("anio_principal") or anios[-1]
-    filas = por_anio[ultimo]
+    if ultimo not in por_anio and re.fullmatch(r"\d{4}-\d{4}", ultimo):
+        # Periodo principal = suma de los años de la serie anual (solo conteos sumables por municipio).
+        a0, a1 = map(int, ultimo.split("-"))
+        filas = defaultdict(lambda: (0.0, None, None))
+        for a in anios:
+            if a.isdigit() and a0 <= int(a) <= a1:
+                for cod, (v, _, _) in por_anio[a].items():
+                    if v is not None:
+                        filas[cod] = (filas[cod][0] + v, None, None)
+        filas = dict(filas)
+        if meta["agregable"] not in ("suma", "no"):
+            sys.exit(f"{ident}: periodo sumado solo para conteos")
+    else:
+        filas = por_anio[ultimo]
     huila = sorted(c for c in univ if c.startswith("41"))
     deps = defaultdict(list)
     for c in univ:
