@@ -1,0 +1,20 @@
+{
+  "id": "cede_sal_energia_rural",
+  "tema": "Educación y servicios",
+  "etiqueta": "Cobertura de energía eléctrica rural (ICEE resto)",
+  "descripcion": "Índice de cobertura del servicio de energía eléctrica fuera de la cabecera municipal (resto), estimado por la UPME.",
+  "unidad": "%",
+  "sentido": "mejor",
+  "periodo": "2011-2015",
+  "anio_principal": "2015",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variable icee_resto; fuente original Unidad de Planeación Minero Energética - UPME)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Índice tal como lo publica el panel. Igual que el total, se repite entre años consecutivos en muchos municipios.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f"
+  }
+}

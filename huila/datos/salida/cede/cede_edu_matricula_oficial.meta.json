@@ -1,0 +1,20 @@
+{
+  "id": "cede_edu_matricula_oficial",
+  "tema": "Educación y servicios",
+  "etiqueta": "Matrícula en sector oficial",
+  "descripcion": "Porcentaje de los alumnos de preescolar, primaria, secundaria y media del municipio matriculados en establecimientos oficiales (públicos).",
+  "unidad": "% de la matrícula",
+  "sentido": "contexto",
+  "periodo": "1996-2020 (sin 2007)",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Educación (variable alumn_oficial y alumn_total; fuente original C600 DANE - MEN)",
+  "enlace": "https://doi.org/10.57924/EPRE6V",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100,
+  "nota": "Porcentaje construido: alumn_oficial / alumn_total × 100 (se cumple alumn_oficial + alumn_nooficial = alumn_total en todas las filas con las tres variables). Se usa el sector oficial y no el no oficial porque alumn_nooficial viene vacía en cerca de la mitad de los municipios desde 2005 y el diccionario no dice que vacío = 0. La matrícula oficial incluye la contratada con privados si el C600 la registra en el establecimiento oficial. Se excluye 2007: el C600 de ese año viene incompleto en el panel (matrícula nacional 9,05 millones vs 9,6-9,7 en 2006 y 2008, filas imposibles como más repitentes que alumnos).",
+  "sha256": {
+    "PANEL_DE_EDUCACION(2021).tab": "8bda7ac46e53550c0b28977cca04a6a1e91dfa4a9953233fe2a173b3d33290b3"
+  }
+}

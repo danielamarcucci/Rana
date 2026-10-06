@@ -1,0 +1,20 @@
+{
+  "id": "cede_sal_energia",
+  "tema": "Educación y servicios",
+  "etiqueta": "Cobertura de energía eléctrica (ICEE)",
+  "descripcion": "Índice de cobertura del servicio de energía eléctrica del municipio (cabecera y resto) estimado por la UPME.",
+  "unidad": "%",
+  "sentido": "mejor",
+  "periodo": "2011-2015",
+  "anio_principal": "2015",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variable icee_tot; fuente original Unidad de Planeación Minero Energética - UPME)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Índice tal como lo publica el panel. En muchos municipios el valor se repite entre años consecutivos (p. ej. Neiva 2012=2013 y 2014=2015), lo que sugiere que la UPME no lo actualizó cada año: no leer esas repeticiones como estancamiento real.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f"
+  }
+}

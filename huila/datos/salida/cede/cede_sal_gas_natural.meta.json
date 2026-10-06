@@ -1,0 +1,20 @@
+{
+  "id": "cede_sal_gas_natural",
+  "tema": "Educación y servicios",
+  "etiqueta": "Cobertura efectiva de gas natural",
+  "descripcion": "Porcentaje de viviendas del municipio que usan el servicio de gas natural por red (usuarios conectados sobre viviendas).",
+  "unidad": "% de viviendas",
+  "sentido": "mejor",
+  "periodo": "2006-2016",
+  "anio_principal": "2016",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Salud y servicios (variable cob_gres_efec; fuente original Ministerio de Minas y Energía)",
+  "enlace": "https://doi.org/10.57924/RASU99",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Valor tal como lo publica el panel, salvo que se EXCLUYEN las filas con valor > 100 (213 filas municipio-año, ninguna del Huila; máximo 3010 %): una cobertura de viviendas mayor a 100 % es imposible por definición y el panel no da el numerador ni el denominador para revisarla. Solo trae dato para municipios con información del Ministerio de Minas (697 en 2016; 26 de 37 en el Huila). El faltante NO se convierte en 0 porque el diccionario no lo autoriza: un municipio sin fila puede no tener red o no tener reporte. Cobertura potencial (anillados) no se incluye.",
+  "sha256": {
+    "PANEL_SALUD_Y_SERVICIOS.tab": "563cd7570ca7ae4eb1bc85690c60343c1ecf29480eb530f61087f0e647306f5f"
+  }
+}

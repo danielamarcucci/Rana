@@ -1,0 +1,20 @@
+{
+  "id": "cede_edu_colegios_cd",
+  "tema": "Educación y servicios",
+  "etiqueta": "Colegios en categorías C o D (Saber 11)",
+  "descripcion": "Porcentaje de los colegios evaluados del municipio que el ICFES clasificó en las dos categorías más bajas de desempeño (C o D) de la escala A+, A, B, C, D.",
+  "unidad": "% de colegios evaluados",
+  "sentido": "peor",
+  "periodo": "2015-2018",
+  "anio_principal": "2018",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Educación (variable col_C, col_D y col_total; fuente original ICFES, clasificación de planteles)",
+  "enlace": "https://doi.org/10.57924/EPRE6V",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 100,
+  "nota": "Porcentaje construido: (col_C + col_D) / col_total × 100. Escala A+...D vigente desde 2014-2 (nota 10 del diccionario); se usa 2015-2018 (2014 mezcla clasificaciones: col_total no cuadra con la suma de categorías en 58 municipios). En 2015-2018 la suma de las categorías presentes es igual a col_total en todas las filas, así que una categoría vacía se toma como 0 colegios (2411 filas con C o D vacía); filas omitidas por no cumplir la identidad: 0. En municipios con pocos colegios un solo plantel mueve mucho el porcentaje.",
+  "sha256": {
+    "PANEL_DE_EDUCACION(2021).tab": "8bda7ac46e53550c0b28977cca04a6a1e91dfa4a9953233fe2a173b3d33290b3"
+  }
+}

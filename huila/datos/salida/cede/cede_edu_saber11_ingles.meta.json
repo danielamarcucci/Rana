@@ -1,0 +1,20 @@
+{
+  "id": "cede_edu_saber11_ingles",
+  "tema": "Educación y servicios",
+  "etiqueta": "Saber 11: inglés (normalizado)",
+  "descripcion": "Promedio del puntaje en inglés de la prueba Saber 11 de los estudiantes de los colegios ubicados en el municipio, normalizado a media 50 y desviación 10 a nivel nacional.",
+  "unidad": "puntos (media nacional = 50)",
+  "sentido": "mejor",
+  "periodo": "2015-2020",
+  "anio_principal": "2020",
+  "institucion": "CEDE, Universidad de los Andes — Panel Municipal",
+  "base": "Educación (variable s11_ingles; fuente original ICFES)",
+  "enlace": "https://doi.org/10.57924/EPRE6V",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "no",
+  "factor": null,
+  "nota": "Valor tal como lo publica el panel. Solo se usa el periodo comparable vigente (2015-2020); el panel trae inglés desde 2007, pero 2007-2014 pertenece a otro periodo de la prueba. Por la normalización, un cambio en el tiempo indica cambio de posición frente al promedio nacional. Municipio = ubicación del colegio.",
+  "sha256": {
+    "PANEL_DE_EDUCACION(2021).tab": "8bda7ac46e53550c0b28977cca04a6a1e91dfa4a9953233fe2a173b3d33290b3"
+  }
+}
