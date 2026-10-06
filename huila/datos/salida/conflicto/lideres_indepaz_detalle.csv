@@ -1,0 +1,657 @@
+anio,fecha,departamento_original,municipio_original,cod_divipola,sector_original,en_subconjunto
+2023,02/01/2023,Nariño,Tumaco,52835,INDÍGENA,no
+2023,02/01/2023,Cauca,Santander de Quilichao,19698,SINDICAL,no
+2023,06/01/2023,Córdoba,Tierralta,23807,CAMPESINO,si
+2023,07/01/2023,Valle del Cauca,Ginebra,76306,COMUNITARIO,no
+2023,14/01/2023,Putumayo,Puerto Leguizamo,86573,INDÍGENA,no
+2023,17/01/2023,Sucre,Morroa,70473,CULTURAL,no
+2023,21/01/2023,Caquetá,La Montañita,18410,Comunal,si
+2023,22/01/2023,Cauca,Páez,19517,Comunal,si
+2023,24/01/2023,Antioquia,Yarumal,05887,COMUNITARIO,no
+2023,25/01/2023,Sucre,Tolú Viejo,70823,LGBTQIA+,no
+2023,29/01/2023,Nariño,Tumaco,52835,INDÍGENA,no
+2023,30/01/2023,Santander,Mogotes,68464,POLÍTICO,no
+2023,31/01/2023,Cauca,Rosas,19622,POLÍTICO,no
+2023,01/02/2023,Caldas,Riosucio,17614,POLÍTICO,no
+2023,04/02/2023,Córdoba,Tierralta,23807,CAMPESINO,si
+2023,04/02/2023,Norte de Santander,Tibú,54810,Comunal,si
+2023,06/02/2023,Bolivar,Cantagallo,13160,Comunal,si
+2023,10/02/2023,Nariño,Mallama,52435,INDÍGENA,no
+2023,18/02/2023,Antioquia,Carepa,05147,SINDICAL,no
+2023,19/02/2023,Magdalena,San Sebastian De Buenavista,47692,POLÍTICO,no
+2023,20/02/2023,Atlántico,Baranoa,08078,Comunal,si
+2023,26/02/2023,Valle del Cauca,Cali,76001,LGBTQIA+,no
+2023,26/02/2023,Bolivar,San Pablo,13670,VÍCTIMA,no
+2023,27/02/2023,Arauca,Tame,81794,Comunal,si
+2023,03/03/2023,Nariño,Tumaco,52835,INDÍGENA,no
+2023,10/03/2023,Cesar,Pailitas,20517,Comunal,si
+2023,11/03/2023,Valle del Cauca,Buga,76111,POLÍTICO,no
+2023,15/03/2023,La Guajira,Riohacha,44001,AFRODESCENDIENTE,no
+2023,15/03/2023,Cauca,Caldono,19137,INDÍGENA,no
+2023,16/03/2023,Atlántico,Soledad,08758,POLÍTICO,no
+2023,19/03/2023,Cauca,Puerto Tejada,19573,AFRODESCENDIENTE,no
+2023,19/03/2023,Chocó,Quibdó,27001,Comunal,si
+2023,21/03/2023,Cesar,Valledupar,20001,INDÍGENA,no
+2023,21/03/2023,Putumayo,Puerto Caicedo,86569,INDÍGENA,no
+2023,24/03/2023,Antioquia,Cáceres,05120,MINERO,no
+2023,24/03/2023,Nariño,Ricaurte,52612,INDÍGENA,no
+2023,25/03/2023,Boyacá,Maripí,15442,MINERO,no
+2023,26/03/2023,Nariño,Tumaco,52835,Comunal,si
+2023,27/03/2023,Nariño,Tumaco,52835,CULTURAL,no
+2023,02/04/2023,Norte de Santander,Teorama,54800,Comunal,si
+2023,03/04/2023,Antioquia,Abejorral,05002,POLÍTICO,no
+2023,03/04/2023,Antioquia,Ituango,05361,Comunal,si
+2023,04/04/2023,Antioquia,Santa Barbara,05679,AMBIENTALISTA,no
+2023,05/04/2023,Cauca,Balboa,19075,CULTURAL,no
+2023,09/04/2023,Valle del Cauca,Cali,76001,AFRODESCENDIENTE,no
+2023,09/04/2023,Antioquia,Carmen De Viboral,05148,Comunal,si
+2023,09/04/2023,Cauca,Guapi,19318,AFRODESCENDIENTE,no
+2023,09/04/2023,Cauca,Guapi,19318,AFRODESCENDIENTE,no
+2023,10/04/2023,Cesar,Valledupar,20001,Comunal,si
+2023,11/04/2023,Norte de Santander,San Cayetano,54673,Comunal,si
+2023,11/04/2023,Bogotá D.C.,Bogotá D.C.,11001,SINDICAL,no
+2023,13/04/2023,Bogotá D.C.,Bogotá D.C.,11001,INDÍGENA,no
+2023,14/04/2023,Quindío,Quimbaya,63594,Comunal,si
+2023,15/04/2023,Bogotá D.C.,Bogotá D.C.,11001,Comunal,si
+2023,16/04/2023,Arauca,Puerto Rondón,81591,POLÍTICO,no
+2023,17/04/2023,Cauca,Corinto,19212,INDÍGENA,no
+2023,17/04/2023,Antioquia,Medellín,05001,COMUNITARIO,no
+2023,18/04/2023,Antioquia,Nariño,05483,Comunal,si
+2023,21/04/2023,Antioquia,Abejorral,05002,COMUNITARIO,no
+2023,22/04/2023,Cundinamarca,Tocancipá,25817,CULTURAL,no
+2023,23/04/2023,Bolivar,Cartagena,13001,Comunal,si
+2023,25/04/2023,Córdoba,Ciénaga De Oro,23189,INDÍGENA,no
+2023,30/04/2023,Tolima,Chaparral,73168,DERECHOS JUVENILES Y DE INFANCIA,no
+2023,02/05/2023,Cauca,Balboa,19075,Comunal,si
+2023,03/05/2023,Cauca,Jambalo,19364,INDÍGENA,no
+2023,04/05/2023,Córdoba,Momil,23464,Comunal,si
+2023,09/05/2023,Valle del Cauca,Buenaventura,76109,COMUNITARIO,no
+2023,11/05/2023,Cauca,Sucre,19785,POLÍTICO,no
+2023,12/05/2023,Bolivar,Carmen De Bolívar,13244,LGBTQIA+,no
+2023,12/05/2023,Sucre,Sincelejo,70001,COMUNITARIO,no
+2023,14/05/2023,Norte de Santander,Tibú,54810,POLÍTICO,no
+2023,16/05/2023,Guaviare,Calamar,95015,POLÍTICO,no
+2023,19/05/2023,Arauca,Tame,81794,CAMPESINO,si
+2023,24/05/2023,Cauca,Jambalo,19364,INDÍGENA,no
+2023,26/05/2023,Valle del Cauca,Buenaventura,76109,SERVIDOR PÚBLICO EN DEFENSA DE LOS DDHH,no
+2023,28/05/2023,Córdoba,Puerto Libertador,23580,SUSTITUCIÓN DE CULTIVOS ILEGALIZADOS,no
+2023,31/05/2023,Cauca,Corinto,19212,CAMPESINO,si
+2023,02/06/2023,Cauca,La Vega,19397,Comunal,si
+2023,05/06/2023,Cauca,El Tambo,19256,SINDICAL,no
+2023,05/06/2023,Córdoba,Puerto Libertador,23580,COMUNITARIO,no
+2023,05/06/2023,Cesar,Bosconia,20060,VÍCTIMA,no
+2023,06/06/2023,Amazonas,La Pedrera,91407,INDÍGENA,no
+2023,10/06/2023,Arauca,Tame,81794,CAMPESINO,si
+2023,11/06/2023,Tolima,Fresno,73283,Comunal,si
+2023,11/06/2023,Guaviare,Miraflores,95200,Comunal,si
+2023,12/06/2023,Córdoba,San Pelayo,23686,RECLAMANTE DE TIERRAS,si
+2023,12/06/2023,Cauca,Jambalo,19364,INDÍGENA,no
+2023,12/06/2023,Cauca,Jambalo,19364,INDÍGENA,no
+2023,15/06/2023,Valle del Cauca,Tuluá,76834,POLÍTICO,no
+2023,19/06/2023,Cauca,Caldono,19137,INDÍGENA,no
+2023,19/06/2023,Cesar,El Copey,20238,POLÍTICO,no
+2023,23/06/2023,Huila,Tello,41799,Comunal,si
+2023,25/06/2023,Antioquia,Ituango,05361,CAMPESINO,si
+2023,25/06/2023,Caquetá,La Montañita,18410,Comunal,si
+2023,26/06/2023,Huila,Gigante,41306,AMBIENTALISTA,no
+2023,26/06/2023,Huila,Tello,41799,Comunal,si
+2023,04/07/2023,Cauca,Caloto,19142,INDÍGENA,no
+2023,04/07/2023,Cauca,Toribio,19821,INDÍGENA,no
+2023,04/07/2023,Antioquia,Ituango,05361,Comunal,si
+2023,05/07/2023,Antioquia,Ituango,05361,Comunal,si
+2023,05/07/2023,Valle del Cauca,Jamundí,76364,COMUNITARIO,no
+2023,05/07/2023,Valle del Cauca,Buenaventura,76109,AFRODESCENDIENTE,no
+2023,06/07/2023,Nariño,Ricaurte,52612,INDÍGENA,no
+2023,08/07/2023,Arauca,Arauca,81001,COMUNITARIO,no
+2023,08/07/2023,Caquetá,Puerto Rico,18592,Comunal,si
+2023,13/07/2023,Nariño,Ricaurte,52612,INDÍGENA,no
+2023,13/07/2023,Atlántico,Malambo,08433,LGBTQIA+,no
+2023,22/07/2023,Nariño,Policarpa,52540,POLÍTICO,no
+2023,23/07/2023,Valle del Cauca,Florida,76275,INDÍGENA,no
+2023,24/07/2023,Cauca,Toribio,19821,INDÍGENA,no
+2023,24/07/2023,Antioquia,Segovia,05736,CAMPESINO,si
+2023,25/07/2023,La Guajira,Maicao,44430,INDÍGENA,no
+2023,26/07/2023,Cauca,Santander De Quilichao,19698,INDÍGENA,no
+2023,31/07/2023,Magdalena,Pueblo Viejo,47570,AFRODESCENDIENTE,no
+2023,02/08/2023,Santander,Barrancabermeja,68081,POLÍTICO,no
+2023,04/08/2023,Valle del Cauca,Pradera,76563,INDÍGENA,no
+2023,04/08/2023,Tolima,Honda,73349,POLÍTICO,no
+2023,09/08/2023,Boyacá,Tunja,15001,SINDICAL,no
+2023,11/08/2023,La Guajira,La Jagua Del Pilar,44420,POLÍTICO,no
+2023,12/08/2023,Bolivar,Cartagena,13001,POLÍTICO,no
+2023,13/08/2023,Cauca,Caldono,19137,Comunal,si
+2023,13/08/2023,Bolivar,Montecristo,13458,Comunal,si
+2023,16/08/2023,Magdalena,Zona Bananera,47980,CAMPESINO,si
+2023,16/08/2023,Magdalena,San Zenon,47703,POLÍTICO,no
+2023,20/08/2023,Valle del Cauca,Cali,76001,CULTURAL,no
+2023,21/08/2023,Antioquia,Segovia,05736,CAMPESINO,si
+2023,23/08/2023,Norte de Santander,Cúcuta,54001,Comunal,si
+2023,23/08/2023,Caquetá,Florencia,18001,CAMPESINO,si
+2023,24/08/2023,Nariño,Tumaco,52835,INDÍGENA,no
+2023,26/08/2023,Valle del Cauca,Jamundí,76364,POLÍTICO,no
+2023,26/08/2023,Córdoba,Tierralta,23807,RECLAMANTE DE TIERRAS,si
+2023,26/08/2023,Córdoba,Puerto Libertador,23580,SINDICAL,no
+2023,02/09/2023,Antioquia,Medellín,05001,Comunal,si
+2023,04/09/2023,Nariño,Taminango,52786,POLÍTICO,no
+2023,06/09/2023,La Guajira,Maicao,44430,SINDICAL,no
+2023,12/09/2023,Antioquia,Yolombó,05890,SINDICAL,no
+2023,17/09/2023,Cauca,Guachené,19300,POLÍTICO,no
+2023,17/09/2023,Cauca,Miranda,19455,INDÍGENA,no
+2023,17/09/2023,Sucre,Majagual,70429,AMBIENTALISTA,no
+2023,18/09/2023,Bogotá D.C.,Bogotá D.C.,11001,AFRODESCENDIENTE,no
+2023,18/09/2023,Bolivar,Santa Rosa Del Sur,13688,POLÍTICO,no
+2023,20/09/2023,Cauca,Buenos Aires,19110,SINDICAL,no
+2023,21/09/2023,Antioquia,Necoclí,05490,INDÍGENA,no
+2023,28/09/2023,Cauca,Caloto,19142,POLÍTICO,no
+2023,28/09/2023,Córdoba,Planeta Rica,23555,Comunal,si
+2023,28/09/2023,Arauca,Tame,81794,PROYECTOS PRODUCTIVOS FIRMANTES,no
+2023,29/09/2023,Nariño,Tumaco,52835,CULTURAL,no
+2023,05/10/2023,Antioquia,Mutata,05480,POLÍTICO,no
+2023,05/10/2023,Chocó,Carmén Del Darién,27150,RECLAMANTE DE TIERRAS,si
+2023,07/10/2023,Nariño,Ipiales,52356,Comunal,si
+2023,07/10/2023,Valle del Cauca,Palmira,76520,Comunal,si
+2023,08/10/2023,Valle del Cauca,Buenaventura,76109,AFRODESCENDIENTE,no
+2023,14/10/2023,Putumayo,Villa Garzon,86885,Comunal,si
+2023,20/10/2023,Cauca,Argelia,19050,Comunal,si
+2023,22/10/2023,Nariño,El Charco,52250,COMUNITARIO,no
+2023,27/10/2023,Sucre,Chalán,70230,POLÍTICO,no
+2023,10/11/2023,Nariño,Ricaurte,52612,INDÍGENA,no
+2023,11/11/2023,Cauca,Toribio,19821,POLÍTICO,no
+2023,12/11/2023,Huila,La Plata,41396,INDÍGENA,no
+2023,12/11/2023,Putumayo,Puerto Caicedo,86569,CAMPESINO,si
+2023,14/11/2023,Cauca,Miranda,19455,Comunal,si
+2023,14/11/2023,Putumayo,Puerto Guzmán,86571,Comunal,si
+2023,15/11/2023,Arauca,Tame,81794,Comunal,si
+2023,20/11/2023,Antioquia,Briceño,05107,Comunal,si
+2023,22/11/2023,Norte de Santander,Tibú,54810,Comunal,si
+2023,23/11/2023,Putumayo,Puerto Asis,86568,Comunal,si
+2023,23/11/2023,Huila,Tesalia,41797,Comunal,si
+2023,24/11/2023,Cauca,Rosas,19622,COMUNITARIO,no
+2023,25/11/2023,Córdoba,Pueblo Nuevo,23570,Comunal,si
+2023,28/11/2023,Huila,Elías,41244,POLÍTICO,no
+2023,29/11/2023,Cauca,Santander De Quilichao,19698,INDÍGENA,no
+2023,30/11/2023,Norte de Santander,Tibú,54810,COMUNITARIO,no
+2023,02/12/2023,Huila,Elías,41244,Comunal,si
+2023,03/12/2023,Putumayo,Puerto Asis,86568,INDÍGENA,no
+2023,04/12/2023,Nariño,Los Andes,52418,Comunal,si
+2023,04/12/2023,Putumayo,Puerto Asis,86568,CAMPESINO,si
+2023,07/12/2023,Valle del Cauca,Cali,76001,AMBIENTALISTA,no
+2023,12/12/2023,Bogotá D.C.,Ciudad Bolívar,11001,OTROS PROCESOS ASOCIATIVOS ECONÓMICOS,no
+2023,14/12/23,Arauca,Tame,81794,Comunal,si
+2023,15/12/23,Antioquia,Turbo,05837,Comunal,si
+2023,14/12/23,Bogotá D.C.,Bogotá D.C.,11001,Activista LGBTIQ+,no
+2023,16/12/23,Cauca,Toribío,19821,Indígena,no
+2023,16/12/23,Caldas,La Dorada,17380,Campesino,si
+2023,17/12/23,Antioquia,Sonsón,05756,Comunitario,no
+2023,20/12/23,Cauca,Silvia,19743,Campesino,si
+2023,22/12/23,Cauca,Santander de Quilichao,19698,Indígena,no
+2023,22/12/23,Cauca,Guachené,19300,Político,no
+2023,24/12/23,Cauca,Caldono,19137,Indígena,no
+2026,7/01/2026,Córdoba,Montería,23001,COMUNITARIO,no
+2026,13/01/2026,Norte de Santander,Cucutilla,54223,COMUNAL,si
+2026,14/01/2026,La Guajira,Riohacha,44001,COMUNITARIO,no
+2026,14/01/2026,Cauca,Argelia,19050,CAMPESINO,si
+2026,20/01/2026,Huila,Algeciras,41020,SINDICAL,no
+2026,22/01/2026,Arauca,Tame,81794,COMUNAL,si
+2026,23/01/2026,Huila,Algeciras,41020,COMUNAL,si
+2026,24/01/2026,Antioquia,Puerto Rico,,COMUNAL,si
+2026,28/01/2026,Antioquia,Tarso,05792,COMUNAL,si
+2026,28/01/2026,Caquetá,San Vicente Del Caguán,18753,AMBIENTALISTA,no
+2026,3/02/2026,Magdalena,San Sebastian De Buenavista,47692,RECLAMANTE DE TIERRAS,si
+2026,5/02/2026,Santander,Barrancabermeja,68081,COMUNAL,si
+2026,9/02/2026,Atlántico,Soledad,08758,POLÍTICO,no
+2026,10/02/2026,Arauca,Tame,81794,AFRODESCENDIENTE,no
+2026,10/02/2026,Arauca,Tame,81794,AFRODESCENDIENTE,no
+2026,12/02/2026,Arauca,Saravena,81736,POLÍTICO,no
+2026,14/02/2026,Nariño,La Unión,52399,POLÍTICO,no
+2026,15/02/2026,Putumayo,Puerto Asís,86568,POLÍTICO,no
+2026,16/02/2026,Caldas,Riosucio,17614,INDÍGENA,no
+2026,16/02/2026,Cauca,Suárez,19780,CAMPESINO,si
+2026,17/02/2026,Nariño,Cumbal,52227,INDÍGENA,no
+2026,19/02/2026,Antioquia,Briceño,05107,AMBIENTALISTA,no
+2026,22/02/2026,Cauca,Cajibío,19130,AMBIENTALISTA,no
+2026,26/02/2026,Antioquia,Segovia,05736,COMUNAL,si
+2026,3/03/2026,Antioquia,Andes,05034,COMUNITARIO,no
+2026,3/03/2026,Arauca,Puerto Rondón,81591,POLÍTICO,no
+2026,4/03/2026,Cauca,Miranda,19455,POLÍTICO,no
+2026,10/03/2026,Chocó,Tadó,27787,INDÍGENA,no
+2026,11/03/2026,Antioquia,Nechí,05495,COMUNITARIO,no
+2026,13/03/2026,Antioquia,Puerto Berrio,05579,SINDICAL,no
+2026,14/03/2026,Nariño,Barbacoas,52079,INDÍGENA,no
+2026,27/03/2026,La Guajira,Riohacha,44001,COMUNITARIO,no
+2026,31/03/2026,Antioquia,Ituango,05361,COMUNAL,si
+2026,1/04/2026,Cauca,López de Micay,19418,POLÍTICO,no
+2026,2/04/2026,Valle del Cauca,Florida,76275,COMUNAL,si
+2026,3/04/2026,La Guajira,Dibulla,44090,POLÍTICO,no
+2026,6/04/2026,Cundinamarca,Soacha,25754,AMBIENTALISTA,no
+2026,7/04/2026,Arauca,Tame,81794,INDÍGENA,no
+2026,9/04/2026,Cauca,Popayán,19001,POLÍTICO,no
+2026,9/04/2026,Cauca,Popayán,19001,POLÍTICO,no
+2026,9/04/2026,Cauca,Popayán,19001,POLÍTICO,no
+2026,14/04/2026,Chocó,Quibdó,27001,COMUNITARIO,no
+2026,15/04/2026,Valle del Cauca,Cali,76001,AFRODESCENDIENTE,no
+2026,18/04/2026,Valle del Cauca,Cali,76001,AMBIENTALISTA,no
+2026,20/04/2026,Arauca,Saravena,81736,SINDICAL,no
+2026,22/04/2026,Cauca,Santander De Quilichao,19698,SINDICAL,no
+2026,22/04/2026,Cauca,Patia,19532,COMUNITARIO,no
+2026,24/04/2026,Tolima,Ibague,73001,COMUNAL,si
+2026,25/04/2026,Cauca,Cajibío,19130,AFRODESCENDIENTE,no
+2026,27/04/2026,Cauca,Mercaderes,19450,COMUNITARIO,no
+2026,29/04/2026,Antioquia,El Bagre,05250,COMUNAL,si
+2026,30/04/2026,Santander,Puerto Wilches,68575,COMUNAL,si
+2026,3/05/2026,Norte de Santander,Cúcuta,54001,COMUNAL,si
+2026,5/05/2026,Antioquia,Bello,05088,COMUNITARIO,no
+2026,5/05/2026,Antioquia,Briceño,05107,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2026,7/05/2026,Valle del Cauca,Palmira,76520,SINDICAL,no
+2026,7/05/2026,Valle del Cauca,Obando,76497,POLÍTICO,no
+2026,13/05/2026,Valle del Cauca,Jamundí,76364,VÍCTIMAS,no
+2026,15/05/2026,Meta,San Luis De Cubarral,50223,POLÍTICO,no
+2026,19/05/2026,Norte de Santander,Abrego,54003,CAMPESINO,si
+2026,19/05/2026,Norte de Santander,Abrego,54003,COMUNITARIO,no
+2026,21/05/2026,Cauca,Silvia,19743,INDÍGENA,no
+2026,21/05/2026,Bogotá D.C.,Bogotá D.C.,11001,CULTURAL,no
+2026,27/05/2026,Magdalena,Fundación,47288,COMUNAL,si
+2026,28/05/2026,Cauca,Silvia,19743,INDÍGENA,no
+2026,6/06/2026,Norte de Santander,Cúcuta,54001,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2026,7/06/2026,Caldas,Manizales,17001,SERVIDOR PÚBLICO EN DEFENSA DE LOS DDHH,no
+2026,15/06/2026,Nariño,Tumaco,52835,INDÍGENA,no
+2026,17/06/2026,Norte de Santander,Tibú,54810,COMUNAL,si
+2026,18/06/2026,Cauca,Purace,19585,INDÍGENA,no
+2026,18/06/2026,Arauca,Cravo Norte,81220,COMUNAL,si
+2026,19/06/2026,Antioquia,Santa Barbara,05679,COMUNITARIO,no
+2026,20/06/2026,Cesar,Agustín Codazzi,20013,SINDICAL,no
+2026,22/06/2026,Cauca,Inzá,19355,VÍCTIMAS,no
+2026,25/06/2026,Huila,Neiva,41001,COMUNAL,si
+2026,01/07/2026,Huila,Algeciras,41020,COMUNAL,si
+2026,08/07/2026,Valle del Cauca,La Victoria,76403,VÍCTIMAS,no
+2026,11/07/2026,Valle del Cauca,Santiago de Cali,76001,Comunitario,no
+2026,14/07/2026,Cesar,Chimichagua,20175,Sindical,no
+2026,14/07/2026,Cauca,Argelia,19050,Comunal,si
+2026,14/07/2026,Valle del Cauca,Palmira,76520,Sindical,no
+2026,18/07/2026,Córdoba,Tierralta,23807,Comunitario,no
+2026,18/07/2026,Magdalena,El Banco,47245,Campesino,si
+2026,22/07/2026,Risaralda,Pereira,66001,Político,no
+2026,24/07/2026,Risaralda,Pereira,66001,Comunal,si
+2026,25/07/2026,Norte de Santander,Tibú,54810,Comunal,si
+2026,30/07/2026,Huila,Algeciras,41020,Comunal,si
+2026,02/08/2026,Valle del Cauca,Florida,76275,Indígena,no
+2026,13/08/2026,Antioquia,Itaguí,05360,Sindical,no
+2026,16/08/2026,Cauca,Páez,19517,Indígena,no
+2026,15/08/2026,Caquetá,Cartagena del Chairá,18150,Comunitaria,no
+2026,15/08/2026,Caldas,Risaralda,17616,Indígena,no
+2026,18/08/2026,La Guajira,Uribia,44847,Político,no
+2026,22/08/2026,Cauca,Piendamó,19548,Juvenil,no
+2026,27/08/2026,Antioquia,Anorí,05040,Comunitario,no
+2026,27/08/2026,Meta,La Macarena,50350,Comunitario,no
+2026,27/08/2026,Meta,La Macarena,50350,Comunitario,no
+2026,27/08/2026,Meta,La Macarena,50350,Comunitario,no
+2026,29/08/2026,Cauca,Argelia,19050,Comunal,si
+2026,29/08/2026,Nariño,Samaniego,52678,Político,no
+2026,30/08/2026,Valle del Cauca,Jamundí,76364,Comunitaria,no
+2026,01/09/2026,Cauca,Cajibío,19130,Comunitario,no
+2026,01/09/2026,Cauca,Cajibío,19130,Indígena,no
+2026,21/05/2026,Bogotá D.C.,Bogotá D.C.,11001,Juvenil,no
+2026,04/09/2026,Valle del Cauca,Cali,76001,Juvenil,no
+2026,08/09/2026,Tolima,Venadillo,73861,Comunitaria,no
+2026,05/09/2026,Boyacá,Mangua,,Comunitario,no
+2026,10/09/2026,Cauca,Morales,19473,Indígena,no
+2025,04/01/2025,Putumayo,Mocoa,86001,POLÍTICO,no
+2025,05/01/2025,Risaralda,Mistrató,66456,INDÍGENA,no
+2025,05/01/2025,Antioquia,San Roque,05670,COMUNITARIO,no
+2025,10/01/2025,Magdalena,Zona Bananera,47980,COMUNITARIO,no
+2025,13/01/2025,Antioquia,Turbo,05837,SINDICAL,no
+2025,13/01/2025,Santander,Barrancabermeja,68081,LGBTIQ+,no
+2025,16/01/2025,Norte de Santander,Convención,54206,CAMPESINO,si
+2025,16/01/2025,Norte de Santander,Hacarí,54344,CAMPESINO,si
+2025,17/01/2025,Valle del Cauca,Cali,76001,SINDICAL,no
+2025,17/01/2025,Atlántico,Barranquilla,08001,COMUNITARIO,no
+2025,18/01/2025,Norte de Santander,Tibú,54810,SUSTITUCIÓN DE CULTIVOS ILEGALIZADOS,no
+2025,18/01/2025,Antioquia,Medellín,05001,LGBTIQ+,no
+2025,19/01/2025,Chocó,Quibdó,27001,CULTURAL,no
+2025,19/01/2025,Chocó,Quibdó,27001,CULTURAL,no
+2025,20/01/2025,Norte de Santander,El Tarra,54250,CAMPESINO,si
+2025,21/01/2025,Valle del Cauca,Cali,76001,COMUNITARIO,no
+2025,24/01/2025,Quindío,Armenia,63001,POLÍTICO,no
+2025,25/01/2025,Santander,Bucaramanga,68001,COMUNITARIO,no
+2025,27/01/2025,Cauca,Páez,19517,INDÍGENA,no
+2025,27/01/2025,Cauca,Argelia,19050,COMUNAL,si
+2025,02/02/2025,Magdalena,Santa Marta,47001,COMUNITARIO,no
+2025,02/02/2025,Nariño,Ricaurte,52612,INDÍGENA,no
+2025,06/02/2025,Nariño,Tumaco,52835,CULTURAL,no
+2025,06/02/2025,Bolívar,Santa Rosa Del Sur,13688,COMUNAL,si
+2025,07/02/2025,Antioquia,Santo Domingo,05690,SINDICAL,no
+2025,07/02/2025,Cauca,El Tambo,19256,COMUNITARIO,no
+2025,09/02/2025,Putumayo,Puerto Asís,86568,INDÍGENA,no
+2025,10/02/2025,Cauca,Toribio,19821,INDÍGENA,no
+2025,18/02/2025,Cauca,Páez,19517,INDÍGENA,no
+2025,18/02/2025,Chocó,El Litoral Del San Juan,27250,INDÍGENA,no
+2025,20/02/2025,Cauca,Cajibío,19130,POLÍTICO,no
+2025,20/02/2025,Sucre,San Onofre,70713,AFRODESCENDIENTE,no
+2025,21/02/2025,Vichada,Cumaribo,99773,CAMPESINO,si
+2025,22/02/2025,Antioquia,Puerto Berrio,05579,COMUNITARIO,no
+2025,23/02/2025,Huila,Algeciras,41020,COMUNAL,si
+2025,23/02/2025,Bogotá D.C.,Bogotá D.C.,11001,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,23/02/2025,Atlántico,Sabanalarga,08638,SINDICAL,no
+2025,27/02/2025,Tolima,Herveo,73347,COMUNITARIO,no
+2025,28/02/2025,Magdalena,Santa Marta,47001,POLÍTICO,no
+2025,01/03/2025,Cauca,Toribio,19821,INDÍGENA,no
+2025,02/03/2025,Antioquia,Caldas,05129,SINDICAL,no
+2025,03/03/2025,Cauca,Rosas,19622,COMUNAL,si
+2025,03/03/2025,Chocó,Juradó,27372,CULTURAL,no
+2025,07/03/2025,Sucre,San Onofre,70713,CULTURAL,no
+2025,09/03/2025,Antioquia,Segovia,05736,MINERO,no
+2025,09/03/2025,Nariño,Tumaco,52835,INDÍGENA,no
+2025,12/03/2025,Cauca,Guachené,19300,POLÍTICO,no
+2025,12/03/2025,Caquetá,Cartagena Del Chairá,18150,COMUNAL,si
+2025,13/03/2025,Cauca,Páez,19517,CAMPESINO,si
+2025,14/03/2025,Cauca,Mercaderes,19450,SINDICAL,no
+2025,14/03/2025,Santander,Barrancabermeja,68081,VÍCTIMAS,no
+2025,15/03/2025,Antioquia,Medellín,05001,POLÍTICO,no
+2025,16/03/2025,Guaviare,Miraflores,95200,INDÍGENA,no
+2025,19/03/2025,Arauca,Arauquita,81065,COMUNAL,si
+2025,20/03/2025,Antioquia,Carepa,05147,COMUNITARIO,no
+2025,21/03/2025,Bolívar,Achí,13006,COMUNITARIO,no
+2025,24/03/2025,Putumayo,San Miguel,86757,INDÍGENA,no
+2025,27/03/2025,Valle del Cauca,Palmira,76520,CAMPESINO,si
+2025,28/03/2025,Antioquia,Envigado,05266,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2025,28/03/2025,La Guajira,Dibulla,44090,COMUNITARIO,no
+2025,03/04/25,Santander,Puerto Wilches,68575,COMUNITARIO,no
+2025,04/04/2025,Norte de Santander,Tibú,54810,COMUNITARIO,no
+2025,06/04/2025,Arauca,Tame,81794,OTROS PROCESOS ASOCIATIVOS ECONÓMICOS,no
+2025,09/04/2025,Cauca,Santander De Quilichao,19698,SINDICAL,no
+2025,12/04/2025,Nariño,Yacuanquer,52885,INDÍGENA,no
+2025,13/04/2025,Cauca,Toribio,19821,INDÍGENA,no
+2025,17/04/2025,Cauca,Santander De Quilichao,19698,INDÍGENA,no
+2025,19/04/2025,Antioquia,Yondó,05893,COMUNAL,si
+2025,19/04/2025,Bolívar,Cantagallo,13160,COMUNAL,si
+2025,26/04/2025,Bolívar,Cartagena,13001,AMBIENTALISTA,no
+2025,27/04/2025,Putumayo,Orito,86320,POLÍTICO,no
+2025,27/04/2025,Bolívar,Magangué,13430,COMUNAL,si
+2025,28/04/2025,Cauca,Corinto,19212,CAMPESINO,si
+2025,28/04/2025,Norte de Santander,Tibú,54810,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,29/04/2025,Cesar,Valledupar,20001,SINDICAL,no
+2025,01/05/2025,Cauca,Miranda,19455,CAMPESINO,si
+2025,01/05/2025,Putumayo,Puerto Caicedo,86569,COMUNAL,si
+2025,01/05/2025,Putumayo,Puerto Caicedo,86569,COMUNAL,si
+2025,07/05/2025,Valle del Cauca,Tuluá,76834,COMUNAL,si
+2025,11/05/2025,Cauca,Inzá,19355,INDÍGENA,no
+2025,13/05/2025,Antioquia,El Bagre,05250,COMUNAL,si
+2025,18/05/2025,Cauca,Santander De Quilichao,19698,COMUNAL,si
+2025,18/05/2025,Norte de Santander,Tibú,54810,COMUNITARIO,no
+2025,22/05/2025,Bolívar,Carmen De Bolívar,13244,LGBTIQ+,no
+2025,24/05/2025,Cesar,El Copey,20238,COMUNAL,si
+2025,30/05/2025,Cesar,La Gloria,20383,SERVIDOR PÚBLICO EN DEFENSA DE LOS DDHH,no
+2025,31/05/2025,Huila,Baraya,41078,COMUNAL,si
+2025,31/05/2025,Nariño,Linares,52411,CULTURAL,no
+2025,01/06/2025,Cauca,Caloto,19142,COMUNITARIO,no
+2025,01/06/2025,Valle del Cauca,Cali,76001,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,02/06/2025,Cauca,Argelia,19050,COMUNITARIO,no
+2025,03/06/2025,Nariño,Ricaurte,52612,INDÍGENA,no
+2025,05/06/2025,Antioquia,Anorí,05040,INDÍGENA,no
+2025,10/06/2025,Casanare,Maní,85139,COMUNITARIO,no
+2025,12/06/2025,Antioquia,Segovia,05736,CULTURAL,no
+2025,16/06/2025,Antioquia,San Andrés de Cuerquia,05647,POLÍTICO,no
+2025,22/06/2025,Antioquia,Toledo,05819,COMUNITARIO,no
+2025,22/06/2025,Antioquia,Toledo,05819,COMUNITARIO,no
+2025,27/06/2025,Cauca,Corinto,19212,CAMPESINO,si
+2025,30/06/2025,Cauca,Jambalo,19364,CULTURAL,no
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNAL,si
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNAL,si
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNAL,si
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNAL,si
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNAL,si
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNAL,si
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNITARIO,no
+2025,02/07/2025,Guaviare,Calamar,95015,COMUNITARIO,no
+2025,12/07/2025,Tolima,Lerida,73408,COMUNITARIO,no
+2025,13/07/2025,Meta,Puerto Gaitán,50568,INDÍGENA,no
+2025,14/07/2025,Cauca,Miranda,19455,SINDICAL,no
+2025,15/07/2025,Cauca,Silvia,19743,INDÍGENA,no
+2025,15/07/2025,Cauca,Silvia,19743,INDÍGENA,no
+2025,19/07/2025,Cauca,Morales,19473,INDÍGENA,no
+2025,19/07/2025,Bolívar,Cartagena,13001,COMUNAL,si
+2025,20/07/2025,Norte de Santander,Cúcuta,54001,COMUNAL,si
+2025,21/07/2025,Cauca,Páez,19517,INDÍGENA,no
+2025,22/07/2025,Cauca,Bolívar,19100,COMUNAL,si
+2025,25/07/2025,Antioquia,Dabeiba,05234,INDÍGENA,no
+2025,30/07/2025,Antioquia,Valdivia,05854,COMUNAL,si
+2025,30/07/2025,Norte de Santander,El Tarra,54250,COMUNITARIO,no
+2025,03/08/2025,Cauca,Argelia,19050,COMUNAL,si
+2025,06/08/2025,Valle del Cauca,Jamundí,76364,COMUNAL,si
+2025,07/08/2025,Valle del Cauca,Dagua,76233,COMUNITARIO,no
+2025,07/08/2025,Huila,La Plata,41396,COMUNAL,si
+2025,11/08/2025,Bogotá D.C.,Bogotá D.C.,11001,POLÍTICO,no
+2025,11/08/2025,Valle del Cauca,El Dovio,76250,INDÍGENA,no
+2025,14/08/2025,Norte de Santander,Tibú,54810,CAMPESINO,si
+2025,14/08/2025,Norte de Santander,Tibú,54810,CAMPESINO,si
+2025,15/08/2025,Valle del Cauca,Palmira,76520,COMUNAL,si
+2025,18/08/2025,Cauca,Balboa,19075,CAMPESINO,si
+2025,22/08/2025,La Guajira,Uribia,44847,INDÍGENA,no
+2025,24/08/2025,Arauca,Tame,81794,COMUNITARIO,no
+2025,25/08/2025,Cauca,Corinto,19212,COMUNITARIO,no
+2025,26/08/2025,Atlántico,Galapa,08296,COMUNITARIO,no
+2025,29/08/2025,Antioquia,Rionegro,05615,AMBIENTALISTA,no
+2025,30/08/2025,Antioquia,Valdivia,05854,COMUNAL,si
+2025,31/08/2025,Antioquia,Bello,05088,COMUNAL,si
+2025,01/09/2025,Cauca,Balboa,19075,COMUNAL,si
+2025,03/09/2025,Antioquia,Ituango,05361,COMUNITARIO,no
+2025,03/09/2025,Casanare,Sácama,85315,POLÍTICO,no
+2025,07/09/2025,Putumayo,Puerto Guzmán,86571,COMUNAL,si
+2025,08/09/2025,Nariño,Mosquera,52473,COMUNITARIO,no
+2025,09/09/2025,Valle del Cauca,Pradera,76563,POLÍTICO,no
+2025,10/9/2025,Cauca,Sucre,19785,COMUNITARIO,no
+2025,10/9/2025,Cundinamarca,Puerto Salgar,25572,RECLAMANTE DE TIERRAS,si
+2025,11/09/2025,Valle del Cauca,Buenaventura,76109,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,22/09/2025,Valle del Cauca,Cali,76001,COMUNAL,si
+2025,23/09/2025,Antioquia,Chigorodó,05172,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,27/09/2025,Valle del Cauca,Cali,76001,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,27/09/2025,Arauca,Arauquita,81065,POLÍTICO,no
+2025,28/09/2025,Cauca,Balboa,19075,CAMPESINO,si
+2025,30/09/2025,Risaralda,Mistrató,66456,POLÍTICO,no
+2025,04/10/2025,Cauca,Puerto Tejada,19573,COMUNAL,si
+2025,07/10/2025,Cauca,Cajibío,19130,POLÍTICO,no
+2025,09/10/2025,Cauca,Totoro,19824,POLÍTICO,no
+2025,13/10/2025,Chocó,Medio Baudó,27430,COMUNITARIO,no
+2025,13/10/2025,Córdoba,San Bernardo Del Viento,23675,COMUNAL,si
+2025,16/10/2025,Norte de Santander,Ocaña,54498,CAMPESINO,si
+2025,20/10/2025,Antioquia,Briceño,05107,COMUNAL,si
+2025,26/10/2025,Cauca,La Vega,19397,VÍCTIMAS,no
+2025,27/10/2025,Valle del Cauca,Palmira,76520,CAMPESINO,si
+2025,08/11/2025,Antioquia,Carmen De Viboral,05148,DERECHOS JUVENILES Y DE INFANCIA,no
+2025,08/11/2025,Antioquia,Nariño,05483,POLÍTICO,no
+2025,09/11/2025,Magdalena,San Zenon,47703,RECLAMANTE DE TIERRAS,si
+2025,10/11/2025,Norte de Santander,Tibú,54810,COMUNAL,si
+2025,11/11/2025,Cauca,Patia,19532,COMUNAL,si
+2025,11/11/2025,Huila,Campoalegre,41132,COMUNAL,si
+2025,12/11/2025,Valle del Cauca,Cali,76001,COMUNITARIO,no
+2025,14/11/2025,Atlántico,Soledad,08758,COMUNITARIO,no
+2025,14/11/2025,Huila,Algeciras,41020,COMUNITARIO,no
+2025,17/11/2025,Valle del Cauca,Pradera,76563,COMUNAL,si
+2025,17/11/2025,Cauca,Santander De Quilichao,19698,INDÍGENA,no
+2025,17/11/2025,Tolima,Chaparral,73168,POLÍTICO,no
+2025,18/11/2025,Antioquia,Támesis,05789,COMUNAL,si
+2025,23/11/2025,Antioquia,Yondó,05893,POLÍTICO,no
+2025,25/11/2025,Huila,La Plata,41396,INDÍGENA,no
+2025,28/11/2025,Valle del Cauca,Buenaventura,76109,INDÍGENA,no
+2025,29/11/2025,Meta,Vista Hermosa,50711,COMUNITARIO,no
+2025,30/11/2025,La Guajira,Riohacha,44001,VÍCTIMAS,no
+2025,02/12/2025,Sucre,El Roble,70233,CAMPESINO,si
+2025,09/12/2025,Caquetá,San Vicente del Caguan,18753,Comunal,si
+2025,15/12/2025,Casanare,Tauramena,85410,Campesino,si
+2025,15/12/2025,Atlántico,Soledad,08758,Comunal,si
+2025,22/12/2025,Bolívar,San Pablo,13670,Comunal,si
+2025,26/12/2025,La Guajira,Riohacha,44001,Indígena,no
+2025,26/12/2025,Antioquia,Arboletes,05051,Deportivo,no
+2024,02/01/2024,Valle del Cauca,Tuluá,76834,POLÍTICO,no
+2024,04/01/2024,Antioquia,Amaga,05030,COMUNITARIO,no
+2024,04/01/2024,Antioquia,Andes,05034,COMUNITARIO,no
+2024,10/01/2024,Norte de Santander,Cúcuta,54001,COMUNAL,si
+2024,10/01/2024,Antioquia,Mutatá,05480,DERECHOS JUVENILES Y DE INFANCIA,no
+2024,14/1/2024,Huila,Pitalito,41551,COMUNITARIO,no
+2024,15/1/2024,Putumayo,Mocoa,86001,COMUNAL,si
+2024,16/1/2024,Arauca,Tame,81794,COMUNAL,si
+2024,17/01/2024,Antioquia,Apartadó,05045,COMUNAL,si
+2024,18/01/2024,Córdoba,San Carlos,23678,COMUNAL,si
+2024,18/01/2024,Bolívar,Cartagena,13001,COMUNAL,si
+2024,19/01/2024,Cauca,Caldono,19137,INDÍGENA,no
+2024,24/01/2024,Sucre,San Pedro,70717,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2024,29/01/2024,Valle del Cauca,Vijes,76869,COMUNAL,si
+2024,30/01/2024,Valle del Cauca,Tuluá,76834,CAMPESINO,si
+2024,02/02/2024,Putumayo,Puerto Asís,86568,COMUNAL,si
+2024,03/02/2024,Antioquia,Yondó,05893,SINDICAL,no
+2024,04/02/2024,Putumayo,Puerto Caicedo,86569,COMUNAL,si
+2024,07/02/2024,Tolima,Ortega,73504,LGBTIQ+,no
+2024,10/02/2024,Cauca,Santander De Quilichao,19698,INDÍGENA,no
+2024,11/02/2024,Tolima,Rioblanco,73616,COMUNITARIO,no
+2024,16/02/2024,Caldas,Riosucio,17614,COMUNITARIO,no
+2024,20/02/2024,Chocó,Quibdó,27001,COMUNITARIO,no
+2024,22/02/2024,Valle del Cauca,Palmira,76520,CAMPESINO,si
+2024,23/02/2024,Caquetá,Florencia,18001,COMUNAL,si
+2024,23/02/2024,Cauca,Santander De Quilichao,19698,COMUNITARIO,no
+2024,25/02/2024,Cesar,Valledupar,20001,SINDICAL,no
+2024,26/02/2024,Putumayo,Puerto Guzmán,86571,COMUNAL,si
+2024,26/02/2024,Bogotá D.C.,Bogotá D.C.,11001,COMUNITARIO,no
+2024,27/02/2024,Cauca,Corinto,19212,AMBIENTALISTA,no
+2024,04/03/2024,Cauca,Páez,19517,INDÍGENA,no
+2024,05/03/2024,Arauca,Tame,81794,COMUNITARIO,no
+2024,06/03/2024,Córdoba,Lorica,23417,SERVIDOR PÚBLICO EN DEFENSA DE LOS DDHH,no
+2024,07/03/2024,Cauca,Balboa,19075,COMUNAL,si
+2024,11/03/2024,Magdalena,Fundación,47288,SINDICAL,no
+2024,11/03/2024,Antioquia,Caldas,05129,COMUNAL,si
+2024,11/03/2024,Cauca,Timbiquí,19809,VÍCTIMAS,no
+2024,17/03/2024,Cauca,Toribio,19821,INDÍGENA,no
+2024,19/03/2024,Cauca,Cajibío,19130,COMUNAL,si
+2024,24/03/2024,Chocó,Quibdó,27001,VÍCTIMAS,no
+2024,26/03/2024,Antioquia,Cáceres,05120,SINDICAL,no
+2024,27/03/2024,Arauca,Saravena,81736,POLÍTICO,no
+2024,28/03/2024,Caquetá,Solano,18756,COMUNAL,si
+2024,29/03/2024,Chocó,Alto Baudó,27025,INDÍGENA,no
+2024,31/03/2024,Arauca,Saravena,81736,CAMPESINO,si
+2024,01/04/2024,Cauca,Guapi,19318,COMUNITARIO,no
+2024,01/04/2024,Arauca,Arauquita,81065,COMUNAL,si
+2024,07/04/2024,Caldas,Viterbo,17877,POLÍTICO,no
+2024,14/04/2024,Norte de Santander,Cúcuta,54001,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2024,14/04/2024,Chocó,Nóvita,27491,COMUNAL,si
+2024,15/04/2024,Cauca,Patía,19532,DERECHOS JUVENILES Y DE INFANCIA,no
+2024,17/04/2024,Antioquia,Santo Domingo,05690,LGBTIQ+,no
+2024,17/04/2024,Bolívar,Cartagena,13001,COMUNAL,si
+2024,19/04/2024,Valle del Cauca,Tuluá,76834,POLÍTICO,no
+2024,19/04/2024,Valle del Cauca,Tuluá,76834,COMUNITARIO,no
+2024,19/04/2024,Guaviare,Miraflores,95200,COMUNITARIO,no
+2024,20/04/2024,Bolívar,San Jacinto,13654,SINDICAL,no
+2024,21/04/2024,Cauca,Corinto,19212,CAMPESINO,si
+2024,21/04/2024,Bolívar,Santa Rosa Del Sur,13688,CAMPESINO,si
+2024,22/04/2024,Antioquia,San Rafael,05667,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2024,25/04/2024,Chocó,Quibdó,27001,DERECHOS JUVENILES Y DE INFANCIA,no
+2024,26/04/2024,Meta,Puerto López,50573,POLÍTICO,no
+2024,27/04/2024,Valle del Cauca,Jamundí,76364,SUSTITUCIÓN DE CULTIVOS ILEGALIZADOS,no
+2024,28/04/2024,Antioquia,Segovia,05736,COMUNAL,si
+2024,28/04/2024,Arauca,Cravo Norte,81220,POLÍTICO,no
+2024,30/04/2024,Arauca,Arauca,81001,COMUNAL,si
+2024,04/05/2024,Antioquia,Puerto Triunfo,05591,POLÍTICO,no
+2024,05/05/2024,Norte de Santander,Villa Del Rosario,54874,COMUNITARIO,no
+2024,06/05/2024,cauca,Suárez,19780,CAMPESINO,si
+2024,09/05/2024,Norte de Santander,Tibú,54810,SINDICAL,no
+2024,09/05/2024,Córdoba,Tierralta,23807,INDÍGENA,no
+2024,10/05/2024,Valle del Cauca,Cali,76001,COMUNITARIO,no
+2024,14/05/2024,Huila,La Plata,41396,INDÍGENA,no
+2024,18/05/2024,Caquetá,San Vicente Del Caguán,18753,POLÍTICO,no
+2024,19/05/2024,Arauca,Tame,81794,COMUNAL,si
+2024,19/05/2024,Antioquia,Toledo,05819,COMUNITARIO,no
+2024,21/05/2024,Cauca,Miranda,19455,CAMPESINO,si
+2024,26/05/2024,Nariño,Santa Barbara Iscuandé,52696,POLÍTICO,no
+2024,31/05/2024,Valle del Cauca,Buga,76111,POLÍTICO,no
+2024,04/06/2024,Norte de Santander,Ocaña,54498,COMUNITARIO,no
+2024,04/06/2024,Valle del Cauca,Buga,76111,COMUNITARIO,no
+2024,05/06/2024,Casanare,Yopal,85001,COMUNAL,si
+2024,07/06/2024,Cauca,Argelia,19050,COMUNITARIO,no
+2024,08/06/2024,Caquetá,Valparaíso,18860,COMUNITARIO,no
+2024,09/06/2024,Valle del Cauca,Tuluá,76834,POLÍTICO,no
+2024,10/06/2024,Cauca,Caloto,19142,INDÍGENA,no
+2024,11/06/2024,Antioquia,Ituango,05361,POLÍTICO,no
+2024,13/06/2024,Cauca,Silvia,19743,COMUNAL,si
+2024,19/06/2024,Arauca,Arauquita,81065,COMUNITARIO,no
+2024,21/06/2024,La Guajira,Maicao,44430,SINDICAL,no
+2024,24/06/2024,Bogotá D.C.,Bogotá D.C.,11001,COMUNAL,si
+2024,25/06/2024,Bolívar,Margarita,13440,CAMPESINO,si
+2024,25/06/2024,Cauca,Páez,19517,INDÍGENA,no
+2024,27/06/2024,Santander,Puerto Wilches,68575,DERECHOS DE LAS MUJERES,no
+2024,27/06/2024,Norte de Santander,Tibú,54810,COMUNICADOR/PERIODISTA EN DEFENSA DE LOS DDHH,no
+2024,27/06/2024,Cauca,Caloto,19142,INDÍGENA,no
+2024,30/06/2024,Santander,Barrancabermeja,68081,COMUNITARIO,no
+2024,01/07/2024,Valle del Cauca,Jamundí,76364,COMUNAL,si
+2024,07/07/2024,Arauca,Arauquita,81065,INDÍGENA,no
+2024,11/07/2024,Valle del Cauca,Cali,76001,COMUNAL,si
+2024,15/07/2024,Antioquia,Cisneros,05190,POLÍTICO,no
+2024,17/07/2024,Sucre,Sampués,70670,CULTURAL,no
+2024,19/07/2924,Antioquia,Titiribí,05809,COMUNAL,si
+2024,20/07/2024,Antioquia,Sonsón,05756,CAMPESINO,si
+2024,21/07/2024,Cauca,Bolívar,19100,COMUNITARIO,no
+2024,31/07/2024,Chocó,Quibdó,27001,INDÍGENA,no
+2024,02/08/2024,Huila,La Plata,41396,CULTURAL,no
+2024,03/08/2024,Cauca,Caloto,19142,INDÍGENA,no
+2024,05/08/2024,Valle del Cauca,Buga,76111,COMUNAL,si
+2024,06/08/2024,Bolívar,Altos Del Rosario,13030,COMUNITARIO,no
+2024,07/08/2024,Risaralda,Pereira,66001,COMUNAL,si
+2024,08/08/2024,La Guajira,Fonseca,44279,CAMPESINO,si
+2024,08/08/2024,Cundinamarca,Girardot,25307,COMUNAL,si
+2024,10/08/2024,Magdalena,Santa Marta,47001,INDÍGENA,no
+2024,12/08/2024,Boyacá,Puerto Boyacá,15572,COMUNAL,si
+2024,14/08/2024,Arauca,Arauquita,81065,COMUNAL,si
+2024,15/08/2024,Bogotá D.C.,Bogotá D.C.,11001,DERECHOS JUVENILES Y DE INFANCIA,no
+2024,15/08/2024,Bogotá D.C.,Bogotá D.C.,11001,DERECHOS JUVENILES Y DE INFANCIA,no
+2024,16/08/2024,Meta,Mapiripán,50325,COMUNAL,si
+2024,19/08/2024,Cauca,Toribio,19821,COMUNAL,si
+2024,24/08/2024,Arauca,Puerto Rondón,81591,COMUNAL,si
+2024,26/08/2024,Huila,La Plata,41396,POLÍTICO,no
+2024,27/08/2024,Arauca,Tame,81794,COMUNAL,si
+2024,28/08/2024,Chocó,Quibdó,27001,COMUNITARIO,no
+2024,29/08/2024,Cauca,Caldono,19137,INDÍGENA,no
+2024,30/08/2024,Antioquia,Cáceres,05120,COMUNITARIO,no
+2024,09/09/2024,Bolívar,María La Baja,13442,CULTURAL,no
+2024,17/09/2024,Magdalena,Aracataca,47053,SINDICAL,no
+2024,19/09/2024,Arauca,Saravena,81736,COMUNAL,si
+2024,23/09/2024,Cesar,Pueblo Bello,20570,INDÍGENA,no
+2024,24/09/2024,Valle del Cauca,Tuluá,76834,COMUNAL,si
+2024,24/09/2024,Arauca,Arauquita,81065,COMUNAL,si
+2024,29/09/2024,Bolívar,Barranco De Loba,13074,COMUNAL,si
+2024,30/09/2024,Antioquia,Yondó,05893,COMUNAL,si
+2024,30/09/2024,Antioquia,Yondó,05893,COMUNAL,si
+2024,30/09/2024,Antioquia,Yondó,05893,COMUNAL,si
+2024,03/08/2024,Arauca,Arauquita,81065,COMUNAL,si
+2024,05/10/2024,Cauca,Argelia,19050,CULTURAL,no
+2024,06/10/2024,Arauca,Tame,81794,Comunal,si
+2024,07/10/2024,Magdalena,Ciénaga,47189,Indígena,no
+2024,08/10/2024,Bogotá D.C,Bogotá D.C,11001,Comunitario,no
+2024,05/10/2024,Bogotá D.C,Bogotá D.C,11001,Derechos Juveniles y de Infancia,no
+2024,13/10/2024,Valle del Cauca,Florida,76275,Campesino,si
+2024,16/10/2024,Antioquia,El Bagre,05250,Comunal,si
+2024,16/10/2024,Valle del Cauca,Alcalá,76020,Indígena,no
+2024,18/10/2024,Tolima,Chaparral,73168,Político,no
+2024,19/10/2024,Antioquia,Salgar,05642,Comunal,si
+2024,22/10/2024,Antioquia,Caldas,05129,LGBTIQ+,no
+2024,28/10/2024,Meta,Mesetas,50330,Comunal,si
+2024,31/10/2024,Cauca,Jambaló,19364,Indígena,no
+2024,01/11/2024,Arauca,Tame,81794,Comunal,si
+2024,05/11/2024,Cauca,Inzá,19355,Indígena,no
+2024,05/11/2024,Valle del Cauca,Cali,76001,Sindicalista,no
+2024,05/11/2024,Nariño,Cumbitara,52233,Funcionario Público,no
+2024,06/11/2024,Santander,Barrancabermeja,68081,Comunal,si
+2024,03/11/2024,Caquetá,Solano,18756,Indígena,no
+2024,09/11/2024,Casanare,Yopal,85001,Comunal,si
+2024,15/11/2024,Magdalena,El Banco,47245,Comunal,si
+2024,17/11/2024,Cauca,Caloto,19142,Campesino,si
+2024,21/11/2024,Antioquia,Puerto Triunfo,05591,Comunicador,no
+2024,23/11/2024,Casanare,Aguazúl,85010,Comunitaria,no
+2024,28/11/2024,Nariño,Tumaco,52835,Indígena,no
+2024,05/12/2024,Antioquia,Cármen de Viboral,05148,Gestor deportivo,no
+2024,08/12/2024,Atlántico,Barranquilla,08001,Político,no
+2024,16/11/2024,Huila,Campoalegre,41132,Campesino,si
+2024,18/10/2024,Boyacá,Paya,15533,Político,no
+2024,12/12/2024,Cesar,Curumaní,20228,Comunitario,no
+2024,13/12/2024,Caquetá,La Montañita,18410,Comunal,si
+2024,18/12/2024,Antioquia,Valdivia,05854,Comunal,si
+2024,18/12/2024,Cauca,Santander de Quilichao,19698,Indígena,no
+2024,19/12/2024,Norte de Santander,Cúcuta,54001,Servidor Público,no
+2024,18/12/2024,Valle del Cauca,Buga,76111,Comunal,si
+2024,28/12/2024,Cauca,Cajibío,19130,Comunal,si

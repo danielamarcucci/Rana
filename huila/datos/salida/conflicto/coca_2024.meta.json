@@ -1,0 +1,18 @@
+{
+  "id": "coca_2024",
+  "etiqueta": "Hectáreas de coca (SIMCI 2024)",
+  "descripcion": "Área sembrada con coca detectada por el censo SIMCI a 31 de diciembre de 2024, en hectáreas, por municipio. El CSV incluye la serie anual 2002-2024 (sin 2001 ni 2009).",
+  "unidad": "hectáreas",
+  "sentido": "peor",
+  "periodo": "2024 (serie 2002-2024 en el CSV)",
+  "institucion": "Ministerio de Justicia y del Derecho – Observatorio de Drogas de Colombia; censo SIMCI (Gobierno de Colombia – UNODC)",
+  "base": "Detección de Cultivos de Coca (hectáreas), datos.gov.co acs4-3wgp",
+  "enlace": "https://www.datos.gov.co/d/acs4-3wgp",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Municipio sin coca detectada = 0 (el censo SIMCI cubre todo el país). Es área a 31 de diciembre detectada con imágenes satelitales, no producción. Totales nacionales del dataset verificados contra SIMCI/UNODC (2024: 261.386 ha, igual al informe de junio de 2026). Se excluyen de la serie 2001 y 2009 porque la suma municipal del dataset no cuadra con el total nacional publicado (2001: 136,918 vs 144,807 ha; 2009: 68,027 vs 73,139 ha).",
+  "sha256": {
+    "acs4-3wgp.csv": "d5348714b89432a5dee5acde96ea7941afb0d88cda4131280f73a9f772d6a93d"
+  }
+}

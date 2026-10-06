@@ -15,6 +15,9 @@ Además construye el indicador compuesto "grupos armados con presencia desde
 grupos_*.csv ubica en el municipio desde 2024 (las categorías genéricas ya
 vienen excluidas por cada script y los nombres ya vienen unificados).
 
+También lee datos/salida/cede/ (Panel Municipal del CEDE, scripts 21 a 26), con el
+tema que trae cada .meta.json.
+
 Salida: datos/salida/conflicto_indicadores.json
 """
 import csv
@@ -27,6 +30,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 D = RAIZ / "datos" / "salida"
 C = D / "conflicto"
+CEDE = D / "cede"
 ANDINA = {"05", "11", "15", "17", "25", "41", "54", "63", "66", "68", "73"}
 TEMA = "Conflicto y violencia"
 FUENTES_GRUPOS = ["sat", "pares", "cnmh", "ucdp"]
@@ -59,10 +63,10 @@ def agregar(filas, meta, cods):
     return None
 
 
-def construir(ident, univ):
-    meta = json.loads((C / f"{ident}.meta.json").read_text("utf-8"))
+def construir(carpeta, ident, univ):
+    meta = json.loads((carpeta / f"{ident}.meta.json").read_text("utf-8"))
     por_anio = defaultdict(dict)
-    with (C / f"{ident}.csv").open(encoding="utf-8") as f:
+    with (carpeta / f"{ident}.csv").open(encoding="utf-8") as f:
         for r in csv.DictReader(f):
             cod = r["cod_divipola"].zfill(5)
             if cod not in univ:
@@ -80,12 +84,12 @@ def construir(ident, univ):
     dep = val_dep.get("41")
     puesto = None
     if dep is not None and meta["sentido"] != "contexto":
-        orden = sorted(val_dep.values(), reverse=True)
+        orden = sorted(val_dep.values(), reverse=(meta["sentido"] == "peor"))
         puesto = orden.index(dep) + 1
     nacional = {c: v[0] for c, v in filas.items() if v[0] is not None}
     serie = lambda cods: {a: agregar(por_anio[a], meta, cods) for a in anios if a.isdigit()}
     return {
-        "id": ident, "tema": TEMA, "etiqueta": meta["etiqueta"], "descripcion": meta.get("descripcion", ""),
+        "id": ident, "tema": meta.get("tema", TEMA), "etiqueta": meta["etiqueta"], "descripcion": meta.get("descripcion", ""),
         "sentido": meta["sentido"], "ceros": True, "unidad": meta["unidad"],
         "fuente": f"{meta['institucion']} — {meta['base']}", "fecha": meta["fecha_consulta"],
         "nota": meta.get("nota", ""), "anio": ultimo, "huila": dep, "colombia": agregar(filas, meta, univ),
@@ -150,9 +154,9 @@ def grupos(univ):
 def main():
     univ = set(universo())
     salida = []
-    for meta in sorted(C.glob("*.meta.json")):
+    for meta in sorted(C.glob("*.meta.json")) + sorted(CEDE.glob("*.meta.json")):
         ident = meta.name[:-len(".meta.json")]
-        x = construir(ident, univ)
+        x = construir(meta.parent, ident, univ)
         salida.append(x)
         print(f"  {ident}: {x['anio']} · Huila {x['huila']} · Colombia {x['colombia']} · "
               f"puesto {x['puesto_dep']}/{x['n_dep']} · {len(x['nacional'])} municipios")

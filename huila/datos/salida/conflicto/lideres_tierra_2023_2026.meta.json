@@ -1,0 +1,20 @@
+{
+  "id": "lideres_tierra_2023_2026",
+  "etiqueta": "Líderes campesinos, comunales y de tierras asesinados",
+  "descripcion": "Número de asesinatos de líderes sociales registrados por Indepaz en 2023-2026 cuyo sector social es campesino, comunal (juntas de acción comunal) o reclamante de tierras, por municipio del hecho.",
+  "unidad": "asesinatos",
+  "sentido": "peor",
+  "periodo": "2023-01-01 a 2026-09-10 (2026 parcial)",
+  "institucion": "Indepaz – Instituto de Estudios para el Desarrollo y la Paz, Observatorio de DDHH y Conflictividades",
+  "base": "Líderes sociales, defensores de DD.HH y firmantes de acuerdo asesinados (listados anuales 2023, 2024, 2025 y 2026)",
+  "enlace": "https://indepaz.org.co/lideres-sociales-defensores-de-dd-hh-y-firmantes-de-acuerdo-asesinados-en-2023/ ; https://indepaz.org.co/lideres-sociales-defensores-de-dd-hh-y-firmantes-de-acuerdo-asesinados-en-2024/",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "suma",
+  "factor": null,
+  "nota": "Registro de una organización de la sociedad civil, no oficial del Estado; la categoría la asigna Indepaz (columna 'Sector social'). Se cuentan CAMPESINO, COMUNAL y RECLAMANTE DE TIERRAS; no se cuenta COMUNITARIO ni los firmantes del Acuerdo (tabla aparte). 2026 es parcial (último caso listado 10/09/2026); las listas se actualizan y pueden cambiar. Totales de filas por año contrastados con el balance anual de Indepaz (2023=188, 2024=173, 2025=187). Ausente = 0 porque el registro es nacional y solo lista municipios con casos. Detalle auditable sin nombres en lideres_indepaz_detalle.csv.",
+  "sha256": {
+    "lideres_2023.html": "c5bd336725937614c66279f13d1d87e5551cd1520e149bc07c5d568a43988407",
+    "lideres_2024_2025_2026.html": "0c583beac3ea46684ffb0492f9e69c54e0eee16757758842f51a203a70e43e1d",
+    "balance_2025.pdf": "b2fd77cbe3acbed9852153f629e95d0c89ec019691f5ce1124818a5be5dcad24"
+  }
+}

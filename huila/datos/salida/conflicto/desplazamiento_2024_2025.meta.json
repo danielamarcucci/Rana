@@ -1,0 +1,20 @@
+{
+  "id": "desplazamiento_2024_2025",
+  "etiqueta": "Desplazamiento forzado por 1.000 hab. (2024-2025)",
+  "descripcion": "Personas víctimas de desplazamiento forzado en 2024 y 2025 según el municipio donde ocurrió el hecho (Registro Único de Víctimas), por cada 1.000 habitantes (población DANE proyectada 2025).",
+  "unidad": "personas desplazadas por 1.000 habitantes",
+  "sentido": "peor",
+  "periodo": "2024-2025 (años de ocurrencia), corte RUV 31/08/2026",
+  "institucion": "Unidad para las Víctimas (UARIV) – Red Nacional de Información",
+  "base": "Reporte víctimas desplazamiento anualizado ocurrencia y llegada, cifra municipal (datos.gov.co krnc-8azs), medida per_ocu",
+  "enlace": "https://www.datos.gov.co/d/krnc-8azs",
+  "fecha_consulta": "2026-10-06",
+  "agregable": "tasa",
+  "factor": 1000,
+  "nota": "Cuenta personas por municipio de ocurrencia y año: quien fue desplazado en 2024 y en 2025, o en dos municipios, cuenta más de una vez, por lo que la suma municipal supera a la nacional de personas únicas (2024: 262152 vs 259714; 2025: 304025 vs 299604). 17 personas no se asignan a ningún municipio (municipio 'SIN DEFINIR' o código 99572 Santa Rita, Vichada, que no existe en la DIVIPOLA vigente). El RUV se actualiza con declaraciones tardías: los años recientes pueden crecer en cortes posteriores. Municipio sin registros = 0 (registro nacional). Mapiripana (ANM, 94663) tiene población DANE = 0: tasa vacía.",
+  "sha256": {
+    "desplazamiento_ocurrencia_municipio_2024_2025.json": "c8bf1c169b910a037cb3653460e66b693e700ff657af6e6969523ec9088e3d03",
+    "desplazamiento_cortes_municipal.json": "733ea51660d5ac986066e8e6bb85dd188f6a8475672e3716418dfd2829450b84",
+    "desplazamiento_nacional_2024_2025.json": "9757ccc2e5c43e64208273bdd3970651e7cca73d88f680d25d8d3de060e53909"
+  }
+}
