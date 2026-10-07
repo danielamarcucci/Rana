@@ -1,0 +1,43 @@
+{
+  "name": "tesoreria-red",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tesorería de la Red — Corporación por la Defensa de la Reforma Agraria",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/migrar.mjs --si-hay-base && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:migrar": "node scripts/migrar.mjs",
+    "cuenta": "node scripts/cuenta.mjs",
+    "demo:cargar": "node scripts/demo.mjs",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "next": "15.5.27",
+    "pdf-lib": "^1.17.1",
+    "pg": "^8.16.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "server-only": "^0.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.5.27",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vitest": "^3.2.4"
+  }
+}

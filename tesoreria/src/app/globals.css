@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-white text-tinta font-sans antialiased;
+    font-size: 15.5px;
+    line-height: 1.55;
+  }
+  h1, h2, h3 {
+    @apply text-olivo;
+  }
+  a {
+    @apply text-ocre-texto;
+  }
+  :focus-visible {
+    outline: 3px solid #b87a20;
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Titulares: Open Sans Condensed ExtraBold en mayúsculas, como el sitio de la Red */
+  .titular {
+    @apply font-titular font-extrabold uppercase text-olivo;
+    letter-spacing: 0.005em;
+    line-height: 1;
+  }
+  .antetitulo {
+    @apply text-[11.5px] font-semibold uppercase text-tierra;
+    letter-spacing: 0.16em;
+  }
+  .etiqueta {
+    @apply text-xs font-semibold uppercase text-gris;
+    letter-spacing: 0.08em;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-semibold no-underline transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primario {
+    @apply btn bg-ocre text-white hover:bg-ocre-hover;
+  }
+  .btn-secundario {
+    @apply btn border border-linea bg-white text-olivo hover:bg-suave;
+  }
+  .btn-peligro {
+    @apply btn border border-alerta/40 bg-white text-alerta hover:bg-alerta-fondo;
+  }
+  .btn-enlace {
+    @apply inline-flex items-center gap-1 text-sm font-semibold text-ocre-texto underline-offset-2 hover:underline;
+  }
+
+  .campo {
+    @apply block;
+  }
+  .campo > span:first-child {
+    @apply mb-1 block text-sm font-semibold text-tinta;
+  }
+  .ayuda {
+    @apply mt-1 block text-xs text-gris;
+  }
+  .entrada {
+    @apply block w-full rounded-md border border-linea bg-white px-3 py-2 text-[15px] text-tinta placeholder:text-gris/60 focus:border-olivo-vivo focus:outline-none focus:ring-2 focus:ring-olivo-vivo/30 disabled:bg-tenue;
+  }
+
+  .panel {
+    @apply rounded-lg border border-linea bg-white;
+  }
+  .seccion {
+    @apply mt-10 first:mt-0;
+  }
+  .seccion-titulo {
+    @apply mb-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-linea pb-2;
+  }
+  .seccion-titulo h2 {
+    @apply text-lg font-semibold text-olivo;
+  }
+
+  .tabla {
+    @apply w-full border-collapse text-sm;
+  }
+  .tabla th {
+    @apply border-b border-linea bg-tenue px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gris;
+  }
+  .tabla td {
+    @apply border-b border-linea/70 px-3 py-2.5 align-top;
+  }
+  .tabla tr:last-child td {
+    @apply border-b-0;
+  }
+  .tabla .der {
+    @apply text-right tabular-nums;
+  }
+  .tabla tfoot td {
+    @apply border-t border-linea bg-tenue font-semibold;
+  }
+
+  .insignia {
+    @apply inline-flex items-center whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-semibold;
+  }
+  .aviso {
+    @apply rounded-md border-l-4 px-4 py-3 text-sm;
+  }
+}
