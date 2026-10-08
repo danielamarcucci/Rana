@@ -1,5 +1,8 @@
 # Rana — Sistema de denuncias de la Red Nacional de Defensa por la Reforma Agraria
 
+> **Tesorería de la Red**: la aplicación de finanzas es un proyecto aparte, en la carpeta
+> [`tesoreria/`](tesoreria/README.md), con su propio despliegue y su propia base de datos.
+
 Aplicación web para la recepción y atención de denuncias sobre amenazas, agresiones
 o hechos de violencia contra personas y comunidades beneficiarias de la Reforma
 Agraria, según el documento *"Paso a paso para la recepción y atención de las
