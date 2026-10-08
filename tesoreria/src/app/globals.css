@@ -7,9 +7,33 @@
     -webkit-text-size-adjust: 100%;
   }
   body {
-    @apply bg-white text-tinta font-sans antialiased;
+    @apply bg-fondo text-tinta font-sans antialiased;
     font-size: 15.5px;
     line-height: 1.55;
+    /* Marca de agua: velos verdes y amarillos de la paleta de la Red */
+    background-image:
+      radial-gradient(ellipse 70% 55% at 0% 0%, rgba(122, 154, 46, 0.22), transparent 70%),
+      radial-gradient(ellipse 60% 50% at 100% 15%, rgba(232, 196, 143, 0.45), transparent 70%),
+      radial-gradient(ellipse 70% 60% at 85% 100%, rgba(184, 122, 32, 0.16), transparent 70%),
+      radial-gradient(ellipse 60% 50% at 10% 95%, rgba(168, 194, 92, 0.25), transparent 70%);
+    background-attachment: fixed;
+  }
+  /* Símbolo de la Red, muy tenue, como marca de agua */
+  body::before {
+    content: "";
+    position: fixed;
+    right: -70px;
+    bottom: -70px;
+    width: 560px;
+    height: 594px;
+    background: url("/marca/simbolo-red.png") no-repeat center / contain;
+    opacity: 0.07;
+    pointer-events: none;
+    z-index: 0;
+  }
+  body > * {
+    position: relative;
+    z-index: 1;
   }
   h1, h2, h3 {
     @apply text-olivo;
@@ -73,7 +97,7 @@
   }
 
   .panel {
-    @apply rounded-lg border border-linea bg-white;
+    @apply rounded-lg border border-linea bg-white shadow-[0_1px_2px_rgba(47,58,26,0.05)];
   }
   .seccion {
     @apply mt-10 first:mt-0;
@@ -86,7 +110,11 @@
   }
 
   .tabla {
-    @apply w-full border-collapse text-sm;
+    @apply w-full border-collapse bg-white text-sm;
+    box-shadow: 0 0 0 1px #dbe1ce;
+  }
+  .panel .tabla {
+    box-shadow: none;
   }
   .tabla th {
     @apply border-b border-linea bg-tenue px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-gris;

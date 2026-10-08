@@ -14,6 +14,11 @@ const dir = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "db", 
 const url = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
 
 if (!url) {
+  // En Vercel la base de datos es obligatoria: sin ella la aplicación no puede funcionar.
+  if (process.env.VERCEL) {
+    console.error("migrar: falta DATABASE_URL. Conecte la base de datos Neon al proyecto (Storage) y vuelva a desplegar.");
+    process.exit(1);
+  }
   if (process.argv.includes("--si-hay-base")) {
     console.log("migrar: sin DATABASE_URL, no se aplican migraciones.");
     process.exit(0);
