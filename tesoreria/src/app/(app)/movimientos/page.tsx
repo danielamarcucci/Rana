@@ -57,7 +57,7 @@ export default async function Movimientos({ searchParams }: { searchParams: Prom
         </div>
       )}
 
-      <form className="mb-5 grid grid-cols-2 gap-3 rounded-lg bg-tenue p-4 sm:grid-cols-3 lg:grid-cols-6" action="/movimientos">
+      <form className="mb-5 grid grid-cols-2 gap-3 rounded-lg border border-linea bg-white p-4 sm:grid-cols-3 lg:grid-cols-6" action="/movimientos">
         <label className="campo"><span className="!text-xs">Desde</span><input type="date" name="desde" defaultValue={filtro.desde} className="entrada py-1.5 text-sm" /></label>
         <label className="campo"><span className="!text-xs">Hasta</span><input type="date" name="hasta" defaultValue={filtro.hasta} className="entrada py-1.5 text-sm" /></label>
         <label className="campo"><span className="!text-xs">Tipo</span>

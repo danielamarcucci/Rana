@@ -65,7 +65,7 @@ export function SituacionCompromiso({ s }: { s: Situacion }) {
 
 export function Aviso({ children, tono = "info" }: { children: React.ReactNode; tono?: "info" | "aviso" | "alerta" }) {
   const c = {
-    info: "border-olivo-vivo bg-tenue text-tinta",
+    info: "border-olivo-vivo bg-white text-tinta",
     aviso: "border-ocre bg-aviso-fondo text-tinta",
     alerta: "border-alerta bg-alerta-fondo text-tinta",
   }[tono];

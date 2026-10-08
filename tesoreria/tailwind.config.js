@@ -10,6 +10,7 @@ module.exports = {
         ocre: { DEFAULT: "#B87A20", texto: "#925E15", hover: "#9E6819" },
         arena: "#E8C48F",
         suave: "#ECF0E4",
+        fondo: "#EEF2DE", // fondo general: verde claro con toques amarillos (marca de agua)
         tenue: "#F6F8F1",
         tinta: "#1C2113",
         gris: "#5F6752",

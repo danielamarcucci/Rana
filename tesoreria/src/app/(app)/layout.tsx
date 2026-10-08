@@ -47,7 +47,7 @@ export default async function LayoutApp({ children }: { children: React.ReactNod
         </div>
       </header>
       <main className="mx-auto w-full max-w-contenido flex-1 px-4 py-7 sm:px-6 sm:py-9">{children}</main>
-      <footer className="border-t border-linea bg-tenue">
+      <footer className="border-t border-linea bg-white">
         <div className="mx-auto max-w-contenido px-4 py-4 text-xs text-gris sm:px-6">
           Corporación por la Defensa de la Reforma Agraria · Valores en pesos colombianos · Fechas en hora de Colombia
         </div>

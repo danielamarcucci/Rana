@@ -2,7 +2,7 @@ import { Marca } from "@/components/Marca";
 
 export default function LayoutAcceso({ children }: { children: React.ReactNode }) {
   return (
-    <main className="min-h-screen bg-tenue px-4 py-10 sm:py-16">
+    <main className="min-h-screen bg-fondo px-4 py-10 sm:py-16">
       <div className="mx-auto w-full max-w-md">
         <div className="mb-8 flex justify-center">
           <Marca grande />
