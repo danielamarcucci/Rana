@@ -33,9 +33,10 @@
   <!-- ============ 1. ELECCIONES ============ -->
   <section id="v-elecciones" class="vista" hidden>
     <div class="titulo-vista"><h2>Elecciones</h2><span class="chip-territorio" data-territorio></span></div>
-    <p class="intro">Resultados oficiales de la Registraduría, mesa a mesa, sumados por municipio. Elija la corporación y el año; el gráfico compara cada opción con la elección anterior o siguiente.</p>
+    <p class="intro">Resultados oficiales de la Registraduría, mesa a mesa, sumados por municipio: territoriales 2019 y 2023, Cámara y Senado 2022 y 2026, y Presidencia 2022 y 2026 (las dos vueltas). Elija la corporación y el año; el gráfico compara cada opción con la elección anterior o siguiente, con todo el Huila o, en la Presidencia, con Colombia.</p>
     <div class="controles">
       <div><div class="lbl">Corporación</div><div class="seg" id="el-corp"></div></div>
+      <div id="el-vuelta-wrap" hidden><div class="lbl">Vuelta</div><div class="seg" id="el-vuelta"></div></div>
       <div><div class="lbl">Año</div><div class="seg" id="el-anio"></div></div>
       <div><div class="lbl">Mapa</div><div class="seg" id="el-modo"></div></div>
       <div id="el-opcion-wrap" hidden><div class="lbl">Opción</div><select id="el-opcion" class="sel-opcion"></select></div>
@@ -69,7 +70,7 @@
   <!-- ============ 4. TRANSFERENCIA ============ -->
   <section id="v-transferencia" class="vista" hidden>
     <div class="titulo-vista"><h2>Transferencia del voto</h2><span class="chip-territorio" data-territorio></span></div>
-    <p class="intro">Cómo se movió la votación de un partido entre elecciones, municipio por municipio: 18 elecciones oficiales en el Huila, de las territoriales 2015 a la presidencial 2026. Compara territorios, no personas: el voto es secreto.</p>
+    <p class="intro">Cómo se movió la votación de un partido entre elecciones, municipio por municipio: 20 elecciones oficiales en el Huila, de las territoriales 2015 a la presidencial 2026. Compara territorios, no personas: el voto es secreto.</p>
     <div class="controles">
       <div><div class="lbl">Partido</div><select id="tr-partido" class="sel-opcion"></select></div>
       <div><div class="lbl">Desde</div><select id="tr-desde" class="sel-opcion sel-corta"></select></div>

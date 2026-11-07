@@ -1,0 +1,8 @@
+archivo,origen,fecha_consulta,sha256,bytes,nota
+MMV_CONGRESO_2026.zip,https://observatorio.registraduria.gov.co/anexos/MMV_CONGRESO_2026.zip,2026-11-07,bf702ef81d41cde9c5c4532ab34146f2f30dc30cd976685705e616363183be0f,521530784,ZIP oficial completo (Last-Modified 28-ago-2026); no se versiona por tamaño
+MMV_CONGRESO_2026/mmvESCRUTINIOCongreso2026.zip,dentro de MMV_CONGRESO_2026.zip,2026-11-07,d29756d8c27de4cf11a96b70a5ee73589949dcda67f2241ea48ecf1cd328b8e4,480300928,escrutinio; no se versiona
+MMV_9999.csv,dentro de mmvESCRUTINIOCongreso2026.zip,2026-11-07,008eadf83b91c9e00e6398a0640435c5bb9b980745de1ddf651cd95a3a5a76f0,9751997430,escrutinio nacional mesa a mesa; SHA-256 igual al de HASH_MMV_9999.txt; no se versiona (9,7 GB)
+MMV_9999_ESCRUTINIO_HUILA.csv (dentro del .gz),filas de MMV_9999.csv que empiezan por 9999;19; copiadas byte a byte (grep -a '^9999;19;'),2026-11-07,7087e39684c99d6ba2d175d3009c570ee23958edd1d3d432436510e9a682ca0c,209538252,3.880.338 filas; departamento 19 = Huila en la codificación de la Registraduría
+MMV_9999_ESCRUTINIO_HUILA.csv.gz,gzip -9 -n del anterior,2026-11-07,5f8b043e0696c96757108112ac44b6471256c938db482bae295c3f182dad725d,10474846,versionado
+HASH_MMV_9999.txt,dentro de mmvESCRUTINIOCongreso2026.zip (sin cambios),2026-11-07,699d440b8b3299d81254ff0a57a4b156c38043313c9c7048695d38cc858685a2,1402,versionado
+ArchivosBasicosDiaElectoralCOngreso2026.zip,dentro de MMV_CONGRESO_2026.zip (sin cambios),2026-11-07,b77a2ac2d42cfc8bf9dcf9d497d6cead2b92492fc334f53d9cd86643413be858,2711758,versionado; nombres de partidos y candidatos con su propio HASH.txt
