@@ -3,9 +3,10 @@
 Tablero territorial de los 37 municipios del Huila, con filtro de territorio
 (todo el Huila, subregión o municipio) en la parte superior y cuatro pestañas:
 
-1. **Elecciones**: Gobernación, Asamblea, Alcaldía y Concejo 2019 y 2023
+1. **Elecciones**: Gobernación, Asamblea, Alcaldía y Concejo 2019 y 2023;
+   Cámara y Senado 2022 y 2026; Presidencia 2022 y 2026, las dos vueltas
    (Registraduría, mesa a mesa): más votado por municipio, % de cada opción,
-   comparación con la otra elección o con todo el Huila.
+   comparación con la otra elección, con todo el Huila o (Presidencia) con Colombia.
 2. **Problemas**: 102 indicadores en siete temas (salud, seguridad, conflicto
    y violencia, economía, educación y servicios, tierra y agricultura, buen
    gobierno) de TerriData/DNP, el Panel Municipal del CEDE y diez fuentes de
@@ -16,7 +17,7 @@ Tablero territorial de los 37 municipios del Huila, con filtro de territorio
 3. **Caracterización**: población, densidad, ruralidad, edad y pertenencia
    étnica (contexto, sin juicio de bueno o malo).
 4. **Transferencia del voto**: cómo cambió la votación de cada partido por
-   municipio entre 18 elecciones (territoriales 2015-2023, Congreso 2022,
+   municipio entre 20 elecciones (territoriales 2015-2023, Congreso 2022 y 2026,
    presidenciales 2022 y 2026), con mapa de cambio y relación con el voto
    presidencial. Compara territorios, no personas.
 

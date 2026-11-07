@@ -147,14 +147,34 @@ def proyectar(geojson):
     return out, ancho, round(alto, 1)
 
 
+CORP_NACIONAL = ("CAMARA", "SENADO", "PRESIDENTE 1V", "PRESIDENTE 2V")
+ESPECIALES = {"__BLANCO__": "blanco", "__NULOS__": "nulos", "__NO_MARCADOS__": "no_marcados"}
+
+
+def _entrada(m):
+    validos = sum(m["part"].values()) + m["blanco"]
+    ent = {"validos": validos, "blanco": m["blanco"], "nulos": m["nulos"], "no_marcados": m["no_marcados"],
+           "total": validos + m["nulos"] + m["no_marcados"],
+           "partidos": dict(sorted(m["part"].items(), key=lambda x: -x[1]))}
+    if m["cand"]:
+        ent["candidatos"] = dict(sorted(m["cand"].items(), key=lambda x: -x[1]))
+    return ent
+
+
+def _vacio():
+    return {"cand": defaultdict(int), "part": defaultdict(int), "blanco": 0, "nulos": 0, "no_marcados": 0}
+
+
 def electoral(munis):
-    res = {}
+    """Territoriales 2019/2023 (02) más Cámara, Senado y Presidencia 2022/2026 (08), por municipio.
+
+    Devuelve (por_municipio, colombia): por_municipio[anio][corp][cod]; colombia[anio][corp] es el total
+    nacional de las presidenciales, para comparar el Huila con el país.
+    """
+    corps = defaultdict(lambda: defaultdict(lambda: defaultdict(_vacio)))
     for anio in (2019, 2023):
-        corps = defaultdict(lambda: defaultdict(lambda: {"cand": defaultdict(int), "part": defaultdict(int),
-                                                          "blanco": 0, "nulos": 0, "no_marcados": 0}))
-        nombres_cand = {}
         for r in leer_csv(D / "salida" / f"territoriales_{anio}_municipio_candidato.csv"):
-            m = corps[r["corporacion"]][r["cod_divipola"]]
+            m = corps[anio][r["corporacion"]][r["cod_divipola"]]
             v = int(r["votos"])
             cc = r["cod_candidato"]
             if cc == "00996":
@@ -166,22 +186,60 @@ def electoral(munis):
             else:
                 m["part"][r["partido"]] += v
                 if r["corporacion"] in ("GOBERNADOR", "ALCALDE") and cc != "00000":
-                    key = f"{r['candidato']}|{r['partido']}"
-                    m["cand"][key] += v
+                    m["cand"][f"{r['candidato']}|{r['partido']}"] += v
+
+    # Cámara y Senado: los partidos se agrupan por familia (partidos_alias.csv) para que la misma
+    # colectividad cuadre entre 2022 y 2026 aunque cambie el nombre de la lista; se rotula con el
+    # nombre oficial más votado que no requirió alias.
+    alias = {r["nombre_normalizado"]: r["familia"] for r in leer_csv(D / "catalogos" / "partidos_alias.csv")}
+    filas = [r for r in leer_csv(D / "salida" / "elecciones_huila_municipio.csv")
+             if r["corporacion"] in CORP_NACIONAL]
+    nombres = defaultdict(lambda: defaultdict(int))
+    for r in filas:
+        if r["corporacion"] in ("CAMARA", "SENADO") and r["opcion"] not in ESPECIALES:
+            nombres[familia(r["opcion"], alias)][r["opcion"]] += int(r["votos"])
+    etiqueta = {}
+    for f, ns in nombres.items():
+        canon = {n: v for n, v in ns.items() if familia(n, {}) == f} or ns
+        etiqueta[f] = max(canon.items(), key=lambda x: x[1])[0]
+    for r in filas:
+        m = corps[int(r["anio"])][r["corporacion"]][r["cod_divipola"]]
+        op, v = r["opcion"], int(r["votos"])
+        if op in ESPECIALES:
+            m[ESPECIALES[op]] += v
+        elif r["corporacion"].startswith("PRESIDENTE"):
+            m["cand"][op] += v
+            m["part"][op.split("|")[1]] += v
+        else:
+            m["part"][etiqueta[familia(op, alias)]] += v
+
+    res = {}
+    for anio, porc in sorted(corps.items()):
         res[anio] = {}
-        for corp, porm in corps.items():
-            res[anio][corp] = {}
-            for cod, m in porm.items():
-                validos = sum(m["part"].values()) + m["blanco"]
-                ent = {"validos": validos, "blanco": m["blanco"], "nulos": m["nulos"],
-                       "no_marcados": m["no_marcados"],
-                       "total": validos + m["nulos"] + m["no_marcados"],
-                       "partidos": dict(sorted(m["part"].items(), key=lambda x: -x[1]))}
-                if m["cand"]:
-                    ent["candidatos"] = dict(sorted(m["cand"].items(), key=lambda x: -x[1]))
-                res[anio][corp][cod] = ent
+        for corp, porm in porc.items():
+            res[anio][corp] = {cod: _entrada(m) for cod, m in porm.items()}
             assert set(res[anio][corp]) == set(munis), (anio, corp)
-    return res
+
+    colombia = defaultdict(dict)
+    nac = defaultdict(_vacio)
+    anio_de = {}
+    for r in filas:
+        anio_de[r["eleccion"]] = (int(r["anio"]), r["corporacion"])
+    for r in leer_csv(D / "salida" / "presidencial_colombia.csv"):
+        m = nac[r["eleccion"]]
+        op, v = r["opcion"], int(r["votos"])
+        if op in ESPECIALES:
+            m[ESPECIALES[op]] += v
+        else:
+            m["cand"][op] += v
+            m["part"][op.split("|")[1]] += v
+    for e, m in nac.items():
+        anio, corp = anio_de[e]
+        colombia[anio][corp] = _entrada(m)
+        # El Huila sale del mismo archivo nacional: su suma no puede pasar del total de Colombia.
+        hu = sum(x["total"] for x in res[anio][corp].values())
+        assert 0 < hu < colombia[anio][corp]["total"], e
+    return res, dict(colombia)
 
 
 def unidad_corta(u):
@@ -237,7 +295,7 @@ def familia(nombre, alias):
 
 
 def transferencia(munis):
-    """Votos por partido (familia de nombres) y municipio en las 18 elecciones de 08_otras_elecciones.py."""
+    """Votos por partido (familia de nombres) y municipio en las 20 elecciones de 08_otras_elecciones.py."""
     alias = {r["nombre_normalizado"]: r["familia"] for r in leer_csv(D / "catalogos" / "partidos_alias.csv")}
     validos = defaultdict(lambda: defaultdict(int))
     fam_votos = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
@@ -299,12 +357,14 @@ def main():
     paths, ancho, alto = proyectar(geo)
     assert set(paths) == set(munis)
 
+    elec, elec_col = electoral(munis)
     tablero = {
         "generado": "scripts/05_construir_web.py",
         "mapa": {"ancho": ancho, "alto": alto},
         "municipios": [{"cod": c, "nombre": munis[c], "subregion": subregion[c], **paths[c]} for c in sorted(munis)],
         "indicadores": problemas(),
-        "electoral": electoral(munis),
+        "electoral": elec,
+        "electoral_colombia": elec_col,
         "transferencia": transferencia(munis),
     }
     salida = RAIZ / "web" / "datos" / "tablero.js"

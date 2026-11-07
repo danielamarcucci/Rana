@@ -7,7 +7,8 @@
   const NOMBRE = Object.fromEntries(MUNIS.map((m) => [m.cod, titulo(m.nombre)]));
   const SUBREG = Object.fromEntries(MUNIS.map((m) => [m.cod, m.subregion]));
   const SUBREGIONES = ["Norte", "Centro", "Occidente", "Sur"].filter((s) => MUNIS.some((m) => m.subregion === s));
-  const CORP = { GOBERNADOR: "Gobernación", ASAMBLEA: "Asamblea", ALCALDE: "Alcaldía", CONCEJO: "Concejo" };
+  const CORP = { GOBERNADOR: "Gobernación", ASAMBLEA: "Asamblea", ALCALDE: "Alcaldía", CONCEJO: "Concejo",
+    CAMARA: "Cámara", SENADO: "Senado", PRESIDENTE: "Presidencia" };
   const $ = (id) => document.getElementById(id);
   const tooltip = $("tooltip");
   const fmtN = new Intl.NumberFormat("es-CO", { maximumFractionDigits: 0 });
@@ -615,13 +616,20 @@
   // ELECCIONES
   // =====================================================================
   const E = T.electoral;
-  const ANIOS = Object.keys(E).sort();
-  const estEl = { anio: ANIOS[ANIOS.length - 1], corp: "GOBERNADOR", modo: "ganador", opcion: "", comp: "anio" };
+  const ECOL = T.electoral_colombia || {};
+  const estEl = { anio: "2023", corp: "GOBERNADOR", vuelta: "1V", modo: "ganador", opcion: "", comp: "anio" };
   const MODOS = { ganador: "Más votado", pct: "% de una opción" };
+  const VUELTAS = { "1V": "1.ª vuelta", "2V": "2.ª vuelta" };
+  // corporación tal como está en los datos (la Presidencia se separa por vuelta)
+  const corpDatos = () => (estEl.corp === "PRESIDENTE" ? `PRESIDENTE ${estEl.vuelta}` : estEl.corp);
+  const esPres = (corp) => corp.startsWith("PRESIDENTE");
+  const esCand = (corp) => corp === "GOBERNADOR" || esPres(corp);
+  const nombreCorp = (corp) => (esPres(corp) ? `Presidencia ${VUELTAS[corp.slice(-2)]}` : CORP[corp]);
+  const aniosDe = (corp) => Object.keys(E).filter((a) => E[a][corp]).sort();
 
-  function opcionesDe(m, corp) { return corp === "GOBERNADOR" ? m.candidatos : m.partidos; }
+  function opcionesDe(m, corp) { return esCand(corp) ? m.candidatos : m.partidos; }
   function etiquetaOp(k, corp) {
-    if (corp !== "GOBERNADOR") return titulo(k);
+    if (!esCand(corp)) return titulo(k);
     const [cand, part] = k.split("|");
     return `${titulo(cand)} (${titulo(part)})`;
   }
@@ -646,11 +654,16 @@
         if (!b) return;
         estEl[k] = b.dataset.v;
         if (k !== "modo") estEl.opcion = "";
+        if (k === "corp") estEl.comp = b.dataset.v === "PRESIDENTE" ? "colombia" : "anio";
         pintarElecciones();
       });
     };
     seg("el-corp", CORP, "corp");
-    seg("el-anio", Object.fromEntries(ANIOS.map((a) => [a, a])), "anio");
+    seg("el-vuelta", VUELTAS, "vuelta");
+    $("el-anio").addEventListener("click", (ev) => {
+      const b = ev.target.closest("button");
+      if (b) { estEl.anio = b.dataset.v; estEl.opcion = ""; pintarElecciones(); }
+    });
     seg("el-modo", MODOS, "modo");
     $("el-sub-barras").addEventListener("click", (ev) => {
       const b = ev.target.closest("button[data-comp]");
@@ -660,16 +673,21 @@
   }
 
   function pintarElecciones() {
-    const { anio, corp, modo } = estEl;
+    const corp = corpDatos(), modo = estEl.modo;
+    const ANIOS = aniosDe(corp);
+    if (!ANIOS.includes(estEl.anio)) estEl.anio = ANIOS[ANIOS.length - 1];
+    const anio = estEl.anio;
     const otro = ANIOS.find((a) => a !== anio);
+    $("el-anio").innerHTML = ANIOS.map((a) => `<button type="button" data-v="${a}">${a}</button>`).join("");
+    $("el-vuelta-wrap").hidden = estEl.corp !== "PRESIDENTE";
     document.querySelectorAll("#v-elecciones [data-territorio]").forEach((e) => (e.textContent = chipTerritorio()));
-    [["el-corp", corp], ["el-anio", anio], ["el-modo", modo]].forEach(([id, v]) =>
+    [["el-corp", estEl.corp], ["el-anio", anio], ["el-modo", modo], ["el-vuelta", estEl.vuelta]].forEach(([id, v]) =>
       $(id).querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v))));
     const datos = E[anio][corp];
     const cods = codsTerritorio();
     const tot = sumar(anio, corp, cods), totOtro = sumar(otro, corp, cods);
     const orden = ordenadas(tot.op);
-    const quien = corp === "GOBERNADOR" ? "candidato" : corp === "ALCALDE" ? "partido o coalición del alcalde" : "partido o coalición";
+    const quien = esCand(corp) ? "candidato" : corp === "ALCALDE" ? "partido o coalición del alcalde" : "partido o coalición";
 
     // opción para el modo %
     const wrap = $("el-opcion-wrap"), sel = $("el-opcion");
@@ -710,7 +728,7 @@
         top.map((k, i) => `<span><span class="chip" style="background:${colores[i]}"></span>${esc(etiquetaOp(k, corp))} · ${cuenta[k]} mun.</span>`).join("");
       const resto = Object.keys(gan).length - top.reduce((s, k) => s + cuenta[k], 0);
       if (resto) leyenda += `<span><span class="chip" style="background:${css("--otro")}"></span>Otros · ${resto} mun.</span>`;
-      $("el-tit-mapa").textContent = `${CORP[corp]} ${anio}: ${quien} más votado`;
+      $("el-tit-mapa").textContent = `${nombreCorp(corp)} ${anio}: ${quien} más votado`;
       $("el-sub-mapa").textContent = "Los tres que ganan más municipios llevan color propio.";
     } else {
       const val = (c) => pct(opcionesDe(datos[c], corp)[estEl.opcion] || 0, datos[c].validos);
@@ -722,7 +740,7 @@
       leyenda = `<span class="tit">% del voto válido</span>` + cortes.map((c0, i) =>
         `<span><span class="chip" style="background:${css(`--c${i + 1}`)}"></span>${fmt1.format(c0)}–${fmt1.format(c0 + maxV / 5)}</span>`).join("") +
         `<span><span class="chip" style="background:${css("--sin-dato")};border:1px solid var(--borde)"></span>Sin votos</span>`;
-      $("el-tit-mapa").textContent = `${CORP[corp]} ${anio}: ${etiquetaOp(estEl.opcion, corp)}`;
+      $("el-tit-mapa").textContent = `${nombreCorp(corp)} ${anio}: ${etiquetaOp(estEl.opcion, corp)}`;
       $("el-sub-mapa").textContent = "Porcentaje del voto válido en cada municipio.";
     }
     dibujarMapa($("el-mapa"), colorDe, (c) => {
@@ -735,14 +753,22 @@
     $("el-leyenda").innerHTML = leyenda;
 
     // Barras: el territorio frente a la otra elección o frente a todo el Huila
-    const comp = terr.tipo === "todo" ? "anio" : estEl.comp;
-    const totComp = comp === "anio" ? totOtro : sumar(anio, corp, MUNIS.map((m) => m.cod));
-    const nomComp = comp === "anio" ? otro : "Huila";
-    $("el-tit-barras").textContent = `${CORP[corp]} ${anio} en ${nombreTerritorio()}`;
-    $("el-sub-barras").innerHTML = (terr.tipo === "todo" ? "" :
-      `<span class="seg seg-mini">${[["anio", "vs " + otro], ["huila", "vs todo el Huila"]].map(([k, t]) =>
+    // Comparaciones posibles: la otra elección de la misma corporación, todo el Huila (si se filtró un
+    // territorio) y, en la Presidencia, el total de Colombia (mismo archivo nacional de la Registraduría).
+    const comps = [["anio", "vs " + otro]];
+    if (terr.tipo !== "todo") comps.push(["huila", "vs todo el Huila"]);
+    if (esPres(corp) && ECOL[anio] && ECOL[anio][corp]) comps.push(["colombia", "vs Colombia"]);
+    const comp = comps.some(([k]) => k === estEl.comp) ? estEl.comp : "anio";
+    let totComp;
+    if (comp === "anio") totComp = totOtro;
+    else if (comp === "huila") totComp = sumar(anio, corp, MUNIS.map((m) => m.cod));
+    else { const n = ECOL[anio][corp]; totComp = { ...n, op: n.candidatos }; }
+    const etqComp = { anio: `${nombreTerritorio()} ${otro}`, huila: `Huila ${anio}`, colombia: `Colombia ${anio}` }[comp];
+    $("el-tit-barras").textContent = `${nombreCorp(corp)} ${anio} en ${nombreTerritorio()}`;
+    $("el-sub-barras").innerHTML = (comps.length < 2 ? "" :
+      `<span class="seg seg-mini">${comps.map(([k, t]) =>
         `<button type="button" data-comp="${k}" aria-pressed="${k === comp}">${t}</button>`).join("")}</span> `) +
-      `% del voto válido. <span class="leyenda-serie" style="display:inline-flex"><span><i class="b-actual"></i>${esc(nombreTerritorio())} ${anio}</span><span><i class="b-otro"></i>${esc(comp === "anio" ? nombreTerritorio() + " " + otro : "Huila " + anio)}</span></span>`;
+      `% del voto válido. <span class="leyenda-serie" style="display:inline-flex"><span><i class="b-actual"></i>${esc(nombreTerritorio())} ${anio}</span><span><i class="b-otro"></i>${esc(etqComp)}</span></span>`;
     const top = orden.slice(0, 10);
     const pctComp = (k) => (k in totComp.op ? pct(totComp.op[k], totComp.validos) : null);
     const pctBlC = pct(totComp.blanco, totComp.validos);
@@ -754,7 +780,7 @@
     hb += fila("Voto en blanco", pctBl, pctBlC);
     if (orden.length > 10) hb += `<p class="pie">${orden.length - 10} opciones más con menos votos no se muestran.</p>`;
     if (comp === "anio" && top.some(([k]) => !(k in totComp.op)))
-      hb += `<p class="pie">— : esa opción no se presentó con el mismo nombre en ${otro}${corp === "GOBERNADOR" ? " (los candidatos cambian entre elecciones; use «vs todo el Huila» en una subregión o municipio)" : ""}.</p>`;
+      hb += `<p class="pie">— : esa opción no se presentó con el mismo nombre en ${otro}${esCand(corp) ? ` (los candidatos cambian entre elecciones; use ${esPres(corp) ? "«vs Colombia» o " : ""}«vs todo el Huila» en una subregión o municipio)` : ""}.</p>`;
     $("el-barras").innerHTML = hb;
 
     // Tabla
@@ -777,9 +803,23 @@
     const s = $("el-tabla").querySelector("tr.sel");
     $("el-tabla").scrollTop = s ? Math.max(0, s.offsetTop - $("el-tabla").clientHeight / 2) : 0;
     $("el-tit-tabla").textContent = terr.tipo === "sub" ? `Municipios de la subregión ${terr.valor}` : "Municipios del Huila";
+    const NOTA_CORP = {
+      ALCALDE: " (cada municipio elige su propia alcaldía y concejo, así que el total es una suma, no una elección)",
+      CONCEJO: " (cada municipio elige su propia alcaldía y concejo, así que el total es una suma, no una elección)",
+      CAMARA: " (la Cámara se elige por circunscripción departamental: el total del Huila sí es la elección completa). Solo la circunscripción ordinaria; no incluye las curules indígena, afro ni de paz (CITREP). Listas agrupadas por partido cuando cambió el nombre entre 2022 y 2026 (por ejemplo, «Pacto Histórico Huila» con «Pacto Histórico»)",
+      SENADO: " (el Senado se elige en circunscripción nacional: el Huila es solo una parte de esa votación). No incluye la circunscripción indígena. Listas agrupadas por partido cuando cambió el nombre entre 2022 y 2026; las coaliciones nuevas (por ejemplo, «Cambio Radical - Alma») se muestran aparte",
+      "PRESIDENTE 1V": " (la Presidencia es una elección nacional; «vs Colombia» usa el total del país, con el exterior, del mismo archivo oficial)",
+      "PRESIDENTE 2V": " (la Presidencia es una elección nacional; «vs Colombia» usa el total del país, con el exterior, del mismo archivo oficial)",
+    };
+    const FUENTE_CORP = {
+      CAMARA: "archivos mesa a mesa (MMV) del Congreso 2022 y escrutinio del Congreso 2026",
+      SENADO: "archivos mesa a mesa (MMV) del Congreso 2022 y escrutinio del Congreso 2026",
+      "PRESIDENTE 1V": "archivos mesa a mesa (MMV) de las presidenciales 2022 y escrutinio 2026",
+      "PRESIDENTE 2V": "archivos mesa a mesa (MMV) de las presidenciales 2022 y escrutinio 2026",
+    };
     $("el-nota").textContent = "Porcentajes sobre votos válidos (opciones + en blanco). Margen: diferencia en puntos porcentuales entre el primero y el segundo. \"vs " + otro +
-      "\": cambio en el total de votos. Las cifras de Huila o de una subregión suman los municipios" + (corp === "ALCALDE" || corp === "CONCEJO" ? " (cada municipio elige su propia alcaldía y concejo, así que el total es una suma, no una elección)" : "") +
-      ". Fuente: Registraduría Nacional, archivos mesa a mesa (MMV) " + ANIOS.join(" y ") + ".";
+      "\": cambio en el total de votos. Las cifras de Huila o de una subregión suman los municipios" + (NOTA_CORP[corp] || "") +
+      ". Fuente: Registraduría Nacional, " + (FUENTE_CORP[corp] || "archivos mesa a mesa (MMV) " + ANIOS.join(" y ")) + "." + (FUENTE_CORP[corp] ? " En 2026 se usa el escrutinio, no el preconteo." : "");
   }
 
 
